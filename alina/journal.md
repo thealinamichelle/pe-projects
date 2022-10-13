@@ -2,8 +2,46 @@
 
 # My learning journal
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
-
 ---------------------------------------------------------------------------
+
+## 10/11/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Checklist based on 
+	- [x] Lesson
+	- [x] Milestones
+- [x] Create JPG, SVG, PNG
+- [x] Create meta data share image
+- [x] add new site and meta image to slack
+- [x] Milestones
+- [x] Study Hall
+- [x] Features
+- [] 30 Mins Substack
+
+### standup
+
+	####Yesterday: I spent time enjoying chrome dev tools, changing the code in Jess's site, and thinking about realizing I usually have the mindset I am writing files or code for myself rather than ensuring someone else could easily understand it and pick up where I left off. 
+
+	####Blockers/Confusing Points:
+	I am looking forward to the huddle with Jake and Drew about puting git onto the server. I don't understand how git will work with group files yet but I am looking forward to learning how it's done. 
+
+	####Today's Goals
+	I am very excited for affinity designer! I am super excited to explore this program today. 
+
+### highlights
+
+- Today we were exposed to infinity designer. It's a fairly intuitive little tool, but learning new tools definitely bumps up against my impatience resilience when I have a deadline. I need to work on that. 
+- I crated a little dog logo and it's now the meta image for my index page.
+- Current Standard sharing size is 1200 x 630 at 72dpi.
+- A rule of thumb would be to make sure the artboard is double  the size that the end graphic will be displayed as. This will take into account future advancements and retina screens, unless svg.
+
+### questions or blockers
+
+- [] I need to know more about the meta tags to understand them. I am uncomfortable using OPG to generate the meta tags for me. I am not sure which part of my tag ultimately made my image pop up in Slack. 
+
+
+-------------------------------------------------
 
 ## 10/11/22
 
