@@ -4,6 +4,62 @@
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
 ---------------------------------------------------------------------------
 
+-------------------------------------------------
+
+## 10/13/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Checklist
+- [x] Lesson
+- [x] Milestones
+- [x] Study Hall
+- [x] Features
+- [x] 30 Mins Substack
+
+### stand up
+
+#### Yesterday: 
+- [x] I explored Affinity Designer. I saw the project initially more as exploring the program rather than making a competent meta-image. I was very impressed with the designs everyone came up with! 
+- [] Jake was kind enough to make a git and transmit video for me. I only watched about half of it before deciding I should prioritize getting into Affinity Designer.
+- I downloaded Divvy, and set up a shortcut but found the program to be a little clunky. I’ve been using Magnet which places windows similar to the way Windows does and will probably continue to do so. However, Divvy seems is easier for smaller divisions.
+
+#### Blockers, Confusing Points
+ - I need to spend more time reading the metadata articles. I want to have a better grasp of why that code is written in that format. I am uncomfortable using OPG to generate the meta tags for me.
+ - Slack keeps giving me an unread thread notification but when I click “threads”, I can’t determine what thread is considered unread.
+
+#### Today
+- Besides the goal of the lesson, I want to better integrate looking for visual inspiration into my day. I took a note from Hjalmar and decided to habit stack it as part of my PE starting/ending routine. 
+- I want to take some time and make a better metadata image. 
+
+### In Real Life Project Ideas:
+
+
+- A little web dog walk choice adventure game (from the dog’s point of view)
+- A little colorful web game about fear-free dog grooming
+- Random Interval Timer with difficulty level (for use for ABA animal training and research)
+- Invoice and receipt builder generated using google calendar events as the main data input.
+- Calm simple visual web game (goal is to fall asleep)
+- My Occupational Therapist friend’s logo/card/website
+
+
+### highlights
+
+- worked in gradiants in Affinity Designer
+- realized I have actually collected some visual inspiration. 
+- took some time for myself this afternoon since I was bordering on a emotional meltdown. I exercised, did a very long run, took a shower and made myself dinner. Those acts of self care did a lot for my emotional state and I am feeling much better.
+- I worked on my FTP HTTP substack post. I'm not quite done, but I can wrap it up tomorrow. 
+
+### questions
+
+- [] Best practices for retrieving past stages from Git
+- [] How does HTTP, HTTPS, POP3, IMAP, SMPT actually all differ?
+- [] I need to know more about the meta tags to understand them. I am uncomfortable using OPG to generate the meta tags for me. I am not sure which part of my tag ultimately made my image pop up in Slack. 
+
+
+---------------------------------------------------------------------------
+
+
 ## 10/11/22
 
 - [x] Set Up Journal Entry
