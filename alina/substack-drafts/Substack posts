@@ -1,0 +1,42 @@
+Substack posts
+
+HTTP: It's a protocol
+hypertext transfer protocol
+	allows the transfer of web pages over the internet and defines how the web browder will respond to any request
+	The web address of all the web pages contains a protocol, domain name, and path to the web page
+
+
+	MDN:  HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
+
+FTP: I assume this is a protocol
+file transfer protocol
+
+how do I use this in a sentence
+air example?
+
+
+I know http isn't as secure as https
+
+pops imap smtp are protocol ive interacted with when setting up email forwarding
+
+
+we use interact with these protocols but dont know how they function or what they do
+it's a black box
+
+
+both connect to a server
+hypertext - I assume this relates to the cerser and translating html and css
+
+ftp connects to a server but no cerser necessary. It's a method of placing files into another piece of software located on a machine somewhere else. We use this to share our projects. We can upload all kinds of files.
+
+According to Geek for Geeks 
+ 	 It is older and is being replaced with new protocols. FTP supports two separate Transmission Control Protocols the first one is a control connection or command port (port 21 ) to authenticate the user and the second one is a data connection or data port(port 20) to transfer the files. It requires a specific username and password for access.
+
+ We use SFTP for pe dev projects. S for secure right?
+
+
+
+
+
+
+
