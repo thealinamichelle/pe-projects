@@ -1,38 +1,22 @@
 Substack posts
+-------
 
-HTTP: It's a protocol
-hypertext transfer protocol
-	allows the transfer of web pages over the internet and defines how the web browder will respond to any request
-	The web address of all the web pages contains a protocol, domain name, and path to the web page
+So I have to be honest with you. I hate writing. In middle school, my eighth grade english teacher was a volunteer mom. In ninth grade my honors english teacher declare to the class that our entire grade had failed the entry level grammar exam with the exception of one student. He had passed because he had attended a different school the year prior. I enjoyed writing prior to that year, spending a year trying to relearn grammar and compete my fellow honors students squeezed out any pride I had about my writing. Ever since then, I approach the practice with total dread. So know that I am doing my best to ensure this is intelligble, and I am all too aware it's not of "academic" quality.
 
-
-	MDN:  HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
-
-FTP: I assume this is a protocol
-file transfer protocol
-
-how do I use this in a sentence
-air example?
+So my group was assigned the task of crafting a blog post on the concept of HTTP anf FTP. Based on the previous paragraph, I'm sure you can visualize how I bounced for joy at the request. Still I am going to do my best at describing the concept as I understand it so far.
 
 
-I know http isn't as secure as https
-
-pops imap smtp are protocol ive interacted with when setting up email forwarding
+<!----Before I get into the definitions of FTP and HTTP, you first have to learn about the parser. The parser is basically how a program understands code. Imagine a little pacman, running along these sentences. Each letter and symbol provides information,  and he can do something with that information as he eats each letter. There is a lot more detail to the concept of a parser, but just know that it's a pacman who eats code so that it can then be translated by the program to create whatever that code intended. The pacman eats hypertext, ---->
 
 
-we use interact with these protocols but dont know how they function or what they do
-it's a black box
+A Web page is a hypertext document. This means some parts of the displayed content are links, which can be activated (usually by a click of the mouse) to fetch a new Web page, allowing the user to direct their user-agent and navigate through the Web. The browser translates these directions into HTTP requests, and further interprets the HTTP responses to present the user with a clear response.
 
 
-both connect to a server
-hypertext - I assume this relates to the cerser and translating html and css
+We all see the https:// or now the less often seen http:// when we type in a web address. What does that little sting of letters really mean? It stands for "hypertext transfer protocol"... { Everytime I come across a definition like this I can't help but think, "well those are words."} HTTP: is a set of rules that your browser follows. It's allows the browser to make requests of a server (a program located on another machine somewhere else). It uses hypertext, or a simplified easy programming language called HTML to identify links which can be other webpages or files located on other servers. The difference in Http: and Https: is the fact that s stands for *secure*. This is an oversimplified explanation since webpages have become more complicated. Also most of the deinfitions are written in a way that my brain starts to melt when trying to glean information beyond this point. 
 
-ftp connects to a server but no cerser necessary. It's a method of placing files into another piece of software located on a machine somewhere else. We use this to share our projects. We can upload all kinds of files.
+FTP stands for file transfer protocol. Back in geocity days, I stopped building websites because I couldn't find a reliably free FTP and didn't fully understand what it was. Unlike HTTP, FTP doesn't need to translate code with the use of a parser. FTP is a method of placing files into another piece of software located on a machine somewhere else. The students at PE use this to share our projects and files with each other. Actually we use a SFTP, so I assume that s also stands for secure. 
 
-According to Geek for Geeks 
- 	 It is older and is being replaced with new protocols. FTP supports two separate Transmission Control Protocols the first one is a control connection or command port (port 21 ) to authenticate the user and the second one is a data connection or data port(port 20) to transfer the files. It requires a specific username and password for access.
-
- We use SFTP for pe dev projects. S for secure right?
+Well that's all I really understand about FTP and HTTPs so far. There are much more fun things to read, learn and write about with webdesign so I am glad I can officially wrap this one up. 
 
 
 
