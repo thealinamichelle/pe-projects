@@ -6,6 +6,33 @@ This is my learning journal for personal use. It keeps track of my daily goals, 
 
 -------------------------------------------------
 
+## 10/17/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Checklist
+- [x] Lesson
+- [x] Milestones
+- [x] Study Hall
+- [x] Features
+- [x] 30 Mins Substack
+
+
+### highlights
+
+- Div stands for divider block
+- Display: inline-block can allow inline elements to behave and use attributes from block elements.
+- Signed up for CodePen
+- block vs inline vs inline-block (images are inline-block by default)
+- Learned about hover/transition time (and delay), clamp() attributes.
+- @media query to query for viewport size
+- Other em uses are button padding, to help size items for different displays.
+- How to select nav only items use: nav a { ... 
+- You can identify a sectin with an ``` <section id="name"> Name information </section>```
+- I did it!  I wrote the second substack post!
+
+-------------------------------------------------
+
 ## 10/13/22
 
 - [x] Set Up Journal Entry
