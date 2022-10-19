@@ -3,6 +3,47 @@
 # My learning journal
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
 ---------------------------------------------------------------------------
+-------------------------------------------------
+
+## 10/18/22
+
+- [x] Set Up Journal Entry
+- [] Stand Up
+- [] Edit Checklist
+- [] Lesson
+- [] Milestones
+- [] Study Hall
+- [] Features
+- [] 30 Mins Substack
+
+### stand up
+
+#### Yesterday: 
+I learned more about the div element, about the in-block and block attributes. 
+I signed up for CodePen and spent time playing around div, inlike and block. 
+I had a meeting with Derek and learned some really cool stuff about 
+	- the hover/transition time (and delay), 
+	- clamp() attributes, 
+	- @media queries and using 
+	- em for button padding, 
+	- nav is technically a grouping of inline elements 
+	- and that sections and divs can have an id name
+	- I wrote a substack post to which my husband kindly gave the feed back "There's an unmistakeable voice in writing where you feel that something is an *assignment*". Well ok, I'll do better next time. 😭
+
+#### Blockers, Confusing Points
+
+- Is there a difference between ```div class=``` vs ```div id=```?
+- I just have a crazy amount of stuff to do this week. I got this!
+
+#### Today
+- Onto iframes!
+
+
+### highlights
+
+
+### questions
+
 
 -------------------------------------------------
 
