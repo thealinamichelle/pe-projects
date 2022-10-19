@@ -1,26 +1,24 @@
-Substack posts
--------
+Learning new things is hard
 
-So I have to be honest with you. I hate writing. In middle school, my eighth grade english teacher was a volunteer mom. In ninth grade my honors english teacher declare to the class that our entire grade had failed the entry level grammar exam with the exception of one student. He had passed because he had attended a different school the year prior. I enjoyed writing prior to that year, spending a year trying to relearn grammar and compete my fellow honors students squeezed out any pride I had about my writing. Ever since then, I approach the practice with total dread. So know that I am doing my best to ensure this is intelligble, and I am all too aware it's not of "academic" quality.
+- this is not my first online education
+- not my first visual education
+-not my first foray into something cody like?
 
-So my group was assigned the task of crafting a blog post on the concept of HTTP anf FTP. Based on the previous paragraph, I'm sure you can visualize how I bounced for joy at the request. Still I am going to do my best at describing the concept as I understand it so far.
-
-
-<!----Before I get into the definitions of FTP and HTTP, you first have to learn about the parser. The parser is basically how a program understands code. Imagine a little pacman, running along these sentences. Each letter and symbol provides information,  and he can do something with that information as he eats each letter. There is a lot more detail to the concept of a parser, but just know that it's a pacman who eats code so that it can then be translated by the program to create whatever that code intended. The pacman eats hypertext, ---->
-
-
-A Web page is a hypertext document. This means some parts of the displayed content are links, which can be activated (usually by a click of the mouse) to fetch a new Web page, allowing the user to direct their user-agent and navigate through the Web. The browser translates these directions into HTTP requests, and further interprets the HTTP responses to present the user with a clear response.
-
-
-We all see the https:// or now the less often seen http:// when we type in a web address. What does that little sting of letters really mean? It stands for "hypertext transfer protocol"... { Everytime I come across a definition like this I can't help but think, "well those are words."} HTTP: is a set of rules that your browser follows. It's allows the browser to make requests of a server (a program located on another machine somewhere else). It uses hypertext, or a simplified easy programming language called HTML to identify links which can be other webpages or files located on other servers. The difference in Http: and Https: is the fact that s stands for *secure*. This is an oversimplified explanation since webpages have become more complicated. Also most of the deinfitions are written in a way that my brain starts to melt when trying to glean information beyond this point. 
-
-FTP stands for file transfer protocol. Back in geocity days, I stopped building websites because I couldn't find a reliably free FTP and didn't fully understand what it was. Unlike HTTP, FTP doesn't need to translate code with the use of a parser. FTP is a method of placing files into another piece of software located on a machine somewhere else. The students at PE use this to share our projects and files with each other. Actually we use a SFTP, so I assume that s also stands for secure. 
-
-Well that's all I really understand about FTP and HTTPs so far. There are much more fun things to read, learn and write about with webdesign so I am glad I can officially wrap this one up. 
+- it is the first time in years Im optimistic about learning
+- first time I have woken up excited to work everyday
+- I get anxious I can't finish everything in time
+- I have to tell myself stop because it's so compelling.
 
 
 
+ In the past it's been isolating, lonely and boring. 
 
 
 
+ My husband remarked last night on yesterday's post “there’s an unmistakable voice in writing where you feel that something is an *assignment*“ but then went on to expound that it's also the first time in years he has seen me optimistic about what I am learning. Going back to class in adulthood can be hard, and online education has extra obsticles that this millenial finds really difficult to overcome. However, he's right. I am really exited to tackle the subjects I come across in PE's education. 
 
+PE organizes it's lessons historically, so that you mentally build the concepts used in code as they were developed. I am finding this teaching method helps me to form a mental model of what I'm doing better than just reading a definiton on wikipedia or on the Mozilla Developer Network Web Docs. So, we are currently playing with code used in the 90s, and have making small project websites to test various methods for organizing web content. Yesterday, we were introduced to the <div> element. Div stands for generic divider, and it's terms like this that can form big road blocks for people learning to code. The div element functions as a box that holds other elements, and it can stack vertically. It can also be assigned a marker through an ID. So it will read <div id=header>, <div id=main> <div id=footer> When HTML 5 was released they turned these common IDs into their own elements so people can just write <header>, <main>, <footer>. However, when someone learning these concepts for the first time in 2022 it can be really confusing knowing that there are <sections>, <main>, <div> etc, all of which seem to be very similar concepts. Our inner annoying child starts asking why repeatedly and gets in the way of learning how to use these tools, or at least my inner child does. 
+
+Why is a valid question. Knowing why something exists can be integral to understanding how it functions, and that's been the case with <div> for many of my classmates. When I trained dogs, I was always asked why does the dog do x? Conservly, in those situations it was important to often say "There's no good way to know the why. We can observe the behavior and we know this behavior is increasing or decreasing." Thus, "I don't know", is also an incredible tool. 
+
+There is this concept of a block element vs an inline element. Somethings stack virtically like <div> and some things will line up horizontally in-line like text. Some elements have the attributes of both and it can be difficult to quantify in a nice neat list what element does what. So in these cases I'm often back to "I don't know if this is technically a block or an inline element, but I can see test how it functions by adding borders, margins and padding and seeing what happens. It feels good when different parts of my learning journey join together for a brief moment. It feels silly to write that playing around with <div> is is exciting and thrilling, but it's true. It's been such a long time, since I've felt that rare feeling of enjoying my work. 
