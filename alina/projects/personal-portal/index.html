@@ -33,100 +33,111 @@
 	<title>Pe'el!</title>
 	
 	<style type="text/css">
+		* { box-sizing: border-box;}
 			
+/* ////////COLORS: 
+	////////Gradient stadnard colors: 
+			7DA6BF
+			8CADBD
+			97B1BB
+			A1B5BA
+			B0BBB8
+			BEC0B6
+//////////	UNUSED:  C8C5B4 200,197,180
 
+	////////Gradient lighter: 
+			#d2d3cc unused
+			#d9d7cb unused
+			#b0bbb8
+			#bdcbce
+			#b7c9d0
+			#afc6d1
+			#a5c1d2
+	////////TEXT:  #dce0e3;
+*/
 		Body {
-			background-color: #D0D0D0;
+			background: #7DA6BF;
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center; 
+			font-family: sans-serif;
+			/*border:  solid 1px black;*/
 		}
-
-		h1 { 
-			color: aliceblue;
-			text-align: center;
-			font-family: Serif;
-			font-size: 45px;
-			padding: 5px;
-			margin-bottom: 5px;
-		}
-		h2 { 
-			font-family: Sans-Serif;
-			font-size: 23px;
-			line-height: .9;			
-			text-transform: capitalize;
-			color: darkslategray;
-			padding: 0px;
-			border-bottom: 30px;
-			margin-bottom: 5px;
+		
+		header {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			/*border:  solid 1px yellow;*/
 		}
 
 		main {
-			float: center;
-			padding: 2em;
+			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 45em;
-			height: 40em;
-			border-radius: 50%;
-			border: 10px solid;
-			border-color: gainsboro;
-			background-color: lightsteelblue;
-
+			/*border:  solid 1px black;*/
 		}
 
-		section {
-			margin: auto;
-			max-width: 40ch;
-		}
-		
-		p {
-			font-family: serif;
-			font-size: 16px;
-			line-height: 1.5;
-			letter-spacing: 0.03em;
-			max-width: 82ch;
+		section{
+			padding:  10px 0px;
+			/*border:  solid 1px black;*/
 		}
 
-		a {
-			background-color: lavender;
-			margin: 2px;
-			padding-left: 5px;
-			padding-right: 5px;
-			border-radius: 5px;
-			outline: none;
-			text-decoration: none;
-			line-height: 2;
+		.everyday {
+			background: #8CADBD;
 		}
 
-		a:link {
-			color: darkslategray;
+		.google {
+			background: #97B1BB;
 		}
 
-		a:visited {
-			color: dimgray;
+		.coding {
+			background: #A1B5BA
 		}
 
-		a:focus {
-			border-bottom: 1px solid;
-			background: mistyrose;
+		.pe {
+			background: #B0BBB8;
 		}
 
-		a:hover {
-			border-bottom: 1px solid;
-			background: mistyrose;
+		.bling {
+			background: #BEC0B6;
 		}
 
-		a:active {
-			background: yellow;
-			color: yellowgreen;
+		h1 { 
+			display: inline-block;
+			color: aliceblue;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: clamp(10px, 10vw, 40px);
+			/*border:  solid 1px purple;*/
 		}
 
-		a[href^="../index.html"] {
-			background: none;
+		h2 { 
+			font-family: Sans-Serif;
+			font-size: clamp(10px, 5vw, 33px);
+			line-height: .9;			
+			text-transform: capitalize;
+			margin: 10px;
 		}
-		a[href^="https://youtu.be/tzE7P3KPi4I?t=20"] {
-			background: none;
+
+		.everyday h2 {
+			color: #587586;
+		}
+
+		.google h2 {
+			color: #637985;
+		}
+
+		.coding h2 {
+			color: #6b7c83;
+		}
+
+		.pe h2 {
+			color: #717f82;
+		}
+
+		.bling h2 {
+			color: #858780;
 		}
 
 		img {
@@ -134,21 +145,125 @@
 			margin-left: auto;
 			margin-right: auto;
 			max-width: 700px;
+			/*border:  solid 1px purple;*/
 		}
 
-		button {
-			color: black;
-			background-color: #D0D0D0;
-			border-style: none;
-			border-radius: 5px;
-			padding: 10px;
+		a {
+			text-decoration: none;
+			color:  #dce0e3;
+			border-bottom: 5px solid rgba(220, 224, 227, .5);
+			padding: 5px 5px 0 5px;
+			margin: 0 3px;
+			line-height: 2;
+			font-size: clamp(0px, 2.8vw, 16px);
+			/*border:  solid 1px blue;*/
+		}
+
+		a:hover {
+			color: rgba(88, 117, 134, .5);
+			border-bottom: 5px solid rgba(88, 117, 134, .5); 
+		}
+
+		.everyday a:hover {
+			color: #a5c1d2;
+			border-bottom: 5px solid #a5c1d2;
+		}
+
+		.google a:hover {
+			color: #afc6d1;
+			border-bottom: 5px solid #afc6d1; 
+		}
+
+		.coding a:hover {
+			color: #b7c9d0;
+			border-bottom: 5px solid #b7c9d0; 
+		}
+
+		.pe a:hover {
+			color: #bdcbce;
+			border-bottom: 5px solid #bdcbce; 
 		}		
+
+		.bling a:hover {
+			color: #b0bbb8;
+			border-bottom: 5px solid #b0bbb8; 
+		}		
+
+		.index a:hover{
+			color: #8dadbd;
+			border-bottom: 5px solid #8dadbd; 
+		}
+
+		a:active {
+			color: rgba(164, 116, 136, 1.00);
+			border-bottom: 5px solid rgba(164, 116, 136, 1.00); 
+		}		
+
+		header a {
+			border: none;
+			font-size: inherit;
+		}
+		
+		header a:active {
+			background: rgba(164, 116, 136, 1.00); 
+			border-radius: 10px;
+		}
+
+		.everyday a:active {
+			color: #a47488;
+			background: none;
+			border-bottom: 5px solid #a47488;
+		}
+
+		.google a:active {
+			color: #af7987;
+			background: none;
+			border-bottom: 5px solid #af7987;
+		}
+
+		.coding a:active {
+			color: #bd7e85;
+			background: none;
+			border-bottom: 5px solid #bd7e85;
+		}
+
+		.pe a:active {
+			color: #c88383;
+			background: none;
+			border-bottom: 5px solid #c88383;
+		}
+
+		.bling a:active {
+			color: #d28682;
+			background: none;
+			border-bottom: 5px solid #d28682;
+		}
+
+		.index a:active {
+			color: #d98a80;
+			background: none;
+			border-bottom: 5px solid #d28682;
+		}
+
+		a:focus {
+			color: #C8C5B4;
+			background: #7DA6BF;
+		}
+
+
+		a[href^="../index.html"] {
+			background: none;
+		}
+		a[href^="https://youtu.be/tzE7P3KPi4I?t=20"] {
+			background: none;
+			/*border:  solid 1px green;*/
+		}	
 
 		footer {
 			padding-top: 200px; 
 			padding-bottom: 30px;
 		}
-		
+
 
 	</style>
 </head>
@@ -167,10 +282,10 @@
 		<!--<div class="box">
 test test-->
 
-			<section>
+			<section class="everyday">
 			<h2>Everyday Resources</h2>
 				<nav>
-					<a href="https://perpetual.education/sign-in/" title="Perpetual Education" target="Learn"> Learn Web Design! </a>
+					<a href="https://perpetual.education/sign-in/" title="Perpetual Education" target="Learn">Learn Web Design!</a>
 					<a href="https://ticktick.com/webapp/#q/all/tasks" target="Tick">Tick Tick</a>
 					<a href="https://typingstudy.com/lesson/1/part/2" target="Type">START TYPING</a>
 					<a href="https://explore.org/fat-bear-week" target="bear"> FAT BEAR WEEK</a>
@@ -178,7 +293,7 @@ test test-->
 
 			</section>
 
-			<section> 
+			<section class="google"> 
 				<h2>Google Tools</h2>
 				
 				<a href="https://drive.google.com/drive/my-drive" target="Drive" title="Drive">Drive</a>	
@@ -189,7 +304,7 @@ test test-->
 
 			</section>
 
-			<section>
+			<section class="coding">
 				<h2>Coding Assistance</h2>
 				
 				<a href="https://enes.in/sorted-colors/" target="color">Color Name Guide</a>
@@ -199,7 +314,7 @@ test test-->
 
 			</section>
 
-			<section>
+			<section  class="pe">
 				<h2>PE Tools</h2>
 				
 				<a href="https://calendly.com/perpetual-education/student-checkin-alpha-six?month=2022-09" target="Calendly">Book a Student Check In</a>
@@ -208,7 +323,7 @@ test test-->
 				<a href="https://peprojects.dev/alpha-6/" target="alpha-6">Alpha 6 Projects</a>
 			</section>
 
-			<section>
+			<section class="bling">
 				<h2>Bling Meeting Tools</h2>
 				
 				<a href="https://trello.com/u/alinapritchett/boards" target="Trello">Trello</a>
@@ -216,14 +331,11 @@ test test-->
 				<a href="https://docs.google.com/spreadsheets/d/1Oaes5jdvX2EyIKVVB1a9A_Mbv2fgJ8SxFcYO4_KAzJM/edit?usp=sharing" target="Budget">Budget Sheet</a>
 
 			</section>
-
-			<section>
-				<h2>Unfinished Lists</h2>
-				<p>Site Catalogue, Wishlist, Art</p>
-				<h6> 
-					<button>
+ 
+ 			<section class="index">
+					
 					<a href="../index.html" target="alina">BACK TO INDEX</A>
-					</button>
+					
 				</h6>
 
 			</section>
