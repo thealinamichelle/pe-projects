@@ -1,0 +1,259 @@
+/*Meyer Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 */
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+/* Resets:  *, picture, links, paragraph links*/
+
+	* { 
+		box-sizing: border-box;
+	}
+	picture {
+		display: block; 
+	}
+	picture img { 
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	a {
+		display: block;
+		list-style: none;
+		color: inherit;
+	}
+	p a { 
+		display: inline-block;
+		list-style: underline;
+		color: blue; 
+	}
+/*Reset END*/
+/*Research Parts: 
+	body
+
+	header
+
+	main
+
+	footer
+
+	section
+		hello
+		page section
+	div
+		inner-column
+
+	h1
+	h2
+
+	p
+
+	nav
+		class=opening
+
+	background:  colors red:  #ee1e33;
+						orange:  #f6a065;
+						purple:  #c6539f;
+
+						bottom:  blue #abb2fe;
+								purple	#b44fc5
+
+					The Rest:  #f8f8f8;
+	Font:  titles albra;
+	pararaph:  Polarband Front;*/
+	
+/*Font Declaration*/
+	@font-face { font-family: polarbandfront; src: url('webfontkit/polarbandfront.woff'); } 
+	@font-face { font-family: albra; src: url('albra_text_regular-webfont.woff'); } 
+	@font-face { font-family: albramedium; src: url('albra_medium-webfont.woff'); } 
+* { 
+	box-sizing: border-box;
+	}
+
+/*sections*/
+	body {
+		 background: #f8f8f8;
+	}
+
+
+header {
+		background:linear-gradient(167deg, #ee1e33 2% , #f6a065 15%, #c6539f 25%, #f8f8f8 50% );
+  		background-size: cover;
+	}
+
+	.inner-column {
+		max-width:  960px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom:  solid black 1px;
+		padding-bottom:  70px;
+	}
+
+	nav {
+		display: block;
+		padding:  30px;
+		width: 100%;
+	}
+
+	nav a {
+		text-decoration: none;
+	}
+
+	nav a:hover{
+		border-bottom: 1px solid black;
+		border-radius: 100%;
+	}
+
+	img {
+		width: 200px;
+		border-radius: 20px;
+		border:  5px solid white;
+		filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, .1));
+	}
+
+
+	.opening a {
+		display: inline-block;
+		padding:  0 40px 40px 40px;
+		float: right;
+		/*border:  solid yellow 2px;*/
+		}
+	
+	.hello {
+		margin-top: 30px;
+		padding-top: 300px;
+	}
+
+	.project {
+		height: 750px;
+		padding-top: 40px;
+ 		/*display: flex;*/
+ 		/*flex-direction: column;*/
+ 		/*background: grey;*/
+
+	}
+
+
+	.right-side {
+		display:  block;
+		padding:  40px;
+		width:  50px;
+		height:  50px;
+		/*background: red;*/
+		margin-left: auto;
+	}
+
+	.right-side a {
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 30px;
+		/*border: solid 1px black;*/
+
+	}
+
+	.right-side img {
+
+	}
+
+	footer {
+			/*border: 1px solid black;*/
+	}
+
+
+
+	h1 {
+		font-family: 'albramedium', serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: clamp(2.7rem, 9vw, 5rem);
+		line-height: 1.05em;
+		letter-spacing: .03em;
+		}
+
+	h2{
+		font-family: 'albramedium', serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: clamp(2.7rem, 4vw, 5rem);
+		line-height: 1.05em;
+		letter-spacing: .03em;
+		}
+
+	p {
+		font-family: 'polarbandfront', sans-serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: 23px;
+		line-height: 25px;
+		letter-spacing: .01px;
+		max-width: 40ch;
+		}
+
+
+	h1 + p {
+		margin-top:  30px;
+	}
+
+	p + p {
+		margin-top: 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
