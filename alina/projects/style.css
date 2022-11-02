@@ -1,0 +1,53 @@
+body {
+	background-color: lightsteelblue;
+}
+
+a {
+	outline: none;
+ 	text-decoration: none;
+}
+
+a:link {
+	color: chocolate;
+}
+
+a:visited {
+	color: royalblue;
+}
+
+a:focus {
+ 	border-bottom: 1px solid;
+	background: mistyrose;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: mistyrose;
+}
+
+a:active {
+  color: yellowgreen;
+}
+
+p {
+	font-family: serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	max-width: 82ch;
+}
+
+h1 { 
+	color: aliceblue;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-bottom: 20px;
+	font-family: Serif;
+}
+
+iframe {
+	display: block;
+	margin: 20px;
+	height: 70px;
+	border: 0px;
+}
