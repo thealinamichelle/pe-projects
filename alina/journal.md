@@ -3,18 +3,128 @@
 # My learning journal
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
 ---------------------------------------------------------------------------
+## 10/12/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+	- [x] Check yesterday's stand up to do list
+- [x] Edit Checklist
+- [] Lesson 51
+- [x] Lesson 50
+- [] Milestones
+- [] Study Hall
+- [] Features
+
+#### highlights
+
+I don't know inline/block elements very well. I need a cheat sheet. 
+
+
+### questions
+
+
+-------------------------------------------------
+
+## 10/29-30/22
+
+### highlights
+
+Font quick guide:
+	line-length: 50-70 characters or 2-3 alphabets
+	font-size
+		body: 17-23px (can change per font)
+		title: 1 line maybe 2
+		want to feel like a printed page held at reading distance
+	line-height: 
+		value: px
+		longer lines need more line height
+	paragraph-spacing
+		more than 0
+		less than line height
+		px
+		spacing between groups > than within groups
+	title fonts
+		strongly branded and can sacrifice legibility
+	accent
+		decorative
+		slub
+		match brand
+	SLUB: smaller lighter uppercase bold
+	body font
+		should hint at brand
+		legible above all else
+
+
+### questions
+
+What are the best practices for resizing a background image?
+How would you center anything ?
+-------------------------------------------------
+
+
+-------------------------------------------------
+
+## 10/12/22
+
+- [x] Set Up Journal Entry
+- [] Stand Up
+	- [] Check yesterday's stand up to do list
+- [x] Edit Checklist
+- [] Lesson 45
+- [x] Lesson 44
+- [] Milestones
+- [] Study Hall
+- [] Features
+- [] 30 Mins Substack
+
+#### highlights
+
+
+### questions
+
+- is there best practices for managing hex and rgb codes in a html/css file?
 -------------------------------------------------
 
 ## 10/18/22
 
 - [x] Set Up Journal Entry
-- [] Stand Up
+- [x] Stand Up
 - [] Edit Checklist
 - [] Lesson
 - [] Milestones
 - [] Study Hall
 - [] Features
 - [] 30 Mins Substack
+
+#### highlights
+
+
+### questions
+
+- is the difference between section and div semantics only?
+
+Assignments:
+Thursday: no feedback required
+
+Friday:
+https://codepen.io/thealinamichelle/pen/YzLoGBe
+There is a certain point where I can't figure out what normal font looks like anymore. How far apart should words be, how tall are line heights usually, how far apart are letters? By the end of this exercise I really struggled to know if my article looked "good" or not. Good type seems like it's something you don't notice, but bad type is easy to see. I'm also struggle to know when margin-left: auto and margin-right: auto is the right tool. My article was stuck to the left forever and I'm not sure what finally allowed me to to center the whole thing. I was also super mentally fried while working on this and problem solving getting it to center was the final step. 
+
+
+Saturday:
+
+-------------------------------------------------
+
+## 10/18/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Checklist
+- [x] Lesson
+- [x] Milestones
+- [x] Study Hall
+- [x] Features
+- [x] 30 Mins Substack
 
 ### stand up
 
@@ -39,7 +149,17 @@ I had a meeting with Derek and learned some really cool stuff about
 - Onto iframes!
 
 
-### highlights
+### Tomorrow's Post:
+
+####
+Styling in Affinity Designer:
+there is a part of me that get's frustrated that it's so complicated and part of me loves how much control I have. Also if you click the A tool twice you get the paragraph tool. If tou go to text > insert filler text, there is a built in lorem ipsum. 
+
+Font Styling:
+Even with taking notes it's hard to remember all the attributes for the fonts and easy to get lost among all the x + x elements. 
+https://codepen.io/thealinamichelle/pen/VwxOxEX?editors=0100
+
+I haven't built my goals page or resume. It feels so early to start that...I will probably start next week once I am not cramming everything into a single day.
 
 
 ### questions
