@@ -105,21 +105,29 @@
 	@font-face { font-family: polarbandfront; src: url('webfontkit/polarbandfront.woff'); } 
 	@font-face { font-family: albra; src: url('albra_text_regular-webfont.woff'); } 
 	@font-face { font-family: albramedium; src: url('albra_medium-webfont.woff'); } 
+html * {
+	border: 1px red solid;
+}
+
+
+
 * { 
 	box-sizing: border-box;
 	}
 
-/*sections*/
+
+
+/*Site-wide*/
 	body {
 		 background: #f8f8f8;
 	}
 
-
-header {
+/*header*/
+	header {
 		background:linear-gradient(167deg, #ee1e33 2% , #f6a065 15%, #c6539f 25%, #f8f8f8 50% );
   		background-size: cover;
 	}
-
+/*projects*/
 	.inner-column {
 		max-width:  960px;
 		margin-left: auto;
@@ -163,6 +171,10 @@ header {
 		padding-top: 300px;
 	}
 
+/*	.project * {
+		display: inline-block;
+	}*/
+
 	.project {
 		height: 750px;
 		padding-top: 40px;
@@ -194,12 +206,7 @@ header {
 	.right-side img {
 
 	}
-
-	footer {
-			/*border: 1px solid black;*/
-	}
-
-
+/*text styling	*/
 
 	h1 {
 		font-family: 'albramedium', serif;
@@ -238,6 +245,16 @@ header {
 		margin-top: 30px;
 	}
 
+
+
+/*footer*/
+	footer {
+			/*border: 1px solid black;*/
+	}
+
+
+
+	
 
 
 
