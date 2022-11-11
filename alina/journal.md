@@ -3,7 +3,59 @@
 # My learning journal
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
 ---------------------------------------------------------------------------
-## 10/12/22
+## 11/1/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [x] Lesson 60
+- [] Milestones
+	- github milestone
+- [] Study Hall
+- [] Features
+
+#### highlights
+
+- learned about SVGs.
+	- name the layers in AF so those paths have names in the css
+	- change ids to classes
+	- remove the style settings in the html
+
+- I made a little angry cat in codepen. 
+	- I couldn't figure out how to make the transition smooth for hover animation when the cursor left the image.
+	- I settled for using used a continuous animaton to blend with the hover and that worked well enough.
+
+### todos
+
+- I still need to finish my casestudy!
+
+### questions
+- How to make a transition for a hover animation when the cursor leaves the frame?
+- I need to know more about axis and transform.
+- what folder am I supposed to sync with github?
+-------------------------------------------------
+
+
+## 11/1/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [] Lesson 57
+- [x] Lesson 50
+- [] Milestones
+- [] Study Hall
+- [] Features
+
+#### highlights
+
+I don't know inline/block elements very well. I need a cheat sheet. 
+
+
+### questions
+-------------------------------------------------
+
+## 11//22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
