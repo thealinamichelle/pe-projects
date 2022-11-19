@@ -3,7 +3,46 @@
 # My learning journal
 This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
 ---------------------------------------------------------------------------
-## 11/1/22
+## 11/19/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [] Lesson 68
+- [] Lesson 69
+- [] Milestones
+- [] Study Hall
+- [] Features
+
+#### highlights
+### questions
+---------------------------------------------------------------------------
+
+
+## 11/18/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [x] Lesson 66
+- [] Milestones
+- [] Study Hall
+- [] Features
+- [x] Case Study
+
+#### highlights
+Flexbox  summary:
+	- display flex applies to children
+	- flex direction: row, column, column-reverse, row-reverse
+	- justify-content: flex-start, center, flex-end, space-around, space-between
+	- align-items: stretch, start, row, end, flex-start, flex-end
+Custom elements are default inline.
+### questions
+- Flex-wrap is a little confusing.
+### note to self
+	- stop choosing extra hard exercises! They take too long and I need to catch up.
+---------------------------------------------------------------------------
+## 11/10/22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
