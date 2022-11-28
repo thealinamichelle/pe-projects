@@ -18,7 +18,7 @@
 		stroke-width:1.37px;
 	}
 
-	.logo-maybe .brain-dead:hover {
+	nav circle:hover, .head {
 		fill: #d5dffd;
 	}
 
@@ -27,15 +27,12 @@
 		visibility: hidden;
 		width:0px;
 		height:0px;
-/*		positon: absolute;
-		bottom: 0px;
-		right: 0px;*/
 	}
 
 /*SITE WIDE STYLING*/
 
 	body {
-			background: #d5dffd;
+		background: #d5dffd;
 	}
 
 	div, section {
@@ -66,7 +63,6 @@
 	.attention-voice {
 		display:block;
 		font-family: helvetica;
-		/*min. font size 36px, max 72px; start scaling @ 320px vw, stop at 960 vw, clamp(2.25rem,5.625vw + 1.125rem,4.5rem)*/
 		font-size: clamp(1rem,4vw + 1rem,4rem);
 		letter-spacing: .09rem;
 		line-height: 1em;
@@ -98,10 +94,6 @@
 	}
 
 
-
-
-
-
 /*SITE STRUCTURE*/
 	.inner-column {
 		display: block;
@@ -112,25 +104,12 @@
 	}
 
 
-
-
-/*initial set up delete by the end*/
-
-/*main {
-	border: solid 3px red;
-}*/
-
 	picture {
 		height: 100px;
 		width: 100px;
 	}
 
 
-	/*images*/
-	.logo-maybe {
-		height:100px;
-		width:100px;
-	}
 
 /*NAVIGATION*/
 
@@ -142,36 +121,34 @@
 	}
 
 	nav {
+		padding-left:10px ;
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-start;
 		align-items: center;
-		gap: 20px;
+		gap: 5px;
 	}
 
 	ul	 {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: 5px;*/
+		gap: 2px;
 	}
 
 	li {
-		padding: 30px;
+		padding: 20px;
 		border-radius: 10px;
 	}
 
 	.logo-maybe {
-		padding: 20px;
+		padding: 10px;
+		min-width:20%;
 	}
 
 	nav li:hover {
 		background: #6d95fc;
 	}
-
-	.logo-maybe:hover {
-		fill: #6d95fc;
-	}
-
 
 
 /*SPLASH*/
@@ -262,7 +239,7 @@
 
 /*FIRST BREAK POINT*/
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
 
 	header {
 		padding: 50px 5vw;
@@ -271,7 +248,6 @@
 	header .loud-voice {
 		font-size: 9vw;
 	}
-
 
 	.front-page-splash {
 		display: flex;
@@ -373,6 +349,38 @@
 
 	}
 
+  .page-content {
+  		padding: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	  }
+
+	 .attention-voice {
+	 	font-size: 30px;
+	 	line-height: 2rem;
+	 }
+
+	.inner-column {
+		min-width: 30vw;
+		gap: 40px;
+	}
+
+	.day-dreaming {
+		position:relative;
+		z-index: 2;
+	}
+
+	.day-dreaming {
+		background: rgba(213, 223, 253, .8);
+		border-radius: 0 0 10px 0;
+	}
+
+	.tres {
+		z-index: 1;
+		margin-bottom: 5px;
+	}
+
 	.front-page-splash {
 		position: relative;
 	}
@@ -382,7 +390,6 @@
 		z-index: 2;
 	}
 
-
 	.uno {
 		display: block;
 		visibility: visible;
@@ -391,11 +398,12 @@
 		position: absolute;
 		bottom: -100px;
 		left: 10%;
-		z-index: 1;
 		overflow:hidden;
 		transform: scaleX(-1);
 		transition: 3s;
+		z-index: 3;
 	}
+
 	.uno {
 		animation-duration: 5s;
   		animation-name: slidein;
@@ -413,6 +421,65 @@
 	    margin-left: 0%;
 	  }
 	}
+}
+
+/*THIRD BREAK POINT
+@media (min-width: 900px) {
+
+	.splash-image, header h1 {
+ 		max-width: 100px;
+ 		padding: 50px;
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+
+	.splash-image {
+		min-width: 100px;
+		max-width: 100px;
+	}
+
+.faint {
+	fill:none;
+}
+
+.faint-dos {
+	fill: rgba(0, 0, 0, .3);
+}
+
+.dos svg {
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	stroke-linejoin:round;
+	stroke-miterlimit:2;
+}
+
+.dos {
+		display: block;
+		visibility: visible;
+		width:900px;
+		height:auto;
+		position: absolute;
+		bottom:0;
+		left: 0px;
+		z-index: 1;
+		transform: scaleX(-1);
+	}
+
+	}
+
+	  
+
+
+	}
+
+
+
+
+
+
+
+
+	
 
 
 
