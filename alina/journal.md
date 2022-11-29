@@ -8,6 +8,38 @@ This is my learning journal for personal use. It keeps track of my daily goals, 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] Edit Ticktick
+- [] lesson 78
+- [] lesson 79
+- [x] Milestones
+- [] Study Hall
+- [] Features
+
+#### one thing I learned yesterday: 
+	“&nbsp;” will add a non breakable space in the html. It worked well for my title but according to Derrick, "it can come back to haunt you later."
+
+#### 30 minutes blog draft	
+Back in september we were introduced to svgs. Wait hold on, SEPTEMBER?! It's been that long? The months are flying by. I feel like I am still at the begining of all this, how it's already almost December? Ok, back to the subject at hand, SVGs. SVG stands for scalable vector graphics, or basically graphics that can infinitely scale in size. Back in college, all my courses referred to these types of files as vector graphics, so only the extention and our current use-case were new to me. Vector or SVG graphics are made of numbers typically using points and paths. The paths are tethers between the points, so drag the points to new places and the whole line or shape changes. Because this kind of graphic is calculated numerically this way, no information is lost as the graphic is scaled upwards in size. Bitmap images (think photos from your phone) only have so much data they can work with, if you scale up the image, the software has to make it up and depending on how that's done it often distorts the image. 
+
+For webdesign the numberical calculation of svgs is really handy, since you can pop it into the code of the page, edit that code so the the user can interact with the image or add extra flair to the page. It also makes the website load much faster since the amount of data is far smaller than a typical png or jpg. While, I know that's why the usecase is important, the previous point is what intrigues me. The abiliity to make a doodle wiggle, change color, move and become an animation is very compelling. Ages ago, I was an animation major for a hot second, but my undiagnosed ADHD got in the way and I switched paths. During the SVG lessons, I found myself obsessed with all the posibilities of how I could make a drawing move, change in size, rotate, etc. Suddenly, I was an animation student again, but I was actually enjoying it. The partnertship of drawing then writing a little string of text was delightful, rather than drawing out each individual frame. It allows for freedom of quick discovery, or for an unoptimized line of code to suprise you with it's results. The point of the lesson wasn't animation, so I larely ended up in a distraction of a rabbit hole.
+
+Creating SVGs in affinity designer and editing their code has been my favorite thing by far so far. 
+
+After you create your vector in Affinity designer, export your file as an svg. Then you can open that file in a text editor like sublime. Remove the docutype, version, xmls:space, xmls:xlink, and xmlns:serif as they are not necissicary. The styles can be removed and transfered to your css file. ID tags can be changed to classes for styling, since we are encouraged to style only with classes. The G tag is an svg version of a div, and the g transform is where the path is on the x/y axis. I'm sure that can also be transfered to css, but I'm not quite comfortable with that yet. Rect is a rectangle.
+
+I have had a few issues with how I create my vectors where I end up needing to reopen the svg file I have edited, and remove a bunch of hidden groupings. That way the code is much simpler than I was getting with my initial creations. 
+
+Have you had the chance to play around with SVGs? Do you prefer to use them or just sticking with bitmap (png/jpg) images? Why or why not? 
+
+#### one thing I learned today
+
+### questions
+---------------------------------------------------------------------------
+
+## 11/19/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
 - [] Lesson 68
 - [] Lesson 69
 - [] Milestones
