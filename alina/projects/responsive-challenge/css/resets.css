@@ -48,19 +48,31 @@
 	* { 
 		box-sizing: border-box;
 	}
+	
 	picture {
 		display: block; 
 	}
-	picture img { 
+	
+	img { 
 		display: block;
 		width: 100%;
 		height: auto;
 	}
+
+	svg {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+
 	a {
 		display: block;
 		list-style: none;
 		color: inherit;
 	}
+
+
 	p a { 
 		display: inline-block;
 		list-style: underline;
