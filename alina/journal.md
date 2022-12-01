@@ -1,15 +1,25 @@
 
 
 # My learning journal
-This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with. 
+This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with.
 ---------------------------------------------------------------------------
-## 11/19/22
+## 12/1/22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] Edit Ticktick
-- [] lesson 78
-- [] lesson 79
+- [x] Milestones
+
+#### one thing I learned yesterday: 
+ - Image children will break a div if the div has a max-height set. 
+ - Use rubberducking before asking questions in stoackoverflow
+
+---------------------------------------------------------------------------
+## 11/28/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
 - [x] Milestones
 - [] Study Hall
 - [] Features
@@ -30,9 +40,6 @@ I have had a few issues with how I create my vectors where I end up needing to r
 
 Have you had the chance to play around with SVGs? Do you prefer to use them or just sticking with bitmap (png/jpg) images? Why or why not? 
 
-#### one thing I learned today
-
-### questions
 ---------------------------------------------------------------------------
 
 ## 11/19/22
