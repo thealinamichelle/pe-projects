@@ -1,28 +1,45 @@
-
-
 # My learning journal
-This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
 ## 12/2/22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
-- [] Edit Ticktick
+- [x] Edit Ticktick
 - [] Milestones
 
 #### one thing I learned yesterday: 
  - when you request a php file with <?php include("filename.php")? it tells the server to run the program (index.html for example). The server will compile all the php requests into html files and serve that back to the browser.
 
-#### Reflections:
-Which little mini projects have resonated with you? Which projects would you like to flesh out a bit more? Which areas are you feeling most attracted to? Should you make a few more SVGs – or an example of some really great metadata? How can you turn what we’ve done so far, into some preliminary portfolio pieces? If you don’t quite know… we can surely help you suss that out.
+## prep for consolidation meeting notes:
+
+### Reflections:
+
+##### Which little mini projects have resonated with you and you like to flesh out a bit more?? 
+ - the responsive website as a humorous burn out resource
+ - svg cat
+ - mock client but a different subject
+
+##### Which areas are you feeling most attracted to? 
+ - svgs right now 
+ - I'd really like to go back and make a choose your own adventure. 
  
 
-#### known weakpoints:
+#### Known weak points:
 - writing blog posts
-- github
-- flex-basis
-- flex-wrap
-- flex-grow 
+- anything networking
+- flex concepts:
+	- flex-basis
+	- flex-wrap
+	- flex-grow 
+- time allocation - hyperfocus vs distracted 
+- planning out projects accurately
+
+#### Goals
+- I would love to turn an "html adventure" into a narrative svg mini-game. 
+- Creae a website with my friends occupational therapy business
+
+
 ---------------------------------------------------------------------------
 
 ## 12/1/22
