@@ -1,8 +1,30 @@
 
 
 # My learning journal
-This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with.
+This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
+## 12/2/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] Edit Ticktick
+- [] Milestones
+
+#### one thing I learned yesterday: 
+ - when you request a php file with <?php include("filename.php")? it tells the server to run the program (index.html for example). The server will compile all the php requests into html files and serve that back to the browser.
+
+#### Reflections:
+Which little mini projects have resonated with you? Which projects would you like to flesh out a bit more? Which areas are you feeling most attracted to? Should you make a few more SVGs – or an example of some really great metadata? How can you turn what we’ve done so far, into some preliminary portfolio pieces? If you don’t quite know… we can surely help you suss that out.
+ 
+
+#### known weakpoints:
+- writing blog posts
+- github
+- flex-basis
+- flex-wrap
+- flex-grow 
+---------------------------------------------------------------------------
+
 ## 12/1/22
 
 - [x] Set Up Journal Entry
@@ -14,6 +36,14 @@ This is my learning journal for personal use. It keeps track of my daily goals, 
  - Image children will break a div if the div has a max-height set. 
  - Use rubberducking before asking questions in stoackoverflow
 
+#### Highlights: 
+ - <?php include ('filename.php') ?> allows for breaking up html code into seperate files for webpages. It also makes parts of pages that are ubiquitus throughout a website be editedable from one location. This code needs to be placed in the correct location within the document flow.
+ - /*  * / and // both allow for comments within php. 
+
+#### known weakpoints:
+- flex-basis
+- flex-wrap
+- flex-grow 
 ---------------------------------------------------------------------------
 ## 11/28/22
 
