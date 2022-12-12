@@ -1,5 +1,50 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+
+---------------------------------------------------------------------------
+## 12/8/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [] Milestones
+
+#### one hightlight in the last lesson: 
+ - I explored the lowercase a as a tool to format layouts and incididentally formed some cool logo options for myself.
+
+ #### today's goals: 
+ - catch up on all text messages!
+ - finish yesterdays lesson and todays lesson
+ - finish blog post draft and ask emily to take a look
+ - get a large bag for andre's gift
+
+
+#### today's highlights: 
+ - Flush left is safe
+ - Use one typeface until you know it well
+ - Skip a weight so use bold and light, go for greater contrasts
+ - double point sizes generally between different elements types
+ - align to one axis: 
+ 	- Vertical: align to left of type
+ 	- Horizontal: strongest horizontal element
+ - Use any typeface you like as long as it’s one of the following:
+		Akzidenz Grotesk, Avenir, Avant Garde, Baskerville,
+		Bembo, Bodoni, Bookman, Caslon, Century, Clarendon,
+		Courier, DIN, Franklin Gothic, Frutiger, Futura,
+		Garamond, Gill Sans, Gotham, Helvetica, Letter Gothic,
+		Memphis, Meta, Mrs. Eaves, OCRB, Rockwell, Sabon,
+		Times New Roman, Trade Gothic, Trajan and Univers.
+- Group relared blocks of information to help visually organize information
+- Avoid corners unless intentional
+- Spacing matters. The closer things are together, the more the reader will
+assume a relationship exists between separate blocks of information. 
+- Avoid rags with shapes. The shape will be stronger than the information.
+- No orphan words at the end of paragraphs.
+- Be bold or italic,never regular
+- Relax, It’s Just Type
+
+
+
 ---------------------------------------------------------------------------
 ## 12/2/22
 
@@ -34,6 +79,8 @@
 	- flex-grow 
 - time allocation - hyperfocus vs distracted 
 - planning out projects accurately
+- github
+	- how to ensure it's up to date
 
 #### Goals
 - I would love to turn an "html adventure" into a narrative svg mini-game. 
