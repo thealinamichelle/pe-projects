@@ -1,5 +1,25 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+---------------------------------------------------------------------------
+## 12/12/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [] Milestones
+
+#### one hightlight in the last lesson: 
+ Worked on writing up a poster imitation via grid. Setting heights for elements is important. I'm not sure how to keep my BAUHAUS title in line with the text underneath and have it be responsive.
+
+ #### today's goals: 
+- Post a blog post
+- Style Tiles
+
+#### today's highlights: 
+- Chat with Jess about blog posts:
+	- just write out lists and build off of that.
+	- "My best english teacher told me that spelling doesnt matter and grammar doesnt matter- just make your point."
+	- So be selfish and make it for you! Ivy also said to remember that you can edit and delete anything.
 
 ---------------------------------------------------------------------------
 ## 12/8/22
