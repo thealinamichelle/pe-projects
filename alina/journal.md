@@ -1,5 +1,33 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+
+---------------------------------------------------------------------------
+## 12/14/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [x] Milestones
+- [] goals page
+- [] lesson 94
+- [] check in on github
+
+#### store tile game plan:
+- Hour 1
+	- 30 mins looking at ecommerce sites and taking screen shots
+		- phone appearance
+		- tablet appearance
+		- desktop appearance
+	- 30 mins making a mood board of favorite parts
+- Hour 2-3
+ 	- 20 minutes generating sections on a stile tile to include all needed content
+ 	- 1.5 hours making the style tile
+
+#### yesterday's highlights: 
+- Don't forget about bitmap mode in affinity designer
+- Sketching in procreate then creating a vector in affinity designer is easier than trying to fix a fully rendered drawing.
+- "Have back up methods for bad drawing days"
+
 ---------------------------------------------------------------------------
 ## 12/12/22
 
