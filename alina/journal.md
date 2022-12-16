@@ -1,5 +1,52 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+---------------------------------------------------------------------------
+## 12/16/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [x] Milestones
+- [] goals page
+- [x] lesson 96/97
+- [] check in on github
+
+#### Goals
+- Gather all of the visual language ideas for your personal website
+- Have some conversation about your choices and see what is working
+- Figure out what visual assets or help that you need
+- Get ready to put the code into place
+
+#### yesterday's highlights: 
+- 
+---------------------------------------------------------------------------
+## 12/15/22
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] Edit Ticktick
+- [x] Milestones
+- [] goals page
+- [x] lesson 95
+- [] check in on github
+
+#### icon game plan:
+- Goals: 
+ - what should the user think and feel?
+ - what asthetic language tools will achieve that?
+	
+- Timeline:
+	- hours:
+		[x] .5: research each image set
+		[x]	(break to walk Lobita)
+		[x]	1: define common visual themes and make quick sketches by hand
+		[x]	2: craft first two icons and establish visual language/style
+		[x]	2.5 reuse similar shapes
+		[x]	3: finish
+
+#### yesterday's highlights: 
+- After thinking about it, realized how important it is to have a cohesive design goal or “words” at the start of the project. My fine art classes really drilled into us to develop the concepts through the process of painting. However, with design that definitely slows you down and can make for a discordant design.
+- There are a lot of cool affinity designer brushes for purchase.
 
 ---------------------------------------------------------------------------
 ## 12/14/22
@@ -9,16 +56,21 @@
 - [x] Edit Ticktick
 - [x] Milestones
 - [] goals page
-- [] lesson 94
+- [x] lesson 94
 - [] check in on github
 
 #### store tile game plan:
+- Goals: 
+	- Show the products
+	- Look cool and avant guard
+	- portal for more information for those who need it
+	- impulse purchase for those who dont
 - Hour 1
-	- 30 mins looking at ecommerce sites and taking screen shots
-		- phone appearance
-		- tablet appearance
-		- desktop appearance
-	- 30 mins making a mood board of favorite parts
+	- [x] 30 mins looking at ecommerce sites and taking screen shots
+		- [x]phone appearance
+		- [x]tablet appearance
+		- [x]desktop appearance
+	- [x] 30 mins making a mood board of favorite parts (50 mins)
 - Hour 2-3
  	- 20 minutes generating sections on a stile tile to include all needed content
  	- 1.5 hours making the style tile
