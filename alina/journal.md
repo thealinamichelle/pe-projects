@@ -17,6 +17,27 @@
 - Figure out what visual assets or help that you need
 - Get ready to put the code into place
 
+
+#### questions
+
+What mood you are going for and why?
+- Alina is an creative web dev who can bring professional layout with an air of humor and whimsy
+
+What content do I need?
+-
+
+What font or font pair helps evoke that?
+What colors would help?
+Should I use any graphics?
+What visual tricks would lend themselves to this story?
+How will the site change and grow?
+Will there be more than one page at this stage?
+How can I measure if this design is successful?
+
+### video notes
+
+
+
 #### yesterday's highlights: 
 - 
 ---------------------------------------------------------------------------
