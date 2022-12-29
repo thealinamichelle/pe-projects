@@ -1,0 +1,88 @@
+@import "resets.css";
+
+/*SITE WIDE STYLING*/
+
+body {
+		background: midnightblue;
+		color: rgba(25, 25, 112, .5);
+		font-family: helvetica-neue, helvetica, sans-serif;
+	}
+
+
+/*	CONTENT STYLING*/
+
+
+	h1 {
+		/*min. font size 36px, max 72px; start scaling @ 320px vw, stop at 960 vw, clamp(2.25rem,5.625vw + 1.125rem,4.5rem)*/
+		font-size: clamp(2.25rem,5.625vw + 1.125rem,4.5rem);
+		letter-spacing: .09rem;
+		line-height: 5rem;
+		margin-bottom: 10px;
+	}
+
+	p, li, a {
+		font-size: 20px;
+
+	}
+
+
+h2 {
+	font-size: 40px;
+	margin: 40px 0 0px 30px;
+	text-transform: uppercase;
+}
+
+body {
+	margin: 50px 0 20px 40px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.plant {
+	display: block;
+	margin: 20px 100px 0 100px;
+	font-size: 1em;
+}
+
+.instructions {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 20px 20px 0 20px;
+	background: rgba(255, 255, 255, .5);
+	border-radius: 30px 30px 0 0;
+	height: 100vh;
+	color: rgba(25, 25, 112, .7);
+}
+
+inner-column {
+	display: block;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255, .5);
+	height: 100%;
+	padding: 20px 20px 0 20px;
+	border-radius: 30px 30px 0 0;
+	line-height: 1.7rem;
+}
+
+body p:nth-of-type(1) {
+	display: inline-block;
+	width: 50ch;
+	margin-left: auto;
+	margin-right: auto;
+	color: darkseagreen;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.first {
+	border: solid 5px darkseagreen;
+	padding: 20px 20px 0 20px;
+	border-radius: 30px 30px 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
