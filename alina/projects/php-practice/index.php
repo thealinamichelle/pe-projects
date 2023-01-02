@@ -25,16 +25,11 @@
 	$day = date("d");
 	?>
 
-
 <h2> <?=date("M d");?></h2>
 
-
 	<div class="instructions">
-
 		
 		<?php 
-
-
 
 		if ($month == 1) {
 			echo "Remember you have plants! Reshap the ones that need it, assess if they need to be moved to take advantage of a sunny window or a plant light. Give your water starved plants a treat by moving them outside for some fresh rain.";

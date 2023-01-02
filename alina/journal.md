@@ -1,19 +1,33 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-## 12/20/22
+
+## 1/1/22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [] Edit Ticktick
 - [] Milestones
 - [] goals page
+- [x] review php and/or arrays
 - [] check in on github
 
-#### Goals
+#### Notes for standup tomorrow:
+- worked on assessability issues with live captions and playback speed.
+-- Substital allows to increase speed for vimeo playback
+-- Mac built in live captioning allows you to change the window size and text size, so I can have one line of text and a large font. It's much easier to read and way less distracting this way.
+- Worked on reviewing PHP lesson on array because I am confused on a few issues since I skipped this video. 
+	--- questions: Why isn't a semicolon required after the curly brackets?"
+- Installed php syntax checker
+- found that I did not actually have php installed due to the error: "/bn/sh: php: command not found"
+- discovered I did not have php installed? and did not have developer tools installed
+- So I installed developer tools with homebrew
+- installed php 
+---------------------------------------------------------------------------
+## 12/20/22
 
-
-#### questions
+- [x] Set Up Journal Entry
+- [x] Stand Up
 
 ---------------------------------------------------------------------------
 ## 12/16/22

@@ -14,44 +14,44 @@
 
 <body>
 <inner-column>
-<h1>Array Stuff</h1>
+<h1>Monsters</h1>
 
 
 
-	<div class="instructions">
+	<div class="adoption">
 
 		
-		<?php 
+		<?php $array = ["one", 1, "three", "cat", true, false];
 
-$itemArray = ["15 minute walk"
-, "30 minute walk"
-, "45 minute walk"
-, "60 minute walk"
-, "Boarding"
-, "Pet Visit 1 hour"
-, "Daycare"
-, "Dog Training"
-, "Holiday Fee "
-, "Local Travel Fee"
-, "Travel Fee"];
+		// id
+		// name
+		// favorite food
+		// age
+		// adoption status
 
+		$dreamlu = [
+			"id" => "4002",
+			"name" => "Dreamlu",
+			"favoritefood" => "wall boogers",
+			"age" => "4",
+			"adoption status" => true, 
+		];
 
-
-$unitpriceArray = ["$20", "$24", "$28", "$30", "$70", "$30", "$35", "$80", "$10", "$10", "$25"
-];
-
+		echo "<p>" . "I have " . $array[0] . " " . $array[3] . "." . "</p>";
 
 
-echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[1] . " = " . $unitpriceArray[1] ;
+		// paragraph 
+		// monster's name favorite food is 
+		// They are years old
+		// Give it an ID
 
+		$story = $dreamlu["name"] . " is " . $dreamlu["age"] . " years old. Her favorite food is " . $dreamlu["favoritefood"] . ".";
+
+		$template = "<p id=" . $dreamlu["id"] . ">" . $story . "</p>";
+
+		echo $template;
 ?>
 
-<br><br>
-
-<?php
-
-echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[6] . " = " . $unitpriceArray[6] ;
-		?>
 	</div>
 	</div>
 </div>

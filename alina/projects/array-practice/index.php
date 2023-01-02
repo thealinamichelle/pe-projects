@@ -2,26 +2,164 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-		<meta name="viewport" content="width">
-		<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
 
-		<title>[[insert title]]</title>
-		<meta name="description" content="[[insert description]]">
-		<meta property="og:image" content="images/default.png">
+	<title>Array and String Practice</title>
+	<meta name="description" content="[[insert description]]">
+	<meta property="og:image" content="images/default.png">
 
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<inner-column>
-<h1>Array Stuff</h1>
+	<div class="inner-column">
+
+		<header>
+			<h1>ArrayStuff</h1>
+		</header>
+
+		<section class="notes">
+			<h2>Notes on Arrays</h2>
+			<?php
+
+
+// this is the program:
+			$price = 34;
+			$tax = $price * .10;
+			$total = $price + $tax;
+// this is what is printed, shoing only the total
+			echo "<h1>" . $total . "</h1>";
+
+
+// if (when the condition is starting and ending) {where the code is starting and ending}
+
+			$percent = 30;
 
 
 
-	<div class="instructions">
+			echo "<h2>Percent tip:" . $percent . "%</h2>";
 
-		
-		<?php 
+			if ($percent > 20) {
+				echo "Wowza - what a tippa!";
+			}
+
+			$tip = $total * ($percent/100);
+
+			$total = $total + $tip;
+
+			echo "<p> $" . $total . "</p>";
+			echo "<p> // the right side operators will happen first. So the total on the right are parsed by the parser first? Why is is the right side first?</p>
+
+			<p>// - Derrick says to think of it as how javascrip works: </p>
+			<p> // Doing stuff to get it ready </p>
+			<p>// Creates the reference </p>
+			<p>// then pointing the reference to the new value. </p>
+			<p>// that's how it works in Javascript, even if that's not how it works in PHP</p>
+
+			<p>// Why isn't a semicolon required after the curly brackets?"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			?>
+		</section>
+
+
+
+
+		<section class="testing">
+			<h2>Testing Area</h2>
+			<?php
+
+		// I am not sure why this isn't working
+
+			$array = [
+				"services" => [
+
+
+
+					
+					[
+						"walks" => [
+							"15" => "$20",
+							"30" => "$24",
+							"45" => "$28",
+							"60" => "$30",
+						],
+					],
+
+					[
+						"Visits" => [
+							[
+								"30" =>  "$30",
+								"60" => "$50",
+							],
+						],
+					],
+					[
+						"Boarding" => "$70",
+						"Daycare"=>"$35",
+						"Dog Training" => "$80",
+						"Other Fees" => [
+							[
+								"Holiday Fee" => "1$0",
+								"Local Travel Fee" => "$10",
+								"Travel Fee" => "$25",
+							],
+							
+						],
+
+					],
+				],
+			]; 
+
+
+			// echo "<pre>";
+			// echo "<code>";
+			// print_r($array);
+			// echo "</pre>";
+			// echo "</code>";
+
+
+			echo $array["services"][0];
+			?>
+		</section>
+
+
+
+		<section class="worked">
+			<h2>Working Area</h2>
+			<?php 
 
 			$itemArray = ["15 minute walk"
 			, "30 minute walk"
@@ -37,34 +175,24 @@
 
 
 
-			$unitpriceArray = [
-				"$20", 
-				"$24", 
-				"$28", 
-				"$30", 
-				"$70", 
-				"$30", 
-				"$35", 
-				"$80", 
-				"$10", 
-				"$10", 
-				"$25"
-			];
+			$unitpriceArray = ["$20", "$24", "$28", "$30", "$70", "$30", "$35", "$80", "$10", "$10", "$25"
+		];
 
 
 
-			echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[1] . " = " . $unitpriceArray[1] ;
+		echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[1] . " = " . $unitpriceArray[1] ;
 
-			?>
+		?>
 
-			<br><br>
+		<br><br>
 
-			<?php
+		<?php
 
-			echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[6] . " = " . $unitpriceArray[6] ;
-					?>
-	</div>
-</inner-column>
+		echo "services due:" . " for " .  date("F d Y") . "<br>" . $itemArray[6] . " = " . $unitpriceArray[6] ;
+		?>
+	</section>
+</div>
+</div>
 
 </body>
 </html>
