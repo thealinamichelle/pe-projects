@@ -59,6 +59,16 @@
 
 			<p>// Why isn't a semicolon required after the curly brackets?"
 
+// $object = [ 
+			// "id" => " term", 
+			// "key" => "value?" ,
+			// "example" => numbers,
+			// "second_example" => true,
+			// "third_example" => 120,
+			// "another_array_within_an_array" => ["another" , "don't forget the commas"],
+	// ]
+// 	one set of brackets determines an array. Arrays that build key associations are called associative arrays. The "=>" shows a key value pairs/	
+
 
 
 

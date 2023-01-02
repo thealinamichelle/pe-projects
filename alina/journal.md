@@ -1,7 +1,78 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
+##1/2/22
 
+## Notes: 
+***
+
+### NORMAL ARRAYS
+
+	$thing = [1, true, "dog", "cat"];
+    
+ - With normal arrays we can find associations by installing a [number] next to the variable like so: `$newidea[2]`
+
+
+### ASSOCIATIVE ARRAYS
+
+ - one set of brackets determines an array. Arrays that build key associations are called associative arrays. The "=>" shows a key value pairs/	
+ 
+	$object = [ 
+      "id" => " term", 
+      "key" => "value?" ,
+      "example" => numbers,
+      "second_example" => true,
+      "third_example" => 120,
+      "another_array_within_an_array" => ["another" , "don't forget the commas"],]
+ 	
+- For an Associative arrays we can select an value by the value key. `$object["key"];`
+- In HTML it will look like:
+		
+		<p> My favorite thing is <?=$object["key"]?>.</p>
+
+
+### Color Systems:
+- CMYK - printing, cyan magenta yellow black
+- LAB colors
+- Greyscale - no hues
+- RGB
+
+		.thing {
+        color: red;
+        color: rgb(255, 10, 50); /*these are hard to guess!*/
+        color: rgba(255, 10, 50, .5); /*adds transparency*/
+        }
+
+#### HSL 
+- Three values: WHEEL/ saturation / value
+- Example:
+		body {
+		 	background:hsl(0, 50%, 100%);
+		 }
+- First value, where is the hue located on the wheel?
+	- first number is 0-360
+	- The pattern is circular. 0 is red and so is 360
+	- Think of a clock: 
+		- 12 red (0/360)
+		- 2 yellow (60)
+		- 4 green (120)
+		- 6 cyan (180)
+		- 8 blue (240)
+		- 10 magenta (300)
+
+- Second value is saturation 
+	- between 0 (grey) to 100% (full saturation)
+
+- Third number is value
+	- range is 0 - 100%
+	- 0% is black (clue no light)
+	- 100% is white (all light)
+	- 50% is pure hue
+
+
+
+
+---------------------------------------------------------------------------
 ## 1/1/22
 
 - [x] Set Up Journal Entry
@@ -11,6 +82,14 @@
 - [] goals page
 - [x] review php and/or arrays
 - [] check in on github
+
+#### Array Review Notes: "<p> // the right side operators will happen first. So the total on the right are parsed by the parser first? Why is is the right side first?</p>
+	- Derrick says to think of it as how javascrip works:
+		- Doing stuff to get it ready 
+		- Creates the reference 
+	- then pointing the reference to the new value.
+	- that's how it works in Javascript, even if that's not how it works in PHP
+	- Why isn't a semicolon required after the curly brackets?
 
 #### Notes for standup tomorrow:
 - worked on assessability issues with live captions and playback speed.
