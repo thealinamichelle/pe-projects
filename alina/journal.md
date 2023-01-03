@@ -69,6 +69,26 @@
 	- 100% is white (all light)
 	- 50% is pure hue
 
+### Loops and Arrays
+
+#### Objectives:
+
+- work on a style tile (Monsters project)
+
+	- Combine the PHP and the Style tile ideas
+		- outline the monsters and get them into Objects
+		- put those objects into an Array
+		- loop through them 
+
+			
+		<?php
+
+			$fruit = ["apple ", "banana ", "carrot ", "diakon ", "eggplant "];
+
+			//  for each thing inside of fruit do as this codeblock says
+			foreach ($fruit as $f)
+				echo $f;
+		?>
 
 
 
