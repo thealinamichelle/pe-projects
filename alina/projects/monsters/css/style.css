@@ -16,47 +16,56 @@ body {
 		font-size: clamp(2.25rem,5.625vw + 1.125rem,4.5rem);
 		letter-spacing: .09rem;
 		line-height: 5rem;
-		margin-bottom: 10px;
+/*		margin-bottom: 10px;*/
 	}
 
 	p, li, a {
 		font-size: 20px;
-
+		list-style-type: none;
 	}
-
 
 h2 {
 	font-size: 40px;
-	margin: 40px 0 0px 30px;
 	text-transform: uppercase;
+}
+html {
+	height: 100%;
 }
 
 body {
-	margin: 50px 0 20px 40px;
+/*	padding: 50px 0 0px 0px;*/
+	height: 100%;
 }
 
-p {
-	margin: 10px 0;
-}
-
-
-.instructions {
-	font-size: 1rem;
-	font-weight: bold;
-	padding: 20px 20px 0 20px;
-	background: rgba(255, 255, 255, .5);
-	border-radius: 30px 30px 0 0;
-	height: 100vh;
-}
-
-inner-column {
-	display: block;
+main {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(255, 255, 255, .5);
-	height: 100vh;
+	height: 100%;
 	padding: 20px 20px 0 20px;
 	border-radius: 30px 30px 0 0;
 	line-height: 1.7rem;
+}
+header {
+	height: 100px;
+}
+
+
+inner-column {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	gap: 10px;
+
+}
+
+inner-column .card {
+	background-color: hsl(250, 30%, 80%);
+	border-radius: 30px;
+	padding: 3%;
+}
+
+.card div {
+	padding:10px 0;
 }
