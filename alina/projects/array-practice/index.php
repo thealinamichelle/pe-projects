@@ -57,8 +57,15 @@
 			<p>// then pointing the reference to the new value. </p>
 			<p>// that's how it works in Javascript, even if that's not how it works in PHP</p>
 
-			<p>// Why isn't a semicolon required after the curly brackets?"
+			<p>// Why isn't a semicolon required after the curly brackets?</p>"
 
+
+// NORMAL ARRAYS
+
+		// $thing = [1, true, "dog", "cat"];
+
+
+// ASSOCIATIVE ARRAYS
 // $object = [ 
 			// "id" => " term", 
 			// "key" => "value?" ,
@@ -69,6 +76,8 @@
 	// ]
 // 	one set of brackets determines an array. Arrays that build key associations are called associative arrays. The "=>" shows a key value pairs/	
 
+
+// With normal arrays we can find associations by installing a [number] next to the variable like so: $newidea[2]
 
 
 
@@ -113,45 +122,116 @@
 
 		// I am not sure why this isn't working
 
-			$array = [
-				"services" => [
+
+
+// $services = ["nothing", "test", "walks"];
+
+
+
+
+			$services = [
+				"test" => 15,
+				"walks" => [
+				
+					[
+					"walk duration" => 15,
+					"price" => 20,
+					],
+					[
+						"15 minutes" => 30,
+						"20 minutes" => 30,
+					],					
+ 
+				],
+			];
+
+			echo $services["walks"][1]["20 minutes"];
+$array = ["Cow", 165];
+
+echo $array[0] . " " . $array[1] . "°";
+			$cocktail = [
+				"name" => "Screwdriver",
+				"temp" => 165,
+				"ingredients" => [
+					[
+						"name" => "Vodka",
+						"ratio" => 1,
+					], 
+					[
+						"name" => "Orange",
+						"ratio" => 2,
+					],
+				],
+			];
+
+			 echo "<pre>";
+			 echo "<code>";
+			 print_r($cocktail);
+			 echo "</pre>";
+			 echo "</code>";
+
+echo $cocktail["ingredients"][0]["name"];
+
+
+// "visits" => [				
+			// 	"30 mins" =>  30,
+			// 	"60 mins" => 50,
+			// 	],
+
+			// 	"walks" => [
+			// 		"15 mins" = 20, 
+			// 		"30 mins" = 24,
+			// 		"45 mins" = 28,
+			// 		"60 mins" = 30, 
+			// 	], 
+			// 	[
+			// 	"visits" => [
+			// 	"30 mins" =>  30,
+			// 	"60 mins" => 50,]
+			// 	]
+			// ]; 
+
 
 
 
 					
-					[
-						"walks" => [
-							"15" => "$20",
-							"30" => "$24",
-							"45" => "$28",
-							"60" => "$30",
-						],
-					],
+				// "15 mins" = 20, 
+				// "30 mins" = 24,
+				// "45 mins" = 28,
+				// "60 mins" = 30, 
+			// 		[
+			// 			"walks" => [
+			// 				"15" => "$20",
+			// 				"30" => "$24",
+			// 				"45" => "$28",
+			// 				"60" => "$30",
+			// 			],
+			// 		],
 
-					[
-						"Visits" => [
-							[
-								"30" =>  "$30",
-								"60" => "$50",
-							],
-						],
-					],
-					[
-						"Boarding" => "$70",
-						"Daycare"=>"$35",
-						"Dog Training" => "$80",
-						"Other Fees" => [
-							[
-								"Holiday Fee" => "1$0",
-								"Local Travel Fee" => "$10",
-								"Travel Fee" => "$25",
-							],
+			// 		[
+			// 			"Visits" => [
+			// 				[
+			// 					"30" =>  "$30",
+			// 					"60" => "$50",
+			// 				],
+			// 			],
+			// 		],
+			// 		[
+			// 			"Boarding" => "$70",
+			// 			"Daycare"=>"$35",
+			// 			"Dog Training" => "$80",
+			// 			"Other Fees" => [
+			// 				[
+			// 					"Holiday Fee" => "1$0",
+			// 					"Local Travel Fee" => "$10",
+			// 					"Travel Fee" => "$25",
+			// 				],
 							
-						],
+			// 			],
 
-					],
-				],
-			]; 
+			// 		],
+			// 	],
+			// ]; 
 
 
 			// echo "<pre>";
@@ -159,10 +239,8 @@
 			// print_r($array);
 			// echo "</pre>";
 			// echo "</code>";
+?>
 
-
-			echo $array["services"][0];
-			?>
 		</section>
 
 
