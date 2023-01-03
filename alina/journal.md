@@ -1,11 +1,10 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-##1/2/22
+##1/2/23
 
-## Notes: 
+## Notes
 ***
-
 ### NORMAL ARRAYS
 
 	$thing = [1, true, "dog", "cat"];
@@ -80,20 +79,19 @@
 		- put those objects into an Array
 		- loop through them 
 
-			
-		<?php
+- How for each works:			
+		
 
-			$fruit = ["apple ", "banana ", "carrot ", "diakon ", "eggplant "];
+		<?php
+            $fruit = ["apple ", "banana ", "carrot ", "diakon ", "eggplant "];
 
 			//  for each thing inside of fruit do as this codeblock says
 			foreach ($fruit as $f)
 				echo $f;
 		?>
 
-
-
 ---------------------------------------------------------------------------
-## 1/1/22
+## 1/1/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
