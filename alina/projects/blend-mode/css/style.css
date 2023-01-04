@@ -213,7 +213,7 @@ main {
 	background: none;
 	animation: myanimation 30s infinite;
 }
-
+/*
 @keyframes myanimation {
 	0%{background-color: none;}
 	10% {background-color: lightcoral;}
@@ -227,7 +227,7 @@ main {
 	90%{background-color: darkorchid;}
 	100%{background-color: hotpink;}
 
-}
+}*/
 
 h1 {
 	font-size:  23px;

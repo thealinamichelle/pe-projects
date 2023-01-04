@@ -2,54 +2,36 @@
 
 /*SITE WIDE STYLING*/
 
-body {
-		background: midnightblue;
-		font-family: helvetica-neue, helvetica, sans-serif;
-	}
-
-
-/*	CONTENT STYLING*/
-
-
-	h1 {
-		/*min. font size 36px, max 72px; start scaling @ 320px vw, stop at 960 vw, clamp(2.25rem,5.625vw + 1.125rem,4.5rem)*/
-		font-size: clamp(2.25rem,5.625vw + 1.125rem,4.5rem);
-		letter-spacing: .09rem;
-		line-height: 5rem;
-/*		margin-bottom: 10px;*/
-	}
-
-	p, li, a {
-		font-size: 20px;
-		list-style-type: none;
-	}
-
-h2 {
-	font-size: 40px;
-	text-transform: uppercase;
-}
 html {
 	height: 100%;
+	font-family: sans-serif;
+
+
 }
 
+
 body {
-/*	padding: 50px 0 0px 0px;*/
 	height: 100%;
+	color: #431311;
+	background: linear-gradient(180deg, #acaf7f 55%, #c77c7a);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 main {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(255, 255, 255, .5);
 	height: 100%;
-	padding: 20px 20px 0 20px;
-	border-radius: 30px 30px 0 0;
-	line-height: 1.7rem;
+	display: flex;
+	flex-direction: column;
 }
+
 header {
 	height: 100px;
+	margin-bottom: 20px;
 }
+
 
 
 inner-column {
@@ -57,15 +39,192 @@ inner-column {
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
 	gap: 10px;
-
 }
 
-inner-column .card {
-	background-color: hsl(250, 30%, 80%);
-	border-radius: 30px;
+
+
+adoption-card {
+	display: grid;
+	gap: 5px;
+	grid-template-rows: 200px 1fr;
+	background-color: #f0ece8;
+	max-width: 300px;
 	padding: 3%;
+	border-radius: 10px;
 }
 
-.card div {
-	padding:10px 0;
+.portrait {
+	height: 100%;
+	width: 100%;
+	opacity: 80%;
+	overflow: hidden;
+	border-radius: 10px;
+	grid-row: 1;
+
 }
+
+
+
+.portrait img {
+	height: 100%;
+	width: auto;
+}
+
+
+.details {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.name {
+	grid-row: 3;
+
+}
+
+
+
+.status {
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	color: #f0ece8;
+	text-transform: uppercase;
+}
+
+
+
+
+/*	TEXT STYLING*/
+
+
+h1 {
+	font-family: 'Shrikhand', cursive;
+	font-size: 5vw;
+}
+
+h2 {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: clamp(40px, 4vw, 100px);
+	background: rgba(240, 236, 232, .5);
+	border-radius: 10px;
+	border: solid 5px white;
+	padding: 10px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Shrikhand', cursive;
+	font-size: clamp(1rem, 0.9338rem + 0.3529vw, 1.375rem);
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	font-size: 16px;
+}
+
+span {
+	font-family: 'Shrikhand', cursive;
+	font-size: font-size: clamp(0.75rem, 0.6618rem + 0.4706vw, 1.25rem);
+}
+
+@media (hover:hover) {
+
+/*.portrait img {
+	mix-blend-mode: multiply;
+	filter: brightness(110%);
+
+}*/
+
+.test {
+	position: absolute;
+		mix-blend-mode: multiply;
+	filter: brightness(110%);
+	top:0;
+	height: 100%;
+	width: 100%;
+}
+
+.portrait {
+	position: relative;
+		;
+}
+
+.test:hover {
+	opacity:0;
+	border: green solid 3px;
+	transition: all 0.6s ease
+
+}
+
+}
+
+
+@media (min-width:380px) {
+
+	inner-column {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	adoption-card {
+		grid-template-rows: 200px 1fr;
+	}
+
+	.portrait img {
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+
+@media (min-width:600px) {
+
+		body {
+			padding-top: 5vw;
+		}
+
+		header {
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			align-items: center;
+		}
+
+
+	@media (hover:hover) {
+
+		header h2:hover {
+			transform: translate(50px, 50px) scale(1.2) rotate(-370deg);
+		}
+
+	}
+   }
+
+
+		h2 {
+			display: block;
+			text-align: center;
+			transition: 0.5s ease-in-out;
+			z-index: 2;
+			margin-left: auto;
+			margin-right: auto;
+						padding: 60px;
+		}
+
+		inner-column {
+			top: 200px;
+			right: 50px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+	}

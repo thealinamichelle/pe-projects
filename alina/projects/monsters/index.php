@@ -2,94 +2,172 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-		<meta name="viewport" content="width">
-		<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>[[insert title]]</title>
-		<meta name="description" content="[[insert description]]">
-		<meta property="og:image" content="images/default.png">
+	<title>Monster Adoption Agency</title>
+	<meta name="description" content="[[insert description]]">
+	<meta property="og:image" content="images/default.png">
 
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+
+<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Shrikhand&display=swap'); </style>
+
+	<?php 
+
+	// $overlays = ["#f5097d", "#f0769a", "#f36a65", "#be8adb", "#f1c547"];
+
+	$dreamlu = [
+		"id" => "4002",
+		"name" => "Dreamlu",
+		"favoritefood" => "wall boogers",
+		"age" => "4",
+		"adoption status" => true, 
+		"portrait" => "images/dreamlu.jpg",
+		"color" => "#f5097d",
+	];
+
+
+	$lima = [
+		"id" => "4003",
+		"name" => "Lima Bean",
+		"favoritefood" => "lima beans",
+		"age" => 9,
+		"adoption status" => false, 
+		"portrait" => "images/lima.jpg",
+		"color" => "#f0769a",
+	];
+
+	$reads = [
+		"id" => "4004",
+		"name" => "Miss Readsalot",
+		"favoritefood" => "the yummiest pages from Cook's Illustrated",
+		"age" => 5,
+		"adoption status" => false, 
+		"portrait" => "images/reads.jpg",
+		"color" => "#f36a65",
+	];
+
+	$fragoo = [
+		"id" => "4005",
+		"name" => "Fragoo",
+		"favoritefood" => "rocks",
+		"age" => 8,
+		"adoption status" => false, 
+		"portrait" => "images/fragoo.jpg",
+		"color" => "#be8adb",
+	];
+
+	$codey = [
+		"id" => "4006",
+		"name" => "Codey",
+		"favoritefood" => "Mountain Dew Code Red",
+		"age" => 7,
+		"adoption status" => false, 
+		"portrait" => "images/codey.jpg",
+		"color" => "#f1c547",
+	];
+
+	$banana = [
+		"id" => "4007",
+		"name" => "Mr. Banana",
+		"favoritefood" => "tostones",
+		"age" => 17,
+		"adoption status" => false,
+		"portrait" => "images/banana.jpg", 
+		"color" => "#f5097d",
+	];
+
+	$grape = [
+		"id" => "4007",
+		"name" => "Grape",
+		"favoritefood" => "Oysters",
+		"age" => 2,
+		"adoption status" => false,
+		"portrait" => "images/grape.jpg",
+		"color" => "#f0769a",
+	];
+	
+
+	?>
+
+
 </head>
 
 <body>
 
 	<main>
-	<header>
-		<h1>Monsters</h1>
-	</header>
-<inner-column>
-	<div class="adoption card">
-
-		
-		<?php $array = ["one", 1, "three", "cat", true, false];
-
-		// id
-		// name
-		// favorite food
-		// age
-		// adoption status
-
-		$dreamlu = [
-			"id" => "4002",
-			"name" => "Dreamlu",
-			"favoritefood" => "wall boogers",
-			"age" => "4",
-			"adoption status" => true, 
-		];
-
-		echo "<p>" . "I have " . $array[0] . " " . $array[3] . "." . "</p>";
+		<header>
+			<h2>Monsters Available!</h2>
+		</header>
+		<inner-column>
 
 
-		// paragraph 
-		// monster's name favorite food is 
-		// They are years old
-		// Give it an ID
 
-		$story = $dreamlu["name"] . " is " . $dreamlu["age"] . " years old. Her favorite food is " . $dreamlu["favoritefood"] . ".";
 
-		$template = "<p id=" . $dreamlu["id"] . ">" . $story . "</p>";
+		<?php
 
-		echo $template;
+ 	$monsters = [$dreamlu, $lima, $reads, $fragoo, $codey, $banana, $grape];
+
+ 
+
+	foreach ($monsters as $monster) {
+		// My attempt:
+		// 	echo "<p id=" . $monster["id"] . ">Hi! My name is " . $monster["name"] . ". I am " . $monster["age"] . " years old. I love to eat " . $monster["favoritefood"] . "." . "</p>" ;
+			
+
+
+		// You can put individually into the system
+			// $name = $monster["name"];
+			// echo "<li class='monster'>" . $name . "</li>";
+
+	 	$name = $monster["name"];
+	 	$id = $monster["id"];
+	 	$portrait = $monster["portrait"];
+	 	$status = $monster["adoption status"];
+	 	$color = $monster["color"];
+
+// set human readable status message
+	 	if ($status == 1) {
+	 		$status = "<span>Adopted!</span>";
+	 	} else {
+	 		$status = "Needs a home!";
+	 	}
+
+// styling
+
+
+	 	$story = "<p> I am " . $monster["age"] . " years old. I love to eat " . $monster["favoritefood"] . ". </p>"; 
+
+	 	echo "<div class='monster' id='" . $id . "'>";
+
+
+		echo "<adoption-card>".
+					"<picture class='portrait'>" .   
+
+					"<img src='" . $portrait . "' >" . "<div class='test' style='background-color:" . $color . ";'></div>" . "</picture>" . 
+
+					"<div class='details'><h3 class='name'>" . $name . "</h3>" . 
+
+					"<p class='story'>" . $story . "</p>" . 
+					"<p class='status' style='background-color:". $color . ";'>" . $status . "</p>" . "</div></adoption-card>";
+
+
+		echo "</div>";
+}
+
+	
 ?>
 
-	</div>
 
 
-<div class="fruit card">
 
-<?php
 
-	$fruits = ["apple", "banana", "carrot", "diakon", "eggplant", "grape", "fruit"];
 
-	echo "<ol>";
-	//  for each thing inside of fruit do as this codeblock says
-	foreach ($fruits as $fruit){
-		echo "<li>" . $fruit . "</li>";
-	}
-
-	echo "</ol>";
-?>
-
-</div>
-
-<div class="testing-ground card">
-
-<?php
-
-	$civilizationSong = ["Don't want no bright lights, false teeth, doorbells, landlords, I make it clear.", "Don't want no penthouse, bathtub, streetcars, taxis, noise in my ear.", "Don't want no jailhouse, (shotgun) fish hooks (golf clubs) I got my spears."];
-
-	echo "<ul>";
-	foreach ($civilizationSong as $bingo){
-		echo "<div><p> So bongo, bongo, bongo, I don't want to leave the congo, oh no no no no no Bingo, bangle, bungle, I'm so happy in the jungle, I refuse to go." .  "<span style='font-weight:600;'>" . $bingo . "</span> (So, no matter how they coax him) I'll stay right here." . "</p></div>";
-	};
-
-	echo "</ul>"
-?>
-
-</div>
-</inner-column>
-</main>
+		</inner-column>
+	</main>
 </body>
 </html>
 

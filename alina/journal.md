@@ -1,6 +1,21 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
+##1/3/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] Milestones
+- [] goals page
+- [x] style tiles for monster site
+- [] monster site
+- [] git commit
+- [] check in on github
+
+
+
+
+---------------------------------------------------------------------------
 ##1/2/23
 
 ## Notes
