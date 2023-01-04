@@ -145,14 +145,13 @@
 
 
 		echo "<adoption-card>".
-					"<picture class='portrait'>" .   
+					"<div class='quick-info'><picture class='portrait'>" .   
 
-					"<img src='" . $portrait . "' >" . "<div class='test' style='background-color:" . $color . ";'></div>" . "</picture>" . 
+					"<img src='" . $portrait . "' >" . "<div class='test' style='background-color:" . $color . ";'></div>" . "</picture>" . "<p class='status' style='background-color:". $color . ";'>" . $status . "</p> </div>" .
 
 					"<div class='details'><h3 class='name'>" . $name . "</h3>" . 
 
-					"<p class='story'>" . $story . "</p>" . 
-					"<p class='status' style='background-color:". $color . ";'>" . $status . "</p>" . "</div></adoption-card>";
+					"<p class='story'>" . $story . "</p>" . "</div></adoption-card>";
 
 
 		echo "</div>";
