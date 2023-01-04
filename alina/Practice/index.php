@@ -88,6 +88,44 @@
 ?>
 
 </div>
+
+<div class="testing-ground-2 card">
+
+<?php
+
+	$colorArray = ["red", "black", "white"];
+
+	
+			
+
+		$sample = [
+				"name" => "Sample",
+				"color" => "red", ];
+
+		$sample2 = [
+				"name" => "Sample2",
+				"color" => "black", ];
+
+		$sample3 = [
+				"name" => "Sample3",
+				"color" => "white", ];
+
+		$kids = [$sample, $sample2, $sample3];
+
+		foreach ($kids as $kid) {
+
+			 	$name = $kid["name"];
+			 	$color = $kid["color"];
+
+
+			 	$story = "<p>" . $kid["name"] . "</p>"; 
+
+				echo "<div style='background-color:" . $color . ";'>" . $story . "</div>";
+
+			}
+?>
+
+</div>
 </inner-column>
 </main>
 </body>

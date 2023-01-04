@@ -1,6 +1,18 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
+##1/4/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] Milestones
+- [] goals page
+- [] functions?
+- [] fix monster site
+- [] git commit
+
+
+---------------------------------------------------------------------------
 ##1/3/23
 
 - [x] Set Up Journal Entry
@@ -8,10 +20,54 @@
 - [] Milestones
 - [] goals page
 - [x] style tiles for monster site
-- [] monster site
-- [] git commit
-- [] check in on github
+- [x] monster site
+- [x] git commit
 
+
+		foreach ($array as $anothervariable) {
+			Do these instructions
+		}
+
+		// You can put individually into the system
+			// $name = $monster["name"];
+			// echo "<li class='monster'>" . $name . "</li>";
+
+- Question: How could I insert a normal array without adding it by hand as a key-value pair? I
+So I would like each sample to be assigned a color from the color array, but I don’t want to write it out with each new sample addition.
+Is another foreach the answer? I can’t quite figure out the next steps or if it’s doable.
+
+
+		<?php
+
+		$colorArray = ["red", "black", "white"];
+
+
+		$sample = [
+			"name" => "Sample",
+			"color" => "red", ];
+
+		$sample2 = [
+			"name" => "Sample2",
+			"color" => "black", ];
+
+		$sample3 = [
+			"name" => "Sample3",
+			"color" => "white", ];
+
+		$kids = [$sample, $sample2, $sample3];
+
+		foreach ($kids as $kid) {
+
+			$name = $kid["name"];
+			$color = $kid["color"];
+
+
+			$story = "<p>" . $kid["name"] . "</p>"; 
+
+			echo "<div style='background-color:" . $color . ";'>" . $story . "</div>";
+
+			}
+		?>
 
 
 
