@@ -4,7 +4,7 @@
 <section class="home-grid">
 			
 			<section class="visuals">
-				<?php include("alina-svg.php")?>
+				<?php include("alina-new-svg.php")?>
 
 					<div class="blue"><p>.</p>
 					</div>
@@ -24,13 +24,13 @@
 		
 			<section class="projects">
 				
-				<a href="#">portal</a>
+				<a href="https://peprojects.dev/alpha-6/alina/goals.php">goals</a>
 				
-				<a href="#">kitty</a>
+				<a href="#">projects</a>
 				
-				<a href="#">tft</a>
+				<a href="mailto:alina.michelle@me.com">chat</a>
 				
-				<a href="#">responsive</a>
+				<a href="#">resume</a>
 
 				
 				<div class="yellow-1">
@@ -40,7 +40,7 @@
 					<p>.</p>
 				</div>
 
-				<div class="yellow-3">
+				<div class="yellow-3 jiggle">
 					<p>.</p>
 				</div>
 
@@ -48,7 +48,7 @@
 					<p>.</p>
 				</div>
 
-				<div class="green">
+				<div class="green jiggle">
 				</div>
 			</section>
 
