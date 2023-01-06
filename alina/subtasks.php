@@ -93,36 +93,24 @@ $sections = [
 		<?php foreach($section["tasks"] as $task) {?>
 		
 		<li> <?=$task?>
+
+
+				<ol class="goal-subtask"> 
+
+					
+					<?php foreach($section["tasks"][$subtasks] as $subtask) {?>
+
+						<li> <?=$subtask?></li>
+						<?php }?>
+				</ol>
+				
 		</li>
+
 	<?php }?>
 	</ol>
 </div>
 
 <?php } ?>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php include("footer.php")?>
 
 

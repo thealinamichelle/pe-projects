@@ -377,6 +377,25 @@ footer a {
 
 
 
+@media (prefers-reduced-motion) { 
+
+	.dog svg {
+		animation: none;
+	}
+
+	.footer-links:hover {
+		text-decoration: none;
+		animation: colorchange 5s ease 1 alternate;
+	}
+
+	a:hover, .jiggle:hover {
+		text-decoration: underline;
+		animation: none;
+
+	}
+
+}
+
 
 /*GOALS PAGE*/
 
@@ -396,30 +415,17 @@ footer a {
 	padding: 2px 0;
 }
 
+.goal-tasks li li {
+
+	padding: 0px 10px;
+}
+
 .goal-title {
 	font-weight: bold;
 	padding: .2rem 0;
 }
 
 
-@media (prefers-reduced-motion) { 
-
-	.dog svg {
-		animation: none;
-	}
-
-	.footer-links:hover {
-		text-decoration: none;
-		animation: colorchange 5s ease 1 alternate;
-	}
-
-	a:hover, .jiggle:hover {
-		text-decoration: underline;
-		animation: none;
-
-	}
-
-}
 
 
 
