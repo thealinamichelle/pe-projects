@@ -3,9 +3,9 @@
 		<meta name="viewport" content="width">
 		<meta name="viewport" content="width=device-width, intial-scale=1">
 
-		<title>[[insert title]]</title>
-		<meta name="description" content="[[insert description]]">
-		<meta property="og:image" content="images/default.png">
+		<title>alina michelle</title>
+		<meta name="description" content="Alina Michelle web developer">
+		<meta property="og:image" content="https://peprojects.dev/alpha-6/alina/images/alina-default.jpg">
 
 		<link rel="stylesheet" href="css/style.css">
 
