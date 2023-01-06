@@ -62,21 +62,21 @@ main {
 
 .dog svg:hover{
 
-		animation: boop .7s infinite;
+	animation: boop .7s infinite;
 }
 
 @keyframes boop {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 
@@ -122,8 +122,8 @@ main {
 @media (min-width:550px) {
 
 
-.alina-svg {
-	grid-column:1/span 4;
+	.alina-svg {
+		grid-column:1/span 4;
 /*	grid-row:1; 
 	z-index: 10;
 	height: 200px;
@@ -133,12 +133,12 @@ main {
 	max-width: 400px;*/
 }
 
-	.blue {
-		grid-area: 1/ 1 / 4/ 5;
-		opacity: 1;
-		background: linear-gradient(rgba(249, 198, 81, 0) 0%, rgba(249, 198, 81, 0) 20%, rgba(249, 198, 81, 1.00), rgba(203, 221, 239, 1.00) 20%, rgba(203, 221, 239, 1.00) 75%, rgba(203, 221, 239, 0) 75%, rgba(203, 221, 239, 0) 100%);
-	}
-
+.blue {
+	grid-area: 1/ 1 / 4/ 5;
+	opacity: 1;
+	background: linear-gradient(rgba(249, 198, 81, 0) 0%, rgba(249, 198, 81, 0) 20%, rgba(249, 198, 81, 1.00), rgba(203, 221, 239, 1.00) 20%, rgba(203, 221, 239, 1.00) 75%, rgba(203, 221, 239, 0) 75%, rgba(203, 221, 239, 0) 100%);
+}
+}
 
 .blue-footer p {
 	opacity: 0;
@@ -204,7 +204,7 @@ main {
 li, a {
 
 	font-family: 'Playfair Display', serif;
-	font-size: 1rem;
+	font-size: 2rem;
 	color: white;
 	text-decoration: none;
 }
@@ -213,13 +213,12 @@ li, a {
 .info {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.2rem;
-/*	font-weight: bold;*/
-grid-column: 2/span 3;
-grid-row: 3;
-color: #115373;
-align-self: start;
-padding-left: 3px;
-align-self: end;
+	grid-column: 2/span 3;
+	grid-row: 3;
+	color: #115373;
+	align-self: start;
+	padding-left: 3px;
+	align-self: end;
 }
 
 
@@ -280,11 +279,11 @@ footer a {
 	font-family: 'Source Sans Pro', sans-serif; 
 	grid-area: ender;
 /*	font-weight: bold;*/
-	font-size: 30px;
-	color: #03193B;
-	text-decoration: none;
-	place-self: center;
-	padding: 10px 10px 0 10px;
+font-size: 30px;
+color: #03193B;
+text-decoration: none;
+place-self: center;
+padding: 10px 10px 0 10px;
 }
 
 a, .jiggle {
@@ -331,50 +330,50 @@ footer a {
 
 
 @keyframes colorchange {
-  0%, 100% {
-    background-color: #E33300;
-    color:#F7F7E9
-  }
-  10% {
-    background-color: #B4416E ;
-  }
-    20% {
-    background-color: #B98CEA ;
-  }
-    30% {
-    background-color: #84A4E3 ;
-  }
-    40% {
-    background-color: #518FD3 ;
-  }
-    50% {
-    background-color: #115373;
+	0%, 100% {
+		background-color: #E33300;
+		color:#F7F7E9
+	}
+	10% {
+		background-color: #B4416E ;
+	}
+	20% {
+		background-color: #B98CEA ;
+	}
+	30% {
+		background-color: #84A4E3 ;
+	}
+	40% {
+		background-color: #518FD3 ;
+	}
+	50% {
+		background-color: #115373;
 
-  }
-    60% {
-    background-color: #022D2B;
-
-
-}}
+	}
+	60% {
+		background-color: #022D2B;
 
 
+	}}
 
 
 
-footer a:nth-of-type(1) {
-	grid-row: 1;
-	grid-column: 19;
-}
 
-footer a:nth-of-type(2) {
-	grid-row: 1;
-	grid-column: 20;
-}
 
-footer a:nth-of-type(3) {
-	grid-row: 1;
-	grid-column: 21;
-}
+	footer a:nth-of-type(1) {
+		grid-row: 1;
+		grid-column: 19;
+	}
+
+	footer a:nth-of-type(2) {
+		grid-row: 1;
+		grid-column: 20;
+	}
+
+	footer a:nth-of-type(3) {
+		grid-row: 1;
+		grid-column: 21;
+	}
 
 
 
@@ -405,20 +404,20 @@ footer a:nth-of-type(3) {
 
 @media (prefers-reduced-motion) { 
 
-.dog svg {
-	animation: none;
-}
+	.dog svg {
+		animation: none;
+	}
 
-.footer-links:hover {
-	text-decoration: none;
-	animation: colorchange 5s ease 1 alternate;
-}
+	.footer-links:hover {
+		text-decoration: none;
+		animation: colorchange 5s ease 1 alternate;
+	}
 
-a:hover, .jiggle:hover {
-	text-decoration: underline;
-	animation: none;
+	a:hover, .jiggle:hover {
+		text-decoration: underline;
+		animation: none;
 
-}
+	}
 
 }
 
