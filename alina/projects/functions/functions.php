@@ -1,3 +1,23 @@
+<?php 
+?>
+
+
+
+
+<?php 
+
+	// function can-be-any-name() {
+	// 	echo 2+2;
+	// }
+// the () will tell it to run the code
+
+?>
+
+
+
+
+
+
 
 <ol class="monster-list">
 

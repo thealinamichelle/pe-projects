@@ -12,6 +12,112 @@
 - [] git commit
 
 
+<?php
+
+// defining a function
+function functionName() {
+	// mini program to run
+	echo "functionName was invoked.";
+}
+
+// PHP lovers often write their function and variable names with underscores
+// function_name
+
+// "running" or "calling" or "invoking" the function goes like this:
+functionName();
+
+// So, in their most simple form: -
+// functions are encapsulated programs that can be called upon
+// - at a later time - and run as many times as desired
+
+function totalBreakfast() {
+	$coffee = 3;
+	$muffin = 4;
+	$total = $coffee + $muffin;
+	echo "Total: $total";
+}
+
+totalBreakfast(); // would print "Total: 7" to the screen
+
+
+201
+
+
+What is "variable scope"?
+Variables have a limited "scope", or "places from which they are accessible". Just because you wrote $foo = 'bar'; once somewhere in your application doesn't mean you can refer to $foo from everywhere else inside the application. The variable $foo has a certain scope within which it is valid and only code in the same scope has access to the variable.
+
+How is a scope defined in PHP?
+Very simple: PHP has function scope. That's the only kind of scope separator that exists in PHP. Variables inside a function are only available inside that function. Variables outside of functions are available anywhere outside of functions, but not inside any function. This means there's one special scope in PHP: the global scope. Any variable declared outside of any function is within this global scope.
+
+
+
+		<?php 
+
+	$sample = 18; 
+	$bob = 3;
+
+
+// function double($test) {
+// 	echo $test * 2;
+// }
+// 	double($sample);
+
+function mary($sal) {
+	echo $sal * 2; 
+}
+
+	mary($bob);
+
+
+	// in this function $sal has an default value of 1
+	// "echo $sal * 2" is equivalent 1 x 2= 2
+	// mary($bob) the $bob will refers to the variable $bob
+	// mary($bob) runs the same functions at mary($sal) but outside of the scope of mary($sal)
+	// unclear why mary($bob) is echoed and not both mary($sal) and mary($bob)
+	// ITS PRE-WRITTEN INSTRUCTIONS OOOOOH
+
+	// TERMS:
+			//function function-name (parameter) {}
+			// function-name(argument) {}
+?>
+
+
+
+
+<?php 
+
+	// function can-be-any-name() {
+	// 	echo 2+2;
+	// }
+// the () will tell it to run the code
+
+?>
+
+
+
+
+
+Watch the video!
+I did try them :slightly_smiling_face: . The betting example really through me for a loop and I had to reach out for help because I was struggling to follow. Miguel and I deconstructed the example to get a bitter understanding of a function and all it's parts:
+I'm not sure how long the video alone took me to get through. I started the video around 1:30pm, Took a break to eat late lunch, reached out to Miguel at 4pm and was in a huddle with him and Derrick for 2 15mins. After that I stepped away from PE stuff for the day. Today I spent about another 45 mins on the video. 
+
+
+Where can you use PHP?
+- Well I know PHP is helpful in diving up the websites into smaller more readable parts, and keeping certain areas more consistent.
+- I honestly can't remember the projects we discussed during the consolidation meeting. 
+- At least for my own personal website, arrays, foreach loop and functions would be helpful increating snapshops of my projects.
+- for each and functions seem to have a few use cases for generating visual stuff. Like rotating through a color set on divs...you could probably even have svgs that appear in different colors in different places without having to insert that svg into the html document again and again.
+- ooooh include svg files away from the html document! Oh man that makes me happy. 
+
+Look for some use-cases in the wild
+So the first two actually look like they use javascript but there could be PHP too. 
+
+1. DoTimely's client database system. Pulling data on clients and using that information in the calendar. These are on two seperate pages. 
+2. DoTimely's header is the same across multiple pages.
+3. Etsy taking seller entered information and presenting it in a uniform manner.
+
+
+
 ---------------------------------------------------------------------------
 ##1/3/23
 
