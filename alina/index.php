@@ -30,7 +30,7 @@
 				
 				<a href="mailto:alina.michelle@me.com">chat</a>
 				
-				<a href="#">resume</a>
+				<a href="resume.php">resume</a>
 
 				
 				<div class="yellow-1">

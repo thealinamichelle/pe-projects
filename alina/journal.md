@@ -6,7 +6,8 @@
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
-- [] resume page
+- [x] do a form
+- [x] resume page
 - [] do a form
 - [] style-guide page
 - [] do a form
