@@ -8,19 +8,27 @@
 - [x] Stand Up
 - [x] do a form
 - [x] resume page
+- [x] do a form
+- [x] style-guide page
 - [] do a form
-- [] style-guide page
-- [] do a form
-- [] projects page
+- [x] projects page
 - [] all the forms
 - [] Milestones
-- [] goals page
-- [] git commit
+- [x] goals page
+- [x] git commit
 - [] problem solve subtasks
 - [] css textures
+- [] add github to website
+
+
+-layout gardon
+-responsive challenge
+- monster adoption
+-mock client
 
 - Form feedbacks:
 - Emily: your strength is obviously consistency and understanding of the tools. The area I would like to see growth is in the design itself. You have made such awesome affinity drawings and collect really great style tiles. I would love to see that design carried into your site, or the visual design reflect your background. That way I am not just reading about it, but also feeling it. 
+- Jess: your website copy is super clear. It just seems like you need to set a meeting with Derrick and work on puting all the knowledge and skills you have into your site. 
 
 ---------------------------------------------------------------------------
 ##1/4/23

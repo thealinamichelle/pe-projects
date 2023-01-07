@@ -1,11 +1,72 @@
+<?php
+
+$menuitems = [
+	
+	[ 
+		"link-name" => "writing",
+		"url" => "'https://alinamichelle.substack.com/' target='substack'"
+	], 
+
+	[ 
+		"link-name" => "style&nbsp;guide",
+		"url" => "'style-guide.php'"
+	], 
+
+
+	[
+		"link-name" => "resume",
+		"url" => "'resume.php'"
+	], 
+
+
+
+	[
+		"link-name" => "chat",
+		"url" => "'mailto:alina.michelle@me.com'"
+	], 
+
+
+	[ 
+		"link-name" => "work",
+		"url" => "'projects.php'"
+	], 
+
+	[ 
+		"link-name" => "goals",
+		"url" => "'goals.php'"
+	], 
+
+
+	[ 
+		"link-name" => "home",
+		"url" => "'index.php'"
+	],
+
+];
+
+
+?>
+
+
+
+
+
+
+
+
 </main>
-	<footer>
+<footer>
 
-				<a href="index.php" class="footer-links">home</a>
-				<a href="#" class="footer-links">art</a>			
-				<a href="#" class="footer-links">cake</a>
+	<?php 
+	foreach($menuitems as $menuitem) { ?>
 
-				<div class="blue-footer"><p>.<p></div>
-			</footer>
-	</body>
-	</html>
+
+		<div class="footer-color-box"> 
+			<a href=<?= $menuitem["url"] ?> class="footer-links"><?= $menuitem["link-name"];?></a>
+		</div>
+
+
+	<?php } ?>
+</footer>
+</body>
+</html>

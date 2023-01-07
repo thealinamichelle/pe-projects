@@ -26,7 +26,7 @@
 				
 				<a href="https://peprojects.dev/alpha-6/alina/goals.php">goals</a>
 				
-				<a href="#">work</a>
+				<a href="projects.php">work</a>
 				
 				<a href="mailto:alina.michelle@me.com">chat</a>
 				

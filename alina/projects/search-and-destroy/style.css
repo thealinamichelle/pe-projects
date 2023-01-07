@@ -105,9 +105,9 @@
 	@font-face { font-family: polarbandfront; src: url('webfontkit/polarbandfront.woff'); } 
 	@font-face { font-family: albra; src: url('albra_text_regular-webfont.woff'); } 
 	@font-face { font-family: albramedium; src: url('albra_medium-webfont.woff'); } 
-html * {
+/*html * {
 	border: 1px red solid;
-}
+}*/
 
 
 
@@ -178,10 +178,6 @@ html * {
 	.project {
 		height: 750px;
 		padding-top: 40px;
- 		/*display: flex;*/
- 		/*flex-direction: column;*/
- 		/*background: grey;*/
-
 	}
 
 
