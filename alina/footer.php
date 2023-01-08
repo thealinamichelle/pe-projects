@@ -1,9 +1,7 @@
 </inner-column>
 </main>
-<footer>
-<?php include("navigation.php") ?>
+<footer class="bumper">
 
-</inner-column>
 </footer>
 </body>
 </html>

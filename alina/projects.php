@@ -1,4 +1,5 @@
 <?php include("header.php")?>
+<?php include("sub-page-nav.php") ?>
 <?php 
 
 $sections = [

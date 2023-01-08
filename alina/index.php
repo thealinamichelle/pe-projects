@@ -1,12 +1,12 @@
 <?php include("header.php") ?>
 
-
+<nav-yellow-index>
 <section class="home-grid">
 			
 			<section class="visuals">
 				<?php include("alina-new-svg.php")?>
 
-					<div class="blue"><p>.</p>
+					<div class="title-blue-square invisible-period"><p>.</p>
 					</div>
 
 				
@@ -22,7 +22,7 @@
 				a dog walker and trainer turned web developer. 
 			</section>
 		
-			<section class="projects">
+			<section class="index-cards">
 				
 				<a href="https://peprojects.dev/alpha-6/alina/goals.php">goals</a>
 				
@@ -33,27 +33,25 @@
 				<a href="resume.php">resume</a>
 
 				
-				<div class="yellow-1">
+				<div class="yellow-1 invisible-period">
 					<p>.</p>
 				</div>
-				<div class="yellow-2">
-					<p>.</p>
-				</div>
-
-				<div class="yellow-3 jiggle">
+				<div class="yellow-2 invisible-period">
 					<p>.</p>
 				</div>
 
-				<div class="red-1">
+				<div class="yellow-3 jiggle invisible-period">
 					<p>.</p>
 				</div>
 
-				<div class="green jiggle">
+				<div class="red-1 invisible-period">
+					<p>.</p>
+				</div>
+
+				<div class="green jiggle invisible-period">
 				</div>
 			</section>
 
 				</section>
-
-
-
-<?php include("footer.php")?>
+</nav-yellow-index>
+<?php include("footer-index.php") ?>
