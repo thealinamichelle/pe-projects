@@ -16,15 +16,9 @@
 - [] Milestones
 - [x] goals page
 - [x] git commit
-- [] problem solve subtasks
+- [] problem solve subtasks kinda?
 - [] css textures
 - [] add github to website
-
-
--layout gardon
--responsive challenge
-- monster adoption
--mock client
 
 - Form feedbacks:
 - Emily: your strength is obviously consistency and understanding of the tools. The area I would like to see growth is in the design itself. You have made such awesome affinity drawings and collect really great style tiles. I would love to see that design carried into your site, or the visual design reflect your background. That way I am not just reading about it, but also feeling it. 
