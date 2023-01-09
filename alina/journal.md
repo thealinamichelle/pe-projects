@@ -1,8 +1,27 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
-
 ---------------------------------------------------------------------------
-##1/4/23
+##1/7/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] add github to website
+- [x] Filling out my resume page
+- [x] fixing my footer for mobile
+- [] linking out the projects page
+- [x] refining the css style naming
+- [] do a form
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+
+- Form feedbacks:
+- Emily: your strength is obviously consistency and understanding of the tools. The area I would like to see growth is in the design itself. You have made such awesome affinity drawings and collect really great style tiles. I would love to see that design carried into your site, or the visual design reflect your background. That way I am not just reading about it, but also feeling it. 
+- Jess: your website copy is super clear. It just seems like you need to set a meeting with Derrick and work on puting all the knowledge and skills you have into your site. 
+---------------------------------------------------------------------------
+##1/6/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up

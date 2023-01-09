@@ -68,8 +68,14 @@ $academy = [
 	"accomplishments" => "President’s List:  2008, 2011, 2013<li>Dean’s List: 2009, 2014</li>",
 ];
 
+$PE = [
+	"name" => "Perpetual Education",
+	"years" => "September 2022 - Current",
+	"accomplishments" => "This website!",
+];
+
    
-$education = [$college, $academy];
+$education = [$college, $academy, $PE];
 
 
 
@@ -79,7 +85,13 @@ $education = [$college, $academy];
 ?>
 
 
+<?php
 
+
+$skills =[
+	 "Affinity Designer", "Google Sheets", "Adobe Photoshop", "Adobe Illustrator", "Desiging ethical training frameworks to support peers and create positive social structures.", " Animal training with applied behavioral analysis and classical conditioning.", "Painting in traditional mediums"]
+
+?>
 
 
 
@@ -89,8 +101,36 @@ $education = [$college, $academy];
 
 <section class="inner-column">
 
+<div class="Skills">
+	<h2 class="card-title">Skills</h2>
+				<div class="resume-card card">
+
+	<?php
+
+
+	foreach ($skills as $skill) {?>
+
+
+
+
+				
+				<ol class="resume-details">
+					<li> 
+						<?=$skill?>
+					</li> 
+				
+				</ol>
+					<?php } ?>
+			</div>
+
+
+	</div>
+
+
+
+
 		<div class="employment">
-		<h2 class="card-title">Skills</h2>
+		<h2 class="card-title">Education</h2>
 
 
 	<?php foreach ($education as $school) {
@@ -122,46 +162,7 @@ $education = [$college, $academy];
 	<?php } ?>
 	</div>
 
-<div class="education">
-	<h2 class="card-title">Education</h2>
 
-	<?php
-
-
-	foreach ($employement as $job) {
-
-		 	$name = $job["name"];//"name of employer",
-		 	$years = $job["years"];//"years",
-		 	$jtitle = $job["job title"];//"job title",
-		 	$jdone = $job["accomplishments"];//"accomplishments" - your strongest, most relevant accomplishments.
-				//Lead with strong action verbs and follow with an accomplishment rather than a task
-				//Employers are interested in what you’ve achieved, not just the tasks you’ve done. When possible, use numbers to measure your success.
-
-		 	?>
-
-
-
-			<div class="resume-card card">
-				<h3><?=$name?></h3>
-				
-				<ol class="resume-details">
-					<li> 
-						<?=$years?>
-					</li> 
-				
-					<li> 
-						<?=$jtitle?>
-					</li> 
-
-					<li> 
-						<?=$jdone?>
-					</li> 
-				
-				</ol>
-			</div>
-
-	<?php } ?>
-	</div>
 
 <div class="employment">
 		<h2 class="card-title">Employment</h2>
