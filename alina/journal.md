@@ -5,6 +5,81 @@
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
+- [] fixing my footer for mobile
+- [] linking out the projects page
+- [] do a form
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] PHP lessons for programmers
+
+
+### Exercises for programers - tip calculator
+- "gathering requirements" figuring out what featurs the program should have
+
+Examples of questions: 
+- what formula do you want to use? 
+	- unknown
+- How should the tip be calculated?
+	- total x tip
+
+- what is the tip percentage
+	- 20%
+- what should display at start up
+	- name of the tip app, input forms
+
+- what should display for output
+	- total, total of tip and total with tip
+
+
+problem statment:
+example: Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip and then display both the tip and the total amount of the bill. 
+
+example output: 
+What is the bill? $200
+What is the tip percentage? 15
+The tip is $30.00
+The total is $230.00
+
+Large programs: break down into component parts to make them easier to manage.
+
+Code that is planned, tested, documented is easier to maintain or extend.
+
+Every program has INPUTS, PROCESS, OUTPUT
+
+example: nouns = inputs/outputs, verbs = process
+
+Inputs: bill amount, tip rate Processes: calculate the tip Outputs: tip amount, total amount
+
+
+
+TEST DRIVEN DEVELOPMENT 
+
+Inputs: bill amount, tip rate Processes: calculate the tip Outputs: tip amount, total amount
+
+Develop 4 test plan for each program
+
+
+Psuedo code: Inputs: bill amount, tip rate Processes: calculate the tip Outputs: tip amount, total amountInputs: bill amount, tip rate Processes: calculate the tip Outputs: tip amount, total amount.
+
+
+Can you write out the syntax of a function on paper and label all the parts?
+
+	function functionname (variable-standin) {
+		code goes here
+	};
+
+PHP PRACTICE
+
+
+---------------------------------------------------------------------------
+
+##1/7/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
 - [x] add github to website
 - [x] Filling out my resume page
 - [x] fixing my footer for mobile
