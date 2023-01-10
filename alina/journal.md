@@ -74,6 +74,20 @@ Can you write out the syntax of a function on paper and label all the parts?
 PHP PRACTICE
 
 
+Here’s a useful built-in function. It has 4 parameters. The number to work with, the number of decimal places, the character to use as the decimal, and the character to visually denote breaks for thousands.
+
+number_format($total, 2, ".", ",");
+
+
+foreach notes:
+	foreach (guitars and guitar) {
+		echo "guitar/n";
+	}
+
+	You can create a line break with the mysterious “Backslash.”
+	However, we find very few reasons to do so. It’s good to know how though!
+	Think “weird slash + n for new line.”
+
 ---------------------------------------------------------------------------
 
 ##1/7/23

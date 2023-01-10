@@ -7,12 +7,12 @@
 
 
 $bill = -2;
-$visbill = "$" . $bill ;
+$prettybill = "$" . $bill ;
 $percentage = .20;
-$visperc = $percentage * 100 . "%";
+$prettyperc = $percentage * 100 . "%";
 $tip = $bill * $percentage;
-$subtotal = $tip + $bill;
-$total = "$" . $subtotal;
+$total = $tip + $bill;
+$prettytotal = number_format($total, 2, ".", ",");
 
 
 ?>
@@ -37,16 +37,26 @@ $total = "$" . $subtotal;
 <div style="background-color: lightgrey">
 <h3>A HANDY DANDY TIP APP</h3>
 <ul>
-<li><?= "Bill: " . "$visbill";?></li>
-<li><?= "Tip percentage: " . $visperc;?></li>
-<li><?= "Total: " . "$total";?></li>
+<li><?= "Bill: " . "$prettybill";?></li>
+<li><?= "Tip percentage: " . $prettyperc;?></li>
+<li><?= "Total: " . "$prettytotal";?></li>
 <ul>
 
 </div>
 
 
 
+<div>
+<?php 
 
+$sandwhich = 6.99;
+$tax = 0.10;
+$total = $sandwhich + ($sandwhich * $tax);
+$prettytotal = number_format($total, 2, ".", ",");
+
+echo $prettytotal;
+?>
+</div>
 
 
 
