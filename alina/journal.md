@@ -7,7 +7,292 @@
 - [x] Stand Up
 - [] fixing my footer for mobile
 - [] linking out the projects page
-- [] do a form
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] PHP lessons for programmers
+
+
+
+
+
+### PHP AEROBICS NOTES
+
+#### STYLING
+- Adds a space or a line break:
+- - "\n\r"
+Adds an S to variable within a string
+- - "this is how {$variable}s you write it"
+
+
+#### NUMBER FORMAT
+		$prettytotal = number_format($total, 2, ".", ",");
+
+#### ROUNDING
+		$box = (round($berriesPerPerson / $perperson, 2));
+
+#### MULTIPLYING
+		$total = $people * $totalbox;
+
+
+
+
+#### FOR LOOPS
+//for (setup variable//)
+//initializing the variable, testing the variable, increment the variable
+//starts at 0, smaller than 10? yes then run the code
+//++ adds one each loop
+//-- takes one away
+
+		for ($dogs = 1; $dogs <= 20; $dogs++) {
+			echo "<li>$dogs</li>";
+		}
+
+#### IF LOOPS WITH FOR LOOPS
+- A numbered loop under 34 except 12, 17, 23
+
+		$max = 34; // SETS THE MAX NUMBER
+		for ($i = 0; $i < $max; $i = $i + 1) {
+			if ($i != 12 and $i != 17 and $i != 23){
+							echo $i ;
+			}}
+		
+
+- Anumbered loop under only under 20
+
+		$numbers = [2,3, 33, 67, 35, 9, 11, 8];
+		foreach ($numbers as $number) {
+		
+			if ($number < 20) {
+			echo "$number, ";
+		
+			}
+		}
+
+### PSUEDO CODE NOTES
+
+#### TIP Calculator
+
+##### Questions:
+	What should be displayed when the program starts/ends?
+	What inputs from the the user do you need?
+	A standard or scalable tip amount?
+	What outputs?
+	What style should the outputs be in?
+
+	What currency?
+	Non-numbered inputs, negative numbers, 3+ decimals generate what output?
+
+##### Problem Statement:
+	example: Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip and then display both the tip and the total amount of the bill. 
+
+
+#### Saying Hello
+
+
+Requirements: 
+	Program needs to prompt for my name then greet me using my name. 
+Constraint: 
+	Keep the input, string concatenation, and output separate.
+Questions: 
+	Keep them in separate files/programs? What does the constraint mean?!
+
+Pre-storage: greeting message 
+Input: name
+Output: greeting
+Process: Inserting name into greeting, storing name
+
+		At the start of the program display “What is your name?”
+		Store the name in the name file and store in short term memory.
+		Greeting file contains the message: “{{name}} Hello, {{name}}, nice to meet you!”
+		Insert name into greeting. 
+		Display the greeting message. 
+
+#### Counting the Numbers of Characters
+
+Input: string
+Output: display output of string and number of characters it contains
+Process: initiating counting, counting numbers in string
+
+Testing
+- inputs numbers - proceed
+- special characters - proceed
+- nothing - displays a message that "nothing is the number count, but that it's something is better than nothing. So there should be something in the input". 
+- max number of characters? - max number based off of 10% under max computing power.
+
+Displays a request for input of garbledygook of letters/words/numbers and a start switch.
+Name is stored somewhere.
+Start switch initiates:
+Read the garbledygook.
+Count the individual characters in garbledygook. 
+Displays number of characters. 
+
+#### Printing Quotes
+example output: What is the quote? These aren't the droids you're looking for. Who said it? Obi-Wan Kenobi Obi-Wan Kenobi says, "These aren't the droids you're looking for."
+
+Constraints: non-applicable to psuedo-code
+
+Input: author, quote
+Output: author says "inputted string surrounded by quotes"  
+Process: insert author and quote with "says", surround string with quotes. 
+
+Testing:
+Inputs quotes - if quotes are detected at the begining and end of the string prompt user to remove them. 
+Print if user chooses the option to ignore. 
+Numbers are inputed - proceed as normal
+No input - request input.
+
+Display: What is the quote? 
+Recieve quote input.
+Store quote input somewhere. 
+Display Who said it?
+Recieve author input.
+Store author input somewhere. 
+Retrieve quote.
+Read quote and look for "" at the start and end. 
+- If detected ask user permission to remove. 
+- - If yes remove start and end "" and proceed. 
+- - If no ignore start and end "" 
+Retrieve author.
+Retrieve filler text ", says"
+Ignore double quotes and display: author says , " quote input" 
+Stop ignore double quotes. 
+
+#### MadLib 
+
+requirements:for a noun, a verb, an adverb, and an adjective and injects those into a story that you create.
+
+Testing: 
+enters a wrong input such as a non-noun into noun input: ignore use it anyways, it's fun.
+missed input: requested input
+missed same input 3 times: 
+- store filled inputs somewhere
+- retrieve snarky madlib file about impatient users
+- display snarky madlib
+- display large prompt to go back to users stored madlib.
+leaves before end of madlib -
+store each madlib input entry somewhere immediately 
+
+Input: a noun, a verb, an adverb, and an adjective
+Output: story with strings
+Process: inserting strings into story
+
+
+Pre-Storage: Story with spaces for noun, verb, adjective, and adverbs.
+Seperate databases for noun, verb, adjective, and adverb.
+Display request for a noun, verb, adjective, and adverb.
+As typed:
+	Store verb input in verb section database. 
+	Store adverb input in verb section database. 
+	Store adjective input in verb section database. 
+	Store noun input in verb section database. 
+Submit initiates: 
+	Retrieve story. 
+	Retrieve verb. 
+	Retrieve adverb.
+	Retrieve adjective.
+	Retrieve noun.
+	Insert noun into noun spaces. 
+	Insert verb into verb  spaces. 
+	Insert adjectives into adjectives spaces. 
+	Insert adverb into adverb spaces. 
+	Display new story.
+
+
+#### Simple Math
+
+Requirements: 
+sum/ addiion
+difference / subtraction
+product / multiplication
+quotient / division
+
+Example Output What is the first number? 10 What is the second number? 5
+
+Input: Numbers
+Output: Math
+Process: math
+
+Testing:
+words - 
+	check against database of number words
+	 - if there is a match sub out number
+	 - if no match retrieve and display "that is a not a number" message
+
+Contraints: I'm tired and there are a lot so not today.
+
+
+Request two numerical inputs:
+Store inputs in memory.
+Retrieve inputs:
+Take first input and add to second input. 
+Store result. 
+Take second input subtract it from first input.  
+Store result. 
+Take first input and multiply it to second input. 
+Store result. 
+Take second input and divide it from first input.
+Store result. 
+Retrieve visual display of equations.
+Retrieve results.
+Display visual equations and results. 
+
+
+#### Retirement Calculator
+
+Requirements: a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output as shown in the example that follows.
+
+Example: What is your current age? 25 At what age would you like to retire? 65 You have 40 years left until you can retire. It's 2015, so you can retire in 2055.
+
+Inputs: age, retirment age
+Outputs: display of years left til retirement
+Process: subtract age of retirement from current age. Take result and add it to the current year. 
+
+Testing: It's 1999, and the years to retirement will exceed 1 year. 
+ - Check if the year is stored as 4 numerals. 
+ 	- if yes! great. No issue.
+ 	- If no, panic and tell the user to make a survival bunker. 
+
+ Display request for current age.
+ Store age input. 
+ Display request for age of retirement. 
+ Store retirement input. 
+ Subtract age from age of retirement. 
+ Answer is years til retirement.
+ Store years til retirement. 
+ Retrieve current year.
+ Add answer to current year for year of retirement.
+ Store years til retirement.
+ Retrieve age and current year.
+ Subtract age from current year.
+ If result is greater than or equal to 1980 but lesser than or equal to 1996, and age of retirement is lesser than or equal to 65 proceed to option two. Else go to option one. 
+ If result is greater than or equal to 2011 proceed to option three. 
+ else proceed to option one
+
+ Option One
+ Retrieve age, age of retirement, answer, current year and years til retirement. 
+ Retrieve message and isert age, age of retirement, answer, current year and years til retirement. 
+ Display message: "You have {{years til retirement}} left until you can retire. It's {{current year}}, so you can retire in {{year of retirement}}." 
+
+ Option Two.
+ Retrieve age, age of retirement, answer, current year and years til retirement. 
+ Retrieve message and isert age, age of retirement, answer, current year and years til retirement. 
+ Display message: "Hey there millenial, I know you want to retire in {{years til retirement}}. It's currently {{current year}}, so unless you are already weathly, super lucky, or have a great plan to increase your wealth it's unlikely you'll get to retire by {{year of retirement}}." 
+
+ Option Three:
+ Retrieve age, age of retirement, answer, current year and years til retirement. 
+ Retrieve message and isert age, age of retirement, answer, current year and years til retirement. 
+ Display message: "Hey there whipper snapper, it's both great and scary you are checking how many years you have until retirement. The bad news is you have {{years til retirement}}. The good news is it's only {{current year}}, so you have time to learning some financial literacy now so you can retire in {{year of retirement}}." 
+
+---------------------------------------------------------------------------
+##1/7/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] fixing my footer for mobile
+- [] linking out the projects page
 - [] problem solve subtasks kinda?
 - [] css textures
 - [] git commit
