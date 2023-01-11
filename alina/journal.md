@@ -1,7 +1,7 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-##1/7/23
+##1/10/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
@@ -287,7 +287,7 @@ Testing: It's 1999, and the years to retirement will exceed 1 year.
  Display message: "Hey there whipper snapper, it's both great and scary you are checking how many years you have until retirement. The bad news is you have {{years til retirement}}. The good news is it's only {{current year}}, so you have time to learning some financial literacy now so you can retire in {{year of retirement}}." 
 
 ---------------------------------------------------------------------------
-##1/7/23
+##1/9/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
