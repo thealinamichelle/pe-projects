@@ -1,0 +1,28 @@
+@import "resets.css";
+
+/*SITE WIDE STYLING*/
+
+body {
+		background: lightblue;
+		color: red;
+	}
+
+
+/*	CONTENT STYLING*/
+
+	h1 {
+		font-family: helvetica;
+		/*min. font size 36px, max 72px; start scaling @ 320px vw, stop at 960 vw, clamp(2.25rem,5.625vw + 1.125rem,4.5rem)*/
+		font-size: clamp(2.25rem,5.625vw + 1.125rem,4.5rem);
+		letter-spacing: .09rem;
+		line-height: 5rem;
+	}
+
+	p, li, a {
+
+		font-family: garamond;
+		font-size: 20px;
+		line-height: 1.5rem;
+		letter-spacing: .09rem;
+
+	}
