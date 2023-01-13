@@ -1,7 +1,7 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-##1/10/23
+## 1/12/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
@@ -13,6 +13,39 @@
 - [] Milestones
 - [] fix personal portal
 - [] PHP lessons for programmers
+- [] forms lesson
+- [] practice lesson
+- [x] edit base files
+
+
+### Input types lesson
+
+- input is a self closing tag in html
+<input> or <input />
+
+- forms and their inputs and labels utilize attributes:
+- - example: type= "number"
+
+- html can send forms to other systems
+- - for PHP style forms:
+- - - <input type="number" name="berries">
+- - -  Each input gets a name and that is used as the key in the submitted Array of content. “POST” means you are sending data to the server vs. requesting it.
+
+- value attribute represents the data but also often the visual content as well
+
+---------------------------------------------------------------------------
+## 1/10/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] fixing my footer for mobile
+- [] linking out the projects page
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [x] PHP lessons for programmers
 
 
 
