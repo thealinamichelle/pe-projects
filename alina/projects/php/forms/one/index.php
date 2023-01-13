@@ -22,6 +22,7 @@
 
 $age = 0;
 $ageOfRetire = 0;
+$message = false;
 
 if (isset($_POST["sub"]) ) {
 
@@ -44,21 +45,24 @@ $year = date("Y");
 $gen = floatval($year) - floatval($age);
 $yearOfRetire = floatval($yearsTil) + floatval($year);
 
-if ($gen > 1980 and $gen < 1996 and $ageOfRetire < 70){
+if ($gen >= 1980 and $gen <= 1996 and $ageOfRetire < 70){
 
-$message = "Hey there millennial, I know you want to retire in $yearsTil years. It's currently $year, so unless you are already wealthy, super lucky, or have a great plan to increase your wealth it's unlikely you'll get to retire by $yearOfRetire. this is the gen $gen";
+$message = "Hey there millennial, I know you want to retire in $yearsTil years. It's currently $year, so unless you are already wealthy, super lucky, or have a great plan to increase your wealth it's unlikely you'll get to retire by $yearOfRetire.";
 }
-if ($gen >= 2011) {
-	$message = "Hey there whipper snapper, it's both great and scary you are checking how many years you have until retirement. The bad news is you have $yearsTil years. The good news is it's only $year, so you have time to learning some financial literacy now so you can retire in $yearOfRetire. this is the gen $gen";
+
+elseif ($gen >= 2011) {
+	$message = "Hey there whipper snapper, it's both great and scary you are checking how many years you have until retirement. The bad news is you have $yearsTil years. The good news is it's only $year, so you have time to learn some financial literacy now so you can retire in $yearOfRetire.";
 }
 else {
 
-	$message = "You have $yearsTil years left until you can retire. It's $year, so you can retire in $yearOfRetire. this is the gen $gen";
+	$message = "You have $yearsTil years left until you can retire. It's $year, so you can retire in $yearOfRetire.";
 }
 
-?>
+}
 
-<?= $message;}?>
+
+
+?>
 
 
 
@@ -81,7 +85,7 @@ else {
 
 </form>
 
-
+<?=$message?>
 
 
 <!-- OUTPUT -->
