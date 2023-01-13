@@ -6,6 +6,7 @@ $sections = [
 		[ 
 		"heading" => "mock client",
 		"url" =>"projects/mock-client.html",
+		"target" => "mock",
 		"works" => [
 			"<picture><img src='project-preview/mock-client.png'></picture>",
 			"project description",			
@@ -13,7 +14,8 @@ $sections = [
 		], 
 				[ 
 		"heading" => "research and destroy",
-		"url" =>"mock-client.html",
+		"url" =>"projects/search-and-destroy/index.html",
+		"target" => "destroy",
 		"works" => [
 			"<picture><img src='project-preview/destroy.png'></picture>",
 			"project description",			
@@ -21,7 +23,8 @@ $sections = [
 		],
 				[ 
 		"heading" => "responsive layout",
-		"url" => "",
+		"url" => "projects/responsive-challenge/index.html",
+		"target" => "poo-brain",
 		"works" => [
 			"<picture><img src='project-preview/responsive.png'></picture>",
 			"project description",			
@@ -29,9 +32,19 @@ $sections = [
 		], 
 				[ 
 		"heading" => "monster adoption",
-		"url" => "",
+		"url" => "projects/monsters/index.php",
+		"target" => "monster",
 		"works" => [
 			"<picture><img src='project-preview/monster.png'></picture>",
+			"project description",			
+				]
+		], 
+						[ 
+		"heading" => "PHP forms",
+		"url" => "forms.php",
+		"target" => "",
+		"works" => [
+			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
 			"project description",			
 				]
 		], 
@@ -43,7 +56,7 @@ $sections = [
 
 
 <?php foreach($sections as $section) { ?>
-	<a href="<?=$section["url"]?>"><div class="project-card">
+	<a href="<?=$section["url"]?>" target="<?=$section["target"]?>"><div class="project-card">
 	<h2 class="project-title"> 
 		<?=$section["heading"]?>
 	</h2>
