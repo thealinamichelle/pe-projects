@@ -27,8 +27,7 @@ main {
 
 main section {
 	background: whitesmoke;
-	min-height: 300px;
-	padding: 20px;
+	padding: 5rem 10%;
 }
 
 .inner-column{
@@ -103,11 +102,15 @@ p, li, a {
 
 
 
-/**/
+/*FORM*/
 
 
-
-
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 30rem;
+}
 
 
 
