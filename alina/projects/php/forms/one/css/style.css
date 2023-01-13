@@ -112,7 +112,13 @@ form {
 	max-width: 30rem;
 }
 
-
+.form-control {
+	border: solid 3px red;
+	font-family: system-ui, sans-serif;
+	font-size: 2rem;
+	font-weight:bold;
+	line-height: 1.1;
+}
 
 
 
