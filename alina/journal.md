@@ -1,20 +1,66 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-## 1/12/23
+## 1/13/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [] fixing my footer for mobile
-- [] linking out the projects page
 - [] problem solve subtasks kinda?
 - [] css textures
 - [] git commit
 - [] Milestones
 - [] fix personal portal
-- [] PHP lessons for programmers
-- [] forms lesson
-- [] practice lesson
+- [] E4P
+- [] responsive layout garden!
+
+This allows your to see your forms arrays:
+
+		function show($variable) {
+		//   echo "<pre class='code'>";
+		//     echo "<code>";
+		//       echo print_r( $variable );
+		//     echo "</code>";
+		//   echo "</pre>";
+		// }
+
+Commonly used checked code for forms - used in area calc for radio group
+
+		//function ischecked($v) {
+			//if ($_POST["measurementType"] == $v){
+				//return "checked";
+			//}
+		//}
+
+
+- switch statements
+- "==" probably equals
+- value is the preset in the input or tells it what to return 
+- radio group, 
+- - id tag links it to the for in the label
+- - label can wrap the input
+- - one input needs a checked/not checked
+- - make a group by using the same name
+
+
+
+---------------------------------------------------------------------------
+
+
+## 1/12/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] fixing my footer for mobile
+- [x] linking out the projects page
+- [] problem solve subtasks kinda?
+- [] css textures
+- [x] git commit
+- [] Milestones
+- [] fix personal portal
+- [x] PHP lessons for programmers
+- [x] forms lesson
+- [x] practice lesson
 - [x] edit base files
 
 
