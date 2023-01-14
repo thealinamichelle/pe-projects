@@ -49,6 +49,15 @@ $sections = [//A
 				]//E
 		],//D
 
+		[ //Dfive
+		"heading" => "Madlib",
+		"url" =>"projects/e4p/six/index.php",
+		"works" => [//E
+			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+			"project description",			
+				]//E
+		],//D
+
 	];//A
 ?>
 
