@@ -5,36 +5,36 @@
 $sections = [//A
 		[ //B
 		"heading" => "Retirement Calculator",
-		"url" =>"projects/e4p/one/index.php",
+		"url" =>"projects/e4p/retirement.php",
 		"works" => [//C
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
-			"project description",			
+		
+			"Calculate how many years until retirement.",			
 				]//C
 		], //B
 				[ //D
 		"heading" => "Area of a Rectangular Room",
-		"url" =>"projects/e4p/two/index.php",
+		"url" =>"projects/e4p/area-calc.php",
 		"works" => [//E
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+		
 			"project description",			
 				]//E
 		],//D
 
 		[ //Dthree
 		"heading" => "Hello There",
-		"url" =>"projects/e4p/two/index.php",
+		"url" =>"projects/e4p/hello.php",
 		"works" => [//E
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
-			"project description",			
+		
+			"a greeting from the browser",			
 				]//E
 		],//D
 
 
 		[ //Dfour
 		"heading" => "Character Counting",
-		"url" =>"projects/e4p/two/index.php",
+		"url" =>"projects/e4p/character-counting.php",
 		"works" => [//E
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+		
 			"project description",			
 				]//E
 		],//D
@@ -42,43 +42,73 @@ $sections = [//A
 
 		[ //Dfive
 		"heading" => "Printing Quotes",
-		"url" =>"projects/e4p/five/index.php",
+		"url" =>"projects/e4p/quotes.php",
 		"works" => [//E
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+		
 			"project description",			
 				]//E
 		],//D
 
-		[ //Dfive
+		[ //Dsix
 		"heading" => "Madlib",
-		"url" =>"projects/e4p/six/index.php",
+		"url" =>"projects/e4p/madlib.php",
 		"works" => [//E
-			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+		
 			"project description",			
 				]//E
 		],//D
 
-	];//A
+		[ //Dseven
+		"heading" => "Simple Math",
+		"url" =>"projects/e4p/simple-math.php",
+		"works" => [//E
+		
+			"project description",			
+				]//E
+		],//D
+		[ //Deight
+		"heading" => "Pizza Party",
+		"url" =>"projects/e4p/pizza-party.php",
+		"works" => [//E
+		
+			"project description",			
+				]//E
+		],//D
+		[ //nine
+		"heading" => "Paint Calculator",
+		"url" =>"projects/e4p/paint-calc.php",
+		"works" => [//E
+		
+			"project description",			
+				]//E
+		],//D
+		[ //ten
+		"heading" => "Self Checkout",
+		"url" =>"projects/e4p/self-checkout.php",
+		"works" => [//E
+		
+			"project description",			
+				]//E
+		],//D
+
+	]; //A
 ?>
 
 <section class="projects-page inner-column">
 
 
 <?php foreach($sections as $section) { ?>
-	<a href="<?=$section["url"]?>"><div class="project-card">
-	<h2 class="project-title"> 
-		<?=$section["heading"]?>
-	</h2>
+	<!-- <div class="form-box"> -->
+	<a href="<?=$section["url"]?>">
+		<div class="project-card form-card">
+			
+			<h2 class="project-title"> 
+				<?=$section["heading"]?>
+			</h2>
 
-	<ol class="project-details">
-		<?php foreach($section["works"] as $work) {?>
-		
-		<li> <?=$work?>
-		</li>
-	<?php }?>
-	</ol>
-</div>
-</a>
+
+		</div>
+	</a>
 
 <?php } ?>
 
