@@ -11,7 +11,52 @@
 - [] git commit
 - [] Milestones
 - [] fix personal portal
-- [] E4P
+- [x] form 1: Simple Math (slack)
+- [x] standardize forms
+- [x] pizza party
+- [x] paint calculator
+- [] form 4
+- [] form 5
+- [] make a md file for form review
+- [] review forms
+- [] responsive layout garden!
+
+ASK: Alter the program so that an indeterminate number of items can be entered. The tax and total are computed when there are no more items to be entered.
+
+
+
+---------------------------------------------------------------------------
+## 1/13/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] fixing my footer for mobile
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] form 1
+- [] form 2
+- [] form 3
+- [] make a md file for form review
+- [] review forms
+- [] responsive layout garden!
+
+
+
+---------------------------------------------------------------------------
+## 1/13/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] fixing my footer for mobile
+- [] problem solve subtasks kinda?
+- [] css textures
+- [x] git commit
+- [] Milestones
+- [] fix personal portal
+- [x] E4P
 - [] responsive layout garden!
 
 This allows your to see your forms arrays:
