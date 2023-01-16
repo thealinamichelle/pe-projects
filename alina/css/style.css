@@ -656,8 +656,12 @@
 			align-items: center;
 			background: linear-gradient(90deg, #518FD3 0, #518FD3 33%, #20A7DF 33%, #20A7DF 66%, #115373 0%, #115373 100%);
 		}
-
-
+/*
+.form-card {
+			display: flex;
+			gap: 20px;
+			padding: 2rem;
+		}*/
 
 /*RESUME PAGE*/
 
