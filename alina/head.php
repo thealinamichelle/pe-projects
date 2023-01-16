@@ -8,10 +8,9 @@
 		<meta property="og:image" content="https://peprojects.dev/alpha-6/alina/images/alina-default.jpg">
 
 		<link rel="stylesheet" href="css/style.css">
-
+		<link rel="stylesheet" href="projects/e4p/css/style.css">
 <!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 
 		<style> @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap'); </style>
-
 </head>
