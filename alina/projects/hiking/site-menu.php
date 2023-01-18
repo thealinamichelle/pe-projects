@@ -10,11 +10,6 @@ $menuitems = [
 		"url" => "'?page=list'"
 	], 
 
-	[ 
-		"link-name" => "details",
-		"url" => "'?page=details'"
-	], 
-
 ];
 
 
