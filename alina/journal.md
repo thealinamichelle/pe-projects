@@ -1,11 +1,50 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-## 1/13/23
+## 1/16/23
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+## 1/15/23
+
+- [x] Set Up Journal Entry
+- [] Stand Up
+- [] add learnings from the last few days into the journal
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] form 5
+- [] make a md file for form review
+- [] review forms
+- [] responsive layout garden!
+
+weekend
+group meeting
+4 new forms
+sync forms
+
+today: responsive layot garden
+form review
+
+blockers deploybot, self checkout
+
+ASK: Alter the program so that an indeterminate number of items can be entered. The tax and total are computed when there are no more items to be entered.
+---------------------------------------------------------------------------
+## 1/15/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
-- [] fixing my footer for mobile
+- [x] fixing my footer for mobile(apparently its been fine)
 - [] problem solve subtasks kinda?
 - [] css textures
 - [] git commit
@@ -15,7 +54,7 @@
 - [x] standardize forms
 - [x] pizza party
 - [x] paint calculator
-- [] form 4
+- [x] self-checkout
 - [] form 5
 - [] make a md file for form review
 - [] review forms
@@ -26,7 +65,7 @@ ASK: Alter the program so that an indeterminate number of items can be entered. 
 
 
 ---------------------------------------------------------------------------
-## 1/13/23
+## 1/14/23
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
@@ -184,7 +223,7 @@ Adds an S to variable within a string
 			}}
 		
 
-- Anumbered loop under only under 20
+- A numbered loop under only under 20
 
 		$numbers = [2,3, 33, 67, 35, 9, 11, 8];
 		foreach ($numbers as $number) {
