@@ -12,55 +12,55 @@ function show($variable) {
 }
 
 $message = null;
-$item1 = null;
-$item1Q = 0;
-$item1C = 0;
-$item2 = null;
-$item2Q = 0;
-$item2C = 0;
-$item3 = null;
-$item3Q = 0;
-$item3C = 0;
+$item = null;
+$itemQ = 0;
+$itemC = 0;
+$item = null;
+$itemQ = 0;
+$itemC = 0;
+$item = null;
+$itemQ = 0;
+$itemC = 0;
 $subtotal = null;
-$item1sub = null;
-$item2sub = null;
-$item3sub = null;
+$itemsub = null;
+$itemsub = null;
+$itemsub = null;
 
 if ( isset($_POST["check-submit"]) ) {
 	
 
-	if ( isset($_POST["$item1"]) ) {
-		$item1 = $_POST["item1"];
-		echo $item1;
-	}
-	if ( isset($_POST["$item1Q"]) ) {
-		$item1Q = $_POST["item1Q"];
+	if ( isset($_POST["items"]) ) {
+		$items = $_POST["items"];
 
 	}
-	if ( isset($_POST["$item1C"]) ) {
-		$item1C = $_POST["item1C"];
-	}
+	if ( isset($_POST["items"][0]["Quant"]) ) {
+		$item0Q = $_POST["items"][0]["Quant"];
 
-
-	if ( isset($_POST["$item2"]) ) {
-		$item2 = $_POST["item2"];
 	}
-	if ( isset($_POST["$item2Q"]) ) {
-		$item1Q = $_POST["item2Q"];
-	}
-	if ( isset($_POST["$item3C"]) ) {
-		$item1C = $_POST["item2C"];
+	if ( isset($_POST["items"][0]["Cost"]) ) {
+		$item0C = $_POST["items"][0]["Cost"];
 	}
 
 
-	if ( isset($_POST["$item3"]) ) {
-		$item3 = $_POST["item3"];
+	// if ( isset($_POST["item"]) ) {
+	// 	$item = $_POST["item"];}
+
+	if ( isset($_POST["items"][1]["Quant"]) ) {
+		$item1Q = $_POST["items"][1]["Quant"];
 	}
-	if ( isset($_POST["$item3Q"]) ) {
-		$item1Q = $_POST["item3Q"];
+	if ( isset($_POST["items"][1]["Cost"]) ) {
+		$item1C = $_POST["items"][1]["Cost"];
 	}
-	if ( isset($_POST["$item3C"]) ) {
-		$item1C = $_POST["item3C"];
+
+
+	// if ( isset($_POST["item"]) ) {
+	// 	$item = $_POST["item"];}
+	
+	if ( isset($_POST["items"][2]["Quant"]) ) {
+		$item2Q = $_POST["items"][2]["Quant"];
+	}
+	if ( isset($_POST["items"][2]["Cost"]) ) {
+		$item2C = $_POST["items"][2]["Cost"];
 	}
 
 
@@ -73,38 +73,49 @@ if ( isset($_POST["check-submit"]) ) {
 // tax
 // total
 
-$item1Sub = floatval($item1C) * floatval($item1Q);
-$item2Sub = floatval($item2C) * floatval($item2Q);
-$item3Sub = floatval($item3C) * floatval($item3Q);
 
 
-$subtotal = $item1sub + $item2sub + $item3sub;
+// foreach ($_POST["items"] as $item) {
+// 	echo $item . "<br>";}
+
+
+	
+		
+
+
+
+
+$itemSub = floatval($itemC) * floatval($itemQ);
+$itemSub = floatval($itemC) * floatval($itemQ);
+$itemSub = floatval($itemC) * floatval($itemQ);
+
+$subtotal = $itemSub + $itemSub + $itemSub;
 $total = floatval($subtotal) * 5.5;
 
-$message = " item1 - $item1 the subtotal $subtotal the total $total";
+$message = "the subtotal $subtotal the total $total.";
 
 }
 
 
 ?>
 
-<h1 class="form-title">Self Checkout</h1>
+<h class="form-title">Self Checkout</h>
 
 <form method="POST">
 <div class="item">
-	<label for="item1">Item</label><input type="text" name="item1" value="<?=$item1?>">
-	<label>Quantity</label><input type="number" name="item1Q" min="1" value="<?=$item1Q?>">
-	<label>Cost</label><input type="number" name="item1C" min="0" value="<?=$item1C?>" >
+	<label for="item">Item</label><input type="text" name="items[]" value="<?=$item?>">
+	<label>Quantity</label><input type="number" step=".0" name="items[0][Quant]" min="" value="<?=$itemQ?>">
+	<label>Cost</label><input type="number" step=".0" name="items[0][Cost]" min="0" value="<?=$itemC?>" >
 </div>
 <div class="item">
-	<label>Item</label><input type="text" name="item2"  value="<?=$item2?>">
-	<label>Quantity</label><input type="number" name="item2Q" min="0" value="<?=$item2Q?>">
-	<label>Cost</label><input type="number" name="item2C" min="0" value="<?=$item2C?>">
+	<label>Item</label><input type="text" name="items[]"  value="<?=$item?>">
+	<label>Quantity</label><input type="number" step=".0" name="items[1][Quant]" min="0" value="<?=$itemQ?>">
+	<label>Cost</label><input type="number" step=".0" name="items[1][Cost]" min="0" value="<?=$itemC?>">
 </div>
 <div class="item">
-	<label>Item</label><input type="text" name="item3"  value="<?=$item3?>">
-	<label>Quantity</label><input type="number" name="item3Q" min="0" value="<?=$item3Q?>">
-	<label>Cost</label><input type="number" name="item3C" min="0" value="<?=$item3C?>">
+	<label>Item</label><input type="text" name="items[]"  value="<?=$item?>">
+	<label>Quantity</label><input type="number" step=".0" name="items[2][Quant]" min="0" value="<?=$itemQ?>">
+	<label>Cost</label><input type="number" step=".0" name="items[2][Cost]" min="0" value="<?=$itemC?>">
 </div>
 
 
@@ -112,9 +123,33 @@ $message = " item1 - $item1 the subtotal $subtotal the total $total";
 	
 	<section class="result">
 		<p>
-			<?=$message?>
+			<ul>
+				<li>Item One:<?=$item?></li>
+				<li>Item Two:<?=$item?></li>
+				<li>Item Three:<?=$item?></li>
+				<li>Subtotal:<?=$subtotal?></li>
+				<li>Tax: 5.5%</li>
+				<li>Total:<?=$total?> </li>
+				<li><?=$_POST["item"]["name"]?></li>
 
-			<?php show( $_POST ); ?>
+			</ul>
+<?php show( $_POST );
+
+echo $_Post["items"][0]["Cost"];
+
+
+		// foreach ($_Post["items"][1]["Quant"] as $item){
+		// 	echo "item: $item <br>";
+
+		// 	foreach ($_Post["items"][1]["Cost"] as $cost)
+		// 		echo "name: $cost <br>";
+		// }
+
+
+
+
+?>
+
 		</p>
 	</section>
 </form>
@@ -123,7 +158,7 @@ $message = " item1 - $item1 the subtotal $subtotal the total $total";
 <?php
 // input: prices 
 // quanities
-// requirements: 3 items
+// requirements:  items
 
 
 
@@ -134,8 +169,8 @@ $message = " item1 - $item1 the subtotal $subtotal the total $total";
 	.item {
 		display: flex;
 		flex-direction:column;
-		padding: 1rem 0;
-		gap: .25rem;
+		padding: rem 0;
+		gap: .5rem;
 	}
 
 </style>
