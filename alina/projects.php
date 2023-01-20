@@ -12,7 +12,7 @@ $sections = [
 			"project description",			
 				]
 		], 
-				[ 
+		[ 
 		"heading" => "research and destroy",
 		"url" =>"projects/search-and-destroy/index.html",
 		"target" => "destroy",
@@ -21,7 +21,7 @@ $sections = [
 			"project description",			
 				]
 		],
-				[ 
+		[ 
 		"heading" => "responsive layout",
 		"url" => "projects/responsive-challenge/index.html",
 		"target" => "poo-brain",
@@ -30,7 +30,7 @@ $sections = [
 			"project description",			
 				]
 		], 
-				[ 
+		[ 
 		"heading" => "monster adoption",
 		"url" => "projects/monsters/index.php",
 		"target" => "monster",
@@ -39,9 +39,18 @@ $sections = [
 			"project description",			
 				]
 		], 
-						[ 
+		[ 
 		"heading" => "PHP forms",
 		"url" => "forms.php",
+		"target" => "",
+		"works" => [
+			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+			"project description",			
+				]
+		], 
+		[ 
+		"heading" => "Dog Hiking Recommendations",
+		"url" => "projects/hiking/index.php",
 		"target" => "",
 		"works" => [
 			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
