@@ -17,6 +17,18 @@
 - [] review forms
 - [] responsive layout garden!
 
+Forms- radio
+
+		<div class="radio-row">
+		<label for ="2slices">
+		<input type="radio" name="this-needs-to-be-thesame" id="what-the-radio-button-is" value="used-to-identify-if-checked" required <?= ischecked("points-to-id")?> >2 slices</label>
+
+		<label for ="4slices">
+				<input type="radio" name="this-needs-to-be-thesame" id="what-the-radio-button-is" value="used-to-identify-if-checked" required <?= ischecked("points-to-id")?> >4 slices</label>
+
+		</div>
+
+
 First lesson in query strings to determine page:
 Here we standardize the variable page as equalling home
 
