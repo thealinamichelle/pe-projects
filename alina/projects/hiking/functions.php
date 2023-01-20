@@ -33,6 +33,8 @@ function radioIsSet($submitName, $radioName, $defaultvalue){//A
 		}//C
 }//A
 
+
+
 function ischecked($radioName, $radioItem) {//A
 
 		if ($_POST["$radioName"] == $radioItem){//B if that the superglobal recieved the radio item and it matches the radio group name add "checked".
@@ -44,4 +46,56 @@ function ischecked($radioName, $radioItem) {//A
 
 
 
+
+
+
+
+function formsetup($formValue) {
+	$formvalue = null;
+
+	if ( isset($_POST["$formvalue"])) {
+	 $formvalue = $_POST["$formvalue"];
+	}
+}
+
+
+// // NOTES:
+// hours needs to be changed to text with limits
+
+
+
+  // function getaddress($lat,$lng)
+  // {
+  //    $url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='.trim($lat).','.trim($lng).'&sensor=false';
+  //    $json = @file_get_contents($url);
+  //    $data=json_decode($json);
+  //    $status = $data->status;
+  //    if($status=="OK")
+  //    {
+  //      return $data->results[0]->formatted_address;
+  //    }
+  //    else
+  //    {
+  //      return false;
+  //    }
+  // }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
