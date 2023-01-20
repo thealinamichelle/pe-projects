@@ -33,21 +33,8 @@ if ( isset($_GET["page"]) ) {
 
 
 
-	if ($page == "home") {
-	include ('home.php');
-	}
 
-	if ($page == "list") {
-	include ('trails.php');
-	}
-
-	if ($page == "details") {
-	include ('details.php');
-	}
-
-	if ($page == null) {
-	include ('home.php');
-	}
+		getpageparts($page);
 
 
 ?>

@@ -7,7 +7,11 @@ $menuitems = [
 	], 
 	[ 
 		"link-name" => "trails",
-		"url" => "'?page=list'"
+		"url" => "'?page=trails'"
+	], 
+		[ 
+		"link-name" => "create",
+		"url" => "'?page=create'"
 	], 
 
 ];
