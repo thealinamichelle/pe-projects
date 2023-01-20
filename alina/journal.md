@@ -1,19 +1,85 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
-## 1/16/23
+## 1/19/23
 
 
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] add learnings from the last few days into the journal
+- [] problem solve subtasks kinda?
+- [] css textures
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] form 5
+- [] make a md file for form review
+- [] review forms
+- [] responsive layout garden!
+
+First lesson in query strings to determine page:
+Here we standardize the variable page as equalling home
+
+		$page = "home"; //default is home
+
+Then we use an if it is it set statement. Get will look at the superglobal array to see if "page" is in the array. If it is, then make "page" point to the variable $page.
+
+		if ( isset($_GET["page"]) ) {
+			$page = $_GET["page"]; //url?page=string
+		}
+
+If it isn't there, then the variable points to "home"
+
+		else {
+			$page = "home"; //default
+
+Later on the same page:
+
+We can either use an if else statment. If the $page variable, which points to the superglobal array "page" has "page=home" then include the file home. If it points to "page=trails" include the file trails etc. 
+
+	if ($page == "home") {
+	include ('home.php');
+	}
+
+	if ($page == "list") {
+	include ('trails.php');
+	}
+
+	if ($page == null) {
+	include ('home.php');
+	}
+
+Or we can use a function to make it smaller. 
+
+		function functionname (argument) {
+			instructions
+		}
+
+the argument has the stand-in variable. Here we still use $page to make it easy. The variable $page points to the "page=name-of-a-page" so now include $page (which is also page=name-of-a-page)
+
+		function getpageparts($page){
+			include($page . '.php') //$page or other variable needs to be set in the query string with an 
+
+		}
+
+Note: if the url query string and the site page name don't match this won't work. The superglobal has for instance: 
+
+page=list
+but the file name is "trails"
+so the page=list and file name don't match. So it doesn't work. 
 
 
+remember that a function is instructions. So you need to call on those instructions for it to work. You ask for those instructions to run by using the function-name connected to () which holds the argument.
+I don't understand what argument means here, but in this case, it needs to hold the variable we need to point to the page name.
 
+		getpageparts($page);
 
+You can tuck away function instructions in a seperate functions file and only call on the function when you need it. 
 
-
-
+		<?php include("functions.php") ?>
 
 ---------------------------------------------------------------------------
-## 1/15/23
+## 1/16/23
 
 - [x] Set Up Journal Entry
 - [] Stand Up
