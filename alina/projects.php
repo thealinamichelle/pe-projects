@@ -5,7 +5,7 @@
 $sections = [
 		[ 
 		"heading" => "mock client",
-		"url" =>"projects/mock-client.html",
+		"url" =>"projects/tft/index.html",
 		"target" => "mock",
 		"works" => [
 			"<picture><img src='project-preview/mock-client.png'></picture>",
