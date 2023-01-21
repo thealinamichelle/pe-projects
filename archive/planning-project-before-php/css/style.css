@@ -1,0 +1,135 @@
+@import 'resets.css';
+
+
+/*SITE WIDE STYLING*/
+
+html {
+		background: linen;
+}
+
+/* STRUCTURE */
+body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+}
+
+.inner-column {
+	display: block;
+	max-width: 600px;		
+	margin-right:auto;
+	margin-left:auto;
+	padding: 30px 14px;
+}
+
+
+/*	TYPOGRAPHY */
+
+
+h1 {
+	font-size: 40px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+p {
+	font-size:16px;
+	line-height: 1.4;
+	font-family: sans-serif;
+}
+
+
+h1 + p {
+	margin-top: 20px;l
+}
+
+h2 + p {
+	margin-top: 20px;l
+}
+
+p + p {
+	margin-top: 14px;
+}
+
+
+
+/*SITE SECTIONS*/
+
+.site-header {
+	background: lightblue;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 3px 78px rgba(0, 0, 0, .4);
+}
+
+.site-header .inner-column {
+	padding: 14px;
+}
+
+.page-content {
+	background-image: url("https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+	background-size: cover;
+	background-position: center 20%;
+	flex-grow: 1; /*true*/
+}
+
+.page-header {
+	background-color: rgba(255, 255, 255, .4);
+}
+
+.about {
+	background: lightblue;
+}
+
+.contact {
+	color: white;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.site-footer {
+	background: #333;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*	
+EXAMPLE
+
+@media (min-width: 700px) {
+
+.contact{
+		background: transparent;
+	}
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

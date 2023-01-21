@@ -1,0 +1,94 @@
+@import "resets.css";
+
+/*SITE WIDE STYLING*/
+
+/*html {
+	height: 100%;
+	font-family: sans-serif;
+}*/
+
+
+/*body {
+	height: 100%;
+	color: #431311;
+	background: linear-gradient(180deg, #acaf7f 55%, #c77c7a);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}*/
+
+
+/*
+main {
+	height: 100%;
+/*		border: solid 3px black;
+}*/
+
+
+
+
+/*inner-column {
+	display: block;
+	max-width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+ol {
+	margin: 0;
+	padding:0;
+	list-style: none;
+/*	*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+	grid-gap: 1em;
+}
+
+
+
+
+monster-card {
+	display:block;
+	border: solid 3px black;
+	padding: 30px;
+}
+
+
+h2, p {
+	padding: 10px 0;
+}
+
+/*	TEXT STYLING*/
+
+/*
+h1 {
+	font-family: 'Shrikhand', cursive;
+	font-size: 5vw;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: clamp(30px, 4vw, 80px);
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Shrikhand', cursive;
+	font-size: clamp(1rem, 0.9338rem + 0.3529vw, 1.375rem);
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	font-size: 16px;
+}
+
+span {
+	font-family: 'Shrikhand', cursive;
+	font-size: font-size: clamp(0.75rem, 0.6618rem + 0.4706vw, 1.25rem);
+}*/

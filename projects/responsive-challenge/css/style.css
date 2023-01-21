@@ -1,0 +1,315 @@
+@import "resets.css";
+
+
+
+html {
+	background: #4ab0c3a1;
+}
+
+/** {
+	border: solid 2px red;
+}*/
+/*
+.splash * {
+	border: 2px red solid;
+}*/
+
+/*Structure*/
+
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.plans {
+/*	flex-grow:;*/
+}
+
+/*MODULE*/
+
+masthead {
+	display:flex; 
+	flex-direction: row;
+	align-items: center;
+}
+
+
+masthead .company-logo {
+	min-width: 60px;
+	max-width: 60px;
+	margin-right: 20px;
+}
+
+masthead .company-name {
+	font-family: sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+
+/*PLANS*/
+
+plan-grid {
+	display: grid;
+	grid-gap: 30px;
+	padding: 60px 0;
+}
+
+plan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 450px;
+}
+
+plan picture {
+	max-width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+plan .heading {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+
+
+.plan-cog {
+	display: block;
+	width: 200px;
+	height: 217px;
+	background-image: url("../images/cog.png");
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	opacity: 0;
+	transition: opacity 1s;
+	pointer-events: none;
+}
+
+plan .ex
+
+
+@media (min-width: 480px) {
+
+	plan {
+		display:flex;
+		flex-direction:row;
+		align-items: center;
+	}
+
+	plan picture {
+		max-width: 150px;
+	}
+
+	plan .copy-group {
+		margin-left: 20px;
+		max-width: 300px;
+	}
+
+	.plan-cog {
+		opacity: 1;
+	}
+}
+
+@media (min-width:800px) {
+
+
+	plan-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+
+
+	plan {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+
+
+
+/*THEME*/
+
+.site-header {
+	background-color: rgba(255,255,255,.5);
+}
+
+section.plans {
+	background-color: rgba(255,255,255,.5);
+	position: relative;
+	overflow: hidden;
+}
+
+.site-footer {
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	min-height: 200px;
+}
+
+@media (min-width: 480px) {
+	section.plans {
+		display: block;
+	}
+}
+
+/*SPLASH*/
+
+.splash h1 {
+	font-size: 40px;
+	font-family: sans-serif;
+	padding: 20px 0;
+}
+
+
+.splash inner-column {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.cloud {
+	display: none;
+}
+
+@media (min-width: 480px) {
+
+
+	.splash inner-column {
+		flex-direction: row;
+		align-items: center;
+		padding-top: 60px;
+	}
+
+	.splash picture, .splash .info {
+		width: 50%;
+	}
+
+	.splash picture {
+		margin-right: 20px;
+		flex-basis: 50%;
+	}
+
+	.splash .info {
+		flex-basis: 50%;
+	}
+}
+
+
+@media (min-width: 800px) {
+
+	.splash {
+		overflow: hidden;
+	}
+
+	inner-column {
+		padding: 50px;
+		position: relative;
+	}
+
+	.splash inner-column {
+		align-items: flex-start;
+	}
+
+	.splash picture {
+		flex-basis: 50%;
+	}
+
+	.splash .info {
+		flex-basis: 50%;
+	}
+
+	.splash h1 {
+	font-size: 40px;
+	}
+
+	.splash .cloud {
+		display: block;
+		width: 250px;
+		position: absolute;
+		right: -50px;
+		bottom: -140px;
+		opacity: .2;
+	}
+}
+
+
+
+/*svgs*/
+
+svg {
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	stroke-linejoin:round;
+	stroke-miterlimit:2;"
+}
+
+.cog {
+	fill: black;	
+}
+
+/*svg - LOGO*/
+.logo-fill {
+	fill: none;
+}
+
+.l-pupil, .r-pupil {
+	fill:black;
+	stroke:black;
+	stroke-width:1.33px;
+}
+
+.r-iris, .l-iris {
+	fill:white;
+	stroke:black;
+	stroke-width:1.37px;
+}
+
+.l-pupil:hover, .r-pupil:hover {
+	fill: #d5dffd;
+}
+
+
+/*METHODS*/
+
+
+
+
+
+/*accessibility*/
+/*class to apply to hidden content for screen readers*/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+
+
+

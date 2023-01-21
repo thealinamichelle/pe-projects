@@ -1,0 +1,68 @@
+@import "resets.css";
+
+/*SITE WIDE STYLING*/
+
+body {
+		background: midnightblue;
+		color: rgba(32, 33, 36, 1.00);
+		font-family: helvetica-neue, helvetica, sans-serif;
+	}
+
+
+/*	CONTENT STYLING*/
+
+
+h1 {
+	/*min. font size 36px, max 72px; start scaling @ 320px vw, stop at 960 vw, clamp(2.25rem,5.625vw + 1.125rem,4.5rem)*/
+	font-size: clamp(2.25rem,5.625vw + 1.125rem,4.5rem);
+	letter-spacing: .09rem;
+	line-height: 5rem;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, .5);
+}
+
+p, li, a {
+	font-size: 1em;
+
+}
+
+
+h2 {
+	font-size: 1.4rem;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+body {
+	margin: 50px 0 20px 40px;
+}
+
+.instructions {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 20px 20px 0 20px;
+	background: rgba(255, 255, 255, .5);
+	border-radius: 30px 30px 0 0;
+	height: 100vh;
+	color: rgba(25, 25, 112, .7);
+}
+
+.inner-column {
+	display: grid;
+	grid-auto-columns: 1fr 1fr;
+	grid-auto-rows: .2fr 1fr 1fr;
+	max-width: 700px;
+	height: 100%;
+	border-radius: 30px 30px 0 0;
+	line-height: 1.7rem;
+	gap: 10px;
+}
+
+.inner-column section {
+	border: solid 2px black;
+	padding: 40px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+
+
