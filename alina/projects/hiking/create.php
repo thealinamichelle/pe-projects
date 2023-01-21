@@ -35,8 +35,6 @@ if ( isset($_POST["add"]) ) {
 	formsetup ("gps");
 	formsetup ("trailHours");
 	formsetup ("gps");
-	formsetup ("trailHours");
-	formsetup ("trailLength");
 	formsetup ("features");
 	formsetup ("hazard");
 	formsetup ("path");
@@ -70,6 +68,31 @@ if ( isset($_POST["add"]) ) {
 		$lat = $_POST["gps"][0];
 		$lng = $_POST["gps"][1];
 	}
+
+
+	//formsetup ("trailHours");
+// if ( isset($_POST["trailHours"]) ) {
+// $trailHours = $date->format('l jS \o\f F Y h:i:s A')
+// number_format($sqMeter, 2 , ".", ".");
+
+
+// // Prints something like: Wednesday 19th of October 2022 08:40:48 AM
+// echo $date->format('l jS \o\f F Y h:i:s A'), "\n";
+
+// /* use the constants in the format parameter */
+// // prints something like: Wed, 19 Oct 2022 08:40:48 +0000
+// echo $date->format(DateTimeInterface::RFC2822), "\n";
+// 
+
+//}
+
+
+// 	formsetup ("trailLength");
+// if ( isset($_POST["trailLength"]) ) {
+
+// }
+
+
 
 }
 
@@ -117,7 +140,7 @@ radioIsSet("add", "dog-walkers", "unknown");
 				<legend>What are the trailhead GPS coordinates? Latitude | Longitude</legend>
 				<input type="number" name="gps[]" step="0.000001" min=-90 max=90 value="<?=$lat?>">
 				<input type="number" name="gps[]" step="0.000001" min=-180 max=180 value="<?=$lng?>">
-
+			</fieldset>
 <?php
 			//$address= getaddress($lat,$lng);
 		  // if($address)
@@ -135,7 +158,8 @@ radioIsSet("add", "dog-walkers", "unknown");
 
 
 			<field>
-				<label for="trailHours">What are the posted trail hours?</label><input type="number" name="trailHours">
+				<label for="trailHours">What are the posted trail hours?</label><input type="time" name="trailHours[]" value="00:00"> through
+				<input type="time" name="trailHours[]" value="00:00">
 			</field>
 
 			<fieldset>
@@ -181,8 +205,8 @@ radioIsSet("add", "dog-walkers", "unknown");
 			</fieldset>
 
 			<field>
-				<label for="trailLength">Trail Length</label>
-				<input type="text" name="trailLength">
+				<label for="trailLength">Trail length in miles</label>
+				<input type="number" name="trailLength" min=".01">
 			</field>
 
 			<fieldset>
@@ -340,7 +364,7 @@ radioIsSet("add", "dog-walkers", "unknown");
 					<label for="notes">Any other helpful details you'd like to provide?</label>
 
 
-					<textarea name="notes" id="notes" rows="10" cols="50" maxlength="1000" placeholder="advice for other hikers with dogs to navigate this trail"spellcheck></textarea>
+					<textarea name="notes" id="notes" rows="10" cols="50" maxlength="1000" placeholder="advice for other hikers with dogs to navigate this trail" spellcheck></textarea>
 				</field>
 
 
