@@ -1,20 +1,69 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---------------------------------------------------------------------------
+## 1/20/23
+
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] add learnings from the last few days into the journal
+- [] git commit
+- [] Milestones
+- [] fix personal portal
+- [] responsive layout garden!
+- [x] waste time on a lame doodle about a slack comment
+
+
+Video Notes:
+
+- How to make utilize PHP for page specific styling
+	example: Underline / different color on your current page/menu
+
+	the router sets the string for the current page
+	you can use that string to create a class
+	if the page is the string home add the class or the current page
+
+
+		<a href="?page=home" class="<?php if ($page == 'home') { echo 'active'}?>"> Home </a>
+
+		<a href="?page=home" class="
+				<?php if ($page == 'home') { 
+					echo 'active'
+				}?>"> 
+			Home 
+		</a>
+
+-- Remember that this is the router that is allowing the above to work. For the hiking project it is located on the index page:
+
+		$page = "home";
+		if ( isset($_GET["page"]) ) {
+			$page = $_GET["page"];
+		}
+
+-- On the index page: 
+
+		<section class="page-content">
+			<div class="inner-column">
+		<?php
+				getpageparts($page);
+		?>
+			<div>
+		</section>
+
+Now that it will add the class active, you can make the class in your CSS file.
+
+--------------------------------------------------------------------------
 ## 1/19/23
 
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] add learnings from the last few days into the journal
-- [] problem solve subtasks kinda?
-- [] css textures
+- [?] problem solve subtasks kinda?
+- [x] css textures
 - [] git commit
 - [] Milestones
 - [] fix personal portal
-- [] form 5
-- [] make a md file for form review
-- [] review forms
 - [] responsive layout garden!
 
 Forms- radio
