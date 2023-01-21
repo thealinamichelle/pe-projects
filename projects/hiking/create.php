@@ -41,6 +41,40 @@ if ( isset($_POST["add"]) ) {//A
 		 }//D
 	}
 
+
+
+	if ( isset($_POST["add"])) {//B
+	 $city = $_POST["city"];
+		 if (strlen($city) > 0) {//C
+		 	$hasCity = true;
+		 }//C
+		  else {//D
+		 	$Error = "** Please choose the approximate city.";
+		 }//D
+	}
+
+
+
+		if ( isset($_POST["add"])) {//B
+	 $street = $_POST["street"];
+		 if (strlen($street) > 0) {//C
+		 	$hasStreet = true;
+		 }//C
+		  else {//D
+		 	$Error = "** Please add street address";
+		 }//D
+	}
+
+
+		if ( isset($_POST["add"])) {//B
+	 $zip = $_POST["zip"];
+		 if (strlen($zip) > 0) {//C
+		 	$hasZip = true;
+		 }//C
+		  else {//D
+		 	$Error = "**Please add zip code";
+		 }//D
+	}
 //BASICS
 	// if ( isset($_POST["address"]) ) {
 	// $street = $_POST["address"][0];
@@ -126,8 +160,6 @@ if ( isset($_POST["add"]) ) {//A
         <input class="zip" id="zip" name="zip" autocomplete="postal-code" enterkeyhint="next" placeholder="zip" value="<?=$zip?>">
       </div>
   </field>
-
-  <?= $zip . $street . $city . "hello";?>
 
 
 

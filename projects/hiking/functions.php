@@ -34,6 +34,16 @@ function radioIsSet($submitName, $radioName, $defaultvalue){//A
 }//A
 
 
+function formsetup($formValue) {
+	$formvalue = null;
+
+	if ( isset($_POST["$formvalue"])) {
+	 $formvalue = $_POST["$formvalue"];
+	}
+}
+
+
+
 
 function ischecked($radioName, $radioItem) {//A
 
@@ -45,13 +55,6 @@ function ischecked($radioName, $radioItem) {//A
 
 
 
-function formsetup($formValue) {
-	$formvalue = null;
-
-	if ( isset($_POST["$formvalue"])) {
-	 $formvalue = $_POST["$formvalue"];
-	}
-}
 
 
 
