@@ -1,0 +1,144 @@
+header { 
+	color: aliceblue;
+	font-family: sans-serif;
+	font-size: 2rem;
+/*	border:  solid 1px purple;*/
+}
+header a {
+	font-size: inherit;
+	padding: 0;
+}
+
+header a:active {
+	background: rgba(164, 116, 136, 1.00); 
+	border-radius: 10px;
+}
+
+h2 { 
+	font-family: Sans-Serif;
+	font-size: 1.5rem;
+	line-height: .9;			
+	text-transform: capitalize;
+/*	margin: 10px;*/
+}
+
+.everyday h2 {
+	color: #587586;
+}
+
+.google h2 {
+	color: #637985;
+}
+
+.coding h2 {
+	color: #6b7c83;
+}
+
+.pe h2 {
+	color: #717f82;
+}
+
+.bling h2 {
+	color: #858780;
+}
+
+
+
+main a, footer a {
+	text-decoration: none;
+	color:  #dce0e3;
+	border-bottom: 5px solid rgba(220, 224, 227, .5);
+	line-height: 2;
+	font-size: 1rem;
+}
+
+a:hover {
+	color: rgba(88, 117, 134, .5);
+	border-bottom: 5px solid rgba(88, 117, 134, .5); 
+}
+
+.everyday a:hover {
+	color: #a5c1d2;
+	border-bottom: 5px solid #a5c1d2;
+}
+
+.google a:hover {
+	color: #afc6d1;
+	border-bottom: 5px solid #afc6d1; 
+}
+
+.coding a:hover {
+	color: #b7c9d0;
+	border-bottom: 5px solid #b7c9d0; 
+}
+
+.pe a:hover {
+	color: #bdcbce;
+	border-bottom: 5px solid #bdcbce; 
+}		
+
+.bling a:hover {
+	color: #b0bbb8;
+	border-bottom: 5px solid #b0bbb8; 
+}		
+
+.index a:hover{
+	color: #8dadbd;
+	border-bottom: 5px solid #8dadbd; 
+}
+
+a:active {
+	color: rgba(164, 116, 136, 1.00);
+	border-bottom: 5px solid rgba(164, 116, 136, 1.00); 
+}		
+
+
+
+.everyday a:active {
+	color: #a47488;
+	background: none;
+	border-bottom: 5px solid #a47488;
+}
+
+.google a:active {
+	color: #af7987;
+	background: none;
+	border-bottom: 5px solid #af7987;
+}
+
+.coding a:active {
+	color: #bd7e85;
+	background: none;
+	border-bottom: 5px solid #bd7e85;
+}
+
+.pe a:active {
+	color: #c88383;
+	background: none;
+	border-bottom: 5px solid #c88383;
+}
+
+.bling a:active {
+	color: #d28682;
+	background: none;
+	border-bottom: 5px solid #d28682;
+}
+
+.index a:active {
+	color: #d98a80;
+	background: none;
+	border-bottom: 5px solid #d28682;
+}
+
+a:focus {
+	color: #C8C5B4;
+	background: #7DA6BF;
+}
+
+
+a[href^="../index.html"] {
+	background: none;
+}
+a[href^="https://youtu.be/tzE7P3KPi4I?t=20"] {
+	background: none;
+}	

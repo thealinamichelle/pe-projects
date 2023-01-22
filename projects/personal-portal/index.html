@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 	<meta charset="utf-8">
 
@@ -28,329 +29,83 @@
 	<meta name="twitter:title" content="A Portal!">
 	<meta name="twitter:description" content="Gowron the klingon from Star Trek The Next Generation and Deep Space Nine welcomes You to the Portal! Pe'el! His eyes are enormous!">
 	<meta name="twitter:image" content="https://peprojects.dev/alpha-6/alina/images/meta-for-portal.jpg">
-        
+   <link rel="stylesheet" href="css/style.css">
 
 	<title>Pe'el!</title>
 	
-	<style type="text/css">
-		* { box-sizing: border-box;}
-			
-/* ////////COLORS: 
-	////////Gradient stadnard colors: 
-			7DA6BF
-			8CADBD
-			97B1BB
-			A1B5BA
-			B0BBB8
-			BEC0B6
-//////////	UNUSED:  C8C5B4 200,197,180
-
-	////////Gradient lighter: 
-			#d2d3cc unused
-			#d9d7cb unused
-			#b0bbb8
-			#bdcbce
-			#b7c9d0
-			#afc6d1
-			#a5c1d2
-	////////TEXT:  #dce0e3;
-*/
-		Body {
-			background: #7DA6BF;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center; 
-			font-family: sans-serif;
-			/*border:  solid 1px black;*/
-		}
-		
-		header {
-			display: block;
-			margin-right: auto;
-			margin-left: auto;
-			/*border:  solid 1px yellow;*/
-		}
-
-		main {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			/*border:  solid 1px black;*/
-		}
-
-		section{
-			padding:  10px 0px;
-			/*border:  solid 1px black;*/
-		}
-
-		.everyday {
-			background: #8CADBD;
-		}
-
-		.google {
-			background: #97B1BB;
-		}
-
-		.coding {
-			background: #A1B5BA
-		}
-
-		.pe {
-			background: #B0BBB8;
-		}
-
-		.bling {
-			background: #BEC0B6;
-		}
-
-		h1 { 
-			display: inline-block;
-			color: aliceblue;
-			text-align: center;
-			font-family: sans-serif;
-			font-size: clamp(10px, 10vw, 40px);
-			/*border:  solid 1px purple;*/
-		}
-
-		h2 { 
-			font-family: Sans-Serif;
-			font-size: clamp(10px, 5vw, 33px);
-			line-height: .9;			
-			text-transform: capitalize;
-			margin: 10px;
-		}
-
-		.everyday h2 {
-			color: #587586;
-		}
-
-		.google h2 {
-			color: #637985;
-		}
-
-		.coding h2 {
-			color: #6b7c83;
-		}
-
-		.pe h2 {
-			color: #717f82;
-		}
-
-		.bling h2 {
-			color: #858780;
-		}
-
-		img {
-			border-radius: 50%;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 700px;
-			/*border:  solid 1px purple;*/
-		}
-
-		a {
-			text-decoration: none;
-			color:  #dce0e3;
-			border-bottom: 5px solid rgba(220, 224, 227, .5);
-			padding: 5px 5px 0 5px;
-			margin: 0 3px;
-			line-height: 2;
-			font-size: clamp(0px, 2.8vw, 16px);
-			/*border:  solid 1px blue;*/
-		}
-
-		a:hover {
-			color: rgba(88, 117, 134, .5);
-			border-bottom: 5px solid rgba(88, 117, 134, .5); 
-		}
-
-		.everyday a:hover {
-			color: #a5c1d2;
-			border-bottom: 5px solid #a5c1d2;
-		}
-
-		.google a:hover {
-			color: #afc6d1;
-			border-bottom: 5px solid #afc6d1; 
-		}
-
-		.coding a:hover {
-			color: #b7c9d0;
-			border-bottom: 5px solid #b7c9d0; 
-		}
-
-		.pe a:hover {
-			color: #bdcbce;
-			border-bottom: 5px solid #bdcbce; 
-		}		
-
-		.bling a:hover {
-			color: #b0bbb8;
-			border-bottom: 5px solid #b0bbb8; 
-		}		
-
-		.index a:hover{
-			color: #8dadbd;
-			border-bottom: 5px solid #8dadbd; 
-		}
-
-		a:active {
-			color: rgba(164, 116, 136, 1.00);
-			border-bottom: 5px solid rgba(164, 116, 136, 1.00); 
-		}		
-
-		header a {
-			border: none;
-			font-size: inherit;
-		}
-		
-		header a:active {
-			background: rgba(164, 116, 136, 1.00); 
-			border-radius: 10px;
-		}
-
-		.everyday a:active {
-			color: #a47488;
-			background: none;
-			border-bottom: 5px solid #a47488;
-		}
-
-		.google a:active {
-			color: #af7987;
-			background: none;
-			border-bottom: 5px solid #af7987;
-		}
-
-		.coding a:active {
-			color: #bd7e85;
-			background: none;
-			border-bottom: 5px solid #bd7e85;
-		}
-
-		.pe a:active {
-			color: #c88383;
-			background: none;
-			border-bottom: 5px solid #c88383;
-		}
-
-		.bling a:active {
-			color: #d28682;
-			background: none;
-			border-bottom: 5px solid #d28682;
-		}
-
-		.index a:active {
-			color: #d98a80;
-			background: none;
-			border-bottom: 5px solid #d28682;
-		}
-
-		a:focus {
-			color: #C8C5B4;
-			background: #7DA6BF;
-		}
-
-
-		a[href^="../index.html"] {
-			background: none;
-		}
-		a[href^="https://youtu.be/tzE7P3KPi4I?t=20"] {
-			background: none;
-			/*border:  solid 1px green;*/
-		}	
-
-		footer {
-			padding-top: 200px; 
-			padding-bottom: 30px;
-		}
-
-
-	</style>
+	
 </head>
 
-<body 
-	
-
-	> 	
+<body> 	
 	<header>
-		<h1>Enter Enter<a href="https://youtu.be/tzE7P3KPi4I?t=20" target="klingon">!</a></h1>
+		<h1>Enter Enter</h1><a href="https://youtu.be/tzE7P3KPi4I?t=20">!</a>
 	</header>
 		
 
 	
-	<main>
-		<!--<div class="box">
-test test-->
+<main>
+	<inner-column>
+		<grid>
+	<section class="everyday">
+	<h2>Everyday Resources</h2>
 
-			<section class="everyday">
-			<h2>Everyday Resources</h2>
-				<nav>
-					<a href="https://perpetual.education/sign-in/" title="Perpetual Education" target="Learn">Learn Web Design!</a>
-					<a href="https://ticktick.com/webapp/#q/all/tasks" target="Tick">Tick Tick</a>
-					<a href="https://typingstudy.com/lesson/1/part/2" target="Type">START TYPING</a>
-					<a href="https://explore.org/fat-bear-week" target="bear"> FAT BEAR WEEK</a>
-				</nav>
-
-			</section>
-
-			<section class="google"> 
-				<h2>Google Tools</h2>
-				
-				<a href="https://drive.google.com/drive/my-drive" target="Drive" title="Drive">Drive</a>	
-				<a href="https://mail.google.com/mail" target="gmail" title="Gmail">Gmail</a>
-				<a href="https://calendar.google.com/calendar/" target="Cal">Calendar</a>
-				<a href="https://docs.google.com/document/" target="Doc">Docs</a>
-				<a href="https://docs.google.com/spreadsheets/u/0/?tgif=d" target="Sheets">Sheets</a>
-
-			</section>
-
-			<section class="coding">
-				<h2>Coding Assistance</h2>
-				
-				<a href="https://enes.in/sorted-colors/" target="color">Color Name Guide</a>
-				<a href="https://validator.w3.org/" target="W3C">W3C Markup Validation</a>
-				<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="MDN">MDN HTML</a>
-				<a href="https://www.markdownguide.org/basic-syntax" target="Markdown">Mark Down Guide</a>
-
-			</section>
-
-			<section  class="pe">
-				<h2>PE Tools</h2>
-				
-				<a href="https://calendly.com/perpetual-education/student-checkin-alpha-six?month=2022-09" target="Calendly">Book a Student Check In</a>
-				<a href="https://slackmojis.com/" target="emoji">Slack Emojis</a>
-				<a href="https://whimsical.com/" target="whim">Whimsical</a>
-				<a href="https://peprojects.dev/alpha-6/" target="alpha-6">Alpha 6 Projects</a>
-			</section>
-
-			<section class="bling">
-				<h2>Bling Meeting Tools</h2>
-				
-				<a href="https://trello.com/u/alinapritchett/boards" target="Trello">Trello</a>
-				<a href="https://app.youneedabudget.com/" target="YNAB">YNAB</a>
-				<a href="https://docs.google.com/spreadsheets/d/1Oaes5jdvX2EyIKVVB1a9A_Mbv2fgJ8SxFcYO4_KAzJM/edit?usp=sharing" target="Budget">Budget Sheet</a>
-
-			</section>
- 
- 			<section class="index">
-					
-					<a href="../index.html" target="alina">BACK TO INDEX</A>
-					
-				</h6>
-
-			</section>
-
-		<!--</div>-->
-			
-	</main>
+			<a href="https://perpetual.education/sign-in/" title="Perpetual Education">Learn Web Design!</a>
+			<a href="https://ticktick.com/webapp/#q/all/tasks">Tick Tick</a>
+			<a href="https://typingstudy.com/lesson/1/part/2">START TYPING</a>
 
 
-	<footer>
-	<!-- <footer> -->
-		<img src="../../images/gowron.png" alt="Gowron gives you eyes" 
-		>
+	</section>
 
-	</footer>
+	<section class="google"> 
+		<h2>Google Tools</h2>
+		
+		<a href="https://drive.google.com/drive/my-drive"title="Drive">Drive</a>	
+		<a href="https://mail.google.com/mail" title="Gmail">Gmail</a>
+		<a href="https://calendar.google.com/calendar/">Calendar</a>
+		<a href="https://docs.google.com/document/">Docs</a>
+		<a href="https://docs.google.com/spreadsheets/u/0/?tgif=d">Sheets</a>
+
+	</section>
+
+	<section class="coding">
+		<h2>Coding Assistance</h2>
+		
+		<a href="https://enes.in/sorted-colors/">Color Name Guide</a>
+		<a href="https://validator.w3.org/">W3C Markup Validation</a>
+		<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN HTML</a>
+		<a href="https://www.markdownguide.org/basic-syntax">Mark Down Guide</a>
+
+	</section>
+
+	<section  class="pe">
+		<h2>PE Tools</h2>
+		
+		<a href="https://calendly.com/perpetual-education/student-checkin-alpha-six?month=2022-09">Book a Student Check In</a>
+		<a href="https://whimsical.com/">Whimsical</a>
+		<a href="https://peprojects.dev/alpha-6/">Alpha 6 Projects</a>
+	</section>
+
+	<section class="bling">
+		<h2>Bling Tools</h2>
+		
+		<a href="https://trello.com/u/alinapritchett/boards">Trello</a>
+		<a href="https://app.youneedabudget.com/">YNAB</a>
+		<a href="https://docs.google.com/spreadsheets/d/1Oaes5jdvX2EyIKVVB1a9A_Mbv2fgJ8SxFcYO4_KAzJM/edit?usp=sharing">Budget Sheet</a>
+
+	</section>
+
+	<section>
+	</section>
+</grid>
+</inner-column>
+</main>
+
+
+<footer>
+	<picture>
+		<img src="../../images/gowron.png" alt="Gowron gives you eyes">
+		</picture>
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+footer {
+	padding-top: 200px; 
+	padding-bottom: 30px;
+	height: 700px;
+}
+
+footer picture {
+	display: block;
+	width: 80vw;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	animation-name: bounce;
+	animation-duration: 5s;
+	animation-delay: 30s;
+}
+
+
+@keyframes bounce {
+   0%, 20%, 50%, 75%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-30px);} 
+   60% {transform: translateY(-350px);} 
+   90% {transform: translateY(-750px);} 
+} 

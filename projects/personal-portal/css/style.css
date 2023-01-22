@@ -1,0 +1,153 @@
+@import "resets.css";
+@import "form.css";
+@import "footer.css";
+@import "fonts.css";
+
+Body {
+	background: #7DA6BF;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+	font-family: sans-serif;
+	/*border:  solid 1px black;*/
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin:0 auto;
+	padding: 2rem;
+}
+
+/*header a, header h1 {
+	border: solid 2px green;
+}*/
+
+main {
+	min-height: 100vh;
+}
+
+inner-column {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+/*	border: solid red 3px;*/
+}
+
+grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+section {
+	padding:  10px 0px;
+	/*border:  solid 1px black;*/
+}
+
+grid section {
+	display: grid;
+	grid-template-rows: 2rem repeat(5, 2rem);
+}
+
+grid h2 {
+	align-self: center;
+}
+/*
+grid h2{
+	border: solid 1px red;
+}
+grid a{
+	border: solid 1px green;
+
+}*/
+
+
+
+@media (min-width:450px){
+	grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	grid section {
+		grid-template-rows: 2.8rem repeat(5, 2rem);
+	}
+
+	inner-column {
+		width: 90vw;
+	}
+}
+
+
+
+@media (min-width:700px){
+	grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	grid section {
+		grid-template-rows: 3.7rem repeat(5, 2rem);
+	}
+
+	inner-column {
+		width: 80vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*BACKGROUND COLORS*/
+.everyday {
+	background: #8CADBD;
+}
+
+.google {
+	background: #97B1BB;
+}
+
+.coding {
+	background: #A1B5BA
+}
+
+.pe {
+	background: #B0BBB8;
+}
+
+.bling {
+	background: #BEC0B6;
+}
+
+
+
+/* ////////COLORS: 
+	////////Gradient stadnard colors: 
+			7DA6BF
+			8CADBD
+			97B1BB
+			A1B5BA
+			B0BBB8
+			BEC0B6
+//////////	UNUSED:  C8C5B4 200,197,180
+
+	////////Gradient lighter: 
+			#d2d3cc unused
+			#d9d7cb unused
+			#b0bbb8
+			#bdcbce
+			#b7c9d0
+			#afc6d1
+			#a5c1d2
+	////////TEXT:  #dce0e3;
+*/
