@@ -1,103 +1,104 @@
 <?php include("head.php")?>
+<?php include("cities.php")?>
 <?php
 
+// JSON?
 
-$name = null;
-$gps = null;
+
+$formsubmitted = isset($_POST["add"]);
+//BASICS
+$name = "";
+$nameError = false;
+$street = "";
+$streetError = "";
+$city = "";
+$cityError = "";
+$zip = "";
+$zipError = "";
 $trailHours = null;
-$gps = null;
-$trailHours = null;
-$trailLength = null;
-$features = null;
-$hazard = null;
-$path = null;
-$difficulty = null;
+// UTILITIES
 $ulitiies = null;
-$notes = null;
+//TRAIL PATH DETAILS
+$difficulty = null;
+$trailLength = null;
+$loop = null;
+//ENVIROMENT
+$features = null;
+$path = null;
+$hazard = null;
+//SUBMISSIONS IMAGES AND EXTRAS
 $trailSignImage = null;
 $trailImages = null;
-$city = "";
-$zip = "";
-$street = "";
-$nameError = false;
-$formvalue = null; 
-$loop = null;
+$notes = null;
+//THANKS FOR YOUR SUBMISSION
+$message = "Add a hiking trail";
+
+radioInitialization("loop", "unknown");
+radioInitialization("dogs-allowed", "unknown");
+radioInitialization("leash-rules", "unknown");
+radioInitialization("owner-control", "unknown");
+radioInitialization("dog-walkers", "unknown");
+radioInitialization("bikes", "unknown");
 
 
+if ( $formsubmitted ) {//A
 
+	 if ( isset($_POST["name"])) {//B
+	  $name = $_POST["name"];
+	 	 if (strlen($name) > 0) {//C
+	 	 	$hasName = true;
+	 	 }//C
+	 	  else {//D
+	 	 	$nameError = "ERROR: Please add trail name.";
+	 	 }//D
+	}//B
 
-
-$message = null;
-
-if ( isset($_POST["add"]) ) {//A
-
-	if ( isset($_POST["name"])) {//B
-	 $name = $_POST["name"];
-		 if (strlen($name) > 0) {//C
-		 	$hasName = true;
-		 }//C
-		  else {//D
-		 	$nameError = "ERROR: Please add trail name.";
-		 }//D
-	}
-
-
-
-	if ( isset($_POST["add"])) {//B
-	 $city = $_POST["city"];
-		 if (strlen($city) > 0) {//C
-		 	$hasCity = true;
-		 }//C
-		  else {//D
-		 	$Error = "** Please choose the approximate city.";
-		 }//D
-	}
-
-
-
-		if ( isset($_POST["add"])) {//B
 	 $street = $_POST["street"];
-		 if (strlen($street) > 0) {//C
+		 if (strlen($street) > 0) {//D
 		 	$hasStreet = true;
-		 }//C
-		  else {//D
-		 	$Error = "** Please add street address";
 		 }//D
-	}
+		  else {//E
+		 	$streetError = "** Please add street address";
+		 }//E
+
+	 $city = $_POST["city"];
+		 if ($city == false) {//B
+		 	$hasCity = true;
 
 
-		if ( isset($_POST["add"])) {//B
+
+
+		 }//B
+		  else {//C
+		 	$cityError = "** Please choose the approximate city.";
+		 }//C
+
 	 $zip = $_POST["zip"];
-		 if (strlen($zip) > 0) {//C
+		 if (strlen($zip) > 0) {//F
 		 	$hasZip = true;
-		 }//C
-		  else {//D
-		 	$Error = "**Please add zip code";
-		 }//D
-	}
-//BASICS
-	// if ( isset($_POST["address"]) ) {
-	// $street = $_POST["address"][0];
-	// $city = $_POST["address"][1];
-	// $zip = $_POST["address"][2];
-	// }
- formsetup("city");
- formsetup("city");
- formsetup("zip");
+		 }//F
+		  else {//G
+		 	$zipError = "**Please add zip code";
+		 }//G
+	$message = "Thank you for helping other dogs find new places to explore!";
+
+
+
 
 	formsetup ("trailHours");
 	formsetup ("ulitiies");
 	formsetup ("difficulty");
 	formsetup ("trailLength");
+	radioSetup("loop");
 
-
-//DOG
-
-
+// DOGS
+	radioSetup("dogs-allowed");
+	radioSetup("leash-rules");
+	radioSetup("owner-control");
+	radioSetup("dog-walkers");
 
 //ENVIROMENT
-
-
+	radioSetup("bikes");
 	formsetup ("features");
 	formsetup ("path");
 	formsetup ("hazard");
@@ -106,23 +107,30 @@ if ( isset($_POST["add"]) ) {//A
 	formsetup ("trailSignImage");
 	formsetup ("trailImages");
 	formsetup ("notes");
-	
-}
+	 	 	
 
-	radioIsSet("add", "loop", "unknown");
-	radioIsSet("add", "dogs-allowed", "unknown");
-	radioIsSet("add", "leash-rules", "unknown");
-	radioIsSet("add", "owner-control", "unknown");
-	radioIsSet("add", "dog-walkers", "unknown");
-	radioIsSet("add", "bikes", "unknown");
+	 	 	//CREATE ENTRY
+			$newTrail = [
+	 				"name" => $name,
+	 			];
+	 	 	var_dump($newTrail);
 
+	 	 	//transform it to JSON
+	 	 	$trailJson = Json_encode($newTrail);
 
+	 	 	//SAVE ENTRY	 	 	
+	 	 	file_put_contents("trails.json", $trailJson);
 
+		 }//C
 
+	 	else {//D
+	 	 	$nameError = "Please the trail name.";
+
+}// END OF - IF FORM SUBMITTED
 
 ?>
 
-<h1 class="form-title">Add a hiking trail</h1>
+<h1 class="form-title"><?=$message?></h1>
 <br>
 <div class="">
 	<section class="">
@@ -133,37 +141,39 @@ if ( isset($_POST["add"]) ) {//A
 
 
 
-			<field>
-				<label for="name">Name of Trail</label><input type="text" name="name" value="<?=$name?>">
-				<?php if ($nameError) { ?>
-				<p class="error"><?=$nameError?></p>
-			<?php } ?>
-			</field>
-
+<field>
+	<label for="name">Name of Trail</label><input type="text" name="name" value="<?=$name?>">
+	<?php if ($nameError) { ?>
+		<p class="error"><?=$nameError?></p>
+	<?php } ?>
+</field>
 
 
 <field>
-      <div>
-        <label for="street">Street address</label>
-        <input type="text" id="street" name="street" autocomplete="street" required enterkeyhint="next" placeholder="street" value="<?=$street?>"></input>
-      </div>
-      <div>
-        <label for="city">City</label>
-        <select id="city" name="city" enterkeyhint="done" value="<?=$city?>" required>
-        <option></option>
-         <option value="Acton"> Acton	</option>
-         <?php citiesDropDown() ?>
-         </select>
-			</div>
-			<div>
-        <label for="zip">ZIP or postal code (optional)</label>
-        <input class="zip" id="zip" name="zip" autocomplete="postal-code" enterkeyhint="next" placeholder="zip" value="<?=$zip?>">
-      </div>
-  </field>
+  <div>
+    <label for="street">Street address</label>
+    <input type="text" id="street" name="street" autocomplete="street" required enterkeyhint="next" placeholder="street" value="<?=$street?>"></input>
+  </div>
+  <div>
+    <label for="city">City</label>
+    <select id="city" name="city" enterkeyhint="done" required>
+			<?php
+			foreach($cities as $selectCity){
+			  $sCity = ($selectCity == $_POST['city'])? "Selected='selected'":"";
+			  echo "<option   $sCity>$selectCity</option>";
+			}
+			?>
+		</select>
+	</div>
+	<div>
+    <label for="zip">ZIP or postal code (optional)</label>
+    <input class="zip" id="zip" name="zip" autocomplete="postal-code" enterkeyhint="next" placeholder="zip" value="<?=$zip?>">
+  </div>
+</field>
 
 
 
-<!-- 			<fieldset>
+<!-- 		<fieldset>
 				<legend>Trailhead Address</legend>
 				<div>
 				<label for="">street</label>
@@ -399,8 +409,7 @@ if ( isset($_POST["add"]) ) {//A
 				<p>
 					<?=$message?>
 
-
-					<?php show( $_POST );	?>
+					<?php show($_POST);	?>
 
 				</p>
 			</section>
