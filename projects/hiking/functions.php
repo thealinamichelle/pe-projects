@@ -15,23 +15,26 @@ function show($variable) {
 }
 
 
-
-function getpageparts($page){
+function getpageparts($page) {
 			include($page . '.php');
 		}
 
+Function radioInitialization($radioName, $defaultValue) {
+		if ( !isset($_POST["$radioName"]) ) {//A// sets up the radio group to have a default. if the post isn't set then this is the standard value. 
+			$_POST["$radioName"] = "$defaultValue"; //make sure all the radio items in the group have the same default value
+		}//A
+}
 
-function radioIsSet($submitName, $radioName, $defaultvalue){//A
-		if ( !isset($_POST["$radioName"]) ) {//B// sets up the radio group to have a default. if the post isn't set then this is the standard value. 
-			$_POST["$radioName"] = "$defaultvalue"; //make sure all the radio items in the group have the same default value
-		}//B
-
-	if ( isset($_POST["$radioName"]) ) {//Cif submit is posted to the POST superglobal array
-		if ( isset($_POST["$radioName"]) ){//Dand if the radio group name is posted to the array
+function radioSetup($radioName){//A
+	if ( isset($_POST["$radioName"]) ) {//B - if submit is posted to the POST superglobal array
+		if ( isset($_POST["$radioName"]) ){//C - and if the radio group name is posted to the array
 			$name = $_POST["$radioName"]; //then the same string but now a variable is points to that array item 
-			}//D
-		}//C
+			}//C
+		}//B
 }//A
+
+
+
 
 
 function formsetup($formValue) {
@@ -51,12 +54,6 @@ function ischecked($radioName, $radioItem) {//A
 			return "checked";
 		}//B
 	}//A
-
-
-
-
-
-
 
 function citiesDropDown () {
 	echo '<option value="Agoura_Hills">Agoura Hills</option>
@@ -153,15 +150,3 @@ function citiesDropDown () {
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
