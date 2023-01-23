@@ -1,5 +1,23 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+---------
+
+
+		//CREATE ENTRY
+		$newTrail = [
+		"name" => $name,
+		];
+		var_dump($newTrail);
+
+
+		//PULL UP THE JSON FILE
+		// $json_data =json_encode($posts);
+
+		//SAVE ENTRY
+		//file_put_contents("myfile.json, $json_data");
+
+
+
 ---------------------------------------------------------------------------
 ## 1/20/23
 
