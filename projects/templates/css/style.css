@@ -1,0 +1,97 @@
+@import "resets.css";
+
+/*SITE WIDE STYLING*/
+
+body {
+	background: lightgrey;
+	color: black;
+}
+
+main {
+	height: 100vh;
+}
+
+
+/* SET UP */
+inner-column {
+	display: block;
+	font-family: helvetica, sans-serif;
+	min-width: 200px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+@media (min-width:900px){
+	border: solid 3px black;	
+}
+	
+wrapper {
+	display: block;
+}
+
+/* FONTS */
+
+.loud-voice {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.inside-voice {
+	font-size: .9rem;
+	line-height: 1.2rem;
+}
+.attention-voice {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.3rem;
+}
+
+.loud-voice + .inside-voice, .attention-voice + .inside-voice {
+	margin-top: 1rem;
+}
+.loud-voice + wrapper {
+	margin-top: 2rem;
+}
+
+
+
+
+
+
+button {
+	display: block;
+	width: fit-content;
+	background: black;
+	border-width: 0;
+   border-style: none;
+   border-color: none;
+   border-image: none;
+	font-family: inherit;
+	font-weight: 600;
+	letter-spacing: .06rem;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: underline;
+	padding: 10px;
+	margin-top: 1rem;
+	
+}
+
+
+
+
+a {
+	color: #2641be;
+	font: inherit;
+}
+
+
+module-one, module-two, module-three, module-four, module-five{
+	display: block;
+}
+
+
+
+
+
+
+
