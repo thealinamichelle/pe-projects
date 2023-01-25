@@ -6,12 +6,12 @@ header{
 masthead {
 	display: block;
 	border: 3px solid black;
-	padding: 10px;
+	padding: var(--pad);
 
 }
 masthead nav {
 	border: 3px solid black;
-	padding: 10px;
+	padding: var(--pad);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -19,7 +19,7 @@ masthead nav {
 
 masthead a {
 	border: 3px solid black;
-	padding: 10px;
+	padding: var(--pad);
 }
 
 @media (min-width: 600px) {
