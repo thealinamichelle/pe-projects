@@ -1,5 +1,48 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+
+
+---------------------------------------------------------------------------
+## 1/21-25/23
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] add learnings from the last few days into the journal
+- [x] git commit
+- [x] fix personal portal
+- [] Milestones
+- [] research travel websites - boutique hotels
+
+## For later:
+- [] return to JSON lesson after theme challenge
+
+CSS learnings: 
+	
+		div.section > div:first-child
+-- Using the > changes the description to: "Find any divs that are the direct descendents of section divs" which is what you want.
+
+JSON Lesson - I need to return to this lesson after the theme challenge:
+
+
+
+		//CREATE ENTRY
+		$newTrail = [
+		"name" => $name,
+		];
+		var_dump($newTrail);
+
+
+		//PULL UP THE JSON FILE
+		// $json_data =json_encode($posts);
+
+		//SAVE ENTRY
+		//file_put_contents("myfile.json, $json_data");
+
+
+
+
+
+
 ---------------------------------------------------------------------------
 ## 1/20/23
 
