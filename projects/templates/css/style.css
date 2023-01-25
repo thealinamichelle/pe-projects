@@ -1,15 +1,16 @@
 @import "resets.css";
+@import "masthead.css";
+@import "diptych.css";
+@import "call-to-action.css";
+@import "article-grid.css";
 
-/*SITE WIDE STYLING*/
-
-body {
-	background: lightgrey;
-	color: black;
+html {
+	--pad:10px;
 }
 
-main {
-	height: 100vh;
-}
+
+
+
 
 
 /* SET UP */
@@ -20,9 +21,7 @@ inner-column {
 	max-width: 900px;
 	margin: 0 auto;
 }
-@media (min-width:900px){
-	border: solid 3px black;	
-}
+
 	
 wrapper {
 	display: block;
@@ -53,13 +52,9 @@ wrapper {
 }
 
 
-
-
-
-
 button {
 	display: block;
-	width: fit-content;
+/*	width: fit-content;*/
 	background: black;
 	border-width: 0;
    border-style: none;
@@ -71,12 +66,10 @@ button {
 	color: white;
 	text-transform: uppercase;
 	text-decoration: underline;
-	padding: 10px;
+	padding: var(--pad);
 	margin-top: 1rem;
 	
 }
-
-
 
 
 a {
@@ -90,8 +83,6 @@ module-one, module-two, module-three, module-four, module-five{
 }
 
 
-
-
-
-
-
+body module-two:last-of-type {
+	background-color: #ff9297;
+}
