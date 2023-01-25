@@ -1,7 +1,17 @@
+<?php //include("functions.php")?>
+<?php //include("arrays.php")?>
+<?php //include("head.php")?>
+
+
+
+
 <module-three>
 	<inner-column>
 		<grid>
-			<section class="grid-header">
+			
+
+
+<section class="grid-header">
 				<div class="attention-voice">
 					<h3>This is an "Article grid" module. This is it's heading.</h3>
 				</div>
@@ -11,79 +21,43 @@
 			</section>
 
 			<section class="cardholder">
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is an article card</h3>
-					</div>
-					<wrapper>
-						<div class="inside-voice">
-							<p>It's basically a mini call to action, right?</p>
-						</div>
-						<button class="grid-button">Act!</button>
-					</wrapper>
-				</div>
 
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is the title of an article</h3>
-					</div>
-					<wrapper>					
-					<div class="inside-voice">
-						<p>Here is a little info to help you understand if this is an article you want to read.</p>
-					</div>
-					<button class="grid-button">Read More</button>
-					</wrapper>
-				</div>
 
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is the title of an article</h3>
-					</div>
-					<wrapper>					
-					<div class="inside-voice">
-						<p>It's basically a mini call to action, right?</p>
-					</div>
-					<button class="grid-button">Read More</button>
-					</wrapper>
-				</div>
+<?php
 
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is the title of an article</h3>
-					</div>
-					<wrapper>					
-					<div class="inside-voice">
-						<p>It's basically a mini call to action, right?</p>
-					</div>
-					<button class="grid-button">Read More</button>
-					</wrapper>
-				</div>
+//showerrors();
 
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is the title of an article</h3>
-					</div>
-					<wrapper>					
-					<div class="inside-voice">
-						<p>It's basically a mini call to action, right?</p>
-					</div>
-					<button class="grid-button">Read More</button>
-					</wrapper>
-				</div>
+//show($gridheader);
 
-				<div class="article-card">
-					<div class="attention-voice">
-						<h3>This is the title of an article</h3>
-					</div>
-					<wrapper>					
-					<div class="inside-voice">
-						<p>It's basically a mini call to action, right?</p>
-					</div>
-					<button class="grid-button">Read More</button>
-					</wrapper>
-				</div>
+	// echo '<section class="' . $gridheader["section class"] . '">
+	// 			<div class="' . $gridheader["header class"] . '">
+	// 				<h3>' . $gridheader["header"] . '</h3>
+	// 			</div>
+	// 			<div class="' . $gridheader["text class"] . '">
+	// 				<p>' . $gridheader["text"] . '</p>
+	// 			</div>
+	// 		</section>
 
-			</section>
+
+	// 		<section class="' . $gridheader["wrapper"] . '"';
+
+	foreach ($articleContent as $card) {
+
+		echo '<section class="' . $card["section class"] . '">
+					<div class="' . $card["header class"] . '">
+						<h3>' . $card["header"] . '</h3>
+					</div>
+					<div class="' . $card["text class"] . '">
+						<p>' . $card["text"] . '</p>
+					</div>
+				</section>';
+	}
+
+	echo '</section>';
+
+
+
+?>
 
 		</grid>
 	</inner-column>
