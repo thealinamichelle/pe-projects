@@ -38,6 +38,252 @@ JSON Lesson - I need to return to this lesson after the theme challenge:
 		//SAVE ENTRY
 		//file_put_contents("myfile.json, $json_data");
 
+## THEME CHALLENGE - RESEARCH
+
+- travel - boutique hotels: romance?
+
+Themes in the language
+
+
+
+###The Hotels
+
+The Hotel June
+
+--  What is working:
+	- images reflect repeating design patterns (rounded book now)
+	- great room photography
+	- color pallet
+	- phone scale the large font is eye catching and easy to read
+	- our: bungalows shows great info hierarchy
+	- photos lean into the color pallet
+	- soft text transitions
+	- little wavy lines reminding you of the water
+	- text is broken up by large photos
+	- desktop: images pressing text into smaller bit-size chunks
+	- sharper image edges vs the flowery font is nice
+
+-- What isn’t
+	- header images are pixelated
+	- “Meet the latest” on desktop is just waaaay too much large text
+	- dots on images to scroll through go missed
+	- background leopard pattern gets cut off
+	- the drawn marks + the digital ones get too chaotic with too much large font on desktop
+
+
+-- What keywords or phrases keep coming up,
+	- private
+	- peaceful
+	- thoughtful
+	- art
+	- music
+	- design
+	- discover
+
+-- theme words: California chic
+
+Sonder
+--  What is working:
+	- colors: really great subtle changes with outlines for those with vision issues
+	- corners: love the rounded corner on large images but the sharp corners for the small ones
+	- font size: maybe too thin for legibility on header for desktop
+	- button style: hover color change, just enough. Rotate image buttons are clear
+	- icons
+
+-- What isn’t
+	- header image with text is a bit confusing
+	- lack uniqueness, all of these tricks are very popular right now
+	- the stupid video with a play video. It’s already playing
+	- edge fade is too drastic in reviews
+
+-- What keywords or phrases keep coming up:
+	future
+	choice
+	comfort
+	story
+	summer
+
+-- theme words: corporate chic cool
+
+
+Amigo
+--  What is working:
+	- logo font is interesting
+	- separators: dark thin lines are a nice contrast to the ugly header fonts
+	- corners: very sublte rounding on buttons
+	- font size: h2 or h3 is a really nice typewriter font
+	- button style: very clear
+	- icons: thin drawings, have a very slight pen-to-paper feel
+
+-- What isn’t
+	- header video: kill it with fire. Very eye-catching at first but quickly becomes fatiguing to have on the site.
+	- there is a weird little fantom logo in the bg as you scroll
+	- font from the logo without the middle cut out is kinda boring
+	- images are a bit blurry
+	- header font is terrible
+	- desktop breakpoint is too wide
+
+-- What keywords or phrases keep coming up:
+	luxe
+	explore
+	artful
+	natural
+
+-- theme words: modern rustic chic
+
+Per La
+--  What is working:
+	-
+	- colors:
+	- corners:
+	- font size
+	- button style: clear on the image rotations. thin black line for links
+	- footer extra clear on a laptop
+
+-- What isn’t
+	- another stupid video header
+	- logo is too tall and makes the header too big. It also reads as too small for center placement.
+	- headers take up a lot of space on a laptop
+	- too much going on for the content rotation. Something about the 3 images+ first image that looks like it has a vertical layout line (but it doesn’t) + theme titles, + headers + dates on top, its too much. The content hierarchy isn’t clear.
+	- header: space-between placement is just too much.
+	- icons: feel outsourced, they are a different weight than everything else.
+
+-- What keywords or phrases keep coming up:
+	discover
+	explore
+	inspired
+	curated
+	escape
+	style
+
+-- theme words: old-world chic
+
+Ultima Thule Lodge
+--  What is working:
+	- font choice for headers is great.
+	font sizes for content hierarchy is clear
+
+-- What isn’t
+	- image on image with drop shadow.
+	- text on very busy images
+	- kinda feels like there are 2-3 different designers editing this page who all have different ideas.
+	- font rules don’t seem consistent.
+	- there are the artsy font sections, the corporate font sections, and the severe drop shadow on images sections.
+	- icons are not consistent in style
+
+-- What keywords or phrases keep coming up:
+	cherish
+	private
+	surprising
+	adventure
+	wild
+	discover
+	explore
+
+-- theme words: rustic nature
+
+Short Stories
+
+--  What is working:
+	- colors: clear color pallet, good contrast.
+	- corners: ink in corners of font. Reminds you of a previous age. Reflects the design of the hotel
+	- movement tied to scrolling from user
+	- links are clear without a hover
+	- font size: scroll icons are clear without obstructing. reiterated underneath
+	- button style: they are fine
+
+-- What isn’t
+	- colors: could be more dynamic
+	- corners:
+	- font size
+	- button style
+
+-- What keywords or phrases keep coming up:
+	inspiration
+	natural
+	tranquil
+	retreat
+	urban
+	artwork
+	unforgettable
+
+-- theme words: subtle vintage chic
+
+Hotel Ziggy
+--  What is working:
+	- love the hand drawn looking lines
+	- logo font is unique, the website doesn’t try and copy it all over in text, but does in style
+	- colors: bold, good contrast
+	- corners:
+	- font size: header font size is great. great contrast.
+	- button style: hand drawn boundaries, hover is subtle. maybe good? scroll buttons are clear
+	- icons
+
+-- What isn’t
+	- bare spots don’t feel like needed visual air but instead evoke missing content
+	- sometimes too cluttered
+	- rotating vinyls hurts to look at
+
+-- What keywords or phrases keep coming up:
+	new
+	celebration
+	inspiration
+	creative
+	unforgettable
+
+-- theme words: funky chic
+
+Versper
+--  What is working:
+	- colors, font: good contrast
+	- parts are a flexbox collage in a goodway
+	- font size
+	- button style
+	- icons
+
+-- What isn’t
+	- the weird left alignment but small boxes are center-aligned??? (oh that’s tablet size)
+	- kinda boring
+	- button style: not always clear what is and isn’t a link, not uniform
+	- the font on the images are totally unreadable in places
+-- What keywords or phrases keep coming up:
+	romantic
+	private
+
+-- theme words: we tried chic
+
+Ryder
+--  What is working:
+	- colors: 60% it’s light and airy, a soothing color pallet. Color looks better on mobile
+	- corners: rounded corners on a lot of the content.
+	- font size: very easy to read
+	- button style: reflects the corners
+	- background: relects the rounded edges
+	- works best of mobile
+
+-- What isn’t
+	- colors: kinda boring, not eye-catching at all
+	- corners: by the end of the page there are too many rounded corners. It’s no longer balanced.
+	- font size
+	- button style: sometimes hand drawn and sometimes not? They often cover the text you want to read.
+	- icons: they are fine. Nothing interesting.
+	- desktop looks like a mess
+
+-- What keywords or phrases keep coming up:
+	discovery
+	explore
+	wander
+	wellness
+	wonder
+
+-- theme words: spa vibe
+
+look at: 
+colors: 
+corners:
+font size
+button style
+icons
 
 
 
