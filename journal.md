@@ -1,6 +1,87 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 
+## 1/30
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] make style tiles
+- [] git commit
+- [] Milestones
+
+
+###
+Blockers: JSON. REMEMBER you didnt finish that lesson. OOps
+
+### video notes
+
+- What is Word Press?
+	just a bunch of PHP functions really.
+	ghelp you get and store data in a database, like the for each statements and JSON. This saves it in a easier way.
+
+- wordpress.org its self hosted
+	WordPress is software designed for everyone, emphasizing accessibility, performance, security, and ease of use. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.
+
+- define is not much different than a meta tag
+- how do we get a database
+- sequalpro :  name and default are root and root. 
+
+name the database the name of the project but short:
+
+what is word press? 
+	it's a big umbrella term for a lot.
+		a free admin panel
+		a form making machine
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+
+## 1/29
+
+- [x] Set Up Journal Entry
+- [] Stand Up
+- [] make style tiles
+- [] git commit
+- [] Milestones
+
+
+
+### CSS Notes
+
+		section:nth-of-type(odd) {
+			position: relative;
+		}
+
+
+		section:nth-of-type(odd):before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-image: var(--texture);
+			background-size: cover;
+			overflow: hidden;
+			opacity: 50%;
+			z-index: -1;
+		}
+	/*this is a psuedo element, basically it's a pretend element.
+	you have to set the parent or real element into a position relative and the child as absolute.
+
+	then make sure it doesn't collapse by setting the top/right/left/bottom are set to 0. 
+
+	making it a z-index -1 makes sure that it is underneath the other items in the element.
+	*/
 
 ---------------------------------------------------------------------------
 ## 1/21-25/23
