@@ -1,0 +1,55 @@
+/*WELCOME DIPTYCH STYLES*/
+
+
+welcome-diptych {
+	position: relative;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	padding: var(--welcomepad) var(--welcomepad);
+}
+
+welcome-diptych p {
+	margin-top: 20px;
+}
+
+welcome-diptych text-content {
+		position: absolute;
+		text-transform: uppercase;
+		top: clamp(300px, 150vw, 320px);;
+		left: 0;
+		padding: 10vw;
+	}
+
+@media (min-width:  700px) {
+	welcome-diptych {
+		flex-direction: row;
+		align-items: center;
+		padding-top: 20vh;
+		padding-bottom: 30vh;
+	}
+
+	welcome-diptych :is(picture, text-content) {
+		flex-basis: 50%;
+	}
+
+	welcome-diptych picture:nth-of-type(1) {
+		transform: translate(0, -10vh);
+	}
+
+	welcome-diptych picture:nth-of-type(2) {
+		transform: translate(0, 5vh);
+	}
+
+	welcome-diptych text-content {
+		max-width: fit-content;
+		top: clamp(425px, 50vh, 450px);
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding: 5vw;
+	}
+
+
+}

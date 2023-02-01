@@ -1,0 +1,34 @@
+/*RESTAURANT DIPTYCH*/
+
+restaurant-diptych {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+	padding: 10vh 0;
+}
+
+restaurant-diptych p {
+	margin-top: 30px;
+}
+
+restaurant-diptych text-content {
+	padding-right: 5vw;
+	text-align: right;
+	margin-top: 40px;
+	}
+
+@media (min-width:  700px) {
+	restaurant-diptych {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	restaurant-diptych picture {
+		width: 70%;
+	}
+
+	restaurant-diptych text-content {
+		padding-right: 2rem;
+	}
+}

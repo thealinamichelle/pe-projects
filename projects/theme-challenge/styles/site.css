@@ -1,0 +1,71 @@
+/* 
+WHOLE SITE
+*/
+
+/* P reset */
+@import "preset.css";
+
+/* S etup */
+@import "setup.css";
+
+/* S setings */
+@import "settings.css";
+/*@import "developer-styles.css";*/
+
+/* S tructure */
+@import "structure.css";
+
+/* T ypography */
+@import "typography.css";
+
+/* C omponents */
+@import "components.css";
+
+/* S tuff (modules) */
+@import "modules.css";
+
+
+body {
+	background-image: var(--texture);
+	overflow: scroll;
+	background-size: 100%;
+
+}
+
+section:nth-of-type(even) {
+	background: var(--paper);
+}
+
+
+section:is(.sign-up, .get-involved) inner-column {
+	max-width: var(--tight);
+}
+
+section.get-involved {
+	background-color: var(--highlight);
+}
+footer {
+	background-color: var(--cream);
+}
+
+section.get-involved .button {
+	background-color: var(--ink);
+	color: var(--paper);
+}
+
+@media (prefers-color-scheme: dark) {
+	section.sign-up {
+		background-color: var(--color);
+		color: var(--black);
+	}
+
+	section.sign-up .button {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	section.get-involved {
+		background-color: var(--highlight);
+		color: var(--black);
+	}
+}

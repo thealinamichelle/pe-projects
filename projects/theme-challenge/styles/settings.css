@@ -1,0 +1,37 @@
+
+html {
+	--black: #2f2f2f;
+	--white: #fbfbfb;
+
+	--neutral: #e4e4e4;
+	--cream: #FAF2E8;
+
+	--color: #ffb600;
+	--highlight: #ffb600;
+
+	--shadow: rgba(0,0,0,.7);
+
+	--corners: 10px; /* or whatevers */
+	--paper: var(--white);
+	--ink: var(--black);
+
+/*page breaks*/
+	--standard: 1140px;
+	--tight: 800px;
+
+/*welcome border padding*/
+
+	--welcomepad: 5vw;
+
+	--texture: url("../images/background/bg-landscape.jpg");
+
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #2f2f2f;
+		--ink: #fbfbfb;
+		--cream: #2f2f2f;
+		--texture: url("../images/background/bg-darkmode.jpg");
+	}
+}

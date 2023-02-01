@@ -1,0 +1,34 @@
+
+graphic-diptych {
+	display: block;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 2rem;
+	padding: 10vh 0;
+	padding-right: 1.5rem;
+}
+
+graphic-diptych p {
+	margin-top: 20px;
+}
+
+graphic-diptych text-content {
+	padding-left: var(--welcomepad);
+}
+
+@media (min-width:  700px) {
+	graphic-diptych {
+		flex-direction: row;
+		align-items: center;
+		padding-bottom: 20vh;
+	}
+
+
+	graphic-diptych picture {
+		max-width: 65%;
+	}
+
+	graphic-diptych text-content {
+	padding-left: 0;
+}
+}

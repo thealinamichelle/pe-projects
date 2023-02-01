@@ -1,0 +1,30 @@
+
+.sign-up {
+	position: relative;
+}
+
+
+.sign-up line {
+	position: absolute;
+	top: 16rem;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 15rem;
+	display:block;
+	border-top: solid 1px var(--highlight);
+	border-bottom: solid 1px var(--highlight);
+}
+
+call-to-action {
+	display: block;
+	/*border: 4px solid orange;*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20rem 0;
+}
+
+call-to-action .button {
+	margin-top: 20px;
+}

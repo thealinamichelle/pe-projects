@@ -1,0 +1,88 @@
+/* Should we pull in @fonts here? */
+
+/*font-family: 'Cambo', serif;
+font-family: 'Roboto', sans-serif;*/
+html {
+	--cambo: 'Cambo', serif;
+	--rob: 'Roboto', sans-serif;
+	--loudv: clamp(36px, 5vw, 60px);
+}
+
+.loud-voice	{
+	font-family: var(--cambo);
+	font-size: var(--loudv);
+	color: var(--ink);
+}
+
+.loud-voice-overlay {
+	font-family: var(--cambo);
+	font-size: var(--loudv);
+	color: var(--white);
+	text-shadow: 1px 0 20px var(--shadow);
+}
+
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+.attention-voice	{
+	font-family: var(--cambo);
+	font-size: 1.8rem;
+}
+
+.strong-voice	{
+	font-family: var(--rob);
+	font-weight: 700;
+	font-size:  .8rem;
+	line-height: 2rem;
+}
+
+.calm-voice, p, li {
+	font-family: var(--rob);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1;
+	color: var(--ink);
+}
+
+.refined-voice {
+	font-family: var(--rob);
+	font-size: .8rem;
+	font-weight: 300;
+	line-height: 1rem;
+	color: var(--ink);
+}
+
+:is(.calm-voice, p, li) em {
+	font-weight: 100;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+	color: var(--highlight);
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+p + p {
+	margin-top: 1em;
+}
+
+p + .refined-voice {
+	margin-top: .5rem;
+}
+.refined-voice + .refined-voice {
+	margin-top: .25rem;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
