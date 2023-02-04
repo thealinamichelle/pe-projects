@@ -1,6 +1,52 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 
+function getFile($path) {
+  return dirname(__FILE__) . '/' . $path;
+}
+eyes
+1000
+clap::skin-tone-4
+
+
+
+
+
+3:46
+Breaking it down:
+eyes
+1000
+clap::skin-tone-4
+
+
+
+
+
+3:47
+getFile  - is just a function name - right? I made it up. Maybe there’s a better name
+eyes
+1000
+clap::skin-tone-4
+
+
+
+
+
+3:48
+dirname  - is a built-in PHP function that will return the directory name (given a path)
+eyes
+1000
+clap::skin-tone-4
+
+
+
+
+
+3:48
+__FILE__ also a built in PHP thing - and is simply the name of the current file
+
+
+
 ## 1/30
 
 - [x] Set Up Journal Entry
