@@ -1,52 +1,370 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+## 2/13
 
-function getFile($path) {
-  return dirname(__FILE__) . '/' . $path;
-}
-eyes
-1000
-clap::skin-tone-4
-
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
 
 
+## portfiolio review
+
+### 10
+?? if it doesn't exist do this
 
 
-3:46
-Breaking it down:
-eyes
-1000
-clap::skin-tone-4
+### 11:
+	
+question: isset? vs just an if statement
+	
+Create a default: 
+	- using this blank equals blank but if not here use this:
+	- $variable = $variable ?? '<span class="todo-warning"> This is unfinished :) </span>' 
+	- suggestions: page titles/headers, paragraphs, intros etc
+
+
+Style Guide Page:
+	SG for style guide in the header
+	(Living style guide)
+
+### 12: 
+	Css class {
+		order: 2
+	}
+- flex and grid children can reaarange their order.
+- diptych: class of flipped apply to modules with new order
+	- variable for class:
+		- On index importer page:
+		- <section class="other-news">
+			<inner-column>
+				<?php 
+					$heading = "in other news";
+					$flipped = true;
+					include('file/location/this-one.php');
+				?>
+				</inner-column>
+			</section>
+		- On graphic-dyptich template: 	
+				<?php $isFlipped = "flipped";?>
+					if ($flipped) {
+						isFlipped = "flipped"
+					}
+				?>	
+
+		- So within the class
+			<?=$isFlipped?>
+
+		- So if if the module is set to $flipped = true in the feeder, it will deplay the alternative layout. 
+
+
+- Add details to help other developers:
+instead of intro should be here
+"many pages willutilitzer this page header module. it includes the main page title. and a supporting paragraph to get the visitor aquainted with the pages goals"
+
+- generic text template: Generic text heading
+this generic text area can have any HTML text elements. It can be long or short, toss in whatever you want. 
+
+
+
+### 13 
+
+JSON data
+
+
+make a goals.json file
+folder: data
+	
+		[
+	{
+		"heading" : "five years",
+		"goals" : [
+			"goal number one",
+			"goal number two",
+		]
+	},
+	{
+		"heading" : "five years",
+		"goals" : [
+			"goal number one",
+			"goal number two",
+		]
+	}
+
+no trailing commas
+
+### 14 MORE JSON
+		<?php
+			$json = file_get_contents('data/goals.json'); //passes in the json data
+			$goalsData = json_decode($json, true); //do you want this to be an associative array?
+		?>
+
+	<goals-module>
+		<?php foreach ($goalsData as timeblock)?>
+....
+
+- First mock up the html how you would like to see it on the screen before writing the php
+...html then:
+			
+			<goals-module>
+				<?php foreach ($goalsData as $timeBlock)?> {
+					<h2 class='attention-voice'><?=$timeBlock["heading"]?></h2>
+
+					<ol>
+						<?php foreach ($timeBlock["goals"] as $goal)?> {
+						<li>
+							<p><?=$goal?></p>
+						</li>
+						<?php } ?>
+					</ol>
+				<?php } ?>
+			</goals-module>
+
+- then put this module on the style guide page
+
+
+### 15
+
+fill in data
+
+### 16
+
+resume/ home / about style guide/ goals/ resume
+
+functions page: in the header or another page all the pages use
+
+		enableerrorreporting
+
+		formatcode($things)
+
+
+datalist element
+dt -
+dd -description
+
+### 18
+emmet = select ctrl + w wrap your thing with stuff
+
+
+when to be a standalone module
 
 
 
 
 
-3:47
-getFile  - is just a function name - right? I made it up. Maybe there’s a better name
-eyes
-1000
-clap::skin-tone-4
+
+
+---------------------------------------------------------------------------
+
+## 2/13
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+
+
+grid: 
+
+repeat: questions
+
+these are relative, so think ratios:
+grid-template-columns: 1fr 1.fr
+2fr 3fr
+20fr 30fr
+
+
+by default everything wraps horizontally
+
+lines start at line 1 not 0
+grid-column: 2 starts at line two
+grid-column: span 2; will span two spaces
+
+
+Only going so many rows:
+try and let rows be implicit (auto) heitght unles absolutely necesary
+
+
+repeat(20, 300px)
+
+repeat is a function
+repeat( 1 amount of times, 1fr the space of the column)
+200px repeat(3, 1fr) 30px
+
+3n + 3 at the 3rd 
+
+justify/align: place-self or place-items: center
+
+
+---------------------------------------------------------------------------
+
+## 2/9
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones
+- [] Spend 1 hour on the ultimate portfolio
+- [] Enable User Log In
+- [] Call BARC about Cake's 17th appointment. Move to 8am	
+
+
+
+Notes from Portfolio Review:
+
+-
+variables as headings
+
+			<?php 
+				$heading = "heading you need to show";
+				include('file.php')
+			?>
+-	
+	- On the other page:
+
+			<h2><?php $heading ?></h2>
+
+	- This is helpful for reused modules. You can change the content without having to use new php files.
+	- helpful for the page header as well
+
+
+Set the widths for inner column, you can't do it at break points but you can do it for 
+	
+	html {
+		--tablet-inner-column: 600px
+	}
+
+	inner-column{
+		width: var(--tablet-inner-column)
+	}
+
+Push the footer down with flex grow
+
+	body main flex-grow: 1
+	I think body needs to be set to display flex for this to work
+
+
+?? Content is content but if you can't find it use this generic heading
+
+	$content = $content ?? "blah blah generic"
+
+- You can create a php with just generic text rather than inserting lorem ipsum everywhere.
+
+base css files as well at php files
+
+File structure
+
+node - javascript files, 3rd part
+
+css>
+	site.css
+templates >
+	components >
+	modules >
+		name>
+			potential controller file
+			module name.css (styles for each modules)
+			module nams.php
+			maybe css?
+	pages
+index.php
+
+
+
+CREATING SUBLIME SNIPPETS:
+
+		<snippet>
+			<content><![CDATA[
+		<div class="$1">
+			<p>The ${2:cat} was ${3:fast}.</p>
+		</div><!-- /$1 -->
+		]]></content>
+			<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+			<tabTrigger>d</tabTrigger>
+			<!-- Optional: Set a scope to limit where the snippet will trigger -->
+			<scope>text.html</scope>
+		</snippet>
+
+- Can be found under tools > developer > snippet
+- Save as sublime-snippet
+- It is an XML file and the text between "[CDATA[" and "]]>" tell it to not percieve that text as XML data
+- tab trigger is the key or word + tab that will trigger the text to show up
+- scope is where this snippet will be able to be used 
+- all the scope source text can be found here: https://gist.github.com/iambibhas/4705378
+
+- $ indicates a place holder. $1 above will leave your cursor there so you can immediately fill out the text
+-- $1 will copy/mirror whatever is your placeholder text
+-- ${number:text} This will give your placeholder a value text. So when you hit d + tab you can hit tab again to immediately edit the $2 and then $3 spots in your snippet.
+-- to get rid of the blinking cursor on the mirror line: use a substition:
+	- ${1/\*//}
+		- this accepts regular expressions and this syntax accepts 4 arguments : ///
+		- 1st is a the field we want to use
+		- 2nd is the regular expression. For substitution we use \*
+		- 3rd and 4th options are empty
+
+
+EMMIT CONTROL:
+CONTROL + W
+
+
+---------------------------------------------------------------------------
+
+## 2/8
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones
+- [x] Fix up my journal
+- [x] Spend 1 hour on the ultimate portfolio
+- [] Ask some WP questions
+- [] Enable User Log In
+- [x] JSON
+- [] Call BARC about Cake's 17th appointment. Move to 8am	
+
+
+
+Notes from Portfolio Review:
+
+php and node allow you to stitch html files together
+initiliaze git repo
+	add
+	git ignore - ds store: ds store is a file about the file itsef. You don't need it in the repo
+	for commits first letter needs to be Capitalized "Add"
+
+A fake image can be a div with example styling:
+	aspect ratio: 1/1
+	background: black
+
+ 
+
+
+
+---------------------------------------------------------------------------
+
+## 2/7
+
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones
+- [x] Fix up my journal
+- [] Spend 1 hour on the ultimate portfolio
+- [] Ask some WP questions
+- [x] Front Page: 
+		- content?
+- [x] Style the About Page
+- [] Enable User Log In
+- [x] JSON
+- [] Call BARC about Cake's 17th appointment. Move to 8am		
 
 
 
 
 
-3:48
-dirname  - is a built-in PHP function that will return the directory name (given a path)
-eyes
-1000
-clap::skin-tone-4
 
 
-
-
-
-3:48
-__FILE__ also a built in PHP thing - and is simply the name of the current file
-
-
-
+---------------------------------------------------------------------------
 ## 1/30
 
 - [x] Set Up Journal Entry
@@ -55,6 +373,16 @@ __FILE__ also a built in PHP thing - and is simply the name of the current file
 - [] git commit
 - [] Milestones
 
+
+### Random Side Note: 
+
+		function getFile($path) {
+		  return dirname(__FILE__) . '/' . $path;
+		}
+
+is just a function name - right? I made it up. Maybe there’s a better name
+is a built-in PHP function that will return the directory name (given a path)
+__FILE__ also a built in PHP thing - and is simply the name of the current file
 
 ###
 Blockers: JSON. REMEMBER you didnt finish that lesson. OOps
