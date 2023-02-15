@@ -20,7 +20,7 @@ $trailHours = null;
 $ulitiies = null;
 //TRAIL PATH DETAILS
 $difficulty = null;
-$trailLength = null;
+$trailLength = null; 
 $loop = null;
 //ENVIROMENT
 $features = null;
