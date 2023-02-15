@@ -10,6 +10,7 @@ html {
 	--highlight: #ffb600;
 
 	--shadow: rgba(0,0,0,.7);
+	--fadedshadow: rgba(47, 47, 47, .3);
 
 	--corners: 10px; /* or whatevers */
 	--paper: var(--white);
@@ -35,3 +36,4 @@ html {
 		--texture: url("../images/background/bg-darkmode.jpg");
 	}
 }
+

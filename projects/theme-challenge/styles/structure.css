@@ -31,11 +31,13 @@ inner-column.tight {
 .site-header {
 	position: sticky;
 	top: 0;
-	z-index: 5;
-	background-color: var(--cream);
-	border-bottom: solid 1px var(--ink);
+	z-index: 5;/*
+	background-color: var(--cream);*/
+	border-bottom: solid 1px var(--fadedshadow);
 	padding: 20px 0;
 }
+
+
 
 
 

@@ -1,7 +1,80 @@
-/*WELCOME DIPTYCH STYLES*/
+/*/*WELCOME DIPTYCH STYLES*/
+
+ welcome-diptych picture {
+	width: 100%;
+	aspect-ratio: 1.25/1.5;
+} 
+
+
+welcome-diptych picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} 
 
 
 welcome-diptych {
+	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+	grid-gap: 0px;
+ 	padding-top: 20vh;
+	padding-bottom: 30vh; 
+}
+
+welcome-diptych picture:nth-of-type(1) {
+	grid-area: 1 / 1 / 12 / 3;
+}
+
+welcome-diptych picture:nth-of-type(2) {	
+	grid-area: 12 / 1 / 24 / 3;
+}
+
+welcome-diptych text-content {
+	grid-area: 5 / 1 / auto / 3;
+	place-self: center;
+	z-index: 2;
+	width: 70%;
+	text-align: center;
+}
+
+@media (min-width:  700px) {
+
+welcome-diptych {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 10px;
+	padding-top: 20vh;
+	padding-bottom: 30vh;
+}
+
+welcome-diptych picture:nth-of-type(1) {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+welcome-diptych picture:nth-of-type(2) {	
+	grid-row-start: 3;
+	grid-row-end: 7;
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+welcome-diptych text-content {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	place-self: center;
+	z-index: 2;
+}
+
+}
+
+
+/*welcome-diptych {
 	position: relative;
 	display: block;
 	display: flex;
@@ -52,4 +125,5 @@ welcome-diptych text-content {
 	}
 
 
-}
+}*/
+*/

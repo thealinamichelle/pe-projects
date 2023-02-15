@@ -2,12 +2,14 @@
 <mast-head>
 
 	<nav class='site-menu'>
+
 		<ul>
-			<li>
+
+			<li>		<div>
 				<a class='home' href='#'>
 					<?php include('modules/logo.php'); ?>
 				</a>
-			</li>
+		</div></li>
 
 			<li>
 				<a href='#'>Some page</a>

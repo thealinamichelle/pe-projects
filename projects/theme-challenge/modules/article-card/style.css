@@ -20,7 +20,6 @@
 .article-card picture {
 	width: 100%;
   aspect-ratio: 1/1.25;
-  border: solid red 1px;
 }
 
 .article-card picture img {
