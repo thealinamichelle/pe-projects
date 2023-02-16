@@ -1,20 +1,184 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
-## 2/13
+
+---
+## 2/1-15
+- [x] Set Up Journal Entry
+- [] Stand Up
+- [x] git commit
+- [] Milestones	
+
+Personal Site Data Structure:
+- redo file organization
+- style guide page
+- modular structures
+- json data
+
+
+
+### 19
+
+#### API Json decode
+
+    $json = file_get_content("");	
+    $variable = json_decode($json, true); 
+
+- `$json = file_get_content("");`//gets the json data
+	
+- `$variable = json_decode($json, true); `//turn it into the php array 
+	 - true for the associative array. The variable points to this data. 
+
+
+      formatCode($variable) 
+      formatCode($variable["name");
+
+The function referenced: 
+
+	function formatCode($things) {
+      echo "<code class='show-code'>";
+        echo "<pre>"
+          print_r($things);
+        echo "</pre>";
+      echo "</code>";
+    }
+
+
+**Side Note: repeating inclusion of files at the top, lots of repetition that can cause issues**
+
+### 20
+
+#### Query strings 
+
+Query Strings start with ? can be useful when looking at API data 
+example: Derrick's pokemon project the link had a `?limit=20` which shows that the amount display was limited to 20. On the API link adding `"endpoint/pokemon?limit=151"` changed the amount displayed.
+
+
+Use a query string to see list vs detail page?
+  <a href="?view=lists"> all pokemon</a>
+
+
+Check the server for the query string and return it
+   
+    function queryString() {
+      return $_SERVER['QUERY_STRING'];
+    }
+
+echo it in the template to see it
+
+    if ($_GET["view'] == "list") {
+        echo "List List List";
+
+    if ($_GET["view'] == "detail") {
+        echo "Detail Detail Detail";
+    } else {
+    //must be a list page
+		Put JSON data conversion info here    
+    }
+ 
+ 
+Need to set the `$_GET["view]`
+
+so you can add set an 
+
+    if( issset($_GET['view'] ) {
+    $view = $_GET["view"];
+    }
+    
+and above it a 
+   
+	$view="none";
+
+### 21
+
+**Explode**
+explode(string $separator, string $string, int $limit = PHP_INT_MAX): array
+Returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string separator.
+
+    $x = explode('/", $url);
+     formatCode($x);
+
+#### Summary 
+**So in the last few videos Derrick has set up a pokemon information page using the Pokemon API**
+
+- Find Pokemon API
+- expose the array and see the view query string 
+- view is part of the url for the pokemon API
+- If view is set in the url then point to that information with $view
+
+- If $view is equal to "detail"  then spit out this info:
+- Otherwise we are on a list page.
+- If we are on a list page:
+- grab the json data,
+- decoded the json data into a PHP array
+- point to "results" another specific part of the pokemon API array
+
+- for every pokemon entry
+  - grab the url
+  - $urlParts points to the subarray. We use an explode function to get there. Seeing the explosion lets us see what item on the subarray is the ID. The parent array showed a name and url. Explode let us see the subarray under the url.
+  - $link is that explosion line 6
+  	- SHow this:
+  		- bullet point
+  			- link
+- end of for every
+
+#### The detail plain logic:
+within the detail page we need to get that information as well.
+so we need the json data and a `$_Get Id` from the query string in order to know the id
+
+
+**The code so far:**
+
+    if ( isset($_Get["view"]) ) {
+        $view = $_Get["view"];
+    }
+
+    if ($view == "detail") {
+        $id = $_Get["id"];    
+        $json = file_get_contents("$endpoint/pokemon/$id");
+        $data = json_decode($json, true);
+        //formatCode($monster);
+    echo"<h1>$monster[name]</h1>";
+
+        }else {
+            //must be a list page
+            $json = file_get_contents("$endpoint/pokemon?limit=10");
+            $data = json_decode($json, true);
+            $monsters = $data["results"];
+
+            echo "<ul>";
+            foreach ($monsters as $monster) {
+                $url = $monster["url"];
+                $urlParts = explode('/', $url);
+                $id = $urlParts[6];
+                $link = "?view=detail&id=$id";
+                echo "
+                    <li>
+                        <a href='$link'>
+                            $monster[name]
+                        </a>
+                    </li>
+                ";
+            }
+            echo :"</ul>";
+        }
+
+
+---
+## 2/14
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
-- [] git commit
+- [x] git commit
 - [] Milestones	
 
 
-## portfiolio review
+## portfolio review
 
 ### 10
 ?? if it doesn't exist do this
 
 
-### 11:
+### 11
 	
 question: isset? vs just an if statement
 	
@@ -28,7 +192,7 @@ Style Guide Page:
 	SG for style guide in the header
 	(Living style guide)
 
-### 12: 
+### 12 
 	Css class {
 		order: 2
 	}
@@ -60,7 +224,7 @@ Style Guide Page:
 
 - Add details to help other developers:
 instead of intro should be here
-"many pages willutilitzer this page header module. it includes the main page title. and a supporting paragraph to get the visitor aquainted with the pages goals"
+"many pages will utilize this page header module. it includes the main page title. and a supporting paragraph to get the visitor acquainted with the pages goals"
 
 - generic text template: Generic text heading
 this generic text area can have any HTML text elements. It can be long or short, toss in whatever you want. 
@@ -148,13 +312,7 @@ emmet = select ctrl + w wrap your thing with stuff
 
 when to be a standalone module
 
-
-
-
-
-
-
----------------------------------------------------------------------------
+---
 
 ## 2/13
 
@@ -196,7 +354,7 @@ repeat( 1 amount of times, 1fr the space of the column)
 justify/align: place-self or place-items: center
 
 
----------------------------------------------------------------------------
+---
 
 ## 2/9
 
@@ -307,7 +465,7 @@ EMMIT CONTROL:
 CONTROL + W
 
 
----------------------------------------------------------------------------
+---
 
 ## 2/8
 
@@ -340,7 +498,7 @@ A fake image can be a div with example styling:
 
 
 
----------------------------------------------------------------------------
+---
 
 ## 2/7
 
@@ -364,7 +522,7 @@ A fake image can be a div with example styling:
 
 
 
----------------------------------------------------------------------------
+---
 ## 1/30
 
 - [x] Set Up Journal Entry
@@ -417,7 +575,7 @@ what is word press?
 
 
 
----------------------------------------------------------------------------
+---
 
 ## 1/29
 
@@ -457,7 +615,7 @@ what is word press?
 	making it a z-index -1 makes sure that it is underneath the other items in the element.
 	*/
 
----------------------------------------------------------------------------
+---
 ## 1/21-25/23
 
 - [x] Set Up Journal Entry
@@ -744,7 +902,7 @@ icons
 
 
 
----------------------------------------------------------------------------
+---
 ## 1/20/23
 
 
@@ -883,7 +1041,7 @@ You can tuck away function instructions in a seperate functions file and only ca
 
 		<?php include("functions.php") ?>
 
----------------------------------------------------------------------------
+---
 ## 1/16/23
 
 - [x] Set Up Journal Entry
@@ -910,7 +1068,7 @@ form review
 blockers deploybot, self checkout
 
 ASK: Alter the program so that an indeterminate number of items can be entered. The tax and total are computed when there are no more items to be entered.
----------------------------------------------------------------------------
+---
 ## 1/15/23
 
 - [x] Set Up Journal Entry
@@ -935,7 +1093,7 @@ ASK: Alter the program so that an indeterminate number of items can be entered. 
 
 
 
----------------------------------------------------------------------------
+---
 ## 1/14/23
 
 - [x] Set Up Journal Entry
@@ -955,7 +1113,7 @@ ASK: Alter the program so that an indeterminate number of items can be entered. 
 
 
 
----------------------------------------------------------------------------
+---
 ## 1/13/23
 
 - [x] Set Up Journal Entry
@@ -999,7 +1157,7 @@ Commonly used checked code for forms - used in area calc for radio group
 
 
 
----------------------------------------------------------------------------
+---
 
 
 ## 1/12/23
@@ -1034,7 +1192,7 @@ Commonly used checked code for forms - used in area calc for radio group
 
 - value attribute represents the data but also often the visual content as well
 
----------------------------------------------------------------------------
+---
 ## 1/10/23
 
 - [x] Set Up Journal Entry
@@ -1320,7 +1478,7 @@ Testing: It's 1999, and the years to retirement will exceed 1 year.
  Retrieve message and isert age, age of retirement, answer, current year and years til retirement. 
  Display message: "Hey there whipper snapper, it's both great and scary you are checking how many years you have until retirement. The bad news is you have {{years til retirement}}. The good news is it's only {{current year}}, so you have time to learning some financial literacy now so you can retire in {{year of retirement}}." 
 
----------------------------------------------------------------------------
+---
 ##1/9/23
 
 - [x] Set Up Journal Entry
@@ -1407,7 +1565,7 @@ foreach notes:
 	However, we find very few reasons to do so. It’s good to know how though!
 	Think “weird slash + n for new line.”
 
----------------------------------------------------------------------------
+---
 
 ##1/7/23
 
@@ -1428,7 +1586,7 @@ foreach notes:
 - Form feedbacks:
 - Emily: your strength is obviously consistency and understanding of the tools. The area I would like to see growth is in the design itself. You have made such awesome affinity drawings and collect really great style tiles. I would love to see that design carried into your site, or the visual design reflect your background. That way I am not just reading about it, but also feeling it. 
 - Jess: your website copy is super clear. It just seems like you need to set a meeting with Derrick and work on puting all the knowledge and skills you have into your site. 
----------------------------------------------------------------------------
+---
 ##1/6/23
 
 - [x] Set Up Journal Entry
@@ -1451,7 +1609,7 @@ foreach notes:
 - Emily: your strength is obviously consistency and understanding of the tools. The area I would like to see growth is in the design itself. You have made such awesome affinity drawings and collect really great style tiles. I would love to see that design carried into your site, or the visual design reflect your background. That way I am not just reading about it, but also feeling it. 
 - Jess: your website copy is super clear. It just seems like you need to set a meeting with Derrick and work on puting all the knowledge and skills you have into your site. 
 
----------------------------------------------------------------------------
+---
 ##1/4/23
 
 - [x] Set Up Journal Entry
@@ -1569,7 +1727,7 @@ So the first two actually look like they use javascript but there could be PHP t
 
 
 
----------------------------------------------------------------------------
+---
 ##1/3/23
 
 - [x] Set Up Journal Entry
@@ -1628,7 +1786,7 @@ Is another foreach the answer? I can’t quite figure out the next steps or if i
 
 
 
----------------------------------------------------------------------------
+---
 ##1/2/23
 
 ## Notes
@@ -1718,7 +1876,7 @@ Is another foreach the answer? I can’t quite figure out the next steps or if i
 				echo $f;
 		?>
 
----------------------------------------------------------------------------
+---
 ## 1/1/23
 
 - [x] Set Up Journal Entry
@@ -1748,13 +1906,13 @@ Is another foreach the answer? I can’t quite figure out the next steps or if i
 - discovered I did not have php installed? and did not have developer tools installed
 - So I installed developer tools with homebrew
 - installed php 
----------------------------------------------------------------------------
+---
 ## 12/20/22
 
 - [x] Set Up Journal Entry
 - [x] Stand Up
 
----------------------------------------------------------------------------
+---
 ## 12/16/22
 
 - [x] Set Up Journal Entry
@@ -1794,7 +1952,7 @@ How can I measure if this design is successful?
 
 #### yesterday's highlights: 
 - 
----------------------------------------------------------------------------
+---
 ## 12/15/22
 
 - [x] Set Up Journal Entry
@@ -1823,7 +1981,7 @@ How can I measure if this design is successful?
 - After thinking about it, realized how important it is to have a cohesive design goal or “words” at the start of the project. My fine art classes really drilled into us to develop the concepts through the process of painting. However, with design that definitely slows you down and can make for a discordant design.
 - There are a lot of cool affinity designer brushes for purchase.
 
----------------------------------------------------------------------------
+---
 ## 12/14/22
 
 - [x] Set Up Journal Entry
@@ -1855,7 +2013,7 @@ How can I measure if this design is successful?
 - Sketching in procreate then creating a vector in affinity designer is easier than trying to fix a fully rendered drawing.
 - "Have back up methods for bad drawing days"
 
----------------------------------------------------------------------------
+---
 ## 12/12/22
 
 - [x] Set Up Journal Entry
@@ -1876,7 +2034,7 @@ How can I measure if this design is successful?
 	- "My best english teacher told me that spelling doesnt matter and grammar doesnt matter- just make your point."
 	- So be selfish and make it for you! Ivy also said to remember that you can edit and delete anything.
 
----------------------------------------------------------------------------
+---
 ## 12/8/22
 
 - [x] Set Up Journal Entry
@@ -1920,7 +2078,7 @@ assume a relationship exists between separate blocks of information.
 
 
 
----------------------------------------------------------------------------
+---
 ## 12/2/22
 
 - [x] Set Up Journal Entry
@@ -1962,7 +2120,7 @@ assume a relationship exists between separate blocks of information.
 - Creae a website with my friends occupational therapy business
 
 
----------------------------------------------------------------------------
+---
 
 ## 12/1/22
 
@@ -1983,7 +2141,7 @@ assume a relationship exists between separate blocks of information.
 - flex-basis
 - flex-wrap
 - flex-grow 
----------------------------------------------------------------------------
+---
 ## 11/28/22
 
 - [x] Set Up Journal Entry
@@ -2009,7 +2167,7 @@ I have had a few issues with how I create my vectors where I end up needing to r
 
 Have you had the chance to play around with SVGs? Do you prefer to use them or just sticking with bitmap (png/jpg) images? Why or why not? 
 
----------------------------------------------------------------------------
+---
 
 ## 11/19/22
 
@@ -2024,7 +2182,7 @@ Have you had the chance to play around with SVGs? Do you prefer to use them or j
 
 #### highlights
 ### questions
----------------------------------------------------------------------------
+---
 
 
 ## 11/18/22
@@ -2049,7 +2207,7 @@ Custom elements are default inline.
 - Flex-wrap is a little confusing.
 ### note to self
 	- stop choosing extra hard exercises! They take too long and I need to catch up.
----------------------------------------------------------------------------
+---
 ## 11/10/22
 
 - [x] Set Up Journal Entry
@@ -2344,7 +2502,7 @@ I haven't built my goals page or resume. It feels so early to start that...I wil
 - [] I need to know more about the meta tags to understand them. I am uncomfortable using OPG to generate the meta tags for me. I am not sure which part of my tag ultimately made my image pop up in Slack. 
 
 
----------------------------------------------------------------------------
+---
 
 
 ## 10/11/22
@@ -2432,7 +2590,7 @@ I haven't built my goals page or resume. It feels so early to start that...I wil
 
 - Well crafted Meta Data is extremely important to ensure your content has reach. It is often a user's first impression and will determine if they click on. It also determines whether your site is determined to be safe, can access the required character set and other important pieces of information.
 
----------------------------------------------------------------------------
+---
 
 ## 10/10/22
 
@@ -2475,6 +2633,6 @@ The rel attribute sets the relationship between your page and the linked url.  "
 ## conclusion
 I think I am starting to have a better grasp of how to get through all the PE materials. I am really appreciating this catch up day and how much easier it is to type with reading glasses on! There are a lot of small things I've missed or haven't been able to interanalize until meeting with a classmate or Derrek. I need to remember that meetings are always helpful! I found better ways to organize and link to my files today, spent some time slowly reading about html questions I had, and spent time organizing the best way to structure my learning days.
 
----------------------------------------------------------------------------
+---
 
 
