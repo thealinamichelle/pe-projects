@@ -1,0 +1,17 @@
+	/*EXAMPLE:
+	html {
+		--black: #2f2f2f;
+		--white: #fbfbfb;
+
+		--neutral: #e4e4e4;
+		--cream: #FAF2E8;
+
+		--color: #ffb600;
+		--highlight: #ffb600;
+
+		--shadow: rgba(0,0,0,.7);
+		--fadedshadow: rgba(47, 47, 47, .3);
+
+		--corners: 10px; /* or whatevers */
+		--paper: var(--white);
+		--ink: var(--black);*/

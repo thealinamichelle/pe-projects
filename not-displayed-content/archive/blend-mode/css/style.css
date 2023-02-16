@@ -1,0 +1,286 @@
+@import "resets.css";
+/*	.multiply-example { /* on the actual image */
+/*	  mix-blend-mode: multiply;
+	} */
+/*	 https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode 
+	/* not exactly the same as Affinity depending on the browser used */
+* {
+	box-sizing: border-box;
+}
+body {
+	background: lightgrey;
+}
+
+
+.multiply-example { /* on the actual image */
+
+	} 
+/*	 https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode 
+	/* not exactly the same as Affinity depending on the browser used */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+picture {
+	display: block;
+	background-color: green;
+	width: 400px;
+	margin: 0 auto;
+/*	margin-top: 10px;*/
+}
+
+/*.test0 {
+	padding-top: 30px;
+}*/
+.test1 {
+  mix-blend-mode: darken;
+}
+
+
+.test2 {
+  mix-blend-mode: multiply;
+}
+
+.test3 {
+  mix-blend-mode: color-burn;
+}
+
+.test4 {
+  mix-blend-mode: linear-burn;
+}
+
+.test5 {
+  mix-blend-mode: darker-color;
+}
+
+.test6 {
+  mix-blend-mode: lighten;
+}
+
+
+.test7 {
+  mix-blend-mode: screen;
+}
+
+
+.test8 {
+  mix-blend-mode: color-dodge;
+}
+
+
+.test9 {
+  mix-blend-mode: add;
+}
+
+
+.test10 {
+  mix-blend-mode: overlay;
+}
+
+.test11 {
+  mix-blend-mode: soft-light;
+}
+
+.test12 {
+  mix-blend-mode: hard-light;
+}
+
+.test13 {
+  mix-blend-mode: vivid-light;
+}
+
+.test14 {
+  mix-blend-mode: linear-light;
+}
+
+
+
+
+
+
+
+
+.test15 {
+  mix-blend-mode:pin-light;
+}
+
+
+.test16 {
+  mix-blend-mode:hard-mix;
+}
+
+
+.test17 {
+  mix-blend-mode:difference;
+}
+
+
+.test18 {
+  mix-blend-mode:exclusion;
+}
+
+
+.test19 {
+  mix-blend-mode:subtract;
+}
+
+
+.test20 {
+  mix-blend-mode:divide;
+}
+
+
+.test21 {
+  mix-blend-mode:hue;
+}
+
+
+.test22 {
+  mix-blend-mode:saturation;
+}
+
+
+.test23 {
+  mix-blend-mode:color;
+}
+
+
+.test24 {
+  mix-blend-mode:luminosity;
+}
+
+
+.test25 {
+  mix-blend-mode:average;
+}
+
+
+.test26 {
+  mix-blend-mode:negation;
+}
+
+
+.test27 {
+  mix-blend-mode:reflect;
+}
+
+
+.test28 {
+  mix-blend-mode:glow;
+}
+
+
+.test29 {
+  mix-blend-mode:contrast-negate;
+}
+
+
+.test30 {
+  mix-blend-mode:erase;
+
+}
+
+main {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.card {
+	display: block;
+	width: 400px;
+}
+.grid {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 400px 400px;
+	grid-auto-rows: 400px;
+	gap: 20px;
+	justify-content: center;
+	font-family: sans-serif;
+	background: none;
+	animation: myanimation 30s infinite;
+}
+/*
+@keyframes myanimation {
+	0%{background-color: none;}
+	10% {background-color: lightcoral;}
+	20%{background-color:darkorange;}
+	30%{background-color: gold;}
+	40%{background-color: yellowgreen;}
+	50%{background-color: limegreen;}
+	60% {background-color: lightseagreen;}
+	70% {background-color: deepskyblue;}	
+	80%{background-color: blueviolet;}
+	90%{background-color: darkorchid;}
+	100%{background-color: hotpink;}
+
+}*/
+
+h1 {
+	font-size:  23px;
+	color: white;
+	padding-top: 20px;
+	margin-top: 40px;
+	border-radius: 10px 10px 0 0;
+	text-transform: uppercase;
+}
+
+p {
+
+	text-align: center;
+	font-size: 16px;
+	color:  white;
+	padding-bottom: 10px;
+	text-transform: lowercase;
+
+}
+
+h1, p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	width: 400px;
+
+}
+
+picture + h1 {
+	padding:  10px;
+}
+
+.title {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

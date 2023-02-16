@@ -1,0 +1,95 @@
+/*NAVIGATION STYLING*/
+	nav-yellow-index {
+		flex-grow:1;
+		display: block;
+		 border-bottom: #f9c651 3px solid;
+	}
+
+	nav-yellow{
+		display: block;
+		 border-bottom: #f9c651 3px solid;
+	}
+
+	nav {
+		display: flex;
+		flex-flow: column-reverse wrap;
+		align-content:stretch;
+ 		text-align: right;
+ 		gap: .2rem; 
+
+	}
+
+	nav a {
+		display: block;
+		font-family: 'Source Sans Pro', sans-serif; 
+		font-size: 1.5rem;
+		color: #03193B;
+		text-decoration: none;
+		padding: .2rem;
+		}
+
+	@media (min-width:350px) {
+	/*	CURRENT BREAK POINTS 350, 550, 700*/
+
+		nav-yellow{
+		display: block;
+/*		border-top: #f9c651 7px solid;
+/*		border-bottom: #f9c651 7px solid;*/*/
+		}
+
+		nav {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		text-align: right;
+/*				position: fixed;
+		 top: 0;
+  			right: 0;*/
+		}
+
+		nav a {
+			font-size: clamp(.5rem, 5vh, 1rem);
+			padding: 1.5vh .5vh;
+		}
+
+	}
+	/*	CURRENT BREAK POINTS 350, 550, 700*/
+	@media (min-width:700px) {
+		nav {
+			gap: 1rem;
+		}
+
+		nav a {
+			min-width: 5rem;
+			text-align: center;
+	}
+
+}
+
+	.nav-links:hover {
+			text-decoration: none;
+			animation: none;
+			color: #F7F7E9;
+			transition: .2s;
+	}
+
+		nav div:hover:nth-of-type(1) {
+			animation: colorchange1 20s ease 1 alternate;
+	}
+
+		nav div:hover:nth-of-type(2), nav div:hover:nth-of-type(7) {
+			animation: colorchange2 20s ease 1 alternate;
+	}
+
+		nav div:hover:nth-of-type(3), nav div:hover:nth-of-type(8) {
+			animation: colorchange3 20s ease 1 alternate;
+	}
+		nav div:hover:nth-of-type(4), nav div:hover:nth-of-type(9) {
+			animation: colorchange4 20s ease 1 alternate;
+	}
+		nav div:hover:nth-of-type(5), nav div:hover:nth-of-type(10) {
+			animation: colorchange5 20s ease 1 alternate;
+	}
+		nav div:hover:nth-of-type(6), nav div:hover:nth-of-type(11) {
+			animation: colorchange1 20s ease 1 alternate;
+	}

@@ -1,0 +1,51 @@
+
+@import "import-preset.css";
+@import "setup.css";
+@import "settings.css";
+/*@import "developer-styles.css";*/
+@import "structure.css";
+@import "typography.css";
+@import "import-components.css";
+@import "import-modules.css";
+@import "import-pages.css";
+
+	
+
+body {
+	background-color: #F7F7E9;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+
+main {
+	flex-grow:1;
+
+}
+.inner-column {
+	/*	not applied to index only	*/
+	display: contents;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 900px;
+	padding-top: 2rem;
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.bumper {
+	height: 5rem;
+}
+
+
+
+
+generic-text {
+	display: block;
+}
+
+home-page {
+	display: block;
+}
