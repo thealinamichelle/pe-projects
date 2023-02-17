@@ -1,0 +1,93 @@
+{
+	"pageTitle": "My cool resume",
+	"introduction": "Cover letter/ intro",
+
+	"sections": [
+		{
+			"heading" : "Work Experience",
+			"jobs" : [
+				{
+					"company" : "Pups Who Hike",
+					"years" : "Septemner 2019 - June 2022",
+					"role" : [
+						"Sole Properietor"
+					],
+					"accomplishments" : "text needs to be filled here",
+					"tools" : "text needs to be filled here"
+				},
+				{
+					"company" : "Doggie Bliss",
+					"years" : "August 2016 - September 2019",
+					"role" : [
+						"Administrative Office Assistant",
+						"Pet Service Professional"
+					],
+					"accomplishments" : "text needs to be filled here",
+					"tools" : "text needs to be filled here"
+				},
+				{
+					"company" : "Paint:Lab",
+					"years" : "May 2015 - September 2015",
+					"role" : [
+						"Painting Instructor"
+					],
+					"accomplishments" : "text needs to be filled here",
+					"tools" : "text needs to be filled here"
+				},
+				{
+					"company" : "Star Education",
+					"years" : "July 2014 - August 2016",
+					"role" : [
+						"Art Instructor"
+					],
+					"accomplishments" : "text needs to be filled here",
+					"tools" : "text needs to be filled here"
+				},
+				{
+					"company" : "Self Employed",
+					"years" : "2014 - 2017",
+					"role" : [
+						"Private Art Instructor"
+					],
+					"accomplishments" : "text needs to be filled here",
+					"tools" : "text needs to be filled here"
+				}
+			]
+		},
+		{
+			"heading" : "Education",
+			"experience" : [
+				{
+					"institution" : "California State University Long Beach / Drawing and Painting Bachelors of Fine Arts",
+					"years" : "September 2007- May 2014",
+					"accomplishments" : [
+						"President’s List:  2008, 2011, 2013 ",
+						"Dean’s List: 2009, 2014"
+					]
+				},
+				{
+					"institution" : "Academy for Dog Trainers",
+					"years" : "May 2018 - May 2020",
+					"accomplishments" : "Honors"
+				},
+				{
+					"institution" : "Perpetual Education",
+					"years" : "September 2022 - Current",
+					"accomplishments" : "This website!"
+				}
+			]
+		},
+		{
+			"heading" : "Skills",
+			"abilities" : [
+				"Affinity Designer", 
+				"Google Sheets", 
+				"Adobe Photoshop", 
+				"Adobe Illustrator", 
+				"Desiging ethical training frameworks to support peers and create positive social structures.", 
+				" Animal training with applied behavioral analysis and classical conditioning.",
+				"Painting in traditional mediums"
+			]
+		}
+	]
+}

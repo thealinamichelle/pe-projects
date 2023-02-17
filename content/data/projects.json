@@ -1,0 +1,50 @@
+[
+	{ 
+		"heading" : "mock client",
+		"url" :"projects/tft/index.html",
+		"works" : [
+			"<picture><img src='project-preview/mock-client.png'></picture>",
+			"project description"		
+				]
+	},
+	{ 
+		"heading" : "research and destroy",
+		"url" :"projects/search-and-destroy/index.html",
+		"works" : [
+			"<picture><img src='project-preview/destroy.png'></picture>",
+			"project description"			
+				]
+	},
+	{ 
+		"heading" : "responsive layout",
+		"url" : "projects/responsive-challenge/index.html",
+		"works" : [
+			"<picture><img src='project-preview/responsive.png'></picture>",
+			"project description"			
+				]
+	}, 
+	{ 
+		"heading" : "monster adoption",
+		"url" : "projects/monsters/index.php",
+		"works" : [
+			"<picture><img src='project-preview/monster.png'></picture>",
+			"project description"
+			]
+	},
+	{ 
+		"heading" : "PHP forms",
+		"url" : "forms",
+		"works" : [
+			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+			"project description"
+			]
+	}, 
+	{ 
+		"heading" : "Dog Hiking Recommendations",
+		"url" : "projects/hiking/index.php",
+		"works" : [
+			"<picture><img src='https://peprojects.dev/images/square.jpg'></picture>",
+			"project description"
+			]
+	}
+]

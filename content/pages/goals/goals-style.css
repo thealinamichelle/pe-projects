@@ -1,0 +1,25 @@
+.goal-card {
+	background: white;
+	padding: 1rem;
+}
+
+.goal-card, .goal-card li {
+	color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+}
+
+.goal-tasks li {
+	color:black;
+	padding: 2px 0;
+}
+
+.goal-tasks li li {
+
+	padding: 0px 10px;
+}
+
+.goal-title {
+	font-weight: bold;
+	padding: .2rem 0;
+}

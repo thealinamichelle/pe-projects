@@ -1,0 +1,85 @@
+[
+	{
+		"heading" : "Retirement Calculator",
+		"url" :"projects/e4p/retirement.php",
+		"works" : {
+
+			"Calculate how many years until retirement."
+		}
+	},
+	{
+		"heading" : "Area of a Rectangular Room",
+		"url" :"projects/e4p/area-calc.php",
+		"works" : {//E
+		
+			"project description"			
+		}
+	},
+
+	{
+		"heading" : "Hello There",
+		"url" :"projects/e4p/hello.php",
+		"works" : {
+		
+			"a greeting from the browser"
+		}
+	},
+	{
+		"heading" : "Character Counting",
+		"url" :"projects/e4p/character-counting.php",
+		"works" : {//E
+		
+			"project description"
+		}
+	},
+	{
+		"heading" : "Printing Quotes",
+		"url" :"projects/e4p/quotes.php",
+		"works" : {
+		
+			"project description"
+		}
+	},
+	{
+		"heading" : "Madlib",
+		"url" :"projects/e4p/madlib.php",
+		"works" : {
+		
+			"project description"
+		}
+	},
+
+	{
+		"heading" : "Simple Math",
+		"url" :"projects/e4p/simple-math.php",
+		"works" : {
+		
+			"project description"
+		}
+	},
+	{ 
+		"heading" : "Pizza Party",
+		"url" :"projects/e4p/pizza-party.php",
+		"works" : {
+		
+			"project description"
+		}
+	},
+	{
+		"heading" : "Paint Calculator",
+		"url" :"projects/e4p/paint-calc.php",
+		"works" : {
+		
+			"project description"			
+		}
+	},
+	{
+		"heading" : "Self Checkout",
+		"url" :"projects/e4p/self-checkout.php",
+		"works" : {//E
+		
+			"project description"		
+		}
+	}
+
+]
