@@ -1,10 +1,34 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 
+
 ---
 ## 2/1-15
 - [x] Set Up Journal Entry
-- [] Stand Up
+- [x] Stand Up
+- [x] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through #30
+- [] Navigation
+- - [x] forms
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] JSON 
+	- - [] goals
+	- - [] resume
+	- - [x] projects pages into modules
+	- - [x] forms
+- [] Unify CSS variables
+
+
+
+
+---
+## 2/15
+- [x] Set Up Journal Entry
+- [x] Stand Up
 - [x] git commit
 - [] Milestones	
 
@@ -235,7 +259,7 @@ this generic text area can have any HTML text elements. It can be long or short,
 
 JSON data
 
-
+JSON SYNTAX
 make a goals.json file
 folder: data
 	

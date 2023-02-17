@@ -1,58 +1,21 @@
 <?php include("header.php") ?>
 
+ <nav-yellow-index>
 
+	<?php //echo "?" . queryString();?>
 
- <!-- <nav-yellow-index> -->
+	<?php 
 
-
-
-
-	
-<?php echo "?" . queryString();?>
-
-<hr>
-
-<?php 
-
-
-	//ROUTER
+		//ROUTER
 		$page = "home";
 		if ( isset($_GET["page"]) ) {
 			$page =$_GET["page"];
 		}
-
-		if ($page == "home") {
-			echo "home";
+		if ($page == "$page") {
+			include("content/pages/$page/$page.php");
 		}
+	?>
 
-		if ($page == "style-guide") {
-			echo "style-guide";
-		}
+</nav-yellow-index>
 
-		if ($page == "resume") {
-			echo "resume";
-		}
-
-		if ($page == "projects") {
-			echo "work";
-		}
-
-		if ($page == "goals") {
-			echo "goals";
-		}
-
-?>
-
-
-
-
- <?php //getpageparts($page); ?> 
-
-
-
-
-
-
-
-<!-- </nav-yellow-index> there is styling here -->
 <?php include("footer-index.php") ?>

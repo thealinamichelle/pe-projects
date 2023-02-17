@@ -1,7 +1,7 @@
 </inner-column>
 </main>
 <footer>
-<?php include("templates/modules/navigation/navigation.php") ?>
+<?php include("content/modules/navigation/navigation.php") ?>
 </footer>
 </body>
 </html>
