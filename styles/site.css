@@ -1,13 +1,11 @@
-
 @import "import-preset.css";
-@import "setup.css";
 @import "settings.css";
-/*@import "developer-styles.css";*/
+@import "developer-styles.css";
 @import "structure.css";
 @import "typography.css";
-@import "import-components.css";
-@import "import-modules.css";
 @import "import-pages.css";
+@import "import-modules.css";
+@import "import-components.css";
 
 	
 
@@ -49,3 +47,41 @@ generic-text {
 home-page {
 	display: block;
 }
+
+
+
+.index-cards, .visuals  {
+	display: contents;
+}
+
+
+.resume-card  {
+			padding: 1rem;
+			border:solid 1px blue;
+			margin-top: 20px;
+			padding-left: 10px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
