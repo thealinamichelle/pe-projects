@@ -1,62 +1,41 @@
 [
-		{ 
-		"link-name" : "forms",
-		"url" : "forms",
-		"internal-link" : true
+	{
+		"link-name": "forms",
+		"url": "forms"
 	},
-
-	{ 
-		"link-name" : "github",
-		"url" : "https://github.com/thealinamichelle",
-		"internal-link" : false
-	}, 
-	{ 
-		"link-name" : "writing",
-		"url" : "https://alinamichelle.substack.com/",
-		"internal-link" : false
-	}, 
-
-	{ 
-		"link-name" : "style&nbsp;guide",
-		"url" : "style-guide",
-		"internal-link" : true
-	}, 
-
-
 	{
-		"link-name" : "resume",
-		"url" : "resume",
-		"internal-link" : true
-	}, 
-
-
-
+		"link-name": "github",
+		"url": "https://github.com/thealinamichelle",
+		"external": true
+	},
 	{
-		"link-name" : "chat",
-		"url" : "mailto:alina.michelle@me.com",
-		"internal-link" : false
-	}, 
-
-
-	{ 
-		"link-name" : "work",
-		"url" : "projects",
-		"internal-link" : true
-	}, 
-
-	{ 
-		"link-name" : "goals",
-		"url" : "goals",
-		"internal-link" : true
-	}, 
-
-
-	{ 
-		"link-name" : "home",
-		"url" : "home",
-		"internal-link" : true
+		"link-name": "writing",
+		"url": "https://alinamichelle.substack.com/",
+		"external": true
+	},
+	{
+		"link-name": "style&nbsp;guide",
+		"url": "style-guide"
+	},
+	{
+		"link-name": "resume",
+		"url": "resume"
+	},
+	{
+		"link-name": "chat",
+		"url": "mailto:alina.michelle@me.com",
+		"external": true
+	},
+	{
+		"link-name": "work",
+		"url": "projects"
+	},
+	{
+		"link-name": "goals",
+		"url": "goals"
+	},
+	{
+		"link-name": "home",
+		"url": "home"
 	}
-
 ]
-
-
