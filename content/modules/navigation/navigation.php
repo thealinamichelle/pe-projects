@@ -7,27 +7,30 @@
 ?>
 
 <nav>
-
 	<?php 	
+
 		foreach($navData as $nav) { 
 
 			$url = $nav["url"];
-			$urlQuery = $nav["internal-link"];
-
-			if ($urlQuery == true) {
-				$test = "?page=";
+			$external = $nav["external"] ?? false;
+			$base = "?page=";
+			$link = $nav["link-name"];
+			$t = "";
+			if ($external) {
+				$base = "";
+				$t = checkTarget($external, $link);
 			}
-			else {
-				$test = "";
-			}
+			
 	?>
 
 		<div class="footer-color-box"> 
-			<a href="<?=$test?><?=$url?>" class="nav-links"><?= $nav["link-name"];?></a>
+			<a href="<?=$base?><?=$url?>" <?php echo $t; ?> class="nav-links" ><?= $link;?></a>
 		</div>
 		
 	<?php } ?>
 	
+
+
 </nav>
 </div>
 
