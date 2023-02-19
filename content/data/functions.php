@@ -52,6 +52,17 @@ function getRoot($pageName){
 		$base_dir = __DIR__;
 		$pageName = $base_dir;
 }
+
+
+	function checkTarget($external, $uniquetarget) {
+
+		if ($external = true){
+			return 'target="' . $uniquetarget . '"';			
+		}
+
+	}
+
+
 ?>
 
 
