@@ -39,7 +39,7 @@
 				a dog walker and trainer turned web developer. 
 			</section>
 		
-			<section class="index-cards">
+			<section class="home-color-blocks">
 				
 				<a href="<?=$base?><?=$goals?>" target="<?=$goals?>">goals</a>
 				

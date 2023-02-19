@@ -161,20 +161,20 @@
 /*INDEX- LINKS*/
 
 
-.index-cards a , .index-cards p { /*Target empty and text filled squares*/
+.home-color-blocks a , .home-color-blocks p { /*Target empty and text filled squares*/
 	place-self: stretch;
 	text-align: center;
 	padding: 20px;
 }
 
-.index-cards a:nth-of-type(1) {
+.home-color-blocks a:nth-of-type(1) {
 	grid-column: 5;
 	grid-row: 7;
 	background: linear-gradient(90deg, #B4416E 0, #B4416E 50%, #E33300 50%, #E33300 100%);
 	z-index:2;
 }
 
-.index-cards a:nth-of-type(2) {
+.home-color-blocks a:nth-of-type(2) {
 
 	grid-column: 1 /span 4;
 	grid-row: 8;
@@ -183,13 +183,13 @@
 }
 
 
-.index-cards a:nth-of-type(3) {
+.home-color-blocks a:nth-of-type(3) {
 	grid-column: 3 /span 4;
 	grid-row: 9;
 	background: linear-gradient(90deg, #84A4E3 0, #84A4E3 50%, #B290C3 50%, #B290C3 100%);
 }
 
-.index-cards a:nth-of-type(4) {
+.home-color-blocks a:nth-of-type(4) {
 	grid-column: 1 /span 5;
 	grid-row: 10;
 	align-items: center;
@@ -200,16 +200,16 @@
 /*	COLOR BLOCK LINKS CURRENT BREAK POINTS 350, 550, 700*/
 @media (min-width:500px) 
 {
-	.index-cards a:nth-of-type(2) {
+	.home-color-blocks a:nth-of-type(2) {
 
 		grid-column: 3 /span 2;
 	}
 
-	.index-cards a:nth-of-type(3) {
+	.home-color-blocks a:nth-of-type(3) {
 		grid-column: 5 /span 3;
 	}
 
-	.index-cards a:nth-of-type(4) {
+	.home-color-blocks a:nth-of-type(4) {
 		grid-column: 1 /span 4;
 
 	}
@@ -218,11 +218,11 @@
 
 /*INDEX- ANIMATION*/
 
-.index-cards a, .jiggle {
+.home-color-blocks a, .jiggle {
 	transition: 1.5s;
 }
 
-.index-cards a:hover, .jiggle:hover {
+.home-color-blocks a:hover, .jiggle:hover {
 	text-decoration: none;
 	animation: jiggle .5s ease infinite alternate;
 }
