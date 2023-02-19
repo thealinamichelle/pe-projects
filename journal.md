@@ -14,8 +14,8 @@
 	- - [] resume
 	- - [] projects pages into modules
 - [] JSON 
-	- - [] goals
-	- - [] resume
+	- - [x] goals
+	- - [x] resume
 	- - [x] projects pages into modules
 	- - [x] forms
 - [] Unify CSS variables
