@@ -7,3 +7,7 @@
 	font-size: 1.1em;
 	color: green;
 }*/
+
+body * {
+	border: solid 1px lightblue;
+}
