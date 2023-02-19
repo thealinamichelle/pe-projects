@@ -3,9 +3,20 @@
 <?php 
 	$json = file_get_contents('content/data/siteNavigation.json'); 
 		//passes in the json data
-	$navData = json_decode($json, true); 
+	$nav = json_decode($json, true); 
 		//do you want this to be an associative array?
+
+	$base = "?page=";
+	$projects = $nav[6]["link-name"];
+	$resume = $nav[4]["link-name"];
+	$mail = $nav[5]["link-name"];
+	$goals = $nav[7]["link-name"];
+	
 	?>
+
+
+
+
 
 <section class="home-grid">
 			
@@ -30,13 +41,13 @@
 		
 			<section class="index-cards">
 				
-				<a href="https://peprojects.dev/alpha-6/alina/goals.php">goals</a>
+				<a href="<?=$base?><?=$goals?>" target="<?=$goals?>">goals</a>
 				
-				<a href="projects.php">work</a>
+				<a href="<?=$base?><?=$projects?>" target="<?=$projects?>"">work</a>
 				
 				<a href="mailto:alina.michelle@me.com">chat</a>
 				
-				<a href="resume.php">resume</a>
+				<a href="<?=$base?><?=$resume?>" target="<?=$resume?>">resume</a>
 
 				
 				<div class="yellow-1 invisible-period">
