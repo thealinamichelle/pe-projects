@@ -1,4 +1,4 @@
-/*test-block {
+test-block {
 	display: block;
 	min-width: 100px;
 	min-height: 100px;
@@ -6,7 +6,7 @@
 	font-family: monospace;
 	font-size: 1.1em;
 	color: green;
-}*/
+}
 
 body * {
 	border: solid 1px lightblue;
