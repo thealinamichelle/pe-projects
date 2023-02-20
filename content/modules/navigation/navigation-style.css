@@ -6,6 +6,17 @@ nav {
 	gap: .2rem; 
 }
 
+.nav-top {
+	border-bottom: var(--yellow) 1px solid; 
+	flex-flow: row-reverse wrap;"
+}
+
+.nav-bottom{
+	border-top: var(--yellow) 1px solid; 
+	flex-flow: row wrap;
+
+}
+
 nav a {
 	display: block;
 	color: var(--ink);

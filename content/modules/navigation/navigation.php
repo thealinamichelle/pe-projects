@@ -6,7 +6,7 @@
 		//do you want this to be an associative array?
 ?>
 
-<nav style="<?=$line?>">
+<nav class="<?=$line?>">
 	<?php 	
 
 		foreach($navData as $nav) { 
