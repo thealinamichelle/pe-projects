@@ -36,8 +36,8 @@ form button {
 	margin-top: 2rem;
 	background: background: rgba(203, 221, 239, 1.00);
 	border: solid 3px #518fd3;
-	border-bottom-color: #f7f7e9;
-  	border-right-color: #f7f7e9;
+	border-bottom-color: var(--paper);
+  	border-right-color: var(--paper);
   	padding: 1rem;
   	font-size: 1.5rem;
 }
@@ -59,7 +59,7 @@ pre.code {
 
 
 input, textarea {
-	background-color: #f7f7e9;
+	background-color: var(--paper);
 	border: none;
 }
 button {
@@ -73,8 +73,8 @@ button {
 
 button:hover {
 	border: solid 3px #f9c651;
-	border-top-color: #f7f7e9;
-  	border-left-color: #f7f7e9;
+	border-top-color: var(--paper);
+  	border-left-color: var(--paper);
 }
 
 

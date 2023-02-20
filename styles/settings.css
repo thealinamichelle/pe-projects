@@ -1,1 +1,27 @@
-settings.css
+html {
+	
+--standard: 900px;
+
+--paper: #F7F7E9;
+--ink: #03193B;
+
+--invisible: rgba(249, 198, 81, 0);
+--yellow: rgba(249, 198, 81, 1.00);
+--red: #E33300;
+--pink: #CC5D94;
+--periwinkle: #84A4E3;
+--purple: #9B6BC2;
+--red-purple: #B4416E;
+--light-purple: #B290C3;
+--bright-lavender: #B98CEA;
+--blue: #518FD3;
+--chathams-blue: #115373;
+--bright-blue: #20A7DF;
+--dark-blue-green: #115373;
+--dark-green: #022D2B;
+--dark-blue: #03193B;
+--light-blue: rgba(203, 221, 239, 1.00);
+
+}
+
+/*	CURRENT BREAK POINTS 350, 550, 700*/
