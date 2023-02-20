@@ -1,6 +1,5 @@
 <?php include("header.php") ?>
 
- <nav-yellow-index>
 
 	<?php //echo "?" . queryString();?>
 
@@ -16,6 +15,7 @@
 		}
 	?>
 
-</nav-yellow-index>
 
-<?php include("footer-index.php") ?>
+
+
+<?php include("footer.php") ?>

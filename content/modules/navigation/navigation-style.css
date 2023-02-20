@@ -1,14 +1,3 @@
-nav-yellow-index {
-	flex-grow:1;
-	display: block;
-	border-bottom: #f9c651 3px solid;
-}
-
-nav-yellow{
-	display: block;
-	 border-bottom: #f9c651 3px solid;
-}
-
 nav {
 	display: flex;
 	flex-flow: column-reverse wrap;
@@ -25,13 +14,9 @@ nav a {
 
 @media (min-width:350px) {
 
-	nav-yellow{
-	display: block;
-	}
-
 	nav {
 	display: flex;
-	flex-flow: row wrap;
+/*	flex-flow: row wrap;*/
 	justify-content: flex-end;
 	}
 

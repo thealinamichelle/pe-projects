@@ -6,7 +6,7 @@
 		//do you want this to be an associative array?
 ?>
 
-<nav>
+<nav style="<?=$line?>">
 	<?php 	
 
 		foreach($navData as $nav) { 
@@ -19,18 +19,13 @@
 			if ($external) {
 				$base = "";
 				$t = checkTarget($external, $link);
-			}
-			
+			}	
 	?>
 
 		<div> 
 			<a href="<?=$base?><?=$url?>" <?php echo $t; ?> class="nav-links" ><?= $link;?></a>
 		</div>
-		
 	<?php } ?>
-	
-
-
 </nav>
 </div>
 
