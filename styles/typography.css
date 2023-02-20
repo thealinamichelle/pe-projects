@@ -1,9 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap');
 
-	li, a {
+html {
+		--sansfont: 'Source Sans Pro', sans-serif;
+		--playfont: 'Playfair Display', serif;
+}
 
-		font-family: 'Playfair Display', serif;
-		font-size: 2rem;
-		color: white;
-		text-decoration: none;
+.loud-voice {
+	font-family: var(--sansfont);
+	font-size: 1.2em;
+	padding: .2rem 0;
+}
+
+
+.attention-voice {
+	font-weight: bold;
+	padding: .2rem 0;
+}
+
+.friendly-voice {
+	font-family: var(--sansfont);
+	font-size: 1.2rem;
+}
+
+.standard-voice{
+	font-family: var(--sansfont);
+	font-size: 1rem;
+}	
+
+.poster-voice, .poster-voice a, .poster-voice li {
+	font-family: var(--playfont);
+	font-size: 2rem;
+	color: var(--paper);
+	text-decoration: none;
+}
+
+
+nav a {
+	font-family: var(--sansfont); 
+	font-size: 1.5rem;
+	color: #03193B;
+	text-decoration: none;
 	}
+
+@media (min-width:350px) {
+	nav {
+	text-align: right;
+	}
+
+	nav a {
+		font-size: clamp(.5rem, 5vh, 1rem);
+		padding: 1.5vh .5vh;
+	}
+
+}
+
+@media (min-width:700px) {
+	nav a {
+		min-width: 5rem;
+		text-align: center;
+	}
+}
