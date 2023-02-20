@@ -34,13 +34,13 @@
 		
 			<section class="home-color-blocks poster-voice">
 				
-				<a href="<?=$base?><?=$goals?>" target="<?=$goals?>">goals</a>
+				<a href="<?=$base?><?=$goals?>">goals</a>
 				
-				<a href="<?=$base?><?=$projects?>" target="<?=$projects?>"">work</a>
+				<a href="<?=$base?><?=$projects?>">work</a>
 				
 				<a href="mailto:alina.michelle@me.com">chat</a>
 				
-				<a href="<?=$base?><?=$resume?>" target="<?=$resume?>">resume</a>
+				<a href="<?=$base?><?=$resume?>">resume</a>
 
 				
 				<div class="yellow-1"></div>
