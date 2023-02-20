@@ -7,16 +7,16 @@
 		//do you want this to be an associative array?
 ?>
 
-<section class="goals inner-column">
+<section class="inner-column">
 
 
 <?php foreach($goalsData as $section) { ?>
-	<div class="goal-card">
-	<h2 class="goal-title"> 
+	<div class="card">
+	<h2 class="attention-voice"> 
 		<?=$section["heading"]?>
 	</h2>
 
-	<ol class="goal-tasks">
+	<ol class="details">
 		<?php foreach($section["tasks"] as $task) {?>
 			<li><?=$task?></li>
 	<?php }?>

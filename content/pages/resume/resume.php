@@ -10,15 +10,13 @@
 
 <section class="inner-column">
 
-<header>
-<h1 class="loud-voice"><?=$title?></h1>
-</header>
+<header><h1 class="loud-voice"><?=$title?></h1></header>
 
 <?php foreach($sections as $section) {?>
 
 	<div class="<?=$section['id']?>">
 
-		<h2 class="card-title"><?=$section["heading"]?></h2>
+		<h2 class="attention-voice" ><?=$section["heading"]?></h2>
 
 			<?php
 			if (isset($section["jobs"]) ){
@@ -55,7 +53,7 @@
 					<div class="card">
 						<h3><?=$exp["institution"]?></h3>
 							
-						<ol class="resume-details">
+						<ol class="details">
 							<li>years: <?=$exp["years"]?></li>
 							<?php foreach($exp["accomplishments"] as $accomplish) {?><li>role: <?=$accomplish?></li><?php }?>
 						</ol>
@@ -65,7 +63,7 @@
 		 
 			<?php if (isset($section["abilities"]) ){?>
 				<div class="card">
-					<ol class="resume-details">
+					<ol class="details">
 					 	<?php foreach($section["abilities"] as $skill) {?>
 							<li><?=$skill?></li>
 						<?php }?>

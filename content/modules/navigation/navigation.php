@@ -23,7 +23,7 @@
 			
 	?>
 
-		<div class="footer-color-box"> 
+		<div> 
 			<a href="<?=$base?><?=$url?>" <?php echo $t; ?> class="nav-links" ><?= $link;?></a>
 		</div>
 		

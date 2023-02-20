@@ -26,7 +26,7 @@ $menuitems = [
 	foreach($menuitems as $menuitem) { ?>
 
 
-		<div class="footer-color-box"> 
+		<div> 
 			<a href=<?= $menuitem["url"] ?> class="footer-links"><?= $menuitem["link-name"];?></a>
 		</div>
 

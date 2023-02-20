@@ -1,5 +1,3 @@
-
-
 <?php 
 	$json = file_get_contents('content/data/siteNavigation.json'); 
 		//passes in the json data
@@ -14,17 +12,12 @@
 	
 	?>
 
-
-
-
-
 <section class="home-grid">
 			
 			<section class="visuals">
 				<?php include("content/components/svg/alina-new-svg.php")?>
 
-					<div class="title-blue-square invisible-period"><p>.</p>
-					</div>
+					<div class="title-blue-square"></div>
 
 				
 
@@ -35,11 +28,11 @@
 			</section>
 
 
-			<section class="info">
+			<section class="introduction friendly-voice">
 				a dog walker and trainer turned web developer. 
 			</section>
 		
-			<section class="home-color-blocks">
+			<section class="home-color-blocks poster-voice">
 				
 				<a href="<?=$base?><?=$goals?>" target="<?=$goals?>">goals</a>
 				
@@ -50,23 +43,14 @@
 				<a href="<?=$base?><?=$resume?>" target="<?=$resume?>">resume</a>
 
 				
-				<div class="yellow-1 invisible-period">
-					<p>.</p>
-				</div>
-				<div class="yellow-2 invisible-period">
-					<p>.</p>
+				<div class="yellow-1"></div>
+				<div class="yellow-2">
 				</div>
 
-				<div class="yellow-3 jiggle invisible-period">
-					<p>.</p>
-				</div>
+				<div class="yellow-3"></div>
 
-				<div class="red-1 invisible-period">
-					<p>.</p>
-				</div>
+				<div class="red-1"></div>
 
-				<div class="green jiggle invisible-period">
-				</div>
+				<div class="green"></div>
 			</section>
-<!-- </home-page> -->
 </section>

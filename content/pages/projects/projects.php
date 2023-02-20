@@ -6,7 +6,7 @@
 		//do you want this to be an associative array?
 ?>
 
-<section class="projects-page inner-column">
+<section class="inner-column">
 
 <?php foreach($projData as $section) {
 	
@@ -24,10 +24,10 @@
 ?>
 
 	<a href="<?=$queryString?><?=$projurl?>" target="<?=$target?>">
-		<div class="project-card">
-			<h2 class="project-title"><?=$heading?></h2>
+		<div class="card">
+			<h2 class="attention-voice"><?=$heading?></h2>
 
-			<ol class="project-details">
+			<ol class="details">
 				<?php foreach($section["works"] as $work) {?>
 				<li> <?=$work?></li>
 <?php }?>
