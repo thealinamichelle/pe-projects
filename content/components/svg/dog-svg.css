@@ -1,0 +1,4 @@
+.dog svg:hover{
+	animation: boop .7s infinite;
+}
+
