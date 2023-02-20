@@ -1,13 +1,84 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+---
+## 2/1-20
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [x] Navigation
+- - [x] forms
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [x] JSON 
+	- - [x] goals
+	- - [x] resume
+	- - [x] projects pages into modules
+	- - [x] forms
+- [x] Unify CSS variables
 
+### Portfolio Review Notes
+
+#### Part 24:
+
+- Issues's in Derrick's site: 
+- - inner columns all have padding: 
+- - - specificing paddings for spoecific parts while keeping general inner column padding
+
+- svg in header so it doesn't shrink:
+	
+	flex-shrink: 0; //this piece of content, don't shrink down!
+
+
+- Side notes:
+- - site.css is a working space before their own file
+- - Name for top header navigation: mast-head
+- - modules: used more than once
+- - components: small parts of the code
+- - partials: mast-head?
+
+- ! realize when you are using interpolation and concatintation
+
+
+- Code for when there isn't a template file:
+
+		$page = "home";
+		if ( isset($\_GET["page"]) ) {
+			$page = $\_GET['page'];
+		}
+        // if the super global variable has a `?page="pagename"` set in it's array then this variable stands for that page-name. 
+
+        $pageFilePath = "templates/pages" . $page . ".php";
+        if (file_exists($pageFilePath) ) {
+          //if the file exists go get it
+        include("templates/pages" . $page . ".php")
+        } else {
+        echo "error page $page does not exist";
+          //sort of a 404 error page
+        }
+
+#### Part 25:
+
+- Tower Git: right click and "discard local changes" for commits you don't want to keep
+
+
+
+
+
+
+
+
+---
 ## 2/1-19
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] git commit
 - [] Milestones	
 - [] Priority: watch the ultimate portfolio process videos through #30
-- [] Navigation
+- [x] Navigation
 - - [x] forms
 - [] Turning the 
 	- - [] goals
@@ -18,7 +89,7 @@
 	- - [x] resume
 	- - [x] projects pages into modules
 	- - [x] forms
-- [] Unify CSS variables
+- [x] Unify CSS variables
 
 ---
 ## 2/1-15
