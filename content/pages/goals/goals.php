@@ -1,4 +1,3 @@
-
 <?php 
 
 	$json = file_get_contents('content/data/goals.json'); 
