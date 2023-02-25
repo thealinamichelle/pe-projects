@@ -31,6 +31,21 @@ home-page {
 }
 
 
+.projects-index {
+	display: grid;
+	grid-template-columns: fit-content 50%;
+/*	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+	grid-gap: 10px;
+	gap: 10px;
+}
+
+.photo-stand-in {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 200px;
+	background-color: grey;
+}
 
 
 
@@ -41,15 +56,64 @@ home-page {
 
 
 
+.projects-index .card {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.projects-index picture {
+	opacity: 5%;
+}
+
+.projects-index .card:hover picture {
+	opacity: 100%;
+
+}
+
+.projects-index .details {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.projects-index .overlay {
+	position: absolute;
+	inset: 0;
+
+	display: flex;
+	text-align: center;
+	justify-content: center;
+
+	background: var(--light-blue);
+	color: var(--paper);
+	transition: all 250ms ease;
+	mix-blend-mode: multiply;
+}
+
+.projects-index .overlay:hover {
+	background: rgba(57, 57, 57, 0);
+	opacity: 0;
+}
+
+
+.projects-index h2 {
+	font-size: clamp(2em, 5vw, 200px);
+	color: var(--cream);
+}
 
 
 
 
 
 
-
-
-
-
+@media (min-width: 700px) {
+	.projects-index {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+		
 
 

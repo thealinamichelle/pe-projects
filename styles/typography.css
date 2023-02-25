@@ -13,7 +13,9 @@ html {
 
 
 .attention-voice {
-	font-weight: bold;
+	font-family: var(--playfont);
+	font-size: 1.5rem;
+/*	font-weight: bold;*/
 	padding: .2rem 0;
 }
 
@@ -22,7 +24,7 @@ html {
 	font-size: 1.2rem;
 }
 
-.standard-voice{
+.standard-voice {
 	font-family: var(--sansfont);
 	font-size: 1rem;
 }	
