@@ -30,7 +30,7 @@
 
 - svg in header so it doesn't shrink:
 	
-	flex-shrink: 0; //this piece of content, don't shrink down!
+	`flex-shrink: 0;` //this piece of content, don't shrink down!
 
 
 - Side notes:
@@ -60,12 +60,20 @@
           //sort of a 404 error page
         }
 
-#### Part 25:
+#### Part 25: Projects Page
 
-- Tower Git: right click and "discard local changes" for commits you don't want to keep
+- Tower Git: 
+	- right click and "discard local changes" for commits you don't want to keep
+	- what you write for your commits can make you sound professional or not
+	- - What sounds better? "added stuff" vs "consolidate temlate logic for page router"
+- folder structure is up to you: maybe make them logical lol
+- readme might be a good place to make rules about the file location
 
 
 
+
+
+#### QUESTIONS: Tower detailed description and / commands - examples?
 
 
 
