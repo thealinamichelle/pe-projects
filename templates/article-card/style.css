@@ -1,0 +1,29 @@
+.article-card {
+	display: block;
+	/*border: 4px solid red;*/
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.article-card text-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.article-card a {
+	margin-top: 20px;
+}
+
+.article-card picture {
+	width: 100%;
+  aspect-ratio: 1/1.25;
+}
+
+.article-card picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
