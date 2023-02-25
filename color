@@ -1,0 +1,46 @@
+$database = [
+	  	"colors" => ["red", "blue", "orange", "yellow"],
+	  	"names" => ["Derek", "Miguel", "Ivy", "Alina", "Steve", "Valentine"],
+	];
+​
+	foreach ($database['colors'] as $color) {
+		echo $color . ",";
+	}
+​
+	function namesRainbow($names, $colors) {
+		$currentColor = 0;
+​
+		foreach ($names as $name) {
+			include('name-card.php');
+​
+			if ($currentColor >= count($colors) - 1) {
+				$currentColor = 0;
+			} else {
+				$currentColor = $currentColor + 1;
+			}
+		}
+	}
+​
+	// in some page section
+	namesRainbow($database["names"], $database["colors"]);
+​
+​
+	$person = [
+		"age" => 21, // change me!
+	];
+​
+	function oldEnough($age) {
+		if ($age >= 18) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+​
+	function renderMessage($age) {
+		if ( oldEnough($age) ) {
+			return "You are old enough to watch X and Pearl.";
+		} else {
+			return "You are NOT old enough to watch X and Pearl....";
+		}
+	}

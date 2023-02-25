@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns" : [
+				"not-displayed-content",
+				"css-timeout",
+				"projects"
+			],
+			"file_exclude_patterns": [
+				".gitignore"
+			],
+		}
+	],
+}

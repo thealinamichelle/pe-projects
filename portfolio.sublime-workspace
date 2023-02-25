@@ -1,0 +1,819 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"--",
+				"--neutral"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"floa",
+				"floatval()"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"rm",
+				"rmWidthFt"
+			],
+			[
+				"r",
+				"rmLengthFt"
+			],
+			[
+				"y",
+				"yearOfRetire"
+			],
+			[
+				"a",
+				"ageOfRetire"
+			],
+			[
+				"mon",
+				"monsterGenerator"
+			],
+			[
+				"grid-templat",
+				"grid-template-columns"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"c",
+				"uppercase"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"vis",
+				"visibility"
+			],
+			[
+				"visi",
+				"visibility"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"direc",
+				"flex-direction"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"paddo",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"height",
+				"line-height"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"outline",
+				"outline"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"da",
+				"darkolivegreen"
+			],
+			[
+				"dark",
+				"darkolivegreen"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"kernin",
+				"font-kerning"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"text-decoration",
+				"text-decoration-line"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"olive",
+				"darkolivegreen"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"width",
+				"max-width"
+			],
+			[
+				"mix",
+				"max-width"
+			],
+			[
+				"oliv",
+				"olivedrab"
+			],
+			[
+				"slategre",
+				"darkslategrey"
+			],
+			[
+				"m",
+				"main"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"bacl",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"work",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Validate"
+			],
+			[
+				"mar",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"age: disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"json",
+				"Preferences: Pretty JSON Settings"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"set sytax:php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set synta",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set synt",
+				"Set Syntax: CSS"
+			],
+			[
+				"install package control",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax: ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sy",
+				"Set Syntax: YAML"
+			],
+			[
+				"k",
+				"Preferences: Key Bindings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"sey syntax: ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 76.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alinapritchett/Sites/pe-projects",
+		"/Users/alinapritchett/Sites/pe-projects/content",
+		"/Users/alinapritchett/Sites/pe-projects/content/data",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/home",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/projects-index",
+		"/Users/alinapritchett/Sites/pe-projects/styles",
+		"/Users/alinapritchett/Sites/pe-projects/templates",
+		"/Users/alinapritchett/Sites/pe-projects/templates/articles-intro"
+	],
+	"file_history":
+	[
+		"/Users/alinapritchett/Sites/pe-projects/content/data/resume.json",
+		"/Users/alinapritchett/Sites/pe-projects/index.php",
+		"/Users/alinapritchett/Sites/pe-projects/color",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/color.json",
+		"/Users/alinapritchett/Sites/pe-projects/styles/site.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/projects-index/projects-index.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/functions.php",
+		"/Users/alinapritchett/Sites/pe-projects/styles/settings.css",
+		"/Users/alinapritchett/Sites/pe-projects/journal.md",
+		"/Users/alinapritchett/Sites/pe-projects/styles/reset.css",
+		"/Users/alinapritchett/Sites/pe-projects/styles/typography.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/home/home.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/projects.json",
+		"/Users/alinapritchett/Sites/pe-projects/styles/structure.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/resume/resume.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/modules/navigation/navigation.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/goals/goals.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/style-guide/style-guide.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/forms/forms.php",
+		"/Users/alinapritchett/Sites/pe-projects/footer.php",
+		"/Users/alinapritchett/Sites/pe-projects/portfolio.sublime-project",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/siteNavigation.json",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/work/projects.php",
+		"/Users/alinapritchett/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/Users/alinapritchett/Sites/pe-projects/header.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/modules/navigation/navigation-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/projects/work.php",
+		"/Users/alinapritchett/Sites/pe-projects/footer-index.php",
+		"/Users/alinapritchett/Sites/pe-projects/readme.md",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/home/home-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/styles/developer-styles.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/e4p/css/style.css",
+		"/Users/alinapritchett/Sites/pe-projects/styles/animation.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/components/svg/dog-svg.css",
+		"/Users/alinapritchett/Sites/pe-projects/styles/import-components.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/projects/projects.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/projects/projects-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/goals/goals-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/e4p/nav.php",
+		"/Users/alinapritchett/Sites/pe-projects/not-displayed-content/archive/index-not-in-use/oldfooter.php",
+		"/Users/alinapritchett/Sites/pe-projects/not-displayed-content/archive/index-not-in-use/footer-function-test.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/home/animation.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/tft-php-broken/images/header/mobile-header-svg.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/tft-php-broken/images/header/mobile-header.svg",
+		"/Users/alinapritchett/Sites/pe-projects/not-displayed-content/archive/base/css/style.css",
+		"/Users/alinapritchett/Sites/pe-projects/content/pages/resume/resume-safe.php",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/goals.json",
+		"/Users/alinapritchett/Sites/pe-projects/content/data/form-functions.php",
+		"/Users/alinapritchett/Sites/pe-projects/templates/pages/home/home.php",
+		"/Users/alinapritchett/Sites/pe-projects/templates/modules/generic-text/generic-text.php",
+		"/Users/alinapritchett/Sites/pe-projects/templates/pages/home/home-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/templates/modules/header/header.php",
+		"/Users/alinapritchett/Sites/pe-projects/templates/data/form-functions.php",
+		"/Users/alinapritchett/Sites/pe-projects/templates/data/functions-list.php",
+		"/Users/alinapritchett/Sites/pe-projects/styles/import-modules.css",
+		"/Users/alinapritchett/Sites/pe-projects/templates/modules/head/head.php",
+		"/Users/alinapritchett/Sites/pe-projects/css/site.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/typography-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/templates/modules/footer/footer-index.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/projects-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/styles/setting.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/unused?style.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/reset.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/style.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/structure.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/import-modules.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/components.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/developer-styles.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/preset.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/navigation-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/goals-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/projects-style.css",
+		"/Users/alinapritchett/Sites/pe-projects/css/imports.css",
+		"/Users/alinapritchett/Sites/pe-projects/templates/pages/home.php",
+		"/Users/alinapritchett/Desktop/example.php",
+		"/Users/alinapritchett/Desktop/goals.json",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/inquiry/inquiry.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/shop/shop.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/log-in/log-in.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/site.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/index.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/header.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/pages.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/components.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/about.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/about.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/inquiry.php",
+		"/Users/alinapritchett/Desktop/here.php",
+		"/Users/alinapritchett/Desktop/main.css",
+		"/Users/alinapritchett/Library/Application Support/Sublime Text/Packages/svgo/Svgo.sublime-settings",
+		"/Users/alinapritchett/Library/Application Support/Sublime Text/Packages/User/grid-snippet.sublime-snippet",
+		"/Users/alinapritchett/Library/Application Support/Sublime Text/Packages/User/mydiv.sublime-snippet",
+		"/Users/alinapritchett/Sites/pe-projects/projects/hiking/css/form.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/home.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/home.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/structure.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/tea.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/food.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/package-card.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/typography.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/shop.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/style.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/styles/package.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/settings.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/functions.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/package-card.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/typography.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/forms.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/menu.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/pages/services.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/shop.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/tea.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/examples.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/site-menu.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/styles/settings.css",
+		"/Users/alinapritchett/Desktop/line height no unit so that it doesn't coss over i",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/styles/setup.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/modules/mast-head/template.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/modules/mast-head/style.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/styles/structure.css",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/modules/logo.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/index.php",
+		"/Users/alinapritchett/Sites/pe-projects/projects/theme-challenge/modules/article-card/style.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/food.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/package-box.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/foods.php",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/styles/modules.css",
+		"/Users/alinapritchett/Sites/wordpress/wp-content/themes/tea-and-treats-2022/templates/components/style.css"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 181.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"colors",
+			"$names",
+			":",
+			"--",
+			"yellow: rgba(249, 198, 81, 1.00);\n--",
+			"%",
+			"ink",
+			"1",
+			"red",
+			"ink",
+			"paper",
+			"#000",
+			"flex-shrink",
+			"clamp",
+			"@media",
+			"</li>",
+			"<li>",
+			"article-grid",
+			"articles-intro",
+			"inner-column",
+			"section class=\"inner-column\"",
+			"inner-column",
+			"test",
+			"'",
+			"filename",
+			"form-box",
+			"form",
+			"$filename",
+			"filename",
+			"]",
+			"image",
+			"works",
+			"project-preview/",
+			"??",
+			"projects",
+			"rojects",
+			"??",
+			"'></picture>",
+			"\"<picture><img src='",
+			"url\" : work",
+			"url\": work",
+			"work.php",
+			"work"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"inner-column"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.941176470588,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setting",
+				"styles/settings.css"
+			],
+			[
+				"ty",
+				"styles/typography.css"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"home",
+				"content/pages/home/home.php"
+			],
+			[
+				"site",
+				"styles/site.css"
+			],
+			[
+				"site.",
+				"styles/site.css"
+			],
+			[
+				"pro",
+				"content/pages/projects-index/projects-index.php"
+			],
+			[
+				"projec",
+				"content/data/projects.json"
+			],
+			[
+				"work",
+				"content/pages/work/work.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 399.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
