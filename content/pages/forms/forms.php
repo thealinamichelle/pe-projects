@@ -6,8 +6,8 @@
 	$sections = json_decode($json, true); 
 		//do you want this to be an associative array?
 	?>
-
-<section class="projects-page inner-column">
+<inner-column>
+<section class="projects-page">
 
 
 <?php foreach($sections as $section) { ?>

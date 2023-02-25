@@ -8,7 +8,7 @@
 	$sections = $resumeData["sections"];
 ?>
 
-<section class="inner-column">
+<inner-column>
 
 <header><h1 class="loud-voice"><?=$title?></h1></header>
 
@@ -73,8 +73,3 @@
 	</div>
 
 <?php }?>
-
-</section>
-
-<?php// formatcode($resumeData);
-?>

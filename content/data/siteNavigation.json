@@ -27,8 +27,8 @@
 		"external": true
 	},
 	{
-		"link-name": "work",
-		"url": "work"
+		"link-name": "projects",
+		"url": "projects-index"
 	},
 	{
 		"link-name": "goals",

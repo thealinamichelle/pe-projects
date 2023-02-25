@@ -6,7 +6,7 @@
 		//do you want this to be an associative array?
 ?>
 
-<section class="inner-column">
+<inner-column>
 
 
 <?php foreach($goalsData as $section) { ?>
@@ -23,32 +23,3 @@
 </div>
 
 <?php } ?>
-
-</section>
-
-
-<!--  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

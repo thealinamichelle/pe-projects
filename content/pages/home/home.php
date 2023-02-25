@@ -5,7 +5,7 @@
 		//do you want this to be an associative array?
 
 	$base = "?page=";
-	$projects = $nav[6]["link-name"];
+	$projects = $nav[6]["url"];
 	$resume = $nav[4]["link-name"];
 	$mail = $nav[5]["link-name"];
 	$goals = $nav[7]["link-name"];
@@ -36,7 +36,7 @@
 				
 				<a href="<?=$base?><?=$goals?>">goals</a>
 				
-				<a href="<?=$base?><?=$projects?>">work</a>
+				<a href="<?=$base?><?=$projects?>"><?=$nav[6]["link-name"]?></a>
 				
 				<a href="mailto:alina.michelle@me.com">chat</a>
 				

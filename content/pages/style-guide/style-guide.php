@@ -30,8 +30,8 @@ $sections = [
 	];
 
 ?>
-
-<section class="goals inner-column">
+<inner-column>
+<section class="goals">
 
 <h1> style guide </h1>
 <?php foreach($sections as $section) { ?>
@@ -52,7 +52,6 @@ $sections = [
 <?php } ?>
 
 </section>
-
 
 
 
