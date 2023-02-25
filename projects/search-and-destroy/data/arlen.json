@@ -1,0 +1,58 @@
+[
+	{
+		"class": "project",
+		"title": "Airbnb Photo Viewer",
+		"description": "A redesign of Airbnb’s photo viewer across desktop web, mobile web, iOS, and Android.",
+		"number": "01",
+		"image": "image-01.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "Animal Health Timeline",
+		"description": "An animal health diagnostic and record keeping tool for dairy farmers.",
+		"number": "02",
+		"image": "image-02.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "Herd Heatmap",
+		"description": "A tool for reducing fertiliser use by showing where dairy cows disperse the most effluent.",
+		"number": "03",
+		"image": "image-03.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "Airbnb Adventures Itinerary",
+		"description": "A redesign of the guest itinerary component for multi-day Adventures.",
+		"number": "04",
+		"image": "image-04.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "Google Search Vision Work",
+		"description": "An effort to modernize Google&#x27;s Desktop Search experience. Vision work as well as small improvements to existing surfaces.",
+		"number": "05",
+		"image": "image-05.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "Dropbox Arbor System",
+		"description": "A comprehensive design system for all global logged-out customer facing properties on desktop and mobile web.",
+		"number": "06",
+		"image": "image-06.png"
+	},
+	{
+		"class": "page-section",
+		"title": "Dropbox Transparency",
+		"description": "A redesign of Dropbox’s Transparency section, which shines a light on how governments seek information about Dropbox's users, and how Dropbox responds.",
+		"number": "07",
+		"image": "image-07.gif"
+	},
+	{
+		"class": "page-section",
+		"title": "JUMP Case Study",
+		"description": "Cycling is a passion of mine, and it inspired me to redesign the main rider journey of an e-bike app called JUMP.",
+		"number": "",
+		"image": "image-08.png"
+	}
+]

@@ -1,0 +1,21 @@
+html {
+	--paper: #f8f8f8;
+	--red: #ee1e3e;
+	--sandy: rgba(0, 0, 0, 1.00);
+	--brown: #f6a065;
+	--mulberry: #c6539f;
+	--ink: #000000;
+
+	--b: solid black 1px;
+	--c: solid #cbddef 1px;
+
+	--pad: 20px;
+}
+
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
