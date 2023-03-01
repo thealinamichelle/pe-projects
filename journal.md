@@ -1,6 +1,11 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---
+## 2/28
+
+new commit
+
+---
 ## 2/1-20
 - [x] Set Up Journal Entry
 - [x] Stand Up
