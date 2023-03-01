@@ -1,0 +1,78 @@
+
+
+
+.page-section {
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;	
+}
+
+.page-section span {
+	display: block;
+	width: 30%;
+	padding-top: 2em;
+	border-bottom: var(--b);
+}
+
+
+
+@media (min-width: 400px) {
+
+.page-section {
+	padding: 100px 0;
+	display: grid;
+	grid-template-columns: 3fr .5fr .35fr 200px;
+	grid-template-rows: 1fr min-content 1fr;
+	grid-template-areas:
+		. . "image"
+		"title" "number" "image"
+		"description description" "image"
+		. . "image";
+	border-bottom: none;
+}
+
+ .page-section h2 {
+	grid-row: 2;
+	align-self: center;
+	padding: var(--pad) 0;
+	border-right: var(--b);
+}
+
+.line {
+	display: block;
+	grid-row: 3 ;
+	grid-column: 1 / span 2;
+	border-top: var(--b);
+	padding-top: var(--pad);
+}
+
+
+.page-section a{
+	grid-area: "number";
+	grid-column: 2;
+	grid-row: 2;
+	align-self: center;
+	justify-self: center;
+	padding: var(--pad);
+}
+
+.page-section picture {
+	grid-column: 4;
+	grid-row: 1 / span 3;
+}
+
+}
+@media (min-width:400px) {
+
+	.page-section picture {
+		max-height: 400px;
+	}
+
+
+}
+
+
+
+
+

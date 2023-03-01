@@ -1,0 +1,54 @@
+	h1 {
+		font-family: 'albramedium', serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: clamp(2.7rem, 9vw, 5rem);
+		line-height: 1.05em;
+		letter-spacing: .03em;
+		}
+
+	h2{
+		font-family: 'albramedium', serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: 1.5em;
+		line-height: 1.05em;
+		letter-spacing: .03em;
+		}
+
+	p {
+		font-family: 'polarbandfront', monospace, sans-serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: 1rem;
+		line-height: 1;
+		max-width: 40ch;
+		}
+
+
+	a {
+		font-family: 'polarbandfront', monospace, sans-serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: 1.2rem;
+		line-height: 1;
+		max-width: 40ch;
+		}
+
+@media (min-width: 600px) {
+
+
+	p {
+		font-family: 'polarbandfront', sans-serif;
+		font-weight:normal;
+		font-style:normal;
+		font-size: 23px;
+		line-height: 25px;
+		letter-spacing: .01px;
+		max-width: 40ch;
+		}
+
+		h2 {
+		font-size: clamp(2.7em, 4vw, 3em);
+		}
+}
