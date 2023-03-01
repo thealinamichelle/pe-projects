@@ -1,0 +1,37 @@
+	p, a {
+			font-family: helvetica, arial, sans-serif;
+			font-size: clamp(16px 6vw 14px);
+			line-height: 1.9rem;
+		}
+
+picture {
+			font-family: helvetica-bold, arial, sans-serif;
+		}
+
+@media (min-width: 500px) {
+
+		p, a, li {
+			font-family: Helvetica-light, Arial, sans-serif;
+				font-size: 1.9rem;
+			
+				line-height: 2.5rem;
+			}
+	}
+
+
+@media (min-width: 900px) {
+
+	p, a, li {
+			font-size: 1rem;
+			line-height: 1rem;
+		}
+	p + address {
+			margin-top: .5rem;
+		}
+address {
+			padding-bottom: 20px;
+			color: #BD9C11;
+		}
+
+
+}
