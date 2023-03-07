@@ -1,6 +1,110 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
 ---
+## 3/6
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+
+
+### JAVASCRIPT!
+
+- Open a browser window: like about:blank
+- open the inspector panel
+- go to console: where you can write javascript code
+
+- How to declare a variable
+	`var name = "Derrick";`
+
+
+#### SYNTAX
+`var name = "Alina"; //string
+var age = 35; //number
+var yearsUntilCrisis = 50 - age; //basic math
+var message1 = name + " is " + age + " years old."; //concatenation
+var message = `${name} is ${age} years old`; //string interpolatiom (for later!)`
+
+
+
+#### ARRAYS
+`var name = ["one", "two"];`
+
+#### OBJECTS
+	`var person = {
+	    height: 6,
+	    name: "Derrick",
+	    alive: true,
+    };`
+
+
+#### THINGS YOU CAN DO
+- Add items to arrays
+	`varName.push("newItem");`
+	or use dot notation
+	`name.new = "newItem";`
+
+
+- Return using square bracket notation: `person['name'];`
+- Return using dot notation: `person.name;`
+
+
+- calling on nested items in objects:
+
+	- object:
+		`var cat = {
+		    name: "bob",
+		    age: "2",
+		    friends: ["sally", "misty"], //array
+		    favoritePlace: {
+		        name: "a warm lap.",
+		        timeSpentPerDay: 2,
+		    },`//nested object
+	- var `firstCat = cat.friends[1];`
+	- var `catPlace = cat.favoritePlace.name;`
+
+#### OBJECTS AND FUNCTIONS
+- Objects can hold functions like below:
+
+		`var cat = {
+		    name: "bob",
+		    age: "2",
+		    friends: [],
+		    favoritePlace: {
+		        name: "a warm lap.",
+		        timeSpentPerDay: 2,
+		    },
+		    cry: function() {
+		    return "meeeeeeeeoooooooow!";
+		    },
+		};`
+
+- How to call up that function:
+		`cat.cry()`
+
+
+- type console and that will show you built in functions?
+
+		`console.log()` //similar to print_r (not working?)
+		`console.clear()` //clears the console
+
+
+
+
+
+
+
+
+
+
+
+---
 ## 2/28
 
 new commit. Let's try again. 
