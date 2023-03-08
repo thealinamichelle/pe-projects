@@ -3,6 +3,107 @@
 ---
 ## 3/6
 - [x] Set Up Journal Entry
+- [] Stand Up
+- [x] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- finish layout plans
+
+DOM - Document Object Model
+
+HOW IT WOREK
+
+W3C - people who write the spec
+	 - working documentation dates to 1998 
+- programming API for HTML and XML documents
+- Application Programming Interface - API a set of interaction points and rules between two systems
+(XML documents are like SVGs)
+- Wikipedia: The DOM is a cross platform and language independent interface that treats XML or HTML document as a tree structure wherein each node is an object representing part of the document. 
+- - what is a node again?
+
+Document Object Model:
+	[Document]
+	|
+	|--[root element: <html>] 
+		|
+		|--[element:<head>]
+		|	|
+		|	|--[element: <title>]
+		|		|
+		|		|--[text: "My title"]
+		|--[element: <body>]
+			|
+			|--[element: <h1>]
+			|	|
+			|	|--[text: "a heading"]
+			|
+			|--[element: <a>]--[attribute: href]
+				|
+				|--[text: "linl text"]
+
+In practice its a basically javascript object, it's not really used with other languages
+
+Ire ADerinokun - bitofcode.de
+
+HOW IT WORKS:
+- it? gets the document
+- browser "looks" at the document on the server
+- it retrieves a snapshot of the document
+- it constructs the dom tree based on that snapshot
+- creates a css ome? tree
+- runs the javascript 
+- creates a bigger tree 
+- paints it to the screen
+
+
+- in the console you can inspect the DOM selectors by
+document.title
+document.head
+
+however you can't drill into the dom object in the same way as javascript and php
+(document.html.head.title doesn't work)
+so you need a `querySelector`
+
+document.querySelector() - this will look for a selector
+
+example: `document.querySelector('h1')`
+	- this can return something like this: <h1 class="welcome-message"> Example Page Title</h1>
+	- it looks like html but it's not it's a javascript object rendered as html
+	- its a 
+		h1 {
+			textContent: "Example Page Title",
+			classList ['welcome-message'],
+			length: ....		
+		}
+You can point a reference to a javascript object:
+	`var heading = document.querySelector('h1')`
+Now you can drill into the object?
+
+
+var paragraphs = document.querySelector("p");
+- this will find the first paragraph not all the paragraphs
+
+How to create an element:
+	`var headingTwo - document.createElement('h2');`
+then you can take that element and value:
+	headingTwo.textContent = "This is the second heading";
+
+You can add properties to the elements. There was no class element unlike textContent above so we have to add it:
+	`headingTwo.classList.add('my-favorite-heading')`
+
+Put the element into the html? //not super important
+	`document.body.appendChild(headingTwo);`
+
+
+classlist - is an 
+---
+## 3/6
+- [x] Set Up Journal Entry
 - [x] Stand Up
 - [] git commit
 - [] Milestones	
@@ -21,8 +122,8 @@
 - go to console: where you can write javascript code
 
 - How to declare a variable
-	`var name = "Derrick";`
-
+	`var name = "Derrick";` //statement
+Note: statements result in a value, you may or may not assign them a "reference"
 
 #### SYNTAX
 `var name = "Alina"; //string
@@ -95,13 +196,9 @@ var message = `${name} is ${age} years old`; //string interpolatiom (for later!)
 		`console.clear()` //clears the console
 
 
+NOTE: a functuon that belongs to an object is called a METHOD
 
-
-
-
-
-
-
+`log` and `clear` are methods of the console object(console in the browser) and they are not part of the javascript core.
 
 
 ---
