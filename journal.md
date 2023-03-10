@@ -3,7 +3,7 @@
 ---
 ## 3/6
 - [x] Set Up Journal Entry
-- [] Stand Up
+- [x] Stand Up
 - [x] git commit
 - [] Milestones	
 - [] Priority: watch the ultimate portfolio process videos through end
