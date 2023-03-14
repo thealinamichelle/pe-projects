@@ -1,7 +1,792 @@
 # My learning journal
-### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts. 
+### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
+
+
+## 3/10
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- [] finish layout plans
+
+### 180 For Each and More
+
+```javascript
+
+((
+//Miguel's function:
+
+		function renderItem(item, index) {
+			var listItem = document.createElement("li");
+			listItem.textContent = "array slot " + index + ": " + item;
+			listItem.classList.add("item");
+			document.body.appendChild(listItem);
+		}
+
+
+		exampleArray.forEach(renderItem);
+))
+
+```
+
+create a javascript file
+scripts.js
+
+in the html file: <script src='scripts.js'></script>
+
+
+Function outide of the For Each Loop:
+
+```javascript
+
+		function printItem(item, i, array){
+			var number = i + 1;
+			console.log(number + ": " + item);
+		};
+
+
+		deskItems.forEach(printItem);
+
+Function within the for each loop
+
+		deskItems.forEach( function printItem(item, i, array){
+			var number = i + 1;
+			console.log(number + ": " + item);
+		});
+```
+
+```javascript 
+
+They will produce the same results!
+
+
+deskItems.forEach( function(item) {
+
+
+//if item is ceramic put it on the list
+
+ if (item.type != "easily lost") {
+ 	console.log(item.name)
+	 }
+ });
+```
+
+var exampleItem =
+		{
+			name:"water bottle", 
+			type:"reusable"
+		};
+ 
+var deskItems = [
+		{
+			name:"water bottle", 
+			type:"reusable"
+		},
+		{
+			name:"timer", 
+			type:"handy"
+		},
+		{
+			name:"pens", 
+			type:"handy"
+		},
+		{
+			name:"papers",
+			type:"trash"
+		},
+		{
+			name:"cup", 
+			type:"reusable"
+		},
+		{
+			name:"fidget toys",
+			type:"handy"
+		},
+				{
+			name:"tissues",
+			type:"trash"
+		},
+		{
+			name:"old notes",
+			type:"trash"
+		},		
+		{
+			name:"scissors",
+			type:"handy"
+		},
+		{
+			name:"keys",
+			type:"essential"
+		}
+	];
+
+
+// function printItem(item){
+// 	console.log(item.name);
+// 	console.log(item.type);
+// };
+
+
+// deskItems.forEach( function(item) {
+
+
+// //if item is ceramic put it on the list
+
+//  if (item.type != "easily lost") {
+//  	console.log(item.name)
+// 	 }
+//  });
+
+var trash = deskItems.filter( 
+
+	function(item) {
+	return item.type == "trash";
+
+
+});
+
+var handy = deskItems.filter( function(item) {
+	return item.type == "handy";
+});
+
+var essential = deskItems.filter( function(item) {
+	return item.type == "essential";
+});
+
+var reusable = deskItems.filter( function(item) {
+	return item.type == "reusable";
+});
+
+
+
+function buildListSection(items, heading) {
+
+		var h2 = document.createElement('h2');
+		h2.textContent = heading;
+		document.body.appendChild(h2);
+
+		var ol = document.createElement('ol');
+
+		items.forEach( function(item) {
+			var li = document.createElement('li');
+			li.textContent = item.name;
+			ol.appendChild(li);
+
+			document.body.appendChild(ol);
+		});
+	};
+
+
+buildListSection( trash, "things Alina needs to throw away.");
+buildListSection( reusable, "Awesome reusable tools");
+
+buildListSection( essential, "Can't leave the studio without it!");
+
+
+
+
+### TESTING
+
+#### Array.from
+- questions - does Array always need to be capitalized? I thought at first array was a stand in term for the array reference but that doesn't seem to work
+- pulls out 
+- Array.from() lets you create Arrays from:
+- - iterable objects (objects such as Map and Set); or, if the object is not iterable,
+- - array-like objects (objects with a length property and indexed elements).
+
+example: 
+	input: `console.log(Array.from("hello"));`
+	output: `(5)['h', 'e', 'l', 'l', 'o']`
+
+
+#### Array.isArray()
+- verified if called object is an array or not
+	input: `console.log(Array.from("hello"));`
+	output: false
+
+		input: `var hello = Array.from("hello");
+				console.log(Array.isArray(hello));
+				console.log(hello);`
+
+		output: true 
+				`(5)['h', 'e', 'l', 'l', 'o']`
+
+#### array.push
+- unlike the other methods this one the array is a stand in term
+- The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+	input: `var deskItems = ["water bottles", "timer"];
+			console.log(deskItems.push("eye drops"));`
+	output: 
+	`		(3) ['water bottles', 'timer', 'eye drops']
+			0: "water bottles"
+			1: "timer"
+			2: "eye drops"
+			length: 3
+			[[Prototype]]: Array(0)`
+
+#### array.shift 
+- The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+	Input: `var testItems = ["water bottles", "timer"];
+			console.log(testItems.shift());
+			console.log(testItems);`
+
+	Output:
+			`> "water bottles"
+			> Array ["timer"]`
+
+#### array.join()
+- The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+
+- Input:
+
+		`var testItems = ["water bottles", "timer", "cup", "notes"];`
+
+		`console.log(testItems.join(' '));
+		console.log(testItems.join('-'));
+		console.log(testItems.join('and'));`
+
+- Output: 
+
+		`"water bottles timer cup notes"
+		"water bottles-timer-cup-notes"
+		"water bottlesandtimerandcupandnotes"`
+
+#### array.reverse()
+- The reverse() method reverses an array in place and returns the reference to the same array, the first array element now becoming the last, and the last array element becoming the first. In other words, elements order in the array will be turned towards the direction opposite to that previously stated.
+- Careful: reverse is destructive -- it changes the original array.
+
+Input: 
+
+		var testItems = ["water bottles", "timer", "cup", "notes"];
+
+		console.log(testItems);
+		console.log(testItems.reverse());
+		console.log("changed: " + testItems);
+
+OutPut
+
+		> Array ["water bottles", "timer", "cup", "notes"]
+		> Array ["notes", "cup", "timer", "water bottles"]
+		> "changed: notes,cup,timer,water bottles"
+
+#### array.find
+
+- The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+- return the first element
+
+- requires a function why?
+
+
+- Input: 
+```javascript
+	var deskItems = [
+			{
+				name:"water bottle", 
+				type:"reusable"
+			},
+			{
+				name:"papers",
+				type:"trash"
+			},
+			{
+				name:"pens", 
+				type:"handy"
+			},
+			{
+				name:"timer", 
+				type:"trash"
+			},
+
+			function isTrash (item) {
+			return item.type === 'trash';
+			};
+
+			console.log(deskItems.find(isTrash));
+```
+
+- Output: 
+		{name: 'papers', type: 'trash'}
+
+
+#### array.map
+
+- The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+INPUT:
+
+		const characters = [
+		    {
+		        name: 'Luke Skywalker',
+		        height: 172,
+		        mass: 77,
+		        eye_color: 'blue',
+		        gender: 'male',
+		    },
+		    {
+		        name: 'Darth Vader',
+		        height: 202,
+		        mass: 136,
+		        eye_color: 'yellow',
+		        gender: 'male',
+		    },
+		    {
+		        name: 'Leia Organa',
+		        height: 150,
+		        mass: 49,
+		        eye_color: 'brown',
+		        gender: 'female',
+		    },
+		    {
+		        name: 'Anakin Skywalker',
+		        height: 188,
+		        mass: 84,
+		        eye_color: 'blue',
+		        gender: 'male',
+		    },
+		];
+
+		const names = characters.map(character => {
+			return character.name;
+		});
+
+		console.log(names);
+
+
+OUTPUT:
+
+		['Luke Skywalker', 'Darth Vader', 'Leia Organa', 'Anakin Skywalker']
+
+
+- -  Input can be written this way as well (implicit return): 
+
+		`const names = characters.map(character => character.name);`
+//map over each character and convert it to name
+
+- - Get the name and the height:
+
+		`const smallRecord = characters.map(character => 
+			({name: character.name, height: character.height
+		}));` //this is an implicit return but because we are returning an object we need to wrap it
+		
+		`console.log(smallRecord);`
+
+
+- - BONUS .split
+
+		`const firstname = characters.map(character => character.name.split(" ")[0])`
+
+		`console.log(firstname);`
+
+- - - output: 'Luke', 'Darth', 'Leia', 'Anakin']
+
+#### Array.reduce
+
+- From MDN: 
+- - The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
+Perhaps the easiest-to-understand case for reduce() is to return the sum of all the elements in an array:
+
+MDN INPUT:
+
+		const array1 = [1, 2, 3, 4];
+
+		// 0 + 1 + 2 + 3 + 4
+		const initialValue = 0;
+		const sumWithInitial = array1.reduce(
+		  (accumulator, currentValue) => accumulator + currentValue,
+		  initialValue
+		);
+
+		console.log(sumWithInitial);
+		// Expected output: 10
+
+
+MDN OUTPUT
+
+		>10
+
+
+- So it does something with accumilating all the items within the array but also takes a currentvalue?
+
+##### SYNTAX
+
+`reduce((accumulator, currentValue, currentIndex, array) => { /* … */ })`
+
+
+// Callback function
+
+		reduce(callbackFn)
+		reduce(callbackFn, initialValue)
+
+
+- - using the characters array: 
+
+		const totalMass = characters.reduce((accumulator, currentValue) => {
+		    return accumulator + currentValue.mass;
+		}, 0);
+
+		console.log(totalMass);
+
+		This returns: 346
+
+
+## 3/10
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- [] finish layout plans
+
+#### For Each
+
+//objects are like associative arrays in PHP
+//sets of key value pairs
+//arrays are lists that keep their order
+
+```javascript
+
+		var exampleArray = ['apple', 'banana', 'melon'];
+		exampleArray[0];
+		"apple"
+		exampleArray[1];
+		"banana"
+		exampleArray[2];
+		"melon"
+
+```
+
+#### for each loops in Javascript
+
+	exampleArray.forEach( );
+
+- for each something in (here) do something
+- takes a function??
+
+//Derrick gets confused on how to explain the following function. 
+
+```javascript
+		exampleArray.forEach (
+			function examplFunction(item) {
+				console.log(item);
+			}
+		 );
+
+```
+
+
+He concludes it's time to move to a proper javascript file. 
+To do that you can set it up much like a `style element`
+When you use javascript you want to know about what's on the page so it's best if scripts are on the bottom.`<script></script>`
+
+
+
+```javascript
+
+		var name = "Alina";
+		console.log(name)
+		//^^^^^^^^^^^^^^^
+		//this prints the name to the console
+
+
+		var total = 200 * 50 * 2;
+		console.log(total);
+
+		//you can use as many arguments as you want for console.log().
+
+		var total = 200 * 50 * 2;
+		console.log("total: ", total);
+		//will print total: 200
+
+		var exampleArray = ['apple', 'banana', 'melon'];
+		console.log(exampleArray[2]);
+
+
+		function shoutName(name) {
+			var name = prompt('What is your name?');
+			console.log("I am " + name + "!!!");
+		}
+
+```
+
+
+for (var current = 0; current <?; current++)
+	//for every current that equals 0, current is smaller is something, for each time it iterates add one to the current count. 
+	//++ add one
+
+	//.length is a property not a method
+	// remember functions specific to objects are referred to as "methods";
+	//that means you don't need a () 
+
+
+//ok so here is an array
+
+	var exampleArray = [1, 2, 3, 4, 56, "hi"];
+	console.log('array length', exampleArray.length);
+//logged to the console with a length property
+
+
+function shoutName(name) {
+	console.log("I am " + name + "!!!");
+}
+
+
+for (var current = 0; current < exampleArray.length; current++) {
+	console.log('current', current)
+}
+
+
+
+
+
+Updated: 
+//here is the array
+
+var exampleArray = ["actions", "who", "dogstooth", "words", 56, "hi"];
+	console.log('array item', exampleArray[0]);
+// console prints it to the console
+
+//current is thrown into the item location spot
+//that let's us list the items individually
+//for every current that equals 0, is the current smaller than the length OF THE ARRAY NOT THE STRING LENGTH, for each time it iterates add one to the current count. 
+for (var current = 0; current < exampleArray.length; current++) {
+	console.log('current', exampleArray[current])
+}
+
+
+	SET UP: `var current = 0`
+	CONDITION:`current < exampleArray.length` 
+	INCREMENT:`current++`
+
+WHAT TO DO EACH TIME
+console.log('current', exampleArray[current])
+
+
+
+//So how can we combine the shout name function with the looping array?
+
+		function shoutName(name) {
+			console.log("I am " + name + "!!!"); 
+		}
+
+		var exampleArray = ["actions", "who", "dogstooth", "words", 56, "hi"];
+
+		for (var current = 0; current < exampleArray.length; current++) {
+			shoutName(exampleArray[current]);
+		 }
+
+
+
+// ### How to make a reusable function
+// this function will take an array and a function
+//for every item in the array it will run the function
+		function doThings(anArray, aFunction) {
+			for (var i = 0; i < anArray.length; i++) {
+						aFunction(anArray[i]);
+					 }
+		}
+
+ doThings(exampleArray, shoutName)
+ //so in this example this will see the words "actions", "who", "dogstooth", "words", 56, "hi"
+
+
+// this function needs the item
+ // it will then create an list item element in the html
+ // it will change the list items text content to the item
+
+function printItem(item) {
+	var listItem = document.createElement('li');
+	listItem.textContent = item;
+	document.body.appendChild(listItem);
+}
+
+//I made this same style function yesterday. FLEXIBLE KNOWLEDGE!!!!
+
+ doThings( exampleArray, printItem );
+//an function that prints items to the screen from an array
+
+How Does It Work?
+//do item takes the named array
+//then it it will run the function as many times as there are items
+//because it knows the .length
+//and it is comparing the item location number via the array[i] and has set conditions:
+	//if i is less than the location number then add one
+	//i has a standard amount of 0
+	// this will change the location number
+//for every item run the function named
+//printItem is named
+// but it also fills in printItem from printItem(item)
+//to printItem(anArray[i])
+//Do Things knows the array and the number so therefore so does printItem
+
+//### But What if I want to know the order?
+
+function printItem(item, index) {
+	var listItem = document.createElement('li');
+	listItem.textContent = index + " " + item;
+	document.body.appendChild(listItem);
+}
+
+function doThings(anArray, aFunction) {
+	for (var i = 0; i < anArray.length; i++) {
+				aFunction(anArray[i], i );
+	}
+}
+
+// again you can change print item's knowledge via Do Things: aFunction(anArray[i], i );
+
+//### What if I need to compare the array to the item? It's possible!
+
+function printItem(item, index) {
+	var listItem = document.createElement('li');
+	listItem.textContent = index + " " + item;
+	document.body.appendChild(listItem);
+}
+
+function doThings(anArray, aFunction) {
+	for (var i = 0; i < anArray.length; i++) {
+				aFunction(anArray[i], i, anArray );
+	}
+}
+
+//THIS IS REVERSE ENGINEERING A BUILT IN JAVASCRIPT FUNCTION
+
+//array.forEach (enter the function you want passed in)
+//YOU CAN ENTER THREE ITEMS LIKE ABOVE? item, index, anArray?
+//fuction() is an anonymous argument
+
+exampleArray.forEach( function(item, index, anArray) {
+
+});
+
+
+exampleArray.forEach( function(placeholder) {
+	console.log(placeholder); // the word doesn't matter
+});
+
+exampleArray.forEach( function(item, index, fullArray) {
+	console.log(item, index, fullArray);
+});//again the words don't matter they are placeholders
+
+you can also leave out the item, index and fullarray
+
+
+this will also work! See the words dont matter
+exampleArray.forEach( function(dog, idog, dogs) {
+	console.log(dog, idog, dogs);
+});
+
+
+
+
+#### For LOOPS
 ---
-## 3/6
+## 3/9
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- [] finish layout plans
+
+### USER INPUT WITH DIALOGS
+
+
+document.createElement('button')
+
+
+give the button a class:
+
+button.classList.add('class-name');
+
+alert('watch out!');
+
+confirm('are you sure'); //option to ok it yes- true cancel - false
+
+prompt('how old are you')
+
+correct interpolation: alert(`hello ${name} nice to meet you`);
+
+a reference for a function - you don't need to write var etc etc
+
+function test() {
+	console.log('test...');
+}
+
+Hello E4P exercise 1
+
+		`function introduction(){ 
+		var name = prompt("What is your name?");
+		    if (name) {
+		        var message = "Hello, " + name + ", nice to meet you.";
+		        alert(message);
+		    } else {
+		     alert('Sorry, come again?');
+		    introduction();
+		    }
+		}`
+
+Add an event listener:
+
+	`button.addEventListener('click', introduction);`
+
+Functions can be defined and run later or used whenever and wherever as many times as you like while the page is loaded. 
+
+
+Other function examples:
+
+function timesTwo(anumber) {
+	return anumber * 2;
+}
+
+timesTwo(2); //4
+timeTwo(13); //26
+
+function higherThanTen(someNumber) {
+	if (someNumber > 10 ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+higherThanTen(2); //false
+higherThanTen(13); true
+
+console is an object
+console.log(stuff) is a function of that object
+functions specific to objects are referred to as "methods";
+
+
+function button(){
+    var button = document.createElement('button');
+    document.body.appendChild(button);
+    button.textContent = "Click!";
+    button.style.padding = "10px";
+'10px'
+button.addEventListener('click', e4p);
+}
+
+
+---
+## 3/7
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] git commit
@@ -16,7 +801,7 @@
 
 DOM - Document Object Model
 
-HOW IT WOREK
+HOW IT WORKS
 
 W3C - people who write the spec
 	 - working documentation dates to 1998 
@@ -100,7 +885,12 @@ Put the element into the html? //not super important
 	`document.body.appendChild(headingTwo);`
 
 
-classlist - is an 
+the entire browser is a javascript object
+
+window will show everything in the window
+these functions work within the brower and are listed under "window"
+
+
 ---
 ## 3/6
 - [x] Set Up Journal Entry
