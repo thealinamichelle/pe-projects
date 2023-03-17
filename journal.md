@@ -1,6 +1,23 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
+## 3/10
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [x] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- [] finish layout plans
+
+### Common JS interface tricks
+
+You can toggle a class with element.classList.toggle('className')
+
 
 ## 3/10
 - [x] Set Up Journal Entry
@@ -519,7 +536,7 @@ When you use javascript you want to know about what's on the page so it's best i
 			console.log("I am " + name + "!!!");
 		}
 
-```
+
 
 
 for (var current = 0; current <?; current++)
@@ -663,6 +680,7 @@ function doThings(anArray, aFunction) {
 
 //THIS IS REVERSE ENGINEERING A BUILT IN JAVASCRIPT FUNCTION
 
+
 //array.forEach (enter the function you want passed in)
 //YOU CAN ENTER THREE ITEMS LIKE ABOVE? item, index, anArray?
 //fuction() is an anonymous argument
@@ -687,7 +705,6 @@ this will also work! See the words dont matter
 exampleArray.forEach( function(dog, idog, dogs) {
 	console.log(dog, idog, dogs);
 });
-
 
 
 
@@ -724,7 +741,7 @@ prompt('how old are you')
 
 correct interpolation: alert(`hello ${name} nice to meet you`);
 
-a reference for a function - you don't need to write var etc etc
+//a reference for a function - you don't need to write var etc etc
 
 function test() {
 	console.log('test...');
@@ -732,6 +749,7 @@ function test() {
 
 Hello E4P exercise 1
 
+```Javascript
 		`function introduction(){ 
 		var name = prompt("What is your name?");
 		    if (name) {
@@ -742,6 +760,7 @@ Hello E4P exercise 1
 		    introduction();
 		    }
 		}`
+```
 
 Add an event listener:
 
@@ -783,8 +802,7 @@ function button(){
 '10px'
 button.addEventListener('click', e4p);
 }
-
-
+```
 ---
 ## 3/7
 - [x] Set Up Journal Entry
@@ -855,8 +873,12 @@ however you can't drill into the dom object in the same way as javascript and ph
 so you need a `querySelector`
 
 document.querySelector() - this will look for a selector
+```
 
-example: `document.querySelector('h1')`
+
+//example: 
+
+`document.querySelector('h1')`
 	- this can return something like this: <h1 class="welcome-message"> Example Page Title</h1>
 	- it looks like html but it's not it's a javascript object rendered as html
 	- its a 
@@ -907,6 +929,8 @@ these functions work within the brower and are listed under "window"
 
 ### JAVASCRIPT!
 
+```
+
 - Open a browser window: like about:blank
 - open the inspector panel
 - go to console: where you can write javascript code
@@ -916,12 +940,13 @@ these functions work within the brower and are listed under "window"
 Note: statements result in a value, you may or may not assign them a "reference"
 
 #### SYNTAX
+```js
 `var name = "Alina"; //string
 var age = 35; //number
 var yearsUntilCrisis = 50 - age; //basic math
 var message1 = name + " is " + age + " years old."; //concatenation
 var message = `${name} is ${age} years old`; //string interpolatiom (for later!)`
-
+````
 
 
 #### ARRAYS
@@ -949,6 +974,7 @@ var message = `${name} is ${age} years old`; //string interpolatiom (for later!)
 - calling on nested items in objects:
 
 	- object:
+	```Javascript
 		`var cat = {
 		    name: "bob",
 		    age: "2",
@@ -959,9 +985,12 @@ var message = `${name} is ${age} years old`; //string interpolatiom (for later!)
 		    },`//nested object
 	- var `firstCat = cat.friends[1];`
 	- var `catPlace = cat.favoritePlace.name;`
+	```
 
 #### OBJECTS AND FUNCTIONS
 - Objects can hold functions like below:
+
+```Javascript
 
 		`var cat = {
 		    name: "bob",
@@ -975,6 +1004,7 @@ var message = `${name} is ${age} years old`; //string interpolatiom (for later!)
 		    return "meeeeeeeeoooooooow!";
 		    },
 		};`
+```
 
 - How to call up that function:
 		`cat.cry()`
@@ -1041,6 +1071,7 @@ new commit. Let's try again.
 
 - Code for when there isn't a template file:
 
+```PHP
 		$page = "home";
 		if ( isset($\_GET["page"]) ) {
 			$page = $\_GET['page'];
@@ -1056,6 +1087,7 @@ new commit. Let's try again.
           //sort of a 404 error page
         }
 
+```
 #### Part 25: Projects Page
 
 - Tower Git: 
@@ -1173,14 +1205,20 @@ example: Derrick's pokemon project the link had a `?limit=20` which shows that t
 Use a query string to see list vs detail page?
   <a href="?view=lists"> all pokemon</a>
 
+```
 
-Check the server for the query string and return it
+```PHP
+
+//Check the server for the query string and return it
    
     function queryString() {
       return $_SERVER['QUERY_STRING'];
     }
 
+```
 echo it in the template to see it
+
+```PHP
 
     if ($_GET["view'] == "list") {
         echo "List List List";
@@ -1192,7 +1230,7 @@ echo it in the template to see it
 		Put JSON data conversion info here    
     }
  
- 
+ ```
 Need to set the `$_GET["view]`
 
 so you can add set an 
@@ -1245,6 +1283,9 @@ so we need the json data and a `$_Get Id` from the query string in order to know
 
 **The code so far:**
 
+
+```PHP
+
     if ( isset($_Get["view"]) ) {
         $view = $_Get["view"];
     }
@@ -1279,6 +1320,7 @@ so we need the json data and a `$_Get Id` from the query string in order to know
             echo :"</ul>";
         }
 
+```
 
 ---
 ## 2/14
