@@ -1,9 +1,9 @@
 <?php
 
-function enableErrorReporting() {
-	error_reporting(E_ALL);
-	ini_set('display_errors', '1');
-}
+// function enableErrorReporting() {
+// 	error_reporting(E_ALL);
+// 	ini_set('display_errors', '1');
+// }
 
 
 function formatCode($things) {
