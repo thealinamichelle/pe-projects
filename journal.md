@@ -1,7 +1,58 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
-## 3/10
+
+## 3/27
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones	
+- [] Priority: watch the ultimate portfolio process videos through end
+- [] Turning the 
+	- - [] goals
+	- - [] resume
+	- - [] projects pages into modules
+- [] Layouts for modules
+- [] finish layout plans
+
+```Javascript
+
+const todos = [];//a place in memory for the todos with a reference
+
+console.log('todos: ', todos);
+
+function add(todo) {//this function will take a todo and add it to the list we have in memory
+	todos.push(todo);
+}
+
+add("Go to the store");//this is the function above
+console.log('todos: ', todos);
+add('prepare dinner');
+console.log('todos: ', todos);
+add('go to bed');
+console.log('todos: ', todos);
+add("Add Cake's walk to the calendar");
+console.log('todos: ', todos);
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+function remove(id) {
+	todos.splice(id, 1)//start, end
+};//read the index number and remove one thing only. Changing the number to 2 removes two list items starting at the index number. Derrick doesn't like this method but its a classic.
+
+remove(0);
+console.log('todos: ', todos);
+// remove(3);
+// console.log('todos: ', todos);
+
+```
+
+
+
+### Common JS interface tricks
+
+You can toggle a class with element.classList.toggle('className')
+
+## 3/some date after the 10th
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [x] git commit
@@ -19,7 +70,7 @@
 You can toggle a class with element.classList.toggle('className')
 
 
-## 3/10
+## 3/some date after the 10th
 - [x] Set Up Journal Entry
 - [x] Stand Up
 - [] git commit
