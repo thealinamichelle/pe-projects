@@ -1,0 +1,62 @@
+@import "resets.css";
+@import "preset.css";
+@import "setup.css";
+@import "settings.css";
+@import "structure.css";
+@import "typography.css";
+@import "components.css";
+@import "modules.css";
+
+main {
+/*		display: flex;
+	flex-direction: column;
+	gap: 50px;*/
+}
+
+
+main section {
+	display: block;
+	padding: 100px;
+}
+
+inner-column {
+	display: block;
+	width: 90vw;
+	max-width: 1200px;
+	min-height: 20vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 0 auto;
+}
+
+.diagonal {
+background-color: #eff3fd;
+opacity: 1;
+background: repeating-linear-gradient( -45deg, var(--light), var(--light) 1px, var(--soft) 1px, var(--soft) 5vw );
+}
+
+wrapper {
+	display: flex;
+	padding: 15px 0px;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+picture.placeholder {
+	width: 100%;
+	height: auto;
+/*	aspect-ratio: 1.25/ 1;*/
+	background-color: var(--soft);
+
+	display: flex;
+	justify-content: center;
+
+}
+
+img.image-symbol {
+	width: 15%;
+	height: auto;
+}

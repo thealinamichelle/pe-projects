@@ -1,0 +1,60 @@
+@import "forms.css";
+
+/* buttons and icons and smaller reusable bits here */
+
+.button {
+	display: block;
+
+/*	font-family: sans-serif;*/
+	font-size: 1rem;
+	line-height: 1.4;
+
+	padding: 0.5em 1em;
+/*	background-color: var(--color);*/
+	min-width: 120px;
+	text-align: center;
+}
+
+
+button {
+	padding: 15px 50px;
+	border-width: 0;
+
+	background-color: var(--paper);
+	border: solid 1px var(--highlight);
+}
+
+
+.start {
+	background: var(--highlight)
+}
+.trial {
+	
+}
+
+
+picture.circle {
+	aspect-ratio: 1/ 1;
+}
+
+svg.circle {
+	height: 100%;
+	width: 100%;
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	stroke-linejoin:round;
+	stroke-miterlimit:2;
+	fill: var(--soft);
+}
+
+.number {
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	aspect-ratio: 1/ 1;
+	background-color: var(--soft);
+	display: flex;
+	flex-direction: column;
+	    justify-content: center;
+    align-items: center;
+}

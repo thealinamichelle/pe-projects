@@ -1,0 +1,172 @@
+/* Should we pull in @fonts here? */
+
+
+
+
+
+.loud-voice,
+h1 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+}
+
+h2, .strong-voice {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 1.1;
+	letter-spacing: 0.2px;
+}
+
+h3, .attention-voice {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.37rem;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+p, .calm-voice {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: var(--fade);
+}
+
+
+p.poster-voice {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.513rem;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: var(--fade);
+}
+
+.tiny-voice {
+	font-size: 1rem;
+}
+
+.bold-voice {
+	font-weight: 500;
+}
+
+/*refined-voice
+.loud-voice 
+.attention-voice 
+.friendly-voice 
+.standard-voice 
+.poster-voice,
+strong-voice*/
+
+
+
+
+
+
+
+/*EXAMPLE*/
+
+/*
+html {
+	--cambo: 'Cambo', serif;
+	--rob: 'Roboto', sans-serif;
+	--loudv: clamp(36px, 5vw, 60px);
+}
+
+.loud-voice	{
+	font-family: var(--cambo);
+	font-size: var(--loudv);
+	color: var(--ink);
+}
+
+.loud-voice-overlay {
+	font-family: var(--cambo);
+	font-size: var(--loudv);
+	color: var(--white);
+	text-shadow: 1px 0 20px var(--shadow);
+}
+
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font 
+	}
+}
+
+.attention-voice	{
+	font-family: var(--cambo);
+	font-size: 1.8rem;
+}
+
+.strong-voice	{
+	font-family: var(--rob);
+	font-weight: 700;
+	font-size:  .8rem;
+	line-height: 2rem;
+}
+
+.calm-voice, p, li {
+	font-family: var(--rob);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1;
+	color: var(--ink);
+}
+
+.refined-voice {
+	font-family: var(--rob);
+	font-size: .8rem;
+	font-weight: 300;
+	line-height: 1rem;
+	color: var(--ink);
+}
+
+:is(.calm-voice, p, li) em {
+	font-weight: 100;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+	color: var(--highlight);
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+
+/*
+p + p {
+	margin-top: 1em;
+}
+
+p + .refined-voice {
+	margin-top: .5rem;
+}
+.refined-voice + .refined-voice {
+	margin-top: .25rem;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+*/

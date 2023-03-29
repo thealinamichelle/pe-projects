@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html * {
+
+/* COLOR PALLET	 */
+	--soft: #eff3fd;
+	--light: #becdf8;
+	--ink: #212121;
+	--info: #424242;
+	--highlight: #3563e9;
+	--paper: #ffffff;
+	--fade: #616161;
+
+/* FONTS	 */
+
+
+/* GAPS & PADDING	*/
+
+	--smspace: 20px;
+	--medspace: 40px;
+
+}
+
+light,
+soft,
+ink,
+info,
+highlight,
+paper, fade {
+	display: block;
+	height: 100px;
+}
+
+light {
+	background: var(--light);
+}
+soft {
+	background: var(--soft);
+}
+ink {
+	background: var(--ink);
+}
+info {
+	background: var(--info);
+}
+highlight {
+	background: var(--highlight);
+}
+paper {
+	background: var(--paper);
+}
+fade {
+	background: var(--fade);
+}
+
+
+/*example*/
+/*
+	--corners: 10px; 
+	--paper: var(--white);
+	--ink: var(--black);
+
+
+	--standard: 1140px;
+	--tight: 800px;
+
+
+	--welcomepad: 5vw;
+
+	--texture: url("../images/background/bg-landscape.jpg");
+
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #2f2f2f;
+		--ink: #fbfbfb;
+		--cream: #2f2f2f;
+		--texture: url("../images/background/bg-darkmode.jpg");
+	}
+}
+
+}*/
+
+
+

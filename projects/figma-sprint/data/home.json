@@ -1,0 +1,22 @@
+[
+	{
+		"type": "templates",
+		"page-name": "hero",
+		"file-name": "hero.php"
+	},
+	{
+		"type": "templates",
+		"page-name": "center-content",
+		"file-name": "center-content.php"
+	},
+	{
+		"type": "templates",
+		"page-name": "feature",
+		"file-name": "feature.php"
+	},
+	{
+		"type": "templates",
+		"page-name": "clients",
+		"file-name": "clients.php"
+	}
+]

@@ -1,0 +1,45 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; 
+} 
+
+main {
+	flex-grow: 1; /* fill up available space + push the footer down */
+}
+/*
+inner-column {
+	display: block;
+	width: 98%;
+	max-width: var(--standard); /* could be a variable in settings 
+	margin-right: auto;
+	margin-left: auto;
+}*/
+
+/*
+inner-column.tight {
+	max-width: var(--tight);
+}
+*/
+
+.no-column inner-column {
+	width: 100vw;
+	max-width: 100vw;
+}
+
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 5;/*
+	background-color: var(--cream);*/
+	border-bottom: solid 1px var(--fadedshadow);
+	padding: 20px 0;
+}
+
+
+
+
+
+
