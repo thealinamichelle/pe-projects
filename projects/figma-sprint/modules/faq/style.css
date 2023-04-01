@@ -1,0 +1,48 @@
+.faq :is(h1, .tag-line) {
+	text-align: center;
+}
+
+.questions {
+	display: grid;
+	margin-top: var(--medspace);
+	gap: var(--medspace);
+}
+
+.faq p.bold-voice {
+	color: var(--ink);
+	font-size: 1.2rem;
+}
+
+
+
+/*.questions svg {
+transform: rotate(90deg);
+}*/
+
+
+/*.questions svg.closed { 
+	transform: rotate(90deg);
+	transition: .7s;
+}*/
+
+/*.questions svg.open {
+	transform: rotate(0deg);
+	transition: .7s;
+}*/
+
+/*#answer {
+	opacity: 0;
+}
+
+#answer.open {
+	height: auto;
+	opacity: 1;
+	transition: 1s;
+}
+
+#answer.closed {
+	opacity: 0;
+	transition: .2s;
+}
+*/
+

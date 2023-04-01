@@ -2,12 +2,27 @@
 
 html * {
 
+
+/* testing */
+--green: rgba(172, 175, 127, .2);
+--red:rgba(228, 97, 117, .2);
+--bordgreen: 1px solid green;
+--bordred: 1px solid red;
+/*media widths*/
+
+/*Break points 500, 800*/
+	--tight: 800px;
+	--standard: 1140px;
+
+
+
 /* COLOR PALLET	 */
 	--soft: #eff3fd;
 	--light: #becdf8;
 	--ink: #212121;
 	--info: #424242;
-	--highlight: #3563e9;
+	--highlight: #3563e9; 
+	--highlight-darker: #2851E3;
 	--paper: #ffffff;
 	--fade: #616161;
 
@@ -16,8 +31,14 @@ html * {
 
 /* GAPS & PADDING	*/
 
+	--tinyspace: 5px;
 	--smspace: 20px;
 	--medspace: 40px;
+	--lgspace: 80px;
+	--xlspace: 100px;
+
+/*Design*/
+	--round-corners: 6px;
 
 }
 
@@ -56,18 +77,6 @@ fade {
 
 /*example*/
 /*
-	--corners: 10px; 
-	--paper: var(--white);
-	--ink: var(--black);
-
-
-	--standard: 1140px;
-	--tight: 800px;
-
-
-	--welcomepad: 5vw;
-
-	--texture: url("../images/background/bg-landscape.jpg");
 
 
 @media (prefers-color-scheme: dark) {

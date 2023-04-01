@@ -5,13 +5,17 @@
 		//ROUTER
 		$page = "home";
 		$class = "home";
+
 		if ( isset($_GET["page"]) ) {
+
 			$page =$_GET["page"];
 			$class = $page;
 		}
 		if ($page == "$page") {
-			include("templates/$page/$page.php");
+		
+			include("pages/$page/$page.php");	
 		}
+
 	?>
 
 <?php include("footer.php");?>

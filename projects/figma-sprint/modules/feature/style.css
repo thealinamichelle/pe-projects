@@ -1,0 +1,56 @@
+
+
+
+
+.feature wrapper {
+	flex-direction: column;
+	justify-content: start;
+	text-align: left;
+	align-items: start;
+}
+
+.feature h2 {
+	text-align: left;
+}
+
+
+.feature ul {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.feature li {
+	display: grid;
+    grid-template-columns: fit-content 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.feature h3 {   
+	grid-column: 2;
+}
+
+.feature p {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: left;
+} 
+
+.feature .number {     
+	grid-row: 1 / span 2;
+    align-self: start;
+}
+
+.feature picture.placeholder {
+	aspect-ratio: 626 / 491;
+}
+
+@media (min-width) {
+
+	.feature li {
+    gap: 10px;
+	}
+
+}

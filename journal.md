@@ -798,10 +798,13 @@ function test() {
 	console.log('test...');
 }
 
+```
+
 Hello E4P exercise 1
 
 ```Javascript
-		`function introduction(){ 
+		
+		function introduction(){ 
 		var name = prompt("What is your name?");
 		    if (name) {
 		        var message = "Hello, " + name + ", nice to meet you.";
@@ -810,8 +813,8 @@ Hello E4P exercise 1
 		     alert('Sorry, come again?');
 		    introduction();
 		    }
-		}`
-```
+		}
+
 
 Add an event listener:
 
@@ -853,6 +856,7 @@ function button(){
 '10px'
 button.addEventListener('click', e4p);
 }
+
 ```
 ---
 ## 3/7
@@ -924,14 +928,19 @@ however you can't drill into the dom object in the same way as javascript and ph
 so you need a `querySelector`
 
 document.querySelector() - this will look for a selector
-```
+
+
+```javascript
 
 
 //example: 
 
-`document.querySelector('h1')`
-	- this can return something like this: <h1 class="welcome-message"> Example Page Title</h1>
+document.querySelector('h1')
+	- this can return something like this: 
+	```
+	<h1 class="welcome-message"> Example Page Title</h1>
 	- it looks like html but it's not it's a javascript object rendered as html
+```javascript
 	- its a 
 		h1 {
 			textContent: "Example Page Title",
@@ -939,7 +948,7 @@ document.querySelector() - this will look for a selector
 			length: ....		
 		}
 You can point a reference to a javascript object:
-	`var heading = document.querySelector('h1')`
+	var heading = document.querySelector('h1')
 Now you can drill into the object?
 
 
@@ -947,15 +956,15 @@ var paragraphs = document.querySelector("p");
 - this will find the first paragraph not all the paragraphs
 
 How to create an element:
-	`var headingTwo - document.createElement('h2');`
+	var headingTwo - document.createElement('h2');
 then you can take that element and value:
 	headingTwo.textContent = "This is the second heading";
 
 You can add properties to the elements. There was no class element unlike textContent above so we have to add it:
-	`headingTwo.classList.add('my-favorite-heading')`
+	headingTwo.classList.add('my-favorite-heading')
 
 Put the element into the html? //not super important
-	`document.body.appendChild(headingTwo);`
+	document.body.appendChild(headingTwo);
 
 
 the entire browser is a javascript object
@@ -963,6 +972,7 @@ the entire browser is a javascript object
 window will show everything in the window
 these functions work within the brower and are listed under "window"
 
+```
 
 ---
 ## 3/6
@@ -980,7 +990,7 @@ these functions work within the brower and are listed under "window"
 
 ### JAVASCRIPT!
 
-```
+
 
 - Open a browser window: like about:blank
 - open the inspector panel

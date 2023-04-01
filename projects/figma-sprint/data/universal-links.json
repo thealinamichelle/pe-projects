@@ -1,0 +1,100 @@
+{
+	"sections": [
+		{
+			"heading": "Product",
+			"location": "site-map",
+			"links": [
+				{
+					"name": "Diam orci",
+					"url": "#"
+				},
+				{
+					"name": "Mi feugiat",
+					"url": "#"
+				},
+				{
+					"name": "Netus fermentum",
+					"url": "#"
+				},
+				{
+					"name": "Suspendisse viverra",
+					"url": "#"
+				},
+				{
+					"name": "Id dolor",
+					"url": "#"
+				},
+				{
+					"name": "Erat mattis",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"heading": "Information",
+			"location": "site-map",
+			"links": [
+				{
+					"name": "Nibh",
+					"url": "#"
+				},
+				{
+					"name": "Egestas",
+					"url": "#"
+				},
+				{
+					"name": "Dictum",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"heading": "Company",
+			"location": "site-map",
+			"links": [
+				{
+					"name": "Id maecenas",
+					"url": "#"
+				},
+				{
+					"name": "Id orci",
+					"url": "#"
+				},
+				{
+					"name": "Magna ultricies",
+					"url": "#"
+				},
+				{
+					"name": "Quis risus",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"heading": "mast-head",
+			"location": "mast-head",
+			"links": [
+				{
+					"name": "Home",
+					"url": "Home.php"
+				},
+				{
+					"name": "Updates",
+					"url": "updates.php"
+				},
+				{
+					"name": "Services",
+					"url": "services.php"
+				},
+				{
+					"name": "Features",
+					"url": "features.php"
+				},
+				{
+					"name": "About&nbsp;Us",
+					"url": "about-us.php"
+				}
+			]
+		}
+	]
+}

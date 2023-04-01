@@ -1,0 +1,21 @@
+.hero {
+		display: flex;
+		flex-direction: column;
+		padding: 10em 1em;
+		min-height: 640px;
+}
+
+.hero :is(h1, h3, h2, p) {
+	text-align: center;
+}
+
+@media (min-width:1000px) {
+
+	.hero {
+			display: flex;
+			flex-direction: column;
+			padding: 11em 14.4em ;
+			min-height: 640px;
+	}
+
+}

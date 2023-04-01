@@ -1,0 +1,172 @@
+/*mast-head {
+  display: block;
+	padding: var(--smspace) var(--medspace);
+}*/
+
+
+mast-head :is(h3, h2, p) {
+	text-align: left;
+}
+
+
+.change-region { 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--tinyspace);
+}
+
+mast-head .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+mast-head a li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+mast-head a li:hover {
+  border-bottom: 1px solid var(--highlight);
+}
+
+.masthead-menu a {
+  padding: var(--tinyspace);
+
+}
+
+.hamburger-input{
+  display: none;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 1.5em;
+    height: 1.5em;
+    display: none;
+    background: linear-gradient(
+      to bottom, 
+      var(--ink), var(--ink) 20%, 
+      var(--paper) 20%, var(--paper) 40%, 
+      var(--ink) 40%, var(--ink) 60%, 
+      var(--paper) 60%, var(--paper) 80%, 
+      var(--ink) 80%, var(--ink) 100%
+    );
+}
+
+.hamburger-menu .sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ink);
+    transition: 0.3s;
+    padding: 2em 1em;
+}
+
+
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--smspace);
+  align-items: flex-start;
+
+}
+
+.hamburger-menu :is(li, p, a) {
+  color: var(--paper);
+}
+
+.hamburger-menu .login {
+  max-width: 200px;
+}
+
+.hamburger-menu .lang svg {
+  stroke: var(--paper);
+}
+
+.hamburger-menu .logo {
+  fill: var(--paper);
+
+}
+.hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+
+@media screen and (max-width: 600px) {
+  .masthead-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+
+
+/**/
+
+
+
+
+
+
+
+
+
+@media (min-width:600px) {
+
+  mast-head ul {
+  display: grid;
+  grid-template-columns: 5fr repeat(5, min-content) 3fr 1fr;
+  gap: var(--smspace);
+  align-items: center;
+  }
+
+
+  mast-head .logo { 
+  grid-area: 1 / 1 / 2 / 2; 
+  justify-self: start;
+  fill: var(--highlight);
+  }
+
+  a:nth-of-type(1) { 
+    grid-area: 1 / 2 / 2 / 3; 
+  }
+
+  a:nth-of-type(2) { 
+    grid-area: 1 / 3 / 2 / 4; 
+  }
+
+  a:nth-of-type(3) { 
+    grid-area: 1 / 4 / 2 / 5; 
+  }
+
+  a:nth-of-type(4) { 
+    grid-area: 1 / 5 / 2 / 6; 
+  }
+
+  a:nth-of-type(5) { 
+    grid-area: 1 / 6 / 2 / 7; 
+  }
+
+  .login { grid-area: 1 / 10 / 2 / 11; }
+
+  .change-region { 
+  grid-area: 1 / 9 / 2 / 10; 
+
+}

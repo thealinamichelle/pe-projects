@@ -1,0 +1,12 @@
+updates {
+	display: block;
+/*	background-color: pink;*/
+}
+
+
+
+updates .hero {
+	background: url(../../images/background/wave.svg) no-repeat bottom left, repeating-linear-gradient( -45deg, var(--light), var(--light) 1px, var(--soft) 1px, var(--soft) 5vw );
+  background-size: contain;
+}
+

@@ -15,7 +15,7 @@
 		if ($page == "$page") {
 			echo "<inner-column class='$class'>";
 			include("content/pages/$page/$page.php");
-			echo "<inner-column>";
+			echo "</inner-column>";
 		}
 	?>
 

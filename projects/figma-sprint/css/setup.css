@@ -34,3 +34,12 @@ svg {
   width: 100%;
 }
 
+
+details summary { 
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+  text-align: left;
+}
