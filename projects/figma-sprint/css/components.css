@@ -45,24 +45,37 @@ wrapper {
 }
 
 .contrast {
+	display: block;
 	background-color: var(--paper);
-	color: var(--highlight)
+	color: var(--highlight);
+	border: solid 1px var(--highlight);
 }
 
-.small-button {
+button.small-button {
 	background-color: var(--highlight);
 	width:1rem;
 	display: flex;
 	align-items: center;
 	grid-column: 2;
 	width: 100%;
-/*	border-radius: 0px 6px 6px 0px;*/
 	border-radius: 0px var(--round-corners) var(--round-corners) 0px;
+	padding: 0;
 }
 
-.small-button svg {
+
+
+button:hover {
+	background: var(--button-submit);
+	border: 1px solid var(--tint);
+	box-shadow: 1px 1px 1px var(--blue-button-tint);
+	color: var(--highlight);
+	transition: all 250ms linear;
+}
+
+button svg {
 	transform: rotate(90deg);
 	stroke: var(--paper);
+	z-index: 100;
 }
 
 .subscribe input {
