@@ -1,9 +1,9 @@
-.ccontent :is(h1, h2, p) {
+.center-content :is(h1, h2, p) {
 	text-align: center;
 }
 
 
-.ccontent picture {
+.center-content picture {
 	display: block;
 	background-color: var(--soft);
 	width: 100%;
