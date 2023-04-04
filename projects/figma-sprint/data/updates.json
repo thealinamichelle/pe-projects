@@ -1,32 +1,122 @@
 [
 	{
-		"type": "modules",
-		"page-name": "hero",
-		"file-name": "hero.php"
+		"module": "hero",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "hero",
+				"file-name": "hero.php",
+				"module-style": "diagonal",
+				"heading": "XArcu Suscipit Massa Aliquam Proin Amet",
+				"teaser": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor.",
+				"actions": [
+					{
+						"text": "Get Started",
+						"url": "#"
+					},
+					{
+						"text": "Start Free Trial",
+						"url": "#",
+						"style": "contrast"
+					}
+				]
+			}
+		]
 	},
 	{
-		"type": "modules",
-		"page-name": "center-content",
-		"file-name": "center-content.php"
+		"module": "center-content",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "center-content",
+				"file-name": "center-content.php",
+				"eyebrow": "This is a little intro",
+				"heading": "This is a Headline",
+				"beard": "Here is a bit more information",
+				"picture": "background/portrait.png"
+			}
+		]
 	},
 	{
-		"type": "modules",
-		"page-name": "feature",
-		"file-name": "feature.php"
+		"module": "feature",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "feature",
+				"file-name": "feature.php",
+				"heading": "Etiam nulla lectus molestie at vulputate.",
+				"mustache": "This is a bit of text",
+				"picture": "background/portrait.png",
+				"article-previews": [
+					{
+						"heading": "Sit quam gravida",
+						"text": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
+					},
+					{
+						"heading": "Elementum enim tempus",
+						"text": "At tristique elementum metus blandit id sed vel eu a. Diam sed feugiat diam nisi est. Dictumst elit."
+					},
+					{
+						"heading": "Tempor egestas augue",
+						"text": "Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio."
+					},
+					{
+						"heading": "Elementum enim tempus",
+						"text": "Molestie faucibus amet sed ut gravida iaculis sed venenatis. Pulvinar id lacus condimentum ut. Non."
+					},
+					{
+						"heading": "Nulla ac lacinia",
+						"text": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
+					},
+					{
+						"heading": "Velit nibh a",
+						"text": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
+					}
+				]
+			}
+		]
 	},
 	{
-		"type": "modules",
-		"page-name": "clients",
-		"file-name": "clients.php"
+		"module": "clients",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "clients",
+				"file-name": "clients.php",
+				"heading": " What Our Client Say",
+				"beard": "Neque, pulvinar vestibulum non aliquam."
+			}
+		]
 	},
 	{
-		"type": "modules",
-		"page-name": "call-to-action",
-		"file-name": "call-to-action.php"
+		"module": "call-to-action",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "call-to-action",
+				"file-name": "call-to-action.php",
+				"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+				"eyebrow": "Rhoncus, accumsan dictum",
+				"inner-style": "soft",
+				"actions": [
+					{
+						"text": "Get Free Quotes",
+						"url": "#"
+					}
+				]
+			}
+		]
 	},
 	{
-		"type": "modules",
-		"page-name": "faq",
-		"file-name": "faq.php"
+		"module": "faq",
+		"contents": [
+			{
+				"type": "modules",
+				"page-name": "faq",
+				"file-name": "faq.php",
+				"heading": "Frequently Asked Questions",
+				"beard:": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor."
+			}
+		]
 	}
 ]
