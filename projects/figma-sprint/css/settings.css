@@ -17,6 +17,7 @@ html * {
 
 
 /* COLOR PALLET	 */
+	--button-submit: #183ec3;
 	--soft: #eff3fd;
 	--light: #becdf8;
 	--ink: #212121;
@@ -25,6 +26,9 @@ html * {
 	--highlight-darker: #2851E3;
 	--paper: #ffffff;
 	--fade: #616161;
+	--tint: rgba(0, 0, 0, .2);
+	--blue-button-tint: rgba(80, 125, 254, .5);
+
 
 /* FONTS	 */
 
