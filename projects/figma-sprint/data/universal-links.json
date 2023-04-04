@@ -75,24 +75,38 @@
 			"location": "mast-head",
 			"links": [
 				{
-					"name": "Home",
-					"url": "Home.php"
+					"name": "Homes",
+					"url": "home"
 				},
 				{
 					"name": "Updates",
-					"url": "updates.php"
+					"url": "updates"
 				},
 				{
 					"name": "Services",
-					"url": "services.php"
+					"url": "home"
 				},
 				{
 					"name": "Features",
-					"url": "features.php"
+					"url": "home"
 				},
 				{
 					"name": "About&nbsp;Us",
-					"url": "about-us.php"
+					"url": "home"
+				}
+			]
+		},
+		{
+			"heading": "subscribe",
+			"text": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi.",
+			"form": [
+				{
+					"input": "email",
+					"for": "email-address",
+					"class": [
+						"small-button",
+						"submit"
+					]
 				}
 			]
 		}

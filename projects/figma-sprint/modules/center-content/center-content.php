@@ -1,13 +1,10 @@
-<section class="ccontent">
+<inner-column>
 
-	<inner-column>
+	<p><?=$m["eyebrow"]?></p>	
+	<h1><?=$heading?></h1>
+	<p><?=$beard?></p>	
 
-		<p>This is a little intro</p>	
-		<h1>Here is a Headline</h1>
-		<p>Here is a bit more information</p>	
+	<picture><img src="images/<?=$picture?>"></picture>
+	
+</inner-column>
 
-		<picture></picture>
-		
-	</inner-column>
-
-</section>

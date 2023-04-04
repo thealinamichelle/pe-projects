@@ -1,13 +1,15 @@
 <?php 
 
 	$json = file_get_contents('data/universal-links.json'); 
-	$uniData = json_decode($json, true); 
-	$sections = $uniData["sections"];
-	$base = "?page=";
+	$updatesData = json_decode($json, true); 
+	$sections = $updatesData["sections"];
+	$style = $updatesData["style"] ?? "";
+
+	
 ?>
 
 <mast-head>
-		<nav id="masthead-menu" class="masthead-menu"> 
+		<nav id="masthead-menu" class="masthead-menu <?=$page?>"> 
 			<ul>
 
 				<picture class="logo">
@@ -16,13 +18,16 @@
 	
 				<?php foreach($sections as $section){
 
-					$loc = $section["location"]; 
-					 if ($loc == "mast-head") {
+					
+					 if (isset($section["location"]) ){
+					 	$loc = $section["location"]; 
+
+						if ($loc == "mast-head") {
 
 					?>
 					
 						<?php foreach($section["links"] as $link){?>
-							<a href="<?=$base . $link["name"]?>">
+							<a href="<?=$base . $link['url']?>">
 								<li class="tiny-voice"><?=$link["name"]?></li>
 							</a>
 						<?php }?>
@@ -40,6 +45,7 @@
 					
 				<?php	}
 					}
+				}	
 				?>
 			</ul>
 

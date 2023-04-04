@@ -3,13 +3,10 @@
 	$json = file_get_contents('data/reviews.json'); 
 	$rData = json_decode($json, true); 
 ?>
-
-
-<section class="clients">
 	<inner-column>
 		<div>
-			<h2>What Our Clients Says</h2>
-			<p class="calm-voice">Neque, pulvinar vestibulum non aliquam.</p>
+			<h2><?=$heading?></h2>
+			<p class="calm-voice"><?=$m["beard"]?></p>
 		</div>
 
 
@@ -46,4 +43,3 @@
 
 	</div>
 </inner-column>
-</section>

@@ -1,18 +1,21 @@
-<div class="test"></div>
-
-<section class="diagonal hero">
-
-
 	<inner-column>
 		<h1 class="loud-voice">
-			 Arcu suscipit massa aliquam proin amet
+			 <?=$heading?>
 		</h1>
 		<p class="poster-voice">
-			Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor.
+			<?=$teaser?>
 		</p>
 		
 		<wrapper>
-		<button> Get Started</button>
-		<button class= "contrast"> Start Free Trial</button>		</wrapper>
+			<?php foreach ($m["actions"] as $a) {
+				$buttonStyle = "";
+
+				if (isset($a["style"]) ){
+					$buttonStyle = $a["style"];
+				}
+				?>
+		<a href="<?$a['url']?>" class="button <?=$buttonStyle?>"><?=$a["text"]?></a> <?php }?>
+	</wrapper>
 	</inner-column>
-</section>
+
+<!-- <section class="hero" style="background-image:url('')"> -->
