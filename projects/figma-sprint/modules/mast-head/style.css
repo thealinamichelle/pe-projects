@@ -98,11 +98,11 @@ mast-head a li:hover {
 }
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
+  visibility: visible;
+  left: 0;
 }
 #hamburger-input:checked ~ .overlay{
-   visibility: visible;
+  visibility: visible;
   opacity: 0.4;
 }
 
