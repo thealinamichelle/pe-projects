@@ -1,6 +1,50 @@
-
 form {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+input, button {
+	font: inherit;
+	padding: 1em 1em;
+	width: 100%;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+input  {
+	background-color: var(--soft);
+	box-shadow: var(--light) 0px 10px 10px -10px inset;
+}
+
+.split {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.inputs, output {
+	flex: 1 0 0;
+}
+
+output {
+	flex-grow: 1;
+	background-color: var(--soft);
+	box-shadow: var(--light) 0px 10px 10px -10px inset;
+}
+
+output:empty {
+	background-color: var(--soft);
+	box-shadow: none;
+}
+
+
+subscribe-form {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 5fr 2fr;
 }
+
+

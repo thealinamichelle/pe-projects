@@ -62,6 +62,10 @@ button.small-button {
 	padding: 0;
 }
 
+.button.leading {
+	background-color: var(--paper);
+	color: var(--highlight);
+}
 
 
 button:hover {
@@ -125,7 +129,7 @@ svg.circle {
 	stroke: var(--fade);
 }
 
-.number {
+.bubble-number {
 	border-radius: 100%;
 	width: 4em;
 	height: 4em;
@@ -181,3 +185,13 @@ details[open].qa-pair > summary::after {
 	width: 2em;
 	align-self: right;
 }
+
+a {
+	border-bottom: 1px solid rgba(255, 221, 255, 0) ;
+}
+
+a:hover {
+	border-bottom: 1px solid var(--highlight) ;
+}
+
+
