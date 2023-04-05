@@ -1,0 +1,101 @@
+[
+	{
+		"module": "madlib",
+		"contents": [
+			{
+				"type": "forms",
+				"file-name": "madlib.php",
+				"script": "madlib.js",
+				"module-style": "",
+				"heading": "",
+				"teaser": "",
+				"form-inputs": [
+					{
+						"input-type": "text",
+						"id": "noun",
+						"for": "noun",
+						"placeholder": "noun",
+						"class": "field"
+					},
+					{
+						"input-type": "text",
+						"id": "noun2",
+						"for": "noun",
+						"placeholder": "noun",
+						"class": "field"
+					},
+					{
+						"input-type": "text",
+						"id": "verb",
+						"for": "verb",
+						"placeholder": "verb",
+						"class": "field"
+					},
+					{
+						"input-type": "text",
+						"id": "verb2",
+						"for": "verb",
+						"placeholder": "verb",
+						"class": "field"
+					},
+					{
+						"input-type": "text",
+						"id": "adjective",
+						"for": "adjective",
+						"placeholder": "adjective",
+						"class": "field"
+					},
+					{
+						"input-type": "text",
+						"id": "adverb",
+						"for": "adverb",
+						"placeholder": "adverb",
+						"class": "field"
+					},
+					{
+						"input-type": "number",
+						"id": "number",
+						"for": "number",
+						"placeholder": "any number up to 4 digits",
+						"class": "field",
+						"min": "0001",
+						"max": "9999"
+					}
+				],
+				"actions": [
+					{
+						"text": "Enter",
+						"class": "submit"
+					}
+				]
+			}
+		]
+	},
+	{
+		"module": "hello",
+		"contents": [
+			{
+				"type": "forms",
+				"file-name": "hello.php",
+				"module-style": "",
+				"heading": "What is your name?",
+				"teaser": "",
+				"actions": [
+					{
+						"text": "Enter",
+						"class": "who contrast"
+					}
+				],
+				"form-inputs": [
+					{
+						"input-type": "text",
+						"id": "name-query",
+						"for": "name-query",
+						"placeholder": "",
+						"class": "field"
+					}
+				]
+			}
+		]
+	}
+]
