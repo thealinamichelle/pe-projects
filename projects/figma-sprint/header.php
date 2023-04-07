@@ -17,7 +17,7 @@
 </head>
 
 <body class="<?=$page?>">
-	<header>
+	<header class="<?=$page?>">
 
 	<?php include("modules/mast-head/mast-head.php") ?>
 	</header>

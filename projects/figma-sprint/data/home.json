@@ -4,7 +4,6 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "hero",
 				"file-name": "hero.php",
 				"module-style": "diagonal",
 				"heading": "XArcu Suscipit Massa Aliquam Proin Amet",
@@ -17,7 +16,7 @@
 					{
 						"text": "Start Free Trial",
 						"url": "#",
-						"style": "contrast"
+						"class": "contrast"
 					}
 				]
 			}
@@ -28,11 +27,12 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "center-content",
 				"file-name": "center-content.php",
 				"eyebrow": "This is a little intro",
+				"eyebrow-class": "",
 				"heading": "This is a Headline",
 				"beard": "Here is a bit more information",
+				"beard-class": "",
 				"picture": "background/portrait.png"
 			}
 		]
@@ -42,7 +42,6 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "feature",
 				"file-name": "feature.php",
 				"heading": "Etiam nulla lectus molestie at vulputate.",
 				"mustache": "This is a bit of text",
@@ -81,7 +80,6 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "clients",
 				"file-name": "clients.php",
 				"heading": " What Our Client Say",
 				"beard": "Neque, pulvinar vestibulum non aliquam."
@@ -93,7 +91,6 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "call-to-action",
 				"file-name": "call-to-action.php",
 				"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
 				"eyebrow": "Rhoncus, accumsan dictum",
@@ -112,7 +109,6 @@
 		"contents": [
 			{
 				"type": "modules",
-				"page-name": "faq",
 				"file-name": "faq.php",
 				"heading": "Frequently Asked Questions",
 				"beard:": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor."

@@ -4,6 +4,7 @@
 		"contents": [
 			{
 				"type": "forms",
+				"form-id": "a123",
 				"file-name": "madlib.php",
 				"script": "madlib.js",
 				"module-style": "",
@@ -76,6 +77,7 @@
 		"contents": [
 			{
 				"type": "forms",
+				"form-id": "a124",
 				"file-name": "hello.php",
 				"module-style": "",
 				"heading": "What is your name?",
@@ -83,16 +85,72 @@
 				"actions": [
 					{
 						"text": "Enter",
-						"class": "who contrast"
+						"class": "who contrast",
+						"id": "hello"
 					}
 				],
 				"form-inputs": [
 					{
 						"input-type": "text",
-						"id": "name-query",
-						"for": "name-query",
+						"id": "name",
 						"placeholder": "",
 						"class": "field"
+					}
+				]
+			}
+		]
+	},
+	{
+		"module": "characters",
+		"contents": [
+			{
+				"type": "forms",
+				"form-id": "a125",
+				"file-name": "characters.php",
+				"module-style": "",
+				"heading": "",
+				"teaser": "",
+				"actions": [
+					{
+						"text": "",
+						"class": "",
+						"id": ""
+					}
+				],
+				"form-inputs": [
+					{
+						"input-type": "",
+						"id": "",
+						"placeholder": "",
+						"class": ""
+					}
+				]
+			}
+		]
+	},
+	{
+		"module": "quotes",
+		"contents": [
+			{
+				"type": "forms",
+				"form-id": "a126",
+				"file-name": "quotes.php",
+				"module-style": "",
+				"heading": "",
+				"teaser": "",
+				"actions": [
+					{
+						"text": "",
+						"class": "",
+						"id": ""
+					}
+				],
+				"form-inputs": [
+					{
+						"input-type": "",
+						"id": "",
+						"placeholder": "",
+						"class": ""
 					}
 				]
 			}

@@ -10,7 +10,7 @@
 
 				<ul>
 					<?php foreach($m["article-previews"] as $ap)	{?>
-								<div class="number"><?=$i++?></div>
+								<div class="bubble-number"><?=$i++?></div>
 							  <h3><?=$ap["heading"]?></h3>
 							  <p><?=$ap["text"]?></p>
 							</li>

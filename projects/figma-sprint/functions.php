@@ -161,12 +161,17 @@ function print_svg($file){
 
 function formButton ($array){
 	$customClass = "";
+	$customID = "";
 
 	if (isset($array["class"]) ){
 			$customClass = $array["class"];
 	}
 
-	$button = "<button class='$customClass'>";
+	if (isset($array["id"]) ){
+			$customClass = $array["id"];
+	}
+
+	$button = "<button class='$customClass' id='$customID'>";
 	$button .= $array["text"];
 	$button .= "</button>";
 

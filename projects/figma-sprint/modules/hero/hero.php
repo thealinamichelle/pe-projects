@@ -5,17 +5,12 @@
 		<p class="poster-voice">
 			<?=$teaser?>
 		</p>
-		
 		<wrapper>
-			<?php foreach ($m["actions"] as $a) {
-				$buttonStyle = "";
+			<?php 
+				 myCheckandPrint($m, "a", "actions", "myButton");
 
-				if (isset($a["style"]) ){
-					$buttonStyle = $a["style"];
-				}
-				?>
-		<a href="<?$a['url']?>" class="button <?=$buttonStyle?>"><?=$a["text"]?></a> <?php }?>
-	</wrapper>
+			?>
+		</wrapper>
 	</inner-column>
 
 <!-- <section class="hero" style="background-image:url('')"> -->

@@ -3,9 +3,38 @@
 }
 
 
-.center-content picture {
+.center-content picture.face {
 	display: block;
 	background-color: var(--soft);
 	width: 100%;
 	height: 20em;
+	aspect-ratio: 520/920;
 }
+
+.center-content picture img {
+	object-fit: cover;
+}
+
+.center-content .to-the-cloud {
+	visibility: hidden;
+	height: 90px;
+	width: 90px;
+}
+
+
+.updates .center-content .to-the-cloud {
+visibility: visible;
+}
+
+
+.center-content .to-the-cloud svg {
+	border: solid 1px black;
+
+}
+
+
+.updates .center-content inner-column {
+	align-items: center;
+}
+
+ 

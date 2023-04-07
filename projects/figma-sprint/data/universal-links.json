@@ -75,7 +75,7 @@
 			"location": "mast-head",
 			"links": [
 				{
-					"name": "Homes",
+					"name": "Home",
 					"url": "home"
 				},
 				{
@@ -88,7 +88,7 @@
 				},
 				{
 					"name": "Features",
-					"url": "home"
+					"url": "features"
 				},
 				{
 					"name": "About&nbsp;Us",

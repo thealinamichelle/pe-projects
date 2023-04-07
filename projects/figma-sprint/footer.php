@@ -8,4 +8,3 @@
 
 
 </html>
-<script src="forms/madlib/madlib.js"></script>

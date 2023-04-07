@@ -39,7 +39,7 @@
 
 		<div class="subscribe">
 			<h3><?=$heading?></h3>
-			<form method="POST">
+			<form method="POST" class="subscribe-form">
 			<?php 
 			if (isset($section["form"]) ) { 
 					foreach ($section["form"] as $form) {?>

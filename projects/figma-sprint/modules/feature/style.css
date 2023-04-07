@@ -34,9 +34,9 @@
 	text-align: left;
 } 
 
-.feature .number {     
+.feature .bubble-number {     
 	grid-row: 1 / span 2;
-    align-self: start;
+   align-self: start;
 }
 
 .feature picture.placeholder {

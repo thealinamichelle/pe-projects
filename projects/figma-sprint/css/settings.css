@@ -14,20 +14,30 @@ html * {
 	--tight: 800px;
 	--standard: 1140px;
 
-
+	--darker-blue: #183ec3;
+	--faint-blue: #eff3fd;
+	--lavender-blue: #becdf8;
+	--black: #212121;
+	--charcoal: #424242;
+	--bright-blue: #3563e9; 
+	--medium-blue: #2851E3;
+	--white: #ffffff;
+	--medium-grey: #616161;
+	--sheer-black: rgba(0, 0, 0, .2);
+	--sheer-blue: rgba(80, 125, 254, .5);
 
 /* COLOR PALLET	 */
-	--button-submit: #183ec3;
-	--soft: #eff3fd;
-	--light: #becdf8;
-	--ink: #212121;
-	--info: #424242;
-	--highlight: #3563e9; 
-	--highlight-darker: #2851E3;
-	--paper: #ffffff;
-	--fade: #616161;
-	--tint: rgba(0, 0, 0, .2);
-	--blue-button-tint: rgba(80, 125, 254, .5);
+	--button-submit: var(--darker-blue);
+	--soft: var(--faint-blue);
+	--light: var(--lavender-blue);
+	--ink: var(--black);
+	--info: var(--charcoal);
+	--highlight: var(--bright-blue); 
+	--highlight-darker: var(--medium-blue);
+	--paper: var(--white);
+	--fade: var(--medium-grey);
+	--tint: var(--sheer-black);
+	--blue-button-tint: var(--sheer-blue);
 
 
 /* FONTS	 */
@@ -46,53 +56,8 @@ html * {
 
 }
 
-light,
-soft,
-ink,
-info,
-highlight,
-paper, fade {
-	display: block;
-	height: 100px;
-}
-
-light {
-	background: var(--light);
-}
-soft {
-	background: var(--soft);
-}
-ink {
-	background: var(--ink);
-}
-info {
-	background: var(--info);
-}
-highlight {
-	background: var(--highlight);
-}
-paper {
-	background: var(--paper);
-}
-fade {
-	background: var(--fade);
-}
 
 
-/*example*/
-/*
-
-
-@media (prefers-color-scheme: dark) {
-	html {
-		--paper: #2f2f2f;
-		--ink: #fbfbfb;
-		--cream: #2f2f2f;
-		--texture: url("../images/background/bg-darkmode.jpg");
-	}
-}
-
-}*/
 
 
 
