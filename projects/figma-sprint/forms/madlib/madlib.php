@@ -10,8 +10,9 @@
 			?>
 
 			<div class="field <?=$inputType?>">
-				<input id="<?=$inputId?>" for="<?=$for?>" type="<?=$inputType?>" placeholder="<?=$pH?>">
-				<label for="<?=$for?>"></label>
+				<label for="<?=$for?>"><?=$for?></label>
+				<input id="<?=$inputId?>" for="<?=$for?>" type="" placeholder="<?=$pH?>">
+				
 			</div>
 	
 			<?php	} 
@@ -26,3 +27,4 @@
 </inner-column>
 
 
+<script src="forms/madlib/madlib.js"></script>

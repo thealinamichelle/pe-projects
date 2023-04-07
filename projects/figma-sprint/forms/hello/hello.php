@@ -1,17 +1,23 @@
+<?php 
+
+	$id = $m["form-id"];
+
+?>
+
 <inner-column class="split">
-	<form class="hello">
+	<form class="hello" id="<?=$id?>">
 		<p><?=$heading?></p>
 
 		<?php foreach ($m["form-inputs"] as $input) {
 					$pH = $input["placeholder"];
 					$inputType = $input["input-type"];
-					$inputId = $input["id"];
-					$for = $input["for"];
+					$inputId = $id . $input["id"];
+					// $for = $input["for"];
 		?>
 
 			<div class="field <?=$inputType?>">
-				<input id="<?=$inputId?>" for="<?=$for?>" type="<?=$inputType?>" placeholder="<?=$pH?>">
-				<label for="<?=$for?>"></label>
+				<input id="<?=$inputId?>" type="<?=$inputType?>" placeholder="<?=$pH?>">
+				<label for="<?=$inputId?>"></label>
 			</div>
 
 		<?php }?>
@@ -22,10 +28,16 @@
 		?>	
 	</form>
 
-	<output class='hello-message tiny-voice'></output>
+	<output class='tiny-voice' id="<?=$id?>message"></output>
 
 </inner-column>
-
-
+<script src="forms/hello/hello.js"></script>
 
 <!-- //prompt as for name -->
+<?php 
+
+
+$id = null;
+
+
+?>

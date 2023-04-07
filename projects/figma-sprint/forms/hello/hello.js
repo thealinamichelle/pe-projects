@@ -1,10 +1,29 @@
-const helloS = document.querySelector('output.hello-message');
-const helloS = document.querySelector('section.hello');
+console.clear();
 
-helloS.addEventlistener("submit", function(click) {
+const formHello = document.querySelector('#a124');
 
-	var helMessage = "I'm sorry what? I couldn't hear you";
-	var nameQ = document.querySelector('#name-query').value;
+var outputHello = document.querySelector('#a124message');
+
+
+var inputHello = formHello.querySelector('#a124name')
+
+
+formHello.addEventListener("submit", function(event) {
+
+	event.preventDefault();
+
+	if (inputHello.value) {
+		var helMessage = `Hello ${inputHello.value}, how are you?`;
+		outputHello.innerHTML = `<p> ${helMessage} </p`;
+	}
+	else{
+		var helMessage = `<p>I'm sorry what? I couldn't hear you</p>`;
+		outputHello.innerHTML = `<p> ${helMessage} </p>`;
+	}
+
+	
+
+
 
 // 	What is your name? Brian Hello, Brian, nice to meet you!
 
@@ -14,3 +33,4 @@ helloS.addEventlistener("submit", function(click) {
 } );
 
 //takes in input
+ 

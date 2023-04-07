@@ -32,7 +32,7 @@ console.log(message);
 	var verb2 = document.querySelector("#verb2").value;
 	var adjective = document.querySelector("#adjective").value;
 	var number = document.querySelector("#number").value;
-	var adverb = document.querySelector("#adverb").value.value;	
+	var adverb = document.querySelector("#adverb").value;	
 	// other types of selector examples too...
 
 	
