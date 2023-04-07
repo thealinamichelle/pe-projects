@@ -20,7 +20,7 @@ input  {
 
 .split {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
@@ -33,6 +33,7 @@ output {
 	flex-grow: 1;
 	background-color: var(--soft);
 	box-shadow: var(--light) 0px 10px 10px -10px inset;
+	padding: var(--smspace);
 }
 
 output:empty {
@@ -47,4 +48,13 @@ subscribe-form {
 	grid-template-columns: 5fr 2fr;
 }
 
+
+
+@media (min-width:600px) {
+	.split {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+}
 
