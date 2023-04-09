@@ -1,25 +1,22 @@
 <inner-column id="a126" class="split">
-<form>
-
-	<label for="quote">What is the quote?</label>
-	<input type="text" id="quote">
-
-
-	<label for="author">Who said it?</label>
-	<input type="text" id="author">
+	<form>
+		<div>
+			<fieldset>
+				<label for="quote">What is the quote?</label>
+				<textarea id="quote"></textarea>
 
 
-	
-<button type="submit">Submit</button>
+				<label for="author">Who said it?</label>
+				<input type="text" id="author">
 
-</form>
+			</fieldset>
 
+			<output></output>
 
-<output></output>
-
-
-
-
+		</div>
+		
+		<button type="submit">Submit</button>
+	</form>
 </inner-column>
 
 
