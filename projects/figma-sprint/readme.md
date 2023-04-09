@@ -10,6 +10,24 @@ Notes on Video:
 ## update the numbers in madlib to have max/min
 
 
+
+forms layout:
+		inner-column 
+			form
+				div - use if you need the inputs in a row
+					fieldset - (default - organizes inputs in columns)
+
+						div - field type
+
+					/fieldset
+
+					output
+				/div
+				button
+			/form
+		/inner-column
+
+
 Classes:
 
 forms:
