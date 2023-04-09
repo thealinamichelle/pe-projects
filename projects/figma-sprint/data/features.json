@@ -12,49 +12,49 @@
 				"teaser": "",
 				"form-inputs": [
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "noun",
 						"for": "noun",
 						"placeholder": "noun",
 						"class": "field"
 					},
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "noun2",
 						"for": "noun",
 						"placeholder": "noun",
 						"class": "field"
 					},
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "verb",
 						"for": "verb",
 						"placeholder": "verb",
 						"class": "field"
 					},
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "verb2",
 						"for": "verb",
 						"placeholder": "verb",
 						"class": "field"
 					},
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "adjective",
 						"for": "adjective",
 						"placeholder": "adjective",
 						"class": "field"
 					},
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "adverb",
 						"for": "adverb",
 						"placeholder": "adverb",
 						"class": "field"
 					},
 					{
-						"input-type": "number",
+						"type": "number",
 						"id": "number",
 						"for": "number",
 						"placeholder": "any number up to 4 digits",
@@ -91,7 +91,7 @@
 				],
 				"form-inputs": [
 					{
-						"input-type": "text",
+						"type": "text",
 						"id": "name",
 						"placeholder": "",
 						"class": "field"
@@ -119,7 +119,7 @@
 				],
 				"form-inputs": [
 					{
-						"input-type": "",
+						"type": "",
 						"id": "",
 						"placeholder": "",
 						"class": ""
@@ -147,7 +147,35 @@
 				],
 				"form-inputs": [
 					{
-						"input-type": "",
+						"type": "",
+						"id": "",
+						"placeholder": "",
+						"class": ""
+					}
+				]
+			}
+		]
+	},
+	{
+		"module": "math",
+		"contents": [
+			{
+				"type": "forms",
+				"form-id": "a127",
+				"file-name": "math.php",
+				"module-style": "",
+				"heading": "",
+				"teaser": "",
+				"actions": [
+					{
+						"text": "",
+						"class": "",
+						"id": ""
+					}
+				],
+				"form-inputs": [
+					{
+						"type": "",
 						"id": "",
 						"placeholder": "",
 						"class": ""
