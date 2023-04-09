@@ -1,31 +1,15 @@
 <inner-column id="a125">
-<form>
+	<form>
 
-	<label for="count">Word and Character Counter</label>
-	<input type="text" id="a125count">
+		<fieldset>
+			<label for="count">Word and Character Counter</label>
+			<input type="text" id="a125count">
+		</fieldset>
 
+		<output id="string"></output>
+		<output id="words"></output>
 
-</form>
-
-<output id="string"></output>
-
-<output id="words"></output>
-
-
-
-
-<?php
-
-//what is the input string?
-//I need an input, output, submit
-//somehow count the string
-//display the number
-
-
-
-
-
-?>
+	</form>
 </inner-column>
 
 
