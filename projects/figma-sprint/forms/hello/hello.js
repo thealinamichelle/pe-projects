@@ -1,36 +1,50 @@
-console.clear();
+(function(){
 
-const formHello = document.querySelector('#a124');
+	console.clear();
 
-var outputHello = document.querySelector('#a124message');
+	const box = document.querySelector('#a124');
+
+	var output = box.querySelector('#a124message');
+	var p = output.querySelector('p');
+	var input = box.querySelector('#a124name')
 
 
-var inputHello = formHello.querySelector('#a124name')
 
+	function hello(){
 
-formHello.addEventListener("submit", function(event) {
+		if (input.value) {
+			var message = `Hello ${input.value}, how are you?`;
+			console.log(`p is reset: ${p}`)
+			p.textContent = message;
+			console.log(`p with message: ${p}`)
 
-	event.preventDefault();
+		}
+		else {
+			var message = `<p>I'm sorry what? I couldn't hear you</p>`;
+			output.innerHTML = `<p> ${message} </p>`;
+		}
 
-	if (inputHello.value) {
-		var helMessage = `Hello ${inputHello.value}, how are you?`;
-		outputHello.innerHTML = `<p> ${helMessage} </p`;
 	}
-	else{
-		var helMessage = `<p>I'm sorry what? I couldn't hear you</p>`;
-		outputHello.innerHTML = `<p> ${helMessage} </p>`;
-	}
-
-	
 
 
 
-// 	What is your name? Brian Hello, Brian, nice to meet you!
-
-// Hogan, Brian P.. Exercises for Programmers: 57 Challenges to Develop Your Coding Skills . Pragmatic Bookshelf. Kindle Edition. 
 
 
-} );
+
+	box.addEventListener("submit", function(event) {
+
+		event.preventDefault();
+
+		hello();
+
+	} );
+
+})()
+
+
+
+
+
 
 //takes in input
  
