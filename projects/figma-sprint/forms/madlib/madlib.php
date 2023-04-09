@@ -1,29 +1,33 @@
 <inner-column class="split">
-	<div class="inputs">
+
 		<form class="madlib">
+			<div>
+				<fieldset>
+					<?php foreach ($m["form-inputs"] as $input) {
+								$pH = $input["placeholder"];
+								$type = $input["type"];
+								$inputId = $input["id"];
+								$for = $input["for"];
+					?>
 
-			<?php foreach ($m["form-inputs"] as $input) {
-						$pH = $input["placeholder"];
-						$inputType = $input["input-type"];
-						$inputId = $input["id"];
-						$for = $input["for"];
-			?>
-
-			<div class="field <?=$inputType?>">
-				<label for="<?=$for?>"><?=$for?></label>
-				<input id="<?=$inputId?>" for="<?=$for?>" type="" placeholder="<?=$pH?>">
-				
-			</div>
-	
-			<?php	} 
-
-			myCheckandPrint($m, "a", "actions", "formButton");
+					<div class="field <?=$type?>">
+						<label for="<?=$for?>"><?=$for?></label>
+						<input id="<?=$inputId?>" for="<?=$for?>" type="<?=$type?>" placeholder="<?=$pH?>">
+						
+					</div>
 			
-			?>	
-		</form>
-	</div>
+					<?php	} ?>
+				</fieldset>
 
-		<output class='madlib-message tiny-voice'></output>
+				<output class='madlib-message tiny-voice'></output>
+
+			</div>
+
+		<?php myCheckandPrint($m, "a", "actions", "formButton");?>	
+		</form>
+
+
+
 </inner-column>
 
 
