@@ -6,29 +6,36 @@
 
 <inner-column class="split">
 	<form class="hello" id="<?=$id?>">
-		<p><?=$heading?></p>
+
+
+		<output class='tiny-voice' id="<?=$id?>message"><p>Hello What's your Name?</p></output>
+
 
 		<?php foreach ($m["form-inputs"] as $input) {
 					$pH = $input["placeholder"];
-					$inputType = $input["input-type"];
+					$inputType = $input["type"];
 					$inputId = $id . $input["id"];
 					// $for = $input["for"];
 		?>
 
-			<div class="field <?=$inputType?>">
+					
+				<label for="<?=$inputId?>" class="visually-hidden"><p><?=$heading?></p></label>
 				<input id="<?=$inputId?>" type="<?=$inputType?>" placeholder="<?=$pH?>">
-				<label for="<?=$inputId?>"></label>
-			</div>
 
 		<?php }?>
 
 
+		
+
+		<!-- <output class='tiny-voice' id="<?=$id?>message"></output> -->
+
 		<?php 
 		myCheckandPrint($m, "a", "actions", "formButton"); 
 		?>	
+
 	</form>
 
-	<output class='tiny-voice' id="<?=$id?>message"></output>
+	
 
 </inner-column>
 <script src="forms/hello/hello.js"></script>
