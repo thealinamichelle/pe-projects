@@ -8,6 +8,7 @@ form {
 }
 
 
+
 form > div {
 /*	display: flex;
 	flex-direction: row;
@@ -44,12 +45,13 @@ input, textarea  {
 	box-shadow: var(--light) 0px 10px 10px -10px inset;
 }
 
-textarea{
+textarea {
 	min-height: 10em;
 	border: 0;
 }
+
+
 output {
-	flex-grow: 2;
 	background-color: var(--soft);
 	padding: var(--smspace);
 }

@@ -1,6 +1,28 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
+--- 
+
+## 4/10 
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones
+- Personal Website:
+- - [] Layouts for modules
+- - [] finish layout plans
+- To Do App: 
+- - [] review video
+
+### Video Notes
+- verb think function
+
+.push(array) will add an item to an array at the end
+
+
+
+
+---
 
 ## 3/27
 - [x] Set Up Journal Entry

@@ -68,3 +68,8 @@
 	}
 /*Reset END*/
 
+
+	output { 
+	display: block;
+	width: 100%
+	 }
