@@ -40,5 +40,12 @@
 		"image" : "https://peprojects.dev/images/sqjpg",
 		"details" : "project description"
 			
+	},
+		{ 
+		"heading" : "Figma-Sprint",
+		"url" : "projects/figma-sprint",
+		"image" : "figma.png",
+		"details" : "project description"
+			
 	}
 ]
