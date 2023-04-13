@@ -1,51 +1,44 @@
 [
-	{ 
-		"heading" : "mock client",
-		"url" :"projects/tft/index.html",
-		"image" : "mock-client.png",
-		"details" : "project description"		
-				
+	{
+		"heading": "mock client",
+		"url": "projects/tft/index.html",
+		"image": "mock-client.png",
+		"details": "project description"
 	},
-	{ 
-		"heading" : "research and destroy",
-		"url" :"projects/search-and-destroy/index.php",
-		"image" : "destroy.png",
-		"details" : "project description"			
-				
+	{
+		"heading": "research and destroy",
+		"url": "projects/search-and-destroy/index.php",
+		"image": "destroy.png",
+		"details": "project description"
 	},
-	{ 
-		"heading" : "responsive layout",
-		"url" : "projects/responsive-challenge/index.html",
-		"image" : "responsive.png",
-		"details" : "project description"			
-				
-	}, 
-	{ 
-		"heading" : "monster adoption",
-		"url" : "projects/monsters/index.php",
-		"image" : "monster.png",
-		"details" : "project description"
-			
+	{
+		"heading": "responsive layout",
+		"url": "projects/responsive-challenge/index.html",
+		"image": "responsive.png",
+		"details": "project description"
 	},
-	{ 
-		"heading" : "PHP forms",
-		"url" : "forms",
-		"image" : "https://peprojects.dev/images/sqjpg",
-		"details" : "project description"
-			
-	}, 
-	{ 
-		"heading" : "Dog Hiking Recommendations",
-		"url" : "projects/hiking/index.php",
-		"image" : "https://peprojects.dev/images/sqjpg",
-		"details" : "project description"
-			
+	{
+		"heading": "PHP forms",
+		"url": "forms",
+		"image": "https://peprojects.dev/images/sqjpg",
+		"details": "project description"
 	},
-		{ 
-		"heading" : "Figma-Sprint",
-		"url" : "projects/figma-sprint",
-		"image" : "figma.png",
-		"details" : "project description"
-			
+	{
+		"heading": "Dog Hiking Recommendations",
+		"url": "projects/hiking/index.php",
+		"image": "https://peprojects.dev/images/sqjpg",
+		"details": "project description"
+	},
+	{
+		"heading": "Figma-Sprint",
+		"url": "projects/figma-sprint",
+		"image": "figma.png",
+		"details": "project description"
+	},
+	{
+		"heading": "To Do App",
+		"url": "projects/todo",
+		"image": "https://peprojects.dev/images/sqjpg",
+		"details": "project description"
 	}
 ]
