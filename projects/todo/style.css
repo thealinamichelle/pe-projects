@@ -1,0 +1,109 @@
+@import 'resets.css';
+
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: max-content;
+}
+
+@media (max-width:110px) {
+	#done, #app, #trashcan {
+		display: none;
+	}
+	
+	body::after {
+		displaY: flex;
+		flex-wrap: wrap;
+		word-break: break-word;
+		padding: 5px;
+		content: "this screen is too small! You're squishing me! Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh!";
+		background-color: red;
+		height: 99vh;
+		max-width: 100px;
+		min-width: 0%;
+	/* 	height: 100vh; */
+	/* 	font-size: clamp(0.1rem, 0.1rem + 24vw, 1.6rem); */
+		color: white;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+@media (min-width:110px) {
+	#done, #app, #trashcan {
+		display: block;
+	}
+	div {
+		padding: 1em;
+		font-family: sans-serif;
+	}
+
+	div ul {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: .2em;
+	}
+
+
+
+	#trashcan {
+		background-color: lightgrey;
+		min-height: 50px;
+	}
+
+	#app {
+		background-color: #d0e5fa;
+		min-height: 50px;
+	}
+
+	#done {
+		background-color: #dde9d3;
+		min-height: 50px;
+	}
+
+	div {
+		margin: 1em;
+	}
+
+	h2 {
+		font-size: clamp(1rem, 0rem + 16vw, 2rem);
+		word-break: break-word;
+		margin-bottom: .5em;
+		line-height: .7;
+		border-bottom: 2px solid rgba(0, 0, 0, .3);
+	}
+
+	li {
+		display: block;
+		background-color: rgba(255, 255, 255, .80);
+		font-size: clamp(0.9rem, 0.8rem + 1.6vw, 1rem);
+		padding: 2px;
+	}
+
+	li:hover {
+		background-color: unset;
+		transition: 180ms;
+	}
+
+}
+
+
+
+@media (min-width:200px) {
+	
+	h2 {
+		font-size: 2em;
+		word-break: normal;
+	}
+	
+	li {
+		font-size: 1rem;
+		padding: 10px;
+	}
+}
