@@ -17,14 +17,18 @@ console.log(clear);
 	function doMath() {
 		if(x.value && x.value) {
 
-		var o = x.value;
-		var t = y.value;
+		var o = Number(x.value);
+		var t = Number(y.value);
 
 
-		var add = Math.round(o + t);
-		var sub = Math.round(o + t);
+		let add = Math.round(o + t);
+		const sub = Math.round(o - t);
 		var div = Math.round(o / t);
 		var mult = Math.round(o * t); 
+//var does something weird and the below is necessary. let and const make the math function
+//One or both of the variables is a string instead of a number. This makes the + do string concatenation.
+//the other arithmetic operators / * - will perform a toNumber conversion on the string(s).
+//A quick way to convert a string to a number is to use the unary + operator. Math.round(+o - +t);
 
 
 
