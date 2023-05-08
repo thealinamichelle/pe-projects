@@ -1,0 +1,197 @@
+@import "forms.css";
+
+/* buttons and icons and smaller reusable bits here */
+
+.logo {
+	min-width: 100px;
+}
+
+.button {
+	display: block;
+	padding: 0.5em 1em;
+	background-color: var(--highlight);
+	width: 14.5em;
+	text-align: center;
+	padding: 15px 50px;
+	color: var(--paper)
+}
+
+
+
+button {
+	color: var(--paper);
+	padding: 15px 50px;
+	border-width: 0; 
+	border: solid 1px var(--highlight);
+	background: var(--highlight)
+}
+
+button.other {
+	color: none;
+	padding: 0;
+	border-width: 0;
+	border: none;
+	background: none;
+}
+
+/*around button elements to unify them*/
+wrapper { 
+	display: flex;
+	padding: 15px 0px;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.contrast {
+	display: block;
+	background-color: var(--paper);
+	color: var(--highlight);
+	border: solid 1px var(--highlight);
+}
+
+button.small-button {
+	background-color: var(--highlight);
+	width:1rem;
+	display: flex;
+	align-items: center;
+	grid-column: 2;
+	width: 100%;
+	border-radius: 0px var(--round-corners) var(--round-corners) 0px;
+	padding: 0;
+}
+
+.button.leading {
+	background-color: var(--paper);
+	color: var(--highlight);
+}
+
+
+button:hover {
+	background: var(--button-submit);
+	border: 1px solid var(--tint);
+	box-shadow: 1px 1px 1px var(--blue-button-tint);
+	color: var(--highlight);
+	transition: all 250ms linear;
+}
+
+button svg {
+	transform: rotate(90deg);
+	stroke: var(--paper);
+	z-index: 100;
+}
+
+.subscribe input {
+	display: block;
+	grid-column: 1;
+	border-style: none;
+	border-width: 0;
+/*	border-radius: 6px 0px 0px 6px;*/
+	border-radius: var(--round-corners) 0px 0px var(--round-corners);
+}
+
+.small-button, input {
+	height: 50px;
+}
+
+
+.login {
+/*	border-radius: 5px;*/
+	border-radius: var(--round-corners);
+	padding: 10px 30px;
+}
+
+hr {
+	opacity: 6%;
+	border: 1px solid var(--paper);
+}
+
+picture.circle {
+	aspect-ratio: 1/ 1;
+}
+
+svg.circle {
+	height: 100%;
+	width: 100%;
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	stroke-linejoin:round;
+	stroke-miterlimit:2;
+	fill: var(--soft);
+}
+
+.lang {
+	min-width: 20px;
+}
+.lang svg {
+	fill: none;
+	stroke: var(--fade);
+}
+
+.bubble-number {
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	aspect-ratio: 1/ 1;
+	background-color: var(--soft);
+	display: flex;
+	flex-direction: column;
+	    justify-content: center;
+    align-items: center;
+}
+
+
+
+.qa-pair summary::-webkit-details-marker {
+ display: none;
+}
+
+.qa-pair summary {
+/*	//gets rid of the arrow*/
+	list-style: none;
+	padding-bottom: var(--smspace);
+	position: relative;
+}
+
+
+details summary::after {
+/* adds the arrow */
+	content: '';
+	border-right: 4px solid;
+	border-bottom: 4px solid;
+	position: absolute;
+	right: .75em;
+	height: .75em;
+	width: .75em;
+	transform: rotate(45deg) translatey(-.1em);
+	transition: .5s;
+	opacity: 70%;
+}
+
+details summary:focus {
+/*	outline: 2px solid;
+	outline-offset: 1px;*/
+}
+
+
+details[open].qa-pair > summary::after {
+	transform: rotate(-135deg) translatey(-.3em);
+	transition: .5s;
+}
+
+
+.social-small {
+	width: 2em;
+	align-self: right;
+}
+
+a {
+	border-bottom: 1px solid rgba(255, 221, 255, 0) ;
+}
+
+a:hover {
+	border-bottom: 1px solid var(--highlight) ;
+}
+
+

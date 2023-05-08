@@ -1,0 +1,73 @@
+/* Should we pull in @fonts here? */
+
+h1, .loud-voice {
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 27px;
+}
+
+.serene-voice {
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 60px;
+}
+
+h3, .attention-voice, .user-name {
+ font-family: 'Avenir';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+}
+
+p, .calm-voice, li, a {
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+	color: var(--fade);
+}
+
+
+
+p.poster-voice, .headline {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 0px;
+text-transform: lowercase;
+}
+
+/*.tiny-voice {
+
+}
+
+.bold-voice {
+
+}
+
+.fine-print {
+
+}
+*/
+/*refined-voice
+.loud-voice 
+.attention-voice 
+.friendly-voice 
+.standard-voice 
+.poster-voice,
+strong-voice*/
+
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+*/

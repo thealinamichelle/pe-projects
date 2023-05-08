@@ -1,0 +1,87 @@
+/*
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	gap: 20px;
+}
+
+
+
+form > div {
+/*	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	grid-auto-flow: column;
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-grow: 1;
+}
+
+input, button, output {
+	font: inherit;
+	padding: 1em 1em;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+input[type=text], input[type=number] {
+	width: 100%;
+
+}
+
+input, textarea  {
+	background-color: var(--soft);
+	box-shadow: var(--light) 0px 10px 10px -10px inset;
+}
+
+textarea {
+	min-height: 10em;
+	border: 0;
+}
+
+
+output {
+	background-color: var(--soft);
+	padding: var(--smspace);
+}
+
+output:empty {
+	background-color: var(--soft);
+	box-shadow: none;
+}
+
+
+form.subscribe-form {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	gap: 0;
+}
+
+
+.visually-hidden {
+   position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+*/
+

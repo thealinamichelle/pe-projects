@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html * {
+
+
+/* testing */
+--green: rgba(172, 175, 127, .2);
+--red:rgba(228, 97, 117, .2);
+--bordgreen: 1px solid green;
+--bordred: 1px solid red;
+/*media widths*/
+
+/*Break points 500, 800*/
+	--tight: 800px;
+	--standard: 1140px;
+
+/* COLOR PALLET	 */
+	--base: #D1DFFC;
+	--gradient: linear-gradient(180deg, #FFFFFF 0%, #EFF4FF 46.88%, #FFFFFF 98.44%);
+	--paper: #FFFFFF;
+	--soft: #DBE6FE;
+	--fade: rgba(226, 236, 255, 0.57);
+	--ink: #475129;
+	--black: #000000;
+	--highlight: #EFC9A6;
+
+
+/* FONTS	 */
+
+
+/* GAPS & PADDING	*/
+
+	--tinyspace: 5px;
+	--smspace: 20px;
+	--medspace: 40px;
+	--lgspace: 80px;
+	--xlspace: 100px;
+
+/*Design*/
+	--round-corners: 6px;
+
+}
+
+
+
+
+
+
