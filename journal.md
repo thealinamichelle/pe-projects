@@ -1,6 +1,92 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
+## 6/20-21
+- [x] Set Up Journal Entry
+- [x] Stand Up
+- [] git commit
+- [] Milestones
+- [] Review Ticktick list
+
+- Personal Website:
+- - [] make an itemized timeline
+
+- Node day 4 []
+
+### Video Notes
+
+- 
+immediately invoke function expression
+
+anonymous function 
+function()
+
+
+.push(array) will add an item to an array at the end
+
+node index.js will run the index file 
+```js
+
+`__dirname` will grab the directory name
+`__filename` will grab the file name
+
+````
+Node functions are local rather than global
+
+Node modoules have these built in:
+```js
+			console.log('e', exports);
+			console.log('r', require);
+			console.log('m', module);
+			console.log('d', __dirname);
+			console.log('f', __filename);
+
+			const something = require('./module.js');
+
+//in the module.js file:
+
+		function something(){
+			console.log("something");
+		}
+		
+		module.exports = something;
+
+```
+ECMAScript modules are the official standard format to package JavaScript code for reuse. Modules are defined using a variety of import and export statements.
+
+here is the above example using the ECMA standard:
+```js
+
+//instead of:
+
+		const something = require('./module.js');
+
+//it's:
+
+		import something from './module.js';
+		something();
+
+//and in the module.ks file:
+
+		function something(){
+			console.log("something");
+		}
+		export default something;
+
+```
+
+
+it can work outside of the browser
+npm init in the terminal for a package.json file
+npm start vs node index.js both start the node module. 
+
+
+
+get the firectory name and file name
+
+
+
+
 --- 
 
 ## 4/10 
@@ -17,10 +103,9 @@
 ### Video Notes
 - verb think function
 
-.push(array) will add an item to an array at the end
 
 
-
+immediately invoked function expression
 
 ---
 
