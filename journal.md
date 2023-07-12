@@ -1,6 +1,233 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
+##7/10
+-
+Summary: GIT & Node review, intro to Express:
+
+#### GIT REVIEW
+- initialiaze git
+- git init
+- git ignore - add files to ignore
+	.DS_Store
+	node_modules
+
+- `git status` will show the currtent status
+- `git add *` will add all the files to the commit
+- `git add .gitignore` will specifically add the ignore file
+
+- `git commit -m "Add initial files"` to add the initial description message
+
+- `git log` will show you the log of commits
+
+
+npm initialize
+#### INITIALIZE EXPRESS
+#### how to add node to a project//initialiaze node
+
+npm initialize
+	npm init
+
+- look into alias for the terminal
+
+in the  package json add the script
+
+	"start": "node app.js"
+
+frameworks for node.js - hapi.dev  and koajs.com
+
+express is one of the first and will help understand other frameworks
+
+npm install express will add to the dependencies 
+
+		(  "dependencies": {
+		    "express": "^4.18.2"
+		  })
+
+- how it looks as a dev dependency
+
+		`(  "devDependencies": {
+		    "express": "^4.18.2"
+		  })`
+
+if there are every any issues, you can delete the nodemodules and enter into the terminal
+npm install 
+and it will install everything in the dependecies in the json
+
+
+### IMPORT EXPRESS
+
+	import express from "express";
+because it is a nodemodule it will naturally import you don't need to point to the path
+
+//INITIALIZE EXPRESS
+		
+		const app = express();
+
+
+### SET UP ROUTING
+
+express lets you combine response and request into and it infers the content type it is and the status code
+	
+	response.send("SENDING");
+
+
+	app.get('/', function(request, response){
+	response.send("SENDING");
+	});
+get request towards this root, expects a request and response
+
+#### SET UP APP TO LISTEN FOR EXPRESS
+
+		app.listen(1982);
+
+
+
+- REMINDER - IMPORT MODULES IN THE JSON
+
+- `"type" : "module";`
+- if you use ECMA and don't set the type as a module you'll get this error SyntaxError: Cannot use import statement outside a module
+
+#### How to add nodemon?
+	under scripts add `"name for script like 'watch'":"nodemon filename"`
+
+
+#### How do we handle all the http requests for the things within pages or handle defaults like the favicon issue?\
+
+create a public folder first I guess `terminal mkdir public`
+
+from the Express documentation: 
+
+>*Serving static files in Express*
+To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
+
+>For example, use the following code to serve images, CSS files, and JavaScript files in a directory named public:`app.use(express.static('public'))`
+
+>Now, you can load the files that are in the public directory:
+http://localhost:3000/images/kitten.jpg
+http://localhost:3000/css/style.css
+http://localhost:3000/js/app.js
+http://localhost:3000/images/bg.png
+http://localhost:3000/hello.html
+
+
+
+>How do I handle 404 responses?
+In Express, 404 responses are not the result of an error, so the error-handler middleware will not capture them. This behavior is because a 404 response simply indicates the absence of additional work to do; in other words, Express has executed all middleware functions and routes, and found that none of them responded. All you need to do is add a middleware function at the very bottom of the stack (below all other functions) to handle a 404 response:
+
+		app.use((req, res, next) => {
+		  res.status(404).send("Sorry can't find that!")
+		})
+
+
+
+
+
+use method (see express documentation)
+shows different use cases and how to add subfolders etc etc
+
+
+
+#### TEMPLATING LANGUAGES
+
+with PHP you have a build in templating language but with node you can pick the templating language
+
+(derrick likes handlebars)
+EJS 
+
+- INSTALL: npm install ejs
+
+EJS Can be used anywhere not just express
+
+- Tags: 
+><% 'Scriptlet' tag, for control-flow, no output
+<%_ ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it
+<%= Outputs the value into the template (HTML escaped)
+<%- Outputs the unescaped value into the template
+<%# Comment tag, no execution, no output
+<%% Outputs a literal '<%'
+%> Plain ending tag
+-%> Trim-mode ('newline slurp') tag, trims following newline
+\_%>"Whitespace Slurping" ending tag, removes all whitespace after it. Note: No backslash that is just 
+for markdown
+
+
+- SET UP THE VIEW ENGINE
+
+	`//set up EJS view engine
+		app.set('view engine', 'ejs');`
+
+- SAVE FILES AS .EJS
+- RESPONSE.RENDER
+	doesn't use an actual file path, but knows where to find the file behind the scenes?
+
+	the render method is smart and will look for whatever changes in the "views" folder
+
+	`app.get('/', function(request, response){
+			response.render('home');
+		});`
+- Dynatmic Data
+
+will take an object
+
+	`app.get('/', function(request, response){
+			response.render('home', {pageName: "the home page brought you by the view engine"},);
+		});`
+
+echo it on the actual page:  <h1><%= pageName %></h1>
+
+
+#### QUESTIONS:
+
+- JSON DATA NOT WORKING??
+terminal mkdir public (???)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##6/29
+-
+
+
+### Notes: 
+
+*Dockblock is a specifically formatted comment in source code to document a specific segment of code*
+
+wiki article: 
+these are comments but something is going to have to read them to turn them into nice looking documentation
+
+good documentation:
+whole comment structure for all your functions for example
+
+### 
+
+
 ## 6/20-21
 - [x] Set Up Journal Entry
 - [x] Stand Up
