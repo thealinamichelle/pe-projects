@@ -1,6 +1,12 @@
 # My learning journal
 ### This is my learning journal for personal use. It keeps track of my daily goals, notes any unique learning concepts, and any questions I come up with, first drafts for blog content, or brief exercises for PE prompts.
 
+##7/14
+- 
+
+slug is a name for saving a piece of url
+
+
 ##7/10
 -
 Summary: GIT & Node review, intro to Express:
@@ -21,14 +27,16 @@ Summary: GIT & Node review, intro to Express:
 - `git log` will show you the log of commits
 
 
-npm initialize
-#### INITIALIZE EXPRESS
+
 #### how to add node to a project//initialiaze node
 
-npm initialize
-	npm init
 
-- look into alias for the terminal
+`npm init`
+
+
+#### initialiaze express 
+
+`npm install express`
 
 in the  package json add the script
 
@@ -51,7 +59,7 @@ npm install express will add to the dependencies
 		  })`
 
 if there are every any issues, you can delete the nodemodules and enter into the terminal
-npm install 
+- npm install 
 and it will install everything in the dependecies in the json
 
 
@@ -183,7 +191,7 @@ echo it on the actual page:  <h1><%= pageName %></h1>
 terminal mkdir public (???)
 
 
-
+- look into alias for the terminal
 
 
 
